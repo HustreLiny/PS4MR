@@ -2,3 +2,14 @@
 目前的想法是，先对英文书分段，再在gitbook里面边读边小修，最后推到github pages
 [text](https://blog.csdn.net/u013545389/article/details/123907541)
 [text](https://www.onejar99.com/gitbook-building-and-publishing-free-unlimitedly/)
+
+1. 分章节：让AI写代码解决
+2. 翻译：qwen3-253B-A22B，让AI写prompt（地道表达，语序，忠于原文，不得遗漏），在cherry测试，之后让AI写代码批量翻译（核心任务：把分好章节的eng_ver再依照标题分段eng_ver_seg，然后分章节翻译，每条消息发送一个seg，每个对话一个章节，合并形成cn_ver）4
+
+目前的翻译方案还不错2.5flash，不用再改了
+格式化（AI做，甚至可以写脚本）：
+1. 中文和英文之间空一行
+2. 标题格式化
+- 按照编号设定标题层次
+- 中文英文放在一行
+3. 人工合并一些段落
