@@ -41,10 +41,10 @@ from zero, but it is more important to quantify the variability of the individua
 
 The question being asked relates to how well the methods agree, and there are two components to the answer. Firstly, the mean difference is an estimate of the average bias of one method relative to the other. Here the mean is negligible and we can say that the methods agree excellently on average. Secondly, it is essential to consider also how well the methods are likely to agree for an individual, for which purpose we use the standard deviation of the differences. Although we could simply quote the standard deviation of the differences  $(s_{diff})$  as a measure of agreement (or disagreement), it is more useful to use the standard deviation to construct a range of values which we expect to cover the agreement between the methods for most subjects.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9f7cffb294c3ed578080097e07f4a3a2ac5b7fa299562942de3a7bff6e69f41e.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img1.jpg)  
 Figure 14.1 Transmitral volumetric flow (MF) and left ventricular stroke volume (SV). Data from Zhang et al. (1986).
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/8687cf639fd86d70315076c42de8d4ee8e1915f9bf4955bcaadbc08c1bad2733.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img2.jpg)  
 Figure 14.2 Difference between transmitral volumetric flow and left ventricular stroke volume (SV-MF) plotted against average,  $(\mathbf{MF} + \mathbf{SV}) / 2$
 
 We saw in section 3.4 that for reasonably symmetric distributions we expect the range mean  $\pm 2\mathbf{SD}$  to include about  $95\%$  of the observations. For a method comparison study we can therefore take mean  $\pm 2s_{diff}$  as a  $95\%$  range of agreement for individuals. This range of values defines the  $95\%$  limits of agreement. For the present data we get a range from
@@ -61,7 +61,7 @@ The researchers also compared MF and SV in 25 patients with aortic valve disease
 
 The interpretation of the mean and standard deviation of the differences must depend upon the clinical circumstances - it is not possible to use statistics to define acceptable agreement.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e25fe76a19301f1f90c2be49e5154ef51f48b7d4d63a45831f24e76a0fc01d06.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img3.jpg)  
 Figure 14.3 Differences between SV and MF for patients with or without aortic valve disease, showing  $95\%$  limits of agreement for patients without disease.
 
 
@@ -321,7 +321,7 @@ two prevalences. As noted, the sensitivity and specificity are unchanged: these 
 
 The effect of a lower prevalence is much as we would expect: the more uncommon is true abnormality the more sure we can be that a negative test indicates no abnormality, and the less sure that a positive result really
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6bb7a80645a77c5b83d25027f797221aef286f1994cbb807b429c7b54d90ac9d.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img4.jpg)  
 Figure 14.4 Graphical illustration of (a) Table 14.6 and (b) Table 14.7. P indicates the pathology and  $\mathbf{T}$  indicates the test. The sensitivity is depicted by the proportion of the area  $\mathbf{P}+$  that is labelled  $\mathbf{T}+$  , and is the same in both figures. Likewise the specificity is the proportion of the area  $\mathbf{P}-$  that is labelled  $\mathbf{T}-$  , and this is the same in both figures. Conversely, the PPV is the proportion of the area labelled  $\mathbf{T}+$  that is  $\mathbf{P}+$  , and is markedly different for the two figures. The same applies to the NPV.
 
 indicates an abnormal patient. The predictive values of a test thus depend upon the prevalence of the abnormality in the patients being tested, which may not be known. We should not take the predictive values observed in the sample as applying universally.
@@ -487,7 +487,7 @@ that is,  $- 0.624$  and  $0.308$ , and back- transform these values (using  $10
 
 As always there are advantages and disadvantages of the alternative approaches and each has strong advocates. The parametric approach depends on the data having a closely Normal distribution, perhaps after transformation. We can use a formal test of non- Normality, as described in section 7.5.3. The Normal plot for the  $\log \mathrm{IgM}$  data in Figure 14.5 shows that the data are indeed close to a Normal distribution. The alternative percentile approach makes no assumptions about the data, but is less reliable when the data are Normal.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/1e6d8cee1828ee4a421f00e8763f801360e7bab2f416d0c130ad7191adb9c208.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img5.jpg)  
 Figure 14.5 Normal plot of log serum  $\mathrm{IgM}$  data in children (Isaacs et al., 1983).
 
 
@@ -511,7 +511,7 @@ $$
 
 where  $s$  is the standard deviation of the observations. This is approximately equal to  $s \sqrt{3 / N}$ . The widths of confidence intervals for the limits of  $95\%$  reference intervals for different sample sizes are shown in Figure 14.6. For sample sizes smaller than about 50 the values defining the reference interval themselves have a confidence interval wider than the standard
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e5955cab3d36040daa4b7674bce4927ea90b82e8e406d185c166b53ea29ec96b.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img6.jpg)  
 Figure 14.6 Width of parametric  $95\%$  confidence interval for limits of reference interval as a multiple of the standard deviation if the data have a Normal distribution.
 
 deviation of the observations. In order to reduce the uncertainty we need much larger samples, preferably of at least 200 observations. Reference intervals derived by the non- parametric percentile method have confidence intervals that are much wider than those shown in Figure 14.6 (Linnet, 1987). The parametric approach is therefore much better if we can make the data conform closely to a Normal distribution, unless we have a very large sample.
@@ -525,10 +525,10 @@ Not only the mean but also the standard deviation may vary with age. Further, th
 
 data from children aged 6 months to 6 years showed that both the mean and standard deviation of log IgM increased slightly and then decreased in the  $5\frac{1}{2}$  year period. Quadratic regression lines were fitted separately to the mean and SD of log IgM for 6 month age groups. These two curves were then combined to give mean  $\pm 1.96\mathrm{SD}$  at each age, and everything was antilogged to give the age- related reference interval shown in Figure 14.7.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/7a325eb5fbf152fbd52d9cb73ef46d03823b66bfca959e8036bf07f70e7d6230.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img7.jpg)  
 Figure 14.7 95% age-related reference interval for IgM (Isaacs et al., 1983).
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/42ac39cee4ff43de769d225ebc0d7ad8746aed37d8b8fe466516e75517933707.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img8.jpg)  
 Figure 14.8 Centiles for birthweight of first-born male babies (Altman and Coles. 1980), showing empirical (raw) centiles and curves derived from regression models.
 
 Further details of the method are given in the original paper (Isaacs et al., 1983).
@@ -573,7 +573,7 @@ aannn aannn aannn aannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 
 <table><tr><td></td><td colspan="6">Time after administration (min)</td><td>Peak value (nmol/l)</td><td>Time to peak (min)</td><td></td></tr><tr><td>0</td><td>1</td><td>3</td><td>5</td><td>10</td><td>15</td><td>30</td><td>45</td><td>60</td><td>120</td></tr><tr><td colspan="10">Group 3 (0.2 ml of 200 mg/ml progesterone in one nostril)</td></tr><tr><td>13</td><td>8.4</td><td>10.8</td><td>8.1</td><td>7.8</td><td>8.5</td><td>12.0</td><td>19.8</td><td>22.2</td><td>40.5</td></tr><tr><td>14</td><td>3.5</td><td>3.2</td><td>3.4</td><td>3.3</td><td>8.5</td><td>9.4</td><td>14.5</td><td>12.7</td><td>10.2</td></tr><tr><td>15</td><td>3.5</td><td>4.0</td><td>4.8</td><td>3.5</td><td>3.7</td><td>13.0</td><td>12.5</td><td>15.0</td><td>10.5</td></tr><tr><td>16</td><td>3.7</td><td>3.2</td><td>4.3</td><td>4.5</td><td>5.5</td><td>8.5</td><td>10.3</td><td>11.1</td><td>6.0</td></tr><tr><td>Mean (SE)</td><td>4.8</td><td>5.3</td><td>5.2</td><td>4.8</td><td>6.7</td><td>10.7</td><td>14.3</td><td>15.3</td><td>16.7</td></tr><tr><td></td><td>(1.2)</td><td>(1.8)</td><td>(1.0)</td><td>(1.0)</td><td>(1.2)</td><td>(1.1)</td><td>(2.0)</td><td>(2.5)</td><td>(4.1)</td></tr><tr><td colspan="10">Group 4 (0.2 ml of 100 mg/ml progesterone in each nostril)</td></tr><tr><td>17</td><td>5.0</td><td>5.6</td><td>6.1</td><td>7.2</td><td>13.8</td><td>26.0</td><td>26.1</td><td>25.7</td><td>20.5</td></tr><tr><td>18</td><td>4.5</td><td>5.1</td><td>13.2</td><td>21.0</td><td>26.8</td><td>28.0</td><td>22.0</td><td>17.8</td><td>15.7</td></tr><tr><td>19</td><td>8.4</td><td>6.2</td><td>8.0</td><td>18.5</td><td>33.8</td><td>35.0</td><td>26.2</td><td>23.0</td><td>19.0</td></tr><tr><td>20</td><td>4.2</td><td>3.2</td><td>4.2</td><td>4.8</td><td>10.3</td><td>13.7</td><td>17.1</td><td>18.3</td><td>15.0</td></tr><tr><td>Mean (SE)</td><td>5.5</td><td>5.0</td><td>7.9</td><td>12.9</td><td>21.2</td><td>25.7</td><td>22.8</td><td>21.2</td><td>18.2</td></tr><tr><td></td><td>(1.0)</td><td>(0.7)</td><td>(1.9)</td><td>(4.0)</td><td>(5.5)</td><td>(4.4)</td><td>(2.2)</td><td>(1.9)</td><td>(1.0)</td></tr></table>
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/09bdc9bf41d064b4bbb717b0a980959ae64c4b5bf6562fb4def0e754f31b4a9b.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img9.jpg)  
 Figure 14.9 Serum progesterone levels after nasal administration of progesterone in four groups of women. Data from Table 14.13.
 
 3. It is difficult, if not impossible, to interpret the multiple non-independent  $\mathbf{P}$  values that are obtained when different groups of subjects are compared;
@@ -625,10 +625,10 @@ The summary measures can also be plotted. One interesting format for 'peaked' da
 
 The area under the curve (AUC) is a useful way of summarizing the information from a series of measurements on one individual. It is
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f660d07039686f40ff3f0209298ea999d7c6b5f29f7ca7aed29a62717b92d38e.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img10.jpg)  
 Figure 14.10 Alternative display of serum progesterone data in Figure 14.9.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/975c5c803e5d954ab7d455a61baa6af96c3d4a2fcc62b9f43302eefe94ddce46.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img11.jpg)  
 Figure 14.11 Plot of peak values of progesterone by time.
 
 frequently used in clinical pharmacology, where the AUC from serum levels can be interpreted as the total uptake or bioavailability of whatever had been administered.
@@ -681,7 +681,7 @@ When data come from ordered groups we should examine directly the possibility of
 
 Several methods exist for analysing such data. Frequencies can be analysed using a non- parametric method given by Freedman (1979), for example to see if the incidence of new cases of disease varies seasonally. Continuous variables or proportions can be examined by fitting a sinusoidal
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a8cde01f439cad3bc98b9b9ecfda279b48f15f9a99b75074129cc356fb7cb60e.jpg)  
+![](../images/14_Some_common_problems_in_medical_research/img12.jpg)  
 Figure 14.12 Observed percentages of IgE values above  $1.0 \mathrm{IU / ml}$  and fitted sine curve.
 
 (or sine) curve to the data. This analysis can be regarded as a complex form of regression. Figure 14.12 shows the observed proportions of abnormal IgE values together with the fitted curve. The analysis, which is not described here, shows a highly significant seasonal pattern.

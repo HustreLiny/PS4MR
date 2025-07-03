@@ -48,7 +48,7 @@ changes over time as being causally related. Second, we would expect them to hav
 
 7.1 Figure A7.1 shows a scatter diagram of the data. The point that is most distant from the general trend is in the bottom left- hand corner, corresponding to patient 19. This patient's wedge pressure was actually  $28 \mathrm{mmHg}$ .
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/10fc9ebaa5de5b42304e3b98b2ac5fe3f26359faa7c59ae857e16a45c94f2397.jpg)
+![](../images/Anwers to exercises/img1.jpg)
 
 7.2 The following table shows the calculations:
 
@@ -56,7 +56,7 @@ changes over time as being causally related. Second, we would expect them to hav
 
 The Normal scores can be obtained in many statistics packages. Otherwise they can be obtained by using Table B1 'in reverse'. The Normal plot of these data is very straight, as is shown in Figure A7.2.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e6404a792646249f8fbdb8afe4ec22b6a1854a76194410ea1281c13cc23e752c.jpg)
+![](../images/Anwers to exercises/img2.jpg)
 
 7.3 The terminal digits (or penultimate digits in the case of dose of SA) are distributed as follows:
 
@@ -401,13 +401,13 @@ The mean and SD of the differences ( $^{51}\mathrm{Cr}$ - biotin) are  $- 85.0$ 
 
 (d) If one method is affected by consumption of eggs then it would be advisable to exclude patients who had eaten eggs. In contrast, it would be completely invalid to omit some patients simply because
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d67b49326a77dcb77806ed44021158421162f52116b658864163387694ff27b6.jpg)
+![](../images/Anwers to exercises/img3.jpg)
 
 their data were discrepant. The authors' comment is curious, as they do not say which of the patients had eaten an egg. If the two patients with suspect values are excluded, the mean and SD of the between method differences become  $- 20.2$  and  $112.2 \mathrm{ml}$  , a considerable improvement. The revised limits of agreement are shown in Figure A14.1 as dashed lines.
 
 14.2 (a) The means are plotted in Figure A14.2. The means for the two groups show a very similar pattern.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/8c827aa7e9db98f45e21ea6616d5f030bbd28a5ea4eb747a9e5e2bb0e31222b9.jpg)
+![](../images/Anwers to exercises/img4.jpg)
 
 (b) The mean and SD of the peak values and areas under the curves for the two groups are
 
@@ -417,7 +417,7 @@ The two groups can be compared by two sample  $t$  tests, which give  $t = 1.53$
 
 (c) The individual curves shown in Figure A14.3 show considerable variation - many look very different from the mean curves. It is a matter of judgement whether the means are a good representation of the overall pattern.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/bad038c61844d02b9fb50870ea1687adaaaf6d25c0687130a542d4a90c4dce08.jpg)  
+![](../images/Anwers to exercises/img5.jpg)  
 Figure A14.3 Time (hours)
 
 14.3 (a) The two thirds of drug users who admitted the fact would not be allowed to give blood. Among the other third we would expect 0.24 (24%) to pass the test, and thus give blood. Among the non- drug users we would expect 0.63 (63%) to pass the test and give blood.

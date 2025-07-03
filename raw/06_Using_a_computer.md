@@ -257,9 +257,9 @@ Initial Blood Pressure (mm Hg)
 
 Final Blood Pressure (mm Hg)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2ffb3f12b28ad48aced5e5361ce18a491498b44a0ac952bbbdb9b83adb132cb8.jpg)
+![](../images/06_Using_a_computer/img1.jpg)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/260b7cbd624c3e4342522fc7fa40f80dc9f5535da132abf0172482c37eb6e106.jpg)  
+![](../images/06_Using_a_computer/img2.jpg)  
 Figure 6.2 Part of a form to collect data for a trial comparing two antihypertensive drugs, corresponding to the data in Figure 6.1.
 
 The way in which forms are designed for recording data needs careful thought. Categorical and continuous variables pose different problems.
@@ -321,7 +321,7 @@ for the program to accept data where all the values are in a single column, and 
 
 The ability to plot data is a major advantage of using a computer. There are two types of plot that can be produced, whether plotting on the screen or on paper - a line plot or a high- resolution plot. The first method uses the usual 'alphanumeric' character set and places each point as near as possible to its correct location, while the second uses the graphical capability of the computer to give a much more accurate plot. Figure 6.3 shows a line plot of the data shown in Figure 11.4; line plots can be produced by most statistical packages. Coincident points are usually indicated by showing the number of points (up to 9). It is often difficult to specify the scaling of axes and to indicate different groups. Most statistical packages can plot histograms and scatter diagrams, and some can produce box- and- whisker or stem- and- leaf plots. Line plots are very useful when analysing data, but they are not of top quality. Until recently few statistical packages could produce high- resolution plots, but improved graphical facilities are becoming more common. The figures in this book were
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/18b18cf6a99758a6849bbc475fdca557e9b9120de485ca7a4d35e4300a2e1fe9.jpg)  
+![](../images/06_Using_a_computer/img3.jpg)  
 Figure 6.3 Line plot of data shown in Figure 11.4 relating log maternal weight to log fetal weight in mammals.
 
 produced on a personal computer (using the package STATA) and printed on a high- resolution laser printer.

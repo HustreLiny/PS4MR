@@ -24,7 +24,7 @@ Correlation is the method of analysis to use when studying the possible associat
 
 If we want to measure the degree of association, this can be done by calculating the correlation coefficient, often loosely just called the correlation. The standard method (often ascribed to Pearson) leads to a quantity called  $r$  which can take any value from  $- 1$  to  $+1$ . This correlation coefficient  $r$  measures the degree of 'straight- line' association between the values of the two variables. Thus a value of  $+1.0$  or  $- 1.0$  is obtained if all the points in a scatter diagram lie on a perfect straight line, as shown in Figure 11.2. Also shown are examples of data with intermediate values of  $r$ . The correlation between two variables is positive if higher values of one variable are associated with higher values of the other and negative if one variable tends to be lower as the other gets higher. A correlation of around zero indicates that there is no linear relation between the values of the two
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/add4bd90172ee1be91621a86bf07d39b01f98de7d34afd6a27b8b5ec89f171ac.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img1.jpg)  
 Figure 11.1 Body fat percentage (%fat) related to age for 18 normal adults (Mazess et al., 1984).
 
 variables (i.e. they are uncorrelated). Clearly the variables in Figure 11.1 are positively correlated; in fact the correlation coefficient can be calculated to be  $r = 0.79$ .
@@ -46,26 +46,26 @@ The mathematical calculations for  $r$ , its confidence interval, and the associ
 
 280 Relation between two continuous variables
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/98166619d6db95fbc83ad5e468c4ea316e511179372d2459969d18b4cddda531.jpg)
+![](../images/11_Relation_between_two_continuous_variables/img2.jpg)
 
 (b)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/dcbb4b62fc433b86336d09600a9fde0b1cc232e75c6ed36ca9597e2cf4c7e384.jpg)
+![](../images/11_Relation_between_two_continuous_variables/img3.jpg)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/999c1d8396f5f7dd4a0a81426fe7b2de54b7a241319a4f6e5b40fead4ec771c0.jpg)
+![](../images/11_Relation_between_two_continuous_variables/img4.jpg)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2ce0eddb814a4ecaf326bbd8924232b921da2d107e924e837b3947fcdc5721c5.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img5.jpg)  
 (d)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/5df57e56731e774c18562d3d1e2c8625a2aa2c0789e9574919acb3d9d139232e.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img6.jpg)  
 Figure 11.2 Data with correlation coefficients (r) of (a) 1.0; (b) -1.0; (c) 0.0; (d) 0.3; (e) -0.5; (f) 0.7.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d1ab51f12bda79f56c1846b85e5a2ad7bbdbcd24255256547b9b03c3dd671468.jpg)
+![](../images/11_Relation_between_two_continuous_variables/img7.jpg)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6e40bc4189094e3a8c23e3ad4af10466f78b4dda470c2cc139dc568e918ec399.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img8.jpg)  
 Figure 11.3 Relation between percentage of fat and bodyweight in 18 normal adults (Mazess et al., 1984).
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/29907cf1bacc21a7bd4156d236e464afa7922451a653f150298f350b544f38bd.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img9.jpg)  
 Figure 11.4 Relation between total fetal weight and non-pregnant maternal weight in 121 species of mammal (Leitch et al., 1959).
 
 
@@ -104,7 +104,7 @@ As already indicated, there is an implicit assumption that the subjects being st
 
 It may be misleading to calculate the correlation when the sample comprises different subgroups. For example, the body fat data in Figure 11.1 relate to 14 women and 4 men. Body fat percentage tends to be lower in men, and it happens that the four men in this study were considerably younger than the women, so mixing the sexes tends to inflate the correlation (see Figure 11.5). It would therefore be better to consider the
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c861c1b461c7879fd0d9580ed30fee4588fdd14cb40935db6c81fe9410aedd52.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img10.jpg)  
 Figure 11.5 % fat by age showing males (+) and females (O).
 
 women only, for whom we get rather lower  $r = 0.51$ . Another consequence of the mixing of subgroups is that the data (when mixed) may not be Normally distributed, but the effect cannot be detected unless the groups are very different and the sample is large.
@@ -158,7 +158,7 @@ Pearson correlation. This is not always the case, of course. The two methods wil
 
 Hughes and Jones (1985) studied the relation between average intake of dietary fibre and the average age of menarche in 46 countries. They quoted a correlation coefficient of  $r = 0.84$  ( $\mathbf{P}< 0.0001$ ). However, as Figure 11.6 shows, the data tend to cluster in two main groups, corresponding roughly to developed and developing countries, and there is one extreme point. The data are thus not near to a Normal distribution for either variable. We might, therefore, prefer to use rank correlation, which gives  $r_{s} = 0.69$ . We can interpret identical values of  $r$  and  $r_{s}$  as being roughly equivalent, so from Table B7 the rather weaker rank correlation is also highly significant ( $\mathbf{P}< 0.0001$ ).
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/5e4e28f5df94403ff439bda7f32fa1af14d651cfbb00e11f3937beec8efc7c98.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img11.jpg)  
 Figure 11.6 Relation between average daily intake of dietary fibre and mean age of menarche in 46 countries (Hughes and Jones, 1985).
 
 We can calculate a confidence interval for  $r_{s}$  in exactly the same way as for  $r$ . Following the method given in section 11.7, the  $95\%$  confidence interval for the fibre and menarche data is from 0.32 to 0.87. The data are thus compatible with a wide range of possibilities for the population correlation, despite the very small  $\mathbf{P}$  value.
@@ -192,7 +192,7 @@ Table 11.4 Latitude, age-standardized dizygotic twinning rates and daily per cap
 
 <table><tr><td>Country</td><td>Latitude (L)</td><td>DZ twinning (T)</td><td>Milk consumption rate/1000(M)</td></tr><tr><td>Portugal</td><td>40 (1.5)</td><td>6.5 (2)</td><td>3.8</td></tr><tr><td>Greece</td><td>40 (1.5)</td><td>8.8 (13)</td><td>7.7</td></tr><tr><td>Spain</td><td>41 (3)</td><td>5.9 (1)</td><td>8.2</td></tr><tr><td>Bulgaria</td><td>42 (4)</td><td>7.0 (3)</td><td>-</td></tr><tr><td>Italy</td><td>44 (5)</td><td>8.6 (11.5)</td><td>6.5</td></tr><tr><td>France</td><td>47 (6.5)</td><td>7.1 (4)</td><td>10.9</td></tr><tr><td>Switzerland</td><td>47 (6.5)</td><td>8.1 (7.5)</td><td>-</td></tr><tr><td>Austria</td><td>48 (8)</td><td>7.5 (6)</td><td>15.9</td></tr><tr><td>Belgium</td><td>51 (9.5)</td><td>7.3 (5)</td><td>11.6</td></tr><tr><td>FR Germany</td><td>51 (9.5)</td><td>8.2 (9)</td><td>14.1</td></tr><tr><td>Holland</td><td>52 (11.5)</td><td>8.1 (7.5)</td><td>18.9</td></tr><tr><td>GDR</td><td>52 (11.5)</td><td>9.1 (16)</td><td>-</td></tr><tr><td>England and Wales</td><td>53 (13.5)</td><td>8.9 (14.5)</td><td>17.1</td></tr><tr><td>Eire</td><td>53 (13.5)</td><td>11.0 (18)</td><td>24.4</td></tr><tr><td>Scotland</td><td>56 (15.5)</td><td>8.9 (14.5)</td><td>-</td></tr><tr><td>Denmark</td><td>56 (15.5)</td><td>9.6 (17)</td><td>16.8</td></tr><tr><td>Sweden</td><td>60 (17)</td><td>8.6 (11.5)</td><td>20.9</td></tr><tr><td>Norway</td><td>61 (18)</td><td>8.3 (10)</td><td>19.3</td></tr><tr><td>Finland</td><td>62 (19)</td><td>12.1 (19)</td><td>30.4</td></tr></table>
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2500d7cb1da127f2fe0344612e22ca6121d90da7eab648220c8b0e38af1da573.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img12.jpg)  
 Figure 11.7 Relation between latitude and dizygotic twinning rate in 19 European countries (James, 1985).
 
 particularly difficult, however. Note that correlation is frequently used for this type of data, although the countries are never randomly sampled as they technically should be. Section 11.8 discusses the general problems of interpreting correlation coefficients.
@@ -408,7 +408,7 @@ Another common problem of interpretation occurs when we know that each of two va
 
 Correlation is often used when it would be better to use regression methods, discussed in section 11.10 onwards. The two methods are compared in section 11.17.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/55e3b411a788312e10f68716f9a33209f0ffdc34837bfcc4b2b284a8bd5b2cbe.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img13.jpg)  
 Figure 11.8 Scatter diagrams showing each two way relation between age,  $\%$  fat, and weight of 18 normal adults (Mazess et al., 1984).
 
 
@@ -433,14 +433,14 @@ Table 11.6 Data from 24 type 1 diabetic patients (Thuesen et al., 1985)
 
 <table><tr><td>Patient</td><td>Fasting blood glucose (mmol/l)</td><td>Mean circumferential shortening velocity (Vcf) (%/sec)</td></tr><tr><td>1</td><td>15.3</td><td>1.76</td></tr><tr><td>2</td><td>10.8</td><td>1.34</td></tr><tr><td>3</td><td>8.1</td><td>1.27</td></tr><tr><td>4</td><td>19.5</td><td>1.47</td></tr><tr><td>5</td><td>7.2</td><td>1.27</td></tr><tr><td>6</td><td>5.3</td><td>1.49</td></tr><tr><td>7</td><td>9.3</td><td>1.31</td></tr><tr><td>8</td><td>11.1</td><td>1.09</td></tr><tr><td>9</td><td>7.5</td><td>1.18</td></tr><tr><td>10</td><td>12.2</td><td>1.22</td></tr><tr><td>11</td><td>6.7</td><td>1.25</td></tr><tr><td>12</td><td>5.2</td><td>1.19</td></tr><tr><td>13</td><td>19.0</td><td>1.95</td></tr><tr><td>14</td><td>15.1</td><td>1.28</td></tr><tr><td>15</td><td>6.7</td><td>1.52</td></tr><tr><td>16</td><td>8.6</td><td>-</td></tr><tr><td>17</td><td>4.2</td><td>1.12</td></tr><tr><td>18</td><td>10.3</td><td>1.37</td></tr><tr><td>19</td><td>12.5</td><td>1.19</td></tr><tr><td>20</td><td>16.1</td><td>1.05</td></tr><tr><td>21</td><td>13.3</td><td>1.32</td></tr><tr><td>22</td><td>4.9</td><td>1.03</td></tr><tr><td>23</td><td>8.8</td><td>1.12</td></tr><tr><td>24</td><td>9.5</td><td>1.70</td></tr></table>
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f66c8bda3851a5d256ff9b5e82c21a26a5e446b771a78cc135a570990d9ebfb1.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img14.jpg)  
 Figure 11.9 Relation between fasting blood glucose and mean velocity of circumferential shortening of the left ventricle (Vcf). Data from 23 type 1 diabetics (Thuesen et al., 1985).
 
 variables. We may consider these as a response (or outcome) variable (Vcf) and a predictor variable (blood glucose). These are often called dependent and independent variables respectively, confusing names which indicate which variable is depending on the other. The response variable is always plotted on the vertical, or  $Y$ , axis and the predictor variable on the horizontal, or  $X$ , axis, as illustrated in Figure 11.9.
 
 The problem is to fit a straight line to the data that in some sense gives the 'best' prediction of  $Y$  for any value of  $X$ . Intuitively this will be a line that minimizes the distance between the data and the fitted line. There are several possible approaches to this problem, but the standard method is called least squares regression. When we use this method to fit a regression line we minimize the sum of the squares of the vertical distances of the observations from the line. Figure 11.10 shows the same data with the least squares regression line, together with the vertical distances from the line. Each distance is the difference for an individual between the observed value and the value given by the line, known as the fitted value. The technical term for this distance is a residual, a term I shall use from now on. Notice that this approach gives a solution that does not depend on the scaling of the graph. If we were to take distances perpendicular to the line (which is an alternative possibility) the solution would depend on the way the graph was drawn, which is clearly an undesirable feature.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/de23acc350cf8722974291eff39abab155567f70d32884cab24d0fff8b8582ed.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img15.jpg)  
 Figure 11.10 Data of Figure 11.9 with regression line, showing differences between observed and fitted values.
 
 The least squares method produces the line that minimizes the sum of the squares of the residuals, and so it also minimizes the variance of the residuals, which is just the sum of squares divided by the number of observations minus two. This variance, known as the residual variance, is a measure of the 'goodness- of- fit' of the line. The residual variance is very important when assessing the results of a regression analysis.
@@ -478,12 +478,12 @@ The assumption of Normality can be assessed formally by means of a Normal plot o
 
 Figure 11.12 shows the residuals plotted against blood glucose, which looks satisfactorily like Figure 11.11(a). Figure 11.13 shows a Normal plot of residuals, which is reasonably straight. However, the Shapiro- Francia
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/708adac377b30a26730614a8e32e0cb546340bfd912b672f3527e8eebdc1d9ac.jpg)
+![](../images/11_Relation_between_two_continuous_variables/img16.jpg)
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/5f4aac8f3bdaffe9857d5699e2c70c217f6c4002c3c56929c095c3daa94e49e5.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img17.jpg)  
 Figure 11.12 Residuals from the regression line shown in Figure 11.10, plotted against blood glucose.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e79a00caa588e912b4da66ff9a75907fa3b2d3e55c3f775e9e928d827a771c43.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img18.jpg)  
 Figure 11.13 Normal plot of residuals shown in Figure 11.12.
 
 test gives  $W^{\prime} = 0.907$ $(\mathbf{P} = 0.03)$  , indicating some non- Normality. Figure 11.13 suggests that this is not a major problem, but if we were worried we could try log transformation of Vcf. The value of  $W^{\prime}$  for the residuals after regression analysis using  $\log_{e}$  Vcf is  $W^{\prime} = 0.94$ $(\mathbf{P} = 0.12)$  .
@@ -508,10 +508,10 @@ points are to the line the narrower will be the confidence interval for the line
 
 Figure 11.14 showed the  $95\%$  confidence interval for the mean Vcf for a given value of fasting blood glucose. We expect greater uncertainty when trying to predict Vcf for an individual, and Figure 11.15 shows that the  $95\%$  prediction interval is indeed much wider. For any value of blood glucose we would expect  $95\%$  of future subjects to have Vcf values between the values shown. There is thus a  $95\%$  probability of an individual's Vcf being within this interval, although our best estimate is given by the value on the regression line corresponding to their blood glucose level. The  $95\%$  prediction interval also widens with distance from the mean blood glucose level although this is not as easy to see. What is clear is that for a given blood glucose value there is enormous uncertainty attached to the estimated Vcf. A much tighter prediction interval is needed for such a relation to have any clinical value. Note that unlike the confidence interval for the regression line the prediction interval can be made only slightly narrower by increasing the sample size. This is because the prediction interval mainly reflects individual variability about the fitted line, which has nothing to do with sample size. Where the measurements are imprecise (such as blood pressure) the prediction interval can be
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/165353a88d88019b699d1c9bb85ae91905b9df2983ec76b73cd31d1916d35cb8.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img19.jpg)  
 Figure 11.14 As Figure 11.10, but showing the  $95\%$  confidence interval for the regression line.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e7ccf6623b981023d99640f727612b3e6865deb489218508d83d01566f187f75.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img20.jpg)  
 Figure 11.15 As Figure 11.10, but showing the  $95\%$  interval for predicting Vd from blood glucose for an individual subject.
 
 narrowed by taking the average for each individual of two (or more) readings.
@@ -556,7 +556,7 @@ Regression analysis will be illustrated using the data from diabetics shown in T
 
 The equation of the least squares linear regression line is  $Y = a + b X$  and
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/4fc9a57085f95883ee2d69c08074395142a184e6ce69c59c1486805bdac6a680.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img21.jpg)  
 Figure 11.16 Quadratic curve fitted to mean birth weight by gestational age (Altman and Coles, 1980).
 
 estimates of  $a$  and  $b$  can be obtained easily. Denoting the observed data as  $x_{i}$  and  $y_{i} (i = 1, \ldots , n)$  it can be shown that the line must pass through the mean of the data  $(\bar{x}, \bar{y})$ . The estimated slope is given by
@@ -813,7 +813,7 @@ where 'Year' is the calendar year - 1900. He observed that the 'ultimate mile' w
 
 Nor should the regression line be used to predict the  $X$  variable from the  $Y$  variable. If we wish to predict blood glucose level from Vcf (which is probably not very sensible) we ought first to calculate the regression of
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/afccd47686670ebd225cc171d45ee01f1bc705ff78b1605777aad1ef5a2a1e4f.jpg)  
+![](../images/11_Relation_between_two_continuous_variables/img22.jpg)  
 Figure 11.17 Quadratic curve fitted to world record times to run a mile (Kitson, 1984), showing the range of observations (1954 to 1984).
 
 blood glucose on Vcf. Regression is not a symmetric relation between two variables, so we need the appropriate regression line for our purpose.

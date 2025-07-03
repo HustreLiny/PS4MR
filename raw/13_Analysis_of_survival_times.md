@@ -18,7 +18,7 @@ With data of this type we often wish to estimate the probability of an individua
 
 The analysis of medical survival data has become widespread since the
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f9518ed8b6b09fd375f2dc86cda92a316ee1118f432adde6e89221e0d76a53bd.jpg)  
+![](../images/13_Analysis_of_survival_times/img1.jpg)  
 Figure 13.1 Diagram showing patients entering a study at different times and the observation of known  $(\bullet)$  and censored  $(\circ)$  survival times.
 
 Table 13.1 Survival times for patients shown in Figure 13.1  
@@ -27,7 +27,7 @@ Table 13.1 Survival times for patients shown in Figure 13.1
 
 *censored observation
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/40e73b300a495d0ac0c81093c35842ef3d5cb60f9779447d9254d2b08be38012.jpg)  
+![](../images/13_Analysis_of_survival_times/img2.jpg)  
 Figure 13.2 Figure 13.1 reorganized to correspond to method of analysis.
 
 early 1970s when new methods were developed. Most of the methods described in this chapter are discussed in much more detail in two excellent papers by Peto et al. (1976 and 1977), especially in the second paper. These papers also contain a wealth of practical advice about the design and execution of studies of survival times.
@@ -68,7 +68,7 @@ The survival curve is drawn as a 'step function': the proportion surviving remai
 
 We can calculate a confidence interval for the survival proportion. If there are no censored values we can use standard methods for deriving a confidence interval for a proportion (see section 10.2), but in general we
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/47e48c2d94b1792477a03dd9425f0102b963fca2d56c78a16239c39f7c0596b0.jpg)  
+![](../images/13_Analysis_of_survival_times/img3.jpg)  
 Figure 13.3 Survival curve corresponding to the motion sickness data in Table 13.2.
 
 will need to make a modification to allow for the censoring. Section 13.4.1 gives a method for calculating the standard error; Table 13.2 shows standard errors for the motion sickness data. Some computer programs will provide standard errors, although these may have been produced by a more complex method than is given in section 13.4.1.
@@ -116,7 +116,7 @@ Table 13.3 Life table for motion sickness data from an experiment with vertical 
 
 \* censored observation
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/87ad3f83073e947754fae7ce1a903a57f9755c4145b4907de6f3d686ca1d29ec.jpg)  
+![](../images/13_Analysis_of_survival_times/img4.jpg)  
 Figure 13.4 Times of events  $(\bullet)$  and censoring  $(\circ)$  for two different motion sickness experiments, showing the time intervals used for calculating the logrank test. Experiment 1 was described in Table 13.2 and Experiment 2 in Table 13.3.
 
 time of an event at the upper limit. The first interval is from 0 to 5 minutes, the second is from 6 to 11 minutes, and so on. For each time period we compare the observed data with what we would expect if the null hypothesis that there is no real difference between the experiments is true.
@@ -141,12 +141,12 @@ Note that the sum of the observed and expected numbers is the same: it is import
 
 The logrank test can be used to compare several groups of subjects.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a682ce38145f0cb361979e8af8386d30a374ec88379257662cc45c92493a48de.jpg)  
+![](../images/13_Analysis_of_survival_times/img5.jpg)  
 Figure 13.5 Survival curves for data shown in Table 13.2 and Table 13.3.
 
 Often, however, the categories defining those groups will have a natural ordering, and we should examine the more specific possibility of a trend in survival across the groups. We might, for example, wish to compare survival in several age groups, or in relation to stage of disease, or in relation to amount of exposure of some suspected environmental hazard (such as smoking). The method is a simple extension of the standard logrank test.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/252b86000becfeced383e8bbd1889969bac9a65c717cf3575cf7d8441591dde8.jpg)  
+![](../images/13_Analysis_of_survival_times/img6.jpg)  
 Figure 13.6 Kaplan-Meier curves for patients with breast cancer with none  $(n = 102)$ , 1-3  $(n = 58)$ , or more than 3  $(n = 35)$  positive nodes (data from Barnes et al., 1988).
 
 Figure 13.6 shows survival curves for three groups of women operated on for breast cancer, classified by the number of positive nodes found. An ordinary logrank test gives  $X^{2} = 5.59$  on 2 degrees of freedom  $(\mathbf{P} = 0.06)$ . Because the groups are ordered, however, the trend test should be used, which gives  $X_{t r e n d}^{2} = 5.26$  on 1 degree of freedom  $(\mathbf{P} = 0.02)$ . There is thus a significant (negative) association between survival and number of positive nodes.
@@ -577,10 +577,10 @@ $$
 
 Figure 13.7 shows estimated survival curves for patients given azathioprine and placebo, based on the model shown in Table 13.7 and setting all other variables to their mean values. The relation between survival probability and prognosis can be examined by fixing  $t$  in the last equation, perhaps at a few values of interest. Figure 13.8 shows estimated 2, 5 and 8 year survival probability as a function of PI derived from the PBC trial. For any new patient it is easy to estimate the probability of surviving a given time. Unfortunately, it is difficult to calculate a confidence interval for the estimated survival probability.
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d4b7d31ebeb51dd135ecf96a47f0d8c4e4a38071b50317fe4aef8934b5c2fef5.jpg)  
+![](../images/13_Analysis_of_survival_times/img7.jpg)  
 Figure 13.7 Estimated survival curves for patients treated with azathioprine or placebo based on the Cox model in Table 13.7 (from Christensen et al., 1985).
 
-![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/dbc3990daa0d252644d43135df5e3bf6a72a757c8ffa3532081eeec62046424c.jpg)  
+![](../images/13_Analysis_of_survival_times/img8.jpg)  
 Figure 13.8 Estimated 2, 5 and 8 year survival probability as a function of the prognostic index (PI) in the trial of azathioprine versus placebo. Note that the therapy given is incorporated in PI (from Christensen et al., 1985).
 
 
