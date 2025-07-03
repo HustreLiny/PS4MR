@@ -1,15 +1,15 @@
 import os
 import re
 
-# 1. 指定 translated 目录
-ROOT = r"e:\Documents\Work\VSCode\PS4MR\translated"
+# 指定源目录和输出目录
+SRC_ROOT = r"e:\Documents\Work\VSCode\PS4MR\translated"
 
 # 匹配 Markdown 标题
 heading_re = re.compile(r'^(#{1,6})\s+(.*)$')
 
-def process_file(path):
+def process_file(src_path):
     # 读取所有行，不保留末尾换行符
-    lines = open(path, encoding='utf-8').read().splitlines()
+    lines = open(src_path, encoding='utf-8').read().splitlines()
     merged = []
     i = 0
     while i < len(lines):
@@ -38,12 +38,26 @@ def process_file(path):
             ln = ln + "  "
         out.append(ln)
 
-    # 写回文件，末尾加一个换行
-    with open(path, "w", encoding="utf-8") as f:
+    # 写回源文件，末尾加一个换行
+    with open(src_path, "w", encoding="utf-8") as f:
         f.write("\n".join(out) + "\n")
 
-if __name__ == "__main__":
-    for dirpath, _, filenames in os.walk(ROOT):
+def main():
+    file_list = []
+    for dirpath, _, filenames in os.walk(SRC_ROOT):
         for fn in filenames:
             if fn.endswith(".md"):
-                process_file(os.path.join(dirpath, fn))
+                src_path = os.path.join(dirpath, fn)
+                file_list.append(src_path)
+
+    for idx, src in enumerate(file_list):
+        print(f"[{idx+1}/{len(file_list)}] 处理文件: {src}")
+        process_file(src)
+        print(f"已写回源文件: {src}")
+        ans = input("按回车继续，或输入 q 退出: ")
+        if ans.strip().lower() == 'q':
+            print("已中止后续处理。")
+            break
+
+if __name__ == "__main__":
+    main()
