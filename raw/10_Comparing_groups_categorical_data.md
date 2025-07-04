@@ -66,7 +66,7 @@ which, from Table B2, corresponds to  $\mathbf{P} = 0.22$ . We cannot reject the
 
 The method just described uses the continuous Normal distribution as an approximation to the discrete Binomial distribution. Figure 10.1 shows these two distributions for the example just examined, with  $n = 215$  and  $p = 0.15$ . The hypothesis test is based on calculating the tail area of the Normal distribution beyond the observed value, here 39. The Normal distribution corresponds better to the Binomial distribution when we make a small correction of  $\frac{1}{2}$  to the observed frequency to allow for the fact that the variable can only take integer values.
 
-![](../images/10_Comparing_groups_categorical_data/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9ec7c2f991dbf6b46fe8b841cee40e73051fe5a48126dc4368a36791ba11d6b1.jpg)  
 Figure 10.1 Binomial distribution with  $p = 0.15$  and  $n = 215$  with the approximating Normal distribution.
 
 The test statistic with the continuity correction is
@@ -419,7 +419,7 @@ When the null hypothesis is true the statistic  $X^{2}$  has a Chi squared distr
 
 The definition of the Chi squared distribution is simple. If we have a quantity (variable)  $X$  which has a standard Normal distribution, then  $X^{2}$  has a Chi squared distribution. Clearly  $X^{2}$  can have only positive values, and its distribution is highly skewed. This distribution of  $X^{2}$  has one degree of freedom, and is the simplest case of a more general 'family' of Chi squared distributions. If we have several independent variables, each of which has a standard Normal distribution, say  $X_{1}, X_{2}, X_{3}, \ldots , X_{k}$ , then the sum of the squares of all the  $X$ s,  $\sum X_{i}^{2}$ , has a Chi squared
 
-![](../images/10_Comparing_groups_categorical_data/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/25890563588ebe8f9f6ceb564d34aa8d409d9952bc6b2aee2c1cbfa8fac7e699.jpg)  
 Figure 10.2 Chi squared distributions with different numbers of degrees of freedom.
 
 distribution with  $k$  degrees of freedom. Figure 10.2 shows theoretical Chi squared distributions with different degrees of freedom.
@@ -600,15 +600,15 @@ Table 10.16 shows the probabilities associated with all seven sets of frequencie
 
 Table 10.15 All tables of frequencies which have the same row and column totals as Table 10.14
 
-![](../images/10_Comparing_groups_categorical_data/img3.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/863d0272b2cc892dc5124b267db0a1e8b3cdb2e245fa46bf02a625a3541477f4.jpg)
 
-![](../images/10_Comparing_groups_categorical_data/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/8a94a7a4e503607549a625ef11e56cdc60dc4ce7fb3ee659d327bb13c0ab9296.jpg)  
 (ii)
 
-![](../images/10_Comparing_groups_categorical_data/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/07f8ee14e3c19f15cb611c1a837201928abe16eaad440aff6346e6600b19d301.jpg)  
 (iii)
 
-![](../images/10_Comparing_groups_categorical_data/img6.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d8e4be8b254195733df043ea7d4248d5e7509f856f67c0e5fecb93197fc373e9.jpg)
 
 Table 10.16 Probability associated with each set of frequencies in Table 10.15  
 
@@ -760,7 +760,7 @@ Table 10.19 Relation between frequency of Caesarean section and maternal shoe si
 
 <table><tr><td rowspan="2">Caesarean section</td><td colspan="7">Shoe size</td></tr><tr><td>&amp;lt; 4</td><td>4</td><td>4 1/2</td><td>5</td><td>5 1/2</td><td>6+</td><td>Total</td></tr><tr><td>Yes</td><td>5</td><td>7</td><td>6</td><td>7</td><td>8</td><td>10</td><td>43</td></tr><tr><td>No</td><td>17</td><td>28</td><td>36</td><td>41</td><td>46</td><td>140</td><td>308</td></tr><tr><td>Total</td><td>22</td><td>35</td><td>42</td><td>48</td><td>54</td><td>150</td><td>351</td></tr></table>
 
-![](../images/10_Comparing_groups_categorical_data/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c95d0a80562fa7cbe83a2b92dc5576e30e48452d30d63ded2f2c38888baff242.jpg)  
 Figure 10.3 Proportions of women having a baby by Caesarean section in different shoe size groups.
 
 Table 10.19 shows the numbers of women having a baby by Caesarean section in each shoe size group, from which we can obtain the proportions in each group, shown graphically in Figure 10.3. The method for evaluating a trend is effectively to fit a straight line to the proportions, and see if the slope of the line is significantly different from zero (which represents a horizontal line). We need to take account of the fact that each proportion is based on different numbers of women. The method for fitting such a line is called regression analysis, and is not described until section 11.3, but we can obtain the same result by a calculation based on the observed frequencies. From this analysis we get a value of the test statistic  $X_{\text{rend}}^{2}$  on one degree of freedom. The calculations are described later.

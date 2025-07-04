@@ -8,10 +8,10 @@ In general we can divide variability into that due to known causes and that whic
 
 In any study we will usually want to summarize some of the data in a simple way. Sometimes this will be as far as the statistical analysis goes, but often it is a first step. For categorical variables, such as sex and blood group, it is straightforward to present the number in each category, usually indicating the frequency or percentage of the total number of patients. When shown graphically this is called a bar diagram. Figure 3.1 shows a bar diagram of general aviation accident rates in 1974 by occupation (Booze, 1977). A similar diagram can also be used to relate frequencies (or rates) to values of another variable. For example, Figure 3.2 shows perinatal mortality per 1000 births in England and Wales in 1979 by day of the week. The higher mortality rates at the weekend are clearly seen. It is very important that the vertical axis of a bar diagram starts at zero, otherwise the visual impression is misleading, with the differences between groups being exaggerated.
 
-![](../images/03_Describing_data/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6f22c66301b575c5b8ee23f534998610b7e2879599b8bb86aa5f022da8bb9d5f.jpg)  
 Figure 3.1 Bar diagram showing general aviation accident rates (per 1000) in 1974 by occupation (Booze, 1977).
 
-![](../images/03_Describing_data/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/94c205f36b51e8a5d233dd04cce2f65c5ddfb544ae8d9b2748ab414530733adb.jpg)  
 Figure 3.2 Perinatal mortality in England and Wales in 1979 by day of the week (Macfarlane and Mugford, 1984).
 
 For continuous variables, such as age and serum bilirubin, there will be a large number of different observed values, so an alternative approach is needed. The remainder of this chapter concentrates on ways of describing and summarizing such data both numerically and graphically.
@@ -64,14 +64,14 @@ Table 3.2 Concentrations of serum IgM in 298 children aged 6 months to 6 years (
 <table><tr><td>IgM 
 (g/l)</td><td>Number of Children</td></tr><tr><td>0.1</td><td>3</td></tr><tr><td>0.2</td><td>7</td></tr><tr><td>0.3</td><td>19</td></tr><tr><td>0.4</td><td>27</td></tr><tr><td>0.5</td><td>32</td></tr><tr><td>0.6</td><td>35</td></tr><tr><td>0.7</td><td>38</td></tr><tr><td>0.8</td><td>38</td></tr><tr><td>0.9</td><td>22</td></tr><tr><td>1.0</td><td>16</td></tr><tr><td>1.1</td><td>16</td></tr><tr><td>1.2</td><td>6</td></tr><tr><td>1.3</td><td>7</td></tr><tr><td>1.4</td><td>9</td></tr><tr><td>1.5</td><td>6</td></tr><tr><td>1.6</td><td>2</td></tr><tr><td>1.7</td><td>3</td></tr><tr><td>1.8</td><td>3</td></tr><tr><td>2.0</td><td>3</td></tr><tr><td>2.1</td><td>2</td></tr><tr><td>2.2</td><td>1</td></tr><tr><td>2.5</td><td>1</td></tr><tr><td>2.7</td><td>1</td></tr><tr><td>4.5</td><td>1</td></tr></table>
 
-![](../images/03_Describing_data/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/fd987c9542c4a1b8894ab9b6b8a12b7deaa96c5ffdcc09b2928335419ef498d6.jpg)  
 Figure 3.3 Frequency histogram of IgM concentrations in 298 children aged 6 months to 6 years (Isaacs et al., 1983).
 
 these values. If there are many different values it is often desirable to group observations before constructing a histogram in order to get a better visual impression. Unless the sample is very large somewhere around 8 to 15 groups will usually suffice for a satisfactory display. This will depend upon the actual data, for it is desirable to keep the groupings simple. Although we could group the IgM data in intervals of, say, 0.25, this goes beyond the precision of the data. Better is the grouping in intervals of 0.2 shown in Figure 3.4. Note that the width of each vertical bar covers the range of values that have been grouped. So, for example, when we group 0.1 and 0.2 we are actually including values between 0.05 and 0.25 even though the data were not recorded that accurately. A histogram is similar to a bar diagram, but because the frequencies relate to a continuous variable adjacent bars of a histogram should touch.
 
 The bars in histograms are usually all the same width, because the groupings are the same size. If the groups are not the same size this should be allowed for by remembering that it is the area of each bar that is proportional to the frequency, not its height. This principle is illustrated on data showing the age distribution of road accident casualties in the London borough of Harrow in 1985. Table 3.3 shows the data as presented. Most of the casualties were adults, with the greatest number in the age range 25 to 59. Clearly the widths of the groupings vary considerably, from 1 to 35 years in fact, and this must be taken account of in a histogram of the data. Note that in order to include the  $60+$  age group in a histogram we have to assume a reasonable upper age limit - here it will be taken as 80.
 
-![](../images/03_Describing_data/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/53645a919a2a225214a5fe77924710f392dfda23099305d41b6563274734fca3.jpg)  
 Figure 3.4 As Figure 3.3 but data grouped in intervals of  $0.2 \text{g / l}$ .
 
 Table 3.3 Road accident casualties in the London Borough of Harrow in 1985 (excluding 65 with unknown age)  
@@ -80,10 +80,10 @@ Table 3.3 Road accident casualties in the London Borough of Harrow in 1985 (excl
 
 First, consider what happens if we ignore the above warning and draw a histogram where, for each age group, the height indicates the frequency shown in Table 3.3 and the width shows the age range - this is shown in Figure 3.5. This histogram suggests that accident victims are much less likely to be 16 and 17 year olds than adults, whereas we would probably expect the opposite to be true. We get the correct picture by making the frequencies correspond to the area of each bar rather than its height, as is shown in Figure 3.6. What we have done is consider the number of casualties per year of age - where we don't have this explicitly we take the
 
-![](../images/03_Describing_data/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/315a72f733072bf5f380137f08f4e35b5d3c7b2962c265fb8436c231eb7a47fa.jpg)  
 Figure 3.5 Incorrect histogram of road accident data of Table 3.3.
 
-![](../images/03_Describing_data/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/10ea3b15ef8bb9864bef9ad78e0642c3d67872722bb047f4df2a45aaed0328f5.jpg)  
 Figure 3.6 Correct histogram of road accident data.
 
 average value in that age group. Figure 3.6 shows a true impression of the data, from which we can see that road accident casualties are more likely to be aged 16 to 24 than any other age group.
@@ -92,7 +92,7 @@ Note that this histogram just shows the observed numbers of casualties. It does 
 
 It is sometimes more useful to show the proportion of the sample in each interval. All the frequencies are converted into percentages by dividing by the sample size and multiplying by 100. Figure 3.7(a) shows the resulting relative frequency histogram for the IgM data, which differs from Figure 3.3 only in the way the vertical axis is labelled. An alternative way of plotting the data is to join the mid- points of the tops of all the vertical bars of the histogram; this is called a frequency polygon. Figure 3.7(b) shows such a plot for the same data.
 
-![](../images/03_Describing_data/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/90f603f6cf77882e9d7c3fb953c7dbcf096ab3cb21762a25c20fda14f7845935.jpg)  
 Figure 3.7 IgM data in Figure 3.3 shown as (a) Relative frequency histogram, (b) Relative frequency polygon.
 
 The vertical axis of a histogram must start at zero, and there should not be any breaks in the scale. Otherwise the visual impression will be misleading. Likewise three- dimensional effects should not be used.
@@ -106,7 +106,7 @@ A clever modification of the histogram called a stem- and- leaf diagram allows a
 
 The stem- and- leaf diagram works well in many circumstances, especially where there are many different values, but the best format depends on the nature of the data and the sample size. The IgM data in Table 3.2 cannot be made into a successful stem- and- leaf diagram using five 'stems' (0, 1, 2, 3, 4), but we can split each group to get a useful diagram, as in Figure 3.9.
 
-![](../images/03_Describing_data/img8.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/34cd46f2b54952096553d0241d10facdd212272f30751b57edcd8a731ad7ced7.jpg)
 
 
 ### 3.3.3 Cumulative frequencies
@@ -117,7 +117,7 @@ Table 3.4 Cumulative frequency distribution of 298 IgM values
 
 <table><tr><td>IgM g/l</td><td>Frequency</td><td>Relative Frequency %</td><td>Cumulative Frequency</td><td>Cumulative Relative Frequency %</td></tr><tr><td>0.1</td><td>3</td><td>1.0</td><td>3</td><td>1.0</td></tr><tr><td>0.2</td><td>7</td><td>2.3</td><td>10</td><td>3.4</td></tr><tr><td>0.3</td><td>19</td><td>6.4</td><td>29</td><td>9.7</td></tr><tr><td>0.4</td><td>27</td><td>9.1</td><td>56</td><td>18.8</td></tr><tr><td>0.5</td><td>32</td><td>10.7</td><td>88</td><td>29.5</td></tr><tr><td>0.6</td><td>35</td><td>11.7</td><td>123</td><td>41.3</td></tr><tr><td>0.7</td><td>38</td><td>12.8</td><td>161</td><td>54.0</td></tr><tr><td>0.8</td><td>38</td><td>12.8</td><td>199</td><td>66.8</td></tr><tr><td>0.9</td><td>22</td><td>7.4</td><td>221</td><td>74.2</td></tr><tr><td>1.0</td><td>16</td><td>5.4</td><td>237</td><td>79.5</td></tr><tr><td>1.1</td><td>16</td><td>5.4</td><td>253</td><td>84.9</td></tr><tr><td>1.2</td><td>6</td><td>2.0</td><td>259</td><td>86.9</td></tr><tr><td>1.3</td><td>7</td><td>2.3</td><td>266</td><td>89.3</td></tr><tr><td>1.4</td><td>9</td><td>3.0</td><td>275</td><td>92.3</td></tr><tr><td>1.5</td><td>6</td><td>2.0</td><td>281</td><td>94.3</td></tr><tr><td>1.6</td><td>2</td><td>0.7</td><td>283</td><td>95.0</td></tr><tr><td>1.7</td><td>3</td><td>1.0</td><td>286</td><td>96.0</td></tr><tr><td>1.8</td><td>3</td><td>1.0</td><td>289</td><td>97.0</td></tr><tr><td>2.0</td><td>3</td><td>1.0</td><td>292</td><td>98.0</td></tr><tr><td>2.1</td><td>2</td><td>0.7</td><td>294</td><td>98.7</td></tr><tr><td>2.2</td><td>1</td><td>0.3</td><td>295</td><td>99.0</td></tr><tr><td>2.5</td><td>1</td><td>0.3</td><td>296</td><td>99.3</td></tr><tr><td>2.7</td><td>1</td><td>0.3</td><td>297</td><td>99.7</td></tr><tr><td>4.5</td><td>1</td><td>0.3</td><td>298</td><td>100.0</td></tr><tr><td>Total</td><td>298</td><td>99.9</td><td></td><td></td></tr></table>
 
-![](../images/03_Describing_data/img9.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6a5a639283dffea2484a1bc4ed8a56b1754e17997b7ca0133077ad3d945cc929.jpg)  
 Figure 3.10 IgM data shown as (a) Cumulative relative frequency histogram, (b) Cumulative distribution.
 
 observations lie above or below any chosen level, or to find the values which a given percentage of children's IgM values lie above or below. For example, we can easily see that the median IgM concentration was  $0.7 \text{g / l}$ . This information cannot be obtained from a histogram or cumulative histogram if values have been grouped.
@@ -139,7 +139,7 @@ The simplest way to describe the spread of a set of data is to quote the lowest 
 
 By specifying two values that encompass most rather than all of the data values we get round much of the difficulty. For example, we could calculate the values between which  $90\%$  of the observations lie. The value below which a given percentage of the values occur is called a centile or percentile, and corresponds to a value with a specified cumulative relative frequency.
 
-![](../images/03_Describing_data/img10.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/04841b57a2a696e83e0da0063733f2db6cd11e3c435129b0aa3b3b1797b137c6.jpg)
 
 We require the 5th and 95th centiles of the distribution of IgM values. From the last column of Table 3.4 we can see that the cumulative relative frequency passes  $5\%$  somewhere in the group of IgM values of  $0.3 \mathrm{g / l}$ , and  $95\%$  is reached at the value of  $1.6 \mathrm{g / l}$ .
 
@@ -154,7 +154,7 @@ A simple but useful semi- graphical way of summarizing data using centiles is th
 
 The alternative approach to quantifying variability is based on the idea of averaging the distance each value is from the mean. For an individual with
 
-![](../images/03_Describing_data/img11.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/1fd0941406f4631c4e181c51b632430edfe6b314e18cc93c27f908be2b0ebf5f.jpg)  
 Figure 3.12 Box-and-whisker plot of the IgM data, showing the  $2\frac{1}{2}$ , 25, 50, 75 and  $97\frac{1}{2}\%$  cumulative relative frequencies (centiles).
 
 an observed value  $x_{i}$  the distance from the mean  $\bar{x}$  is  $x_{i} - \bar{x}$ , and if we have  $n$  observations we have a set of  $n$  such distances, one for each individual. For observations below the mean the difference will be negative. We can calculate the average distance between the observations and their mean, but the sum of these distances,  $\Sigma (x_{i} - \bar{x})$ , is always zero because of the way the mean is calculated from the individual observations. However, if we square the distances before we sum them we get a quantity that must be positive. The average of these squared differences thus gives a measure of individual deviations from the mean. This quantity is called the variance, and is defined as
@@ -218,7 +218,7 @@ Note that log data can be negative, and that it does not matter whether logs to 
 
 The alternative approach to describing the distribution of skewed data is to calculate the centiles corresponding to a chosen central range. For example, to get the values that enclose  $95\%$  of the observations we need to calculate the  $2\frac{1}{2}$ th and  $97\frac{1}{2}$ th centiles. Using the method described in the
 
-![](../images/03_Describing_data/img12.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/642f7d38303726a3c136455be56a2c90f0d2eb204226523102d8f7436e685168.jpg)  
 Figure 3.13 Frequency histogram of  $\log_{10} \mathrm{IgM}$  showing the values of mean  $\pm 2 \mathrm{SD}$ .
 
 previous section, these values are obtained by interpolation as 0.2 and  $2.0 \mathrm{g / l}$ . These values of 0.2 and  $2.0 \mathrm{g / l}$  are called empirical centiles as opposed to the earlier values of 0.23 and 2.08 (obtained from the mean  $\pm 2 \mathrm{SD}$  of the log data), which are estimated centiles. The two methods agree well for these data. Likewise the median IgM value is  $0.7 \mathrm{g / l}$ , which is very close to the geometric mean.
@@ -248,9 +248,9 @@ Table 3.5 Details of patients in each treatment group in a study of low back pai
 
 Sometimes we wish to show graphically the distribution of a continuous variable in two or more groups. This can be done by means of a separate histogram for each group, these being aligned vertically, but there is a rather clearer format that shows all the observations. Figure 3.14 shows the distribution of uric acid in a group of women before, during and after pregnancy (Lind et al., 1984). All the data are shown in the graph, and the authors have also given the mean, standard deviation and number of observations at each stage. This informative figure thus effectively incorporates a table while using little extra space. Bar diagrams are often used to show means and standard deviations in each group. This is not a good format – this information is better in a table, or else a more informative display, such as that in Figure 3.14 or a box- and- whisker diagram, should be used.
 
-![](../images/03_Describing_data/img13.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/728cb555c15961382732a9b7120a48022ab481cc315a491242fadb06c226848e.jpg)
 
-![](../images/03_Describing_data/img14.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f37866a487f9f07b749022c28799e6907a60e0859d5a5a70ad3378fd189d75cb.jpg)  
 Figure 3.14 Distribution of serum uric acid in a group of healthy women before, during and after pregnancy (reproduced from Lind et al., 1984, with permission).
 
 
@@ -258,7 +258,7 @@ Figure 3.14 Distribution of serum uric acid in a group of healthy women before, 
 
 The relation between two continuous variables may be shown graphically in a scatter diagram. This is a simple graph in which the values of one variable are plotted against those of the other. For example, Figure 3.15 shows a scatter diagram of the PImax data of Table 3.1 related to age. Scatter diagrams are very simple to produce using statistical computer programs. When there are two (or more) individuals with identical values of both variables this should be shown, preferably by moving one point slightly. Some software packages print the actual number of coincident points up to 9, so that '9' means '9 or more'. It is easy to indicate subgroupings by using different plotting symbols. For example, in Figure 3.15 males and females could have been indicated by closed and open circles. The scatter diagram is a very useful descriptive tool, and is often valuable as a prelude to formal statistical analysis. The graph in Figure 3.14 is really a scatter diagram relating a continuous and a categorical variable.
 
-![](../images/03_Describing_data/img15.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6380096f97fccbe75ba118175beae2126c43f20b2b2b187d2a8df165d452ca62.jpg)  
 Figure 3.15 Scatter diagram of PImax by age.
 
 
@@ -304,7 +304,7 @@ Table 3.6 Amounts of bread consumed in London from 1960 to 1980 (g per person pe
 
 An excellent book on graphical methods in general is that by Tufte (1983), and graphs for statistics are discussed by Moses (1987). Many innovative ideas for descriptive methods are described by Tukey (1977).
 
-![](../images/03_Describing_data/img16.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/296a27b9781f9d6606954eab133862cc47f2d30a4cea8861fc2f88cdf832af34.jpg)
 
 
 ## EXERCISES

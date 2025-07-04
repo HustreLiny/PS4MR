@@ -60,7 +60,7 @@ There is also the 'pseudo- longitudinal' study in which each subject is seen at 
 
 Figure 5.1 summarizes the most likely possible combinations of design features. There is a clear distinction between experimental studies which are nearly all prospective and longitudinal, and observational studies which can be either retrospective or prospective and also either cross- sectional or
 
-![](../images/05_Designing_research/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/1b8ed0406eaa0e95778be95be4dad8995f7ff6f608433ee424d4f9df07728faf.jpg)  
 Figure 5.1 Types of research design.
 
 longitudinal. For this reason experiments and observational studies are considered separately later in this chapter.
@@ -176,7 +176,7 @@ In a designed experiment such as the arm comparison study there may be several c
 
 A simple example is an experiment to compare three separate groups of subjects given different analgesics to combat migraine. Figure 5.2 shows the simple structure of this design. Each x denotes an observation. In this design there is no need for the three groups to be of equal size but in more complicated designs equal sizes are highly desirable. If the study design
 
-![](../images/05_Designing_research/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/b14b95941e51996b0817d071022b06b78d8e2ca744ff2f1191d98c298904f222.jpg)  
 Figure 5.2 Structure of a study to compare three groups of subjects receiving analgesics A, B or C. Each x indicates one subject.
 
 were changed so that each subject received all three analgesics in random order, the design would be as shown in Figure 5.3. Here observations on the same subject are connected.
@@ -187,13 +187,13 @@ The study comparing blood pressure in the left and right arms was more complicat
 
 It is not possible to say what the best design is in any given circumstance. The choice of factors to control, which factors are between subject and which within, and how many observations to take for each subject is difficult, and it will often take much thought to arrive at a satisfactory design. Expert statistical help is particularly valuable at this stage. Any weaknesses in the design cannot be rectified later.
 
-![](../images/05_Designing_research/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e0892d2aa85d6ded527cb7317bb44d37bcc336639f8e0dabeadccc4acb5e9e55.jpg)  
 Figure 5.3 Structure of a study to compare three treatments in one group of subjects. Lines join observations on the same subject, which are made in random order.
 
-![](../images/05_Designing_research/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/300644a872fd00aa47fd771ab744a9d1321d7156f150c319ed34616dffeaa660.jpg)  
 Figure 5.4 Structure of a study to compare two groups measured before and after treatment.
 
-![](../images/05_Designing_research/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/73620c35d6ece04641e71f3a6986ea3ad883e919732e2156c721ee65c00ad9bc.jpg)  
 Figure 5.5 Structure of the study to compare blood pressure in the left and right arms - a three way factorial design.
 
 
@@ -317,7 +317,7 @@ As shown in Figure 5.1, observational studies can take different forms. Many stu
 
 There are two main types of observational study that are used to investigate causal factors - the case- control study and the cohort study. Figure 5.6 indicates the basic structure of these designs. In a retrospective case- control study a number of subjects with the disease in question (the cases) are identified along with some unaffected subjects (controls). The past history of these groups in relation to the exposure(s) of interest is then compared. In contrast, in a prospective cohort study a group of subjects is identified and followed prospectively, perhaps for many years, and their subsequent medical history recorded. The cohort may be subdivided at the outset into groups with different characteristics, or the study may be used to investigate which subjects go on to develop a particular disease. (There is also the historical cohort study, in which a past cohort is identified, and
 
-![](../images/05_Designing_research/img6.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/ede41aad36a12ba0e7649af043028c84d6b6dbf2448695305a198b98f828c5e3.jpg)
 
 * Cohort Study:*
 

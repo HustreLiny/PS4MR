@@ -97,16 +97,16 @@ between two continuous variables. Figure 7.2 shows the change in plasma protein 
 
 Outliers can affect many types of statistical analysis, often by inflating the variance of a set of observations and so obscuring the effect of interest. Awareness of any outliers is a highly beneficial spin- off from checking the data.
 
-![](../images/07_Preparing_to_analyse_data/img1.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a15eb2e7161a87304c0db40de67300a9af9ede693ec79eae06632b25c8876dbb.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img2.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/118fe1880328f50cd052300324e2524494c3b9f3c7a2475f9593145d8bf96ca9.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img3.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/11951e3807cdc3a91e589bbff322ba85cff963b39ac72ace980cca1a224a715d.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/fe5c0e28013aecf4faaa93e07fa401c90fea52b261f7151d4c613b532c74eac9.jpg)  
 Non-Hodgkin's disease  Figure 7.1 Histograms of  $\mathbf{T_{4}}$  cell counts  $/\mathbf{m}\mathbf{m}^{3}$  in patients with and without Hodgkin's disease shown in Table 7.1 (a) raw data; (b) after  $\log_{2}$  transformation.
 
-![](../images/07_Preparing_to_analyse_data/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6710ec73a3de9e9e9d773bf14b3c8501335e754b67924ab017b042e9b57c4398.jpg)  
 Figure 7.2 Data showing the relation between change in plasma protein  $(g / l)$  after haemodialysis and age in 12 patients with chronic renal failure, showing regression lines for all data (—) and excluding the youngest patient (- - - - - -). Data from Toulon et al. (1987).
 
 A useful strategy to adopt when analysing data is to carry out the analysis both including and excluding the suspicious value(s), as in Figure 7.2. If there is little difference in the results obtained then the outlier(s) had minimal effect, but if excluding them does have an effect it may be better to find an alternative method of analysis. Rank methods, introduced in Chapter 8, may be a good approach here. This is an area where expert statistical advice is valuable.
@@ -162,9 +162,9 @@ The Normal plot is based on two ideas. First, the cumulative frequency distribut
 
 Suppose we have a variable whose values in the population have a Normal distribution with a mean of 34.46 and a standard deviation of 5.84. Figure 7.3 shows (a) the frequency distribution, (b) the cumulative frequency distribution, and (c) the Normal plot. The horizontal axis of the Normal plot shows the numerical value of the observation, and the vertical axis gives the relative frequency in terms of the number of standard deviations from the mean. The values labelled on the vertical axis of the Normal plot correspond to cumulative percentages of  $0.1\%$ ,  $2.3\%$ ,  $16\%$ ,  $50\%$ ,  $84\%$ ,  $97.7\%$  and  $99.9\%$  (see section 4.5.1). The calculation of the plotting coordinates is explained below. Figure 7.3 shows what happens in theory, and Figure 7.4 shows the same process for a sample of size 216 chosen at random from the same population. The top panel shows a histogram of the data, which exhibits some irregularities. The second shows the cumulative frequency distribution and the last the Normal plot. The data are close to a straight line in the Normal plot.
 
-![](../images/07_Preparing_to_analyse_data/img6.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e1a1c7c301937fca32a43ff4520503292e862a98d925361a69219cc3225295bf.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img7.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9602338a1c71a25f3af7a1b87c2f685ef57ece0d8462c2d7c8622e5ce111e344.jpg)
 
 Now that we know what sort of picture to expect when the data really do come from a Normal distribution, we have some basis for judging some real data. Figure 7.5 gives a Normal plot for the serum albumin values from the study of 216 patients with primary biliary cirrhosis previously discussed. These data had a mean of  $34.46 \mathrm{g} / \mathrm{l}$  and the standard deviation was  $5.84 \mathrm{g} / \mathrm{l}$ . Figures 7.3, 7.4 and 7.5 are thus directly comparable. When we produce a Normal plot for some data this is the comparison that is implicitly being made. The Normal plot in Figure 7.5(c) is very near to a straight line, indicating that the distribution of serum albumin values in these patients is near to a Normal distribution, in agreement with Figure 4.5. I shall consider below how we can quantify the nearness.
 
@@ -185,12 +185,12 @@ which are obvious extensions to the formula for the variance. From these we can 
 
 Situations in which we may wish to assess the Normality of a set of data
 
-![](../images/07_Preparing_to_analyse_data/img8.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/22f78d0a4563f9ebf06796aaa22c61d73f844387cf8d8f9e9cdd2464336c9a28.jpg)  
 Figure 7.5 Serum albumin values of 216 patients with primary biliary cirrhosis expressed as (a) frequency histogram; (b) cumulative frequency distribution; (c) Normal plot.
 
-![](../images/07_Preparing_to_analyse_data/img9.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/ada312b6db8fee4b2f2822d89a7d83d0157deb02af831806467db1585318b0d6.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img10.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/21895c7b2ce7632e527330a62a4534904d0952e23be0d96aa5d959c5f4f7d64a.jpg)
 
 arise in subsequent chapters. For many purposes it is not necessary to do more than check the Normal plot by eye, but if something more is required then a more useful approach is based on measuring the straightness of the Normal plot. We can then calculate the probability that such a value would be obtained in a sample if the population had a Normal distribution, and if this probability is large enough, say greater than 0.05 (1 in 20), we conclude that the data are reasonably near to a Normal distribution. This procedure is an example of a standard statistical approach to inference which is introduced properly and discussed in detail in the next chapter.
 
@@ -202,13 +202,13 @@ Table 7.2 Shapiro and Wilk's W test applied to 216 values of serum albumin, seru
 
 Non- Normality is usually most marked in the tails of the distribution. Outliers will show up in a Normal plot as one or more points lying away from the general linear trend of the rest of the data. Even one outlier can make the data fail the Shapiro- Wilk test. Systematic curvature, as seen in Figure 7.6(a), indicates skewness (to the right), while an S shaped plot will indicate either too many or too few values in both tails of the distribution in comparison with a Normal distribution, as shown in Figures 7.7 and 7.8
 
-![](../images/07_Preparing_to_analyse_data/img11.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/0d94d0c222faacd78546b012faace688a602a6d00c2bf7c6f91608688b739fac.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img12.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c78f6e427d66092dc5b7463f40438d216dc0bfe6a69974b28cd377f6f12f2060.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img13.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/bbcca77cd6dd865e9a567a3a537c10a42d7c238233be5b1d702f10586d4a2576.jpg)
 
-![](../images/07_Preparing_to_analyse_data/img14.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f7abae7f5a99f6571bdeea9c8b199c093b266d7760b5e5310fe2ed832fc44d67.jpg)  
 Figure 7.8 Data with too few values in the tails of the distribution  $(n = 400$ , mean  $= 80$ , SD  $= 9.7)$  (a) histogram; (b) Normal plot.
 
 respectively. Normal plots can also reveal a mixture of two distributions in the data. Figure 7.9 shows a Normal plot of birth weights of one litter of piglets, suggesting a normally grown group and a group of three 'runt' piglets with lower weights (Royston et al., 1982). The different slopes indicate different standard deviations in the two putative groups.
@@ -220,7 +220,7 @@ respectively. Normal plots can also reveal a mixture of two distributions in the
 
 The scale of the  $Y$  axis in the Normal plots such as Figure 7.7 is linear in multiples of the standard deviation of the observations. The Normal plot is constructed by sorting the observations into ascending order and then plotting the data against the corresponding Normal scores. The Normal score is the number of standard deviations below or above the mean that we expect to find the observation with a given rank from a sample from a Normal distribution of a given size. Many statistical programs can calculate Normal scores for plotting against the data, and some can produce Normal plots easily. For drawing a Normal plot by hand there is special Normal probability paper with divisions corresponding to the percentage points of the Normal distribution. The observations are sorted and then the ith
 
-![](../images/07_Preparing_to_analyse_data/img15.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c132765f6355ab9e9e250d526798ad4d376b4ebe6a1db6e03d569e79b611b4ff.jpg)  
 Figure 7.9 Normal plot of piglet birth weights (Royston et al., 1982).
 
 observation is plotted against the Normal score corresponding to the percentage  $P_{i}$ , given by
@@ -241,7 +241,7 @@ For some methods the distributional assumption is not too critical, especially i
 
 Other transformations sometimes used are the square root and reciprocal transformations. Figure 7.10 shows histograms of the serum bilirubin data before and after different transformations. The square root transformation (Figure 7.10c) is less dramatic than taking logs. It is particularly used when the variable is a count (frequency) and thus would be expected to follow a
 
-![](../images/07_Preparing_to_analyse_data/img16.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d2e0ceb359cf7021248e10f12ec5e296cf6d861e984a256698922e17e6fc1678.jpg)
 
 Poisson distribution. The reciprocal transformation (Figure 7.10d) has a much more drastic effect than taking logs (note that it reverses the order of the observations), and may be useful if the observed data have an extremely skewed distribution. The use of the reciprocal transformation for plasma creatinine values of kidney transplant patients and the square root transformation for tumour size measurements were described by Gore (1982). Their use is not common, however, and there are certain reasons for using the log transformation in preference to any other as long as it yields satisfactory results (see section 9.7). Sometimes there may be a strong logical reason for using a particular transformation. For example, the cube root may be appropriate for data that are volumes and the reciprocal of a recorded time to walk a certain distance will yield the speed.
 

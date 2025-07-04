@@ -52,7 +52,7 @@ First I shall consider the case where the distribution in the population is Norm
 
 I used the study of patients with primary biliary cirrhosis (PBC) discussed in Chapter 4 as the basis for the simulations. I supposed that among all patients with PBC, which is the population of interest here, serum albumin values have a Normal distribution with a mean of  $35 \mathrm{~g} / \mathrm{l}$  and a standard deviation of  $6 \mathrm{~g} / \mathrm{l}$ . I used computer simulation to study the distributions of samples of sizes 10, 25 and 100 drawn at random from this Normal distribution. Figure 8.1 shows the theoretical Normal distribution of serum albumin in the population of patients with PBC together with histograms of the means of 100 random samples of sizes 10, 25, and 100. (Note that as there were 100 samples the histograms show both frequencies and relative frequencies.) The expected standard deviations of the sets of 100 means are  $6 / \sqrt{10}$ ,  $6 / \sqrt{25}$  and  $6 / \sqrt{100}$  respectively, or 1.90, 1.20 and 0.60. It can be seen that the observed distributions are reasonably Normal,
 
-![](../images/08_Principles_of_statistical_analysis/img1.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e0390f404715f45e84defd3e1f1df9a32017c1528334e3a4e745699e283964af.jpg)
 
 especially for larger samples, and that their means and standard deviations are close to the expected values. The histograms will get nearer to a Normal distribution as the number of means increases.
 
@@ -64,13 +64,13 @@ As discussed in Chapter 4, the number of subjects in a sample who have a particu
 
 These simulations have verified empirically the three statements in the previous section. In practice we nearly always have just a single sample, but because we can predict what would happen if many samples were taken we can use values from a single sample to make some strong inferences about the population, and can quantify the uncertainty.
 
-![](../images/08_Principles_of_statistical_analysis/img2.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/336f79737dffc5e2073b1640dad969dff4868029cb57cd5d46895e35083393f8.jpg)
 
-![](../images/08_Principles_of_statistical_analysis/img3.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/dbc508eca628c5657d1d17fb1fdbe9dc404cd084b54335b59d3d948038fa1cb3.jpg)
 
-![](../images/08_Principles_of_statistical_analysis/img4.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a90d60c43614b5950a7b1d4cea8ef062179e82a5346d7ae9ea9d0443718e3fcb.jpg)
 
-![](../images/08_Principles_of_statistical_analysis/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/578154d8d2d90b065f034fe9c8ca2e867aee5154f3f5f1bef7bd4835f988b1ba.jpg)  
 Figure 8.3 Observed distributions of the number of women with asthma (probability 0.20) in 100 random samples of sizes 10, 25, and 100.
 
 
@@ -145,10 +145,10 @@ We expect that the  $95\%$  confidence interval will not include the true popula
 
 The  $95\%$  confidence interval for the sample mean is usually interpreted as a range of values which contains the true population mean with probability 0.95. We thus expect that if we calculate a  $95\%$  confidence interval for the mean serum albumin using each of the 100 random samples shown in Figure 8.1 we would find that about  $5\%$  of them would not include the value of  $35 \mathrm{g / l}$ . Figure 8.4 shows all 100 confidence intervals based on samples of size 100 of which seven do not include  $35 \mathrm{g / l}$ . Figure 8.5 shows the confidence intervals sorted by the size of the sample mean and we can see that seven sample means fall outside the range within which we expect  $95\%$  of sample means. This range is calculated using the
 
-![](../images/08_Principles_of_statistical_analysis/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e52d17f3dd8fa689076bd5604d3a08d44c41dfa06dde6d8323a96822e511b7bf.jpg)  
 Figure 8.4 Confidence intervals for mean serum albumin constructed from 100 random samples of size 100. The vertical lines show the range within which  $95\%$  of sample means are expected to fall.
 
-![](../images/08_Principles_of_statistical_analysis/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/b1c75c5fd5a10f7349eb57b091cccadd81378d656c3945ef84d49e5bab157e99.jpg)  
 Figure 8.5 Confidence intervals from Figure 8.4 ordered by the magnitude of the mean of the random sample.
 
 population mean and standard deviation to get mean  $\pm 1.96\mathrm{SD} / \sqrt{n}$ ; that is  $35 \pm 1.96 \times 6 / \sqrt{100}$  or 33.8 to 36.2. The difference between the observed  $7\%$  and the expected  $5\%$  is of no importance - we would not expect to observe exactly  $5\%$ .

@@ -62,17 +62,17 @@ In the previous chapter I showed how a histogram can be used to depict the distr
 
 difficult to imagine that the histogram or frequency polygon of some observed data is an approximation to some 'underlying' smooth frequency distribution. For example, Figure 4.1 shows a histogram of serum albumin values in 216 patients with primary biliary cirrhosis, and Figure 4.2 shows a
 
-![](../images/04_Theoretical_distributions/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/24cb2509478d63eb641834dd2638f78a65a096de7655d061c06836fc3f2be9bf.jpg)  
 Figure 4.1 Histogram of serum albumin values in 216 patients with primary biliary cirrhosis (from the study by Christensen et al., 1985)
 
-![](../images/04_Theoretical_distributions/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/74b91208bc53abd7241e185789aecbeb7483c8c249dd52ab50802bdf5432ee1b.jpg)  
 Figure 4.2 Frequency polygon of serum albumin values in 216 patients with primary biliary cirrhosis.
 
 frequency polygon of the same data, in which the effect is rather clearer.
 
 frequency distributions for continuous measurements, such as in Figure 4.2, tend to have a single peak: they are called unimodal. They may be fairly symmetric, as here, or asymmetric, as with the IgM data discussed in Chapter 3. The Normal distribution is a probability distribution which is unimodal and symmetric; its shape is shown in Figure 4.3. Frequency distributions with two peaks are occasionally seen. These are called bimodal, and are usually the result of mixing subgroups with different means.
 
-![](../images/04_Theoretical_distributions/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/7092068d0a404afea89cd36c4357e1c7e52bde91c1cde3e32f4ed6618af27b4f.jpg)  
 Figure 4.3 The Normal distribution.
 
 Before considering how we make use of the Normal distribution there are some general points to note about continuous probability distributions. First, they usually have no upper limit and some have no lower limit either. In theory the Normal distribution extends from minus infinity  $(- \infty)$  to plus infinity  $(+\infty)$ . Second, the height of the frequency curve, which is called the probability density, cannot be taken as the probability of a particular value. This is because for a continuous variable there are infinitely many possible values so that the probability of any specific value is zero. The height of a curve is not of any practical use; its value is determined by the fact that the total area under the curve is always taken to be 1. As with histograms of observed data, we use a probability distribution by considering the area corresponding to a particular restricted range of values. Because the total area is 1 this area corresponds to the probability of those values. To take a simple example, the area to the left
@@ -92,16 +92,16 @@ Table B1 in Appendix B shows the lower tail areas of the standard Normal distrib
 
 The area below  $- 1$  is 0.16 and the area below  $+1$  is 0.84, so that the
 
-![](../images/04_Theoretical_distributions/img4.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/29034ad646ae4712f68954f6d05765a735d27f129c1f1d898523fdc03090f892.jpg)
 
-![](../images/04_Theoretical_distributions/img5.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/24eee6d7bc10432156ce81780e2e196d4dab70e3a7e424d82113b8d2ec23625f.jpg)
 
-![](../images/04_Theoretical_distributions/img6.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/ff245d6f59c7dc15796b63f2506dc0b784712df97eb88c94fa854a06d7b51502.jpg)
 
-![](../images/04_Theoretical_distributions/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/da75ab53752226a6e2bf53a7483436e06703be11de8a9594c1590af254a643f6.jpg)  
 Figure 4.5 Histogram of 216 serum albumin values and the Normal distribution with the same mean and standard deviation.
 
-![](../images/04_Theoretical_distributions/img8.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/87fd549c42600c1ac33df9b7d104f4c8d940129c3e92b87bb1c0d3106cdd8aba.jpg)  
 Figure 4.6 Cumulative Normal distribution fitted to serum albumin data.
 
 area corresponding to the range  $- 1$  to  $+1$  is  $0.84 - 0.16 = 0.68$ . In other words, for data with an exactly Normal distribution there is a probability of 0.68 of being within one standard deviation of the mean. Repeating these calculations for other numbers of standard deviations we get
@@ -154,7 +154,7 @@ distribution is important, and will be considered at various points in the follo
 
 Although formal methods can be used (described in Chapter 7), whether a set of observations are reasonably Normal is often a matter of judge­ ment, usually by visual inspection of a histogram. It is instructive to look at distributions obtained by taking random samples from a Normal distribu­ tion to give a reference against which to judge a set of observed data. Figure 4.7 shows frequency histograms of 16 samples of 50 observations sampled at random from the standard Normal distribution. Each sample is equivalent to considering 50 individuals sampled from a population known to have a Normal distribution for the variable of interest. There is considerable irregularity in the distributions of these samples, with the key properties of unimodality and symmetry generally absent. This figure should be borne in mind when considering whether observed data might have come from a Normal distribution, especially when the sample size is small.
 
-![](../images/04_Theoretical_distributions/img9.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/37f772053f0b04b8ee90ff86d7cd096c717bdeb824b6ace3dc3e30dfd2e4e742.jpg)  
 Figure 4.7 Distributions of 16 samples of size 50 from the Normal distribution.
 
 
@@ -162,7 +162,7 @@ Figure 4.7 Distributions of 16 samples of size 50 from the Normal distribution.
 
 In section 3.4 we saw that in some circumstances a set of data with a positively skewed distribution can be transformed into a symmetric distribution by taking logarithms. Taking logs of data with a skewed distribution will often give a distribution that is near to Normal. Figure 4.8 shows a histogram of serum bilirubin levels in the same 216 patients with primary
 
-![](../images/04_Theoretical_distributions/img10.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2497dae1549f39fe47d73f2480318e2f8263f7ddf35ff166d6aa1fa8c17b9a63.jpg)  
 Figure 4.8 Histogram of serum bilirubin values in 216 patients with primary biliary cirrhosis with fitted Normal distribution (from the study by Christensen et al., 1985).
 
 biliary cirrhosis (PBC). The mean and standard deviation are 60.7 and  $77.9 \mu \mathrm{mol} / \mathrm{l}$  respectively. The superimposed best- fitting Normal distribution (with the same mean and standard deviation) is a terrible fit to the data because of the extreme skewness. If we take logs (to base e) of the data we get a much more symmetric distribution with a mean of 3.55 and a standard deviation of  $1.03 \log \mu \mathrm{mol} / \mathrm{l}$ . Figure 4.9 shows a histogram of  $\log_{e}$  serum bilirubin with the fitted Normal distribution, which is a much better fit. Figure 4.10 shows the raw data with the 'back- transformation' of the fitted Normal distribution function. The fitted curve is an example of the Lognormal distribution function. Data with a Lognormal distribution can be transformed to Normality by taking logarithms.
@@ -173,17 +173,17 @@ $$
 3.547 + (1.96 \times 1.030) = 5.566.
 $$
 
-![](../images/04_Theoretical_distributions/img11.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/463bab3957b5deac2596bf2a43678278b8dace860e67a40f9ce3da3ec7b25584.jpg)  
 Figure 4.9 Histogram of log serum bilirubin with fitted Normal distribution (logarithms to base e).
 
-![](../images/04_Theoretical_distributions/img12.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/7c51d11444c513fda37294188260a18e58da748f083927f8b3617498b62a9f9b.jpg)  
 Figure 4.10 Histogram of serum bilirubin with fitted Lognormal distribution.
 
 The antilogs of these values (using the function  $\mathbf{e}^{x}$ ) are  $\mathbf{e}^{1.528} = 4.61$  and  $\mathbf{e}^{5.566} = 261.4 \mu \mathrm{mol} / \mathrm{l}$ . The antilog of the mean of the log data is  $\mathbf{e}^{3.547} = 34.7 \mu \mathrm{mol} / \mathrm{l}$ , which is the geometric mean of the data. All of these values are depicted in a box- and- whisker diagram in Figure 4.11.
 
 It should not be assumed that data with a skewed distribution can be transformed to approximate Normality. This must be established, perhaps visually as in Figure 4.9 or formally using the methods described in section 7.5.
 
-![](../images/04_Theoretical_distributions/img13.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/48790cd749a53d77cf3ead11e6473540daaedef8ae48f45f7b14afd4430750eb.jpg)  
 Figure 4.11 Box-and-whisker diagram of serum bilirubin showing  $95\%$  central range derived from fitting a Normal distribution to log data.
 
 
@@ -195,20 +195,20 @@ We can summarize the possibilities as follows:
 
 64 Theoretical distributions
 
-![](../images/04_Theoretical_distributions/img14.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/121649da996f77a740f2fed010ff7f7fb3d102e7b570b9696b8c8b5fb20d6a28.jpg)  
 Figure 4.12 shows the probability distribution of the number of people out of two in blood group B. This distribution is a simple example of the Binomial distribution. To get the three probabilities shown we had to make three simple calculations. However, if we extend this simple calculation to consider the number of people out of four it is not so easy. Each person is either group B or not group B so there are  $2 \times 2 \times 2 \times 2$  possible orderings, which is 16. The number of possible orderings for  $n$  people is  $2^{n}$ , so if we have seven people for example, there are 128 possible orderings.
 
 Fortunately, we can bypass most of the calculations by using a general formula. As it is rather complicated, the details are given in section 4.9. Using the formula one can calculate the probability of different numbers of outcomes of a particular type in a series of events from the probability of one such outcome. For example, Figure 4.13 shows the probability
 
-![](../images/04_Theoretical_distributions/img15.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/5c101059381427bba4e88c3fdc9c3c56b4b1d5812ef18b31bf5aa624f75d9f4d.jpg)  
 Figure 4.12 Binomial distribution of number of people out of two in blood group B.
 
 distribution for the number of individuals out of 10 being of blood group B. (The calculations are shown in section 4.9. ) The distribution is asymmetric, but as the sample size increases the Binomial distribution becomes
 
-![](../images/04_Theoretical_distributions/img16.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9a56c1445d337bde3bb95876e6dffe5180ac8fe7e4b598b249cf4c3a30eddfd4.jpg)  
 Figure 4.13 Binomial distribution showing the number of subjects out of ten in blood group B based on the probability of being in blood group B of 0.08.
 
-![](../images/04_Theoretical_distributions/img17.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c83f23aab3e2cbf5c3ac548fca59b32230aad6a1290168adc6fe4769792cc940.jpg)  
 Figure 4.14 Binomial distribution showing the number of subjects out of 100 in blood group B based on the probability of being in blood group B of 0.08.
 
 more symmetric and gradually begins to look like a Normal distribution. Figure 4.14 shows that the Binomial distribution for the number of people in blood group B in a sample of 100 is almost symmetric.
@@ -228,7 +228,7 @@ Table 4.2 shows some data that might be expected to follow a Poisson distributio
 
 The Poisson distribution is completely described by a single parameter.
 
-![](../images/04_Theoretical_distributions/img18.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a171d7bebab4b25d3a1005ed1108ac3f1fe07204fa327e05a4cccb3672b359ea.jpg)  
 Figure 4.15 Poisson distribution with mean 2.2.
 
 Table 4.2 Number of crimes per day in three areas of India during 1978 to 1982 (Thakur and Sharma, 1984) showing observed frequencies (Obs) and expected frequencies using the Poisson distribution (Exp)  

@@ -77,7 +77,7 @@ Figure 1.1 shows the general sequence of steps in a research project. Statistica
 
 The key difference between medical research and clinical practice is their scope. In each, data are collected from individual subjects, but in medical research the aim is to be able to make some general statements about a wider set of subjects, and we are not usually especially interested in the particular subjects that have been studied. We thus use information from a sample of individuals to make some inference about the wider population of like individuals. The three words in bold are formal statistical terms that will be explained fully in later chapters. The important point here is that the subjects who are studied act as a proxy for the total group of interest.
 
-![](../images/01_Statistics_in_medical_research/img1.jpg) 
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2b16ff99886abc6b31e8c6f394bf9d43a6ed2b043d9a46f0a4e34c94b92dccc6.jpg) 
 Figure 1.1 General sequence of steps in a research project.
 
 ### 1.4.1 Research design

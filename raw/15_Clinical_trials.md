@@ -206,7 +206,7 @@ Clinical trials are a prime example of the principle that we collect data from a
 
 Figure 15.1 shows how patients with either low or high blood pressure would be excluded from a trial of a new hypertensive treatment, although for different reasons. Often the patients whom it is both ethical and reasonable to include in a trial are those most likely to benefit if the treatment is effective. In general, but not always, we do not expect treatment to do much for patients who already have an excellent prognosis, nor for those with a dreadful prognosis.
 
-![](../images/15_Clinical_trials/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/1d7df027dc4c031bbbc93aa52ec6c010a270ff0dbd8c898d7fac89edd76a3f64.jpg)  
 Figure 15.1 Diagram showing the eligibility of patients for a trial of a new antihypertensive agent (based on Elwood, 1982).
 
 Begg and Engstrom (1987) discussed the problem of over- restrictive eligibility criteria in cancer clinical trials, which can lead to most patients with a disease being ineligible for a trial. They suggest that many exclusion criteria are unnecessary. The more restrictive the exclusion criteria, the less generalizable will be the results of the trial. In large trials especially it is better not to be too restrictive, although in small trials there may be some advantage in keeping the study subjects more homogeneous, especially if simple randomization is used.
@@ -303,7 +303,7 @@ can be, but greater power requires a larger sample, as we will see. It is common
 
 The necessary sample size is usually obtained from complicated formulae or there are extensive tables available (Machin and Campbell, 1987), but it is much simpler to use a graphical method. Figure 15.2 shows a nomogram that can be used to calculate the appropriate sample size for all the situations considered in this chapter. It is simple to use and has the added
 
-![](../images/15_Clinical_trials/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/87054afa85ca549c15a52ce8ef590c60c58cd6eaa1c4b6eb411321732dcdb892.jpg)  
 Figure 15.2 Nomogram for calculating sample size or power (reproduced from Altman, 1982b, with permission).
 
 advantage of being equally easy to use in reverse for determining the power of a study of given sample size.
@@ -541,7 +541,7 @@ A comparison of baseline readings taken at the start of each period can show whe
 
 shows baseline data from a randomized crossover trial comparing rifampicin with phenobarbitone for treatment of pruritus in biliary cirrhosis. It is clear that patients in the first group had less severe pruritis at the beginning of the second period than at the start of the study. Thus either
 
-![](../images/15_Clinical_trials/img3.jpg)
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/fde8619c26f37fb5e070cc32cb46446f5d7f4c2284521c5fc045383528963d8e.jpg)
 
 Table 15.6 Distribution of pruritus scores, from 0 (mild) to 3 (severe) before each period in a two-period crossover trial (Bachs et al., 1989)  
 
