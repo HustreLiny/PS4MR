@@ -20,6 +20,6 @@
 * [16. The medical literature](translated/16_The_medical_literature_translated.md)
 * [Appendix A: Mathematical notation](translated/Appendix_A_Mathematical_notation_translated.md)
 * [Appendix B: Statistical tables](translated/Appendix_B_Statistical_tables_translated.md)
-* [Answers to exercises](translated/Anwers to exercises_translated.md)
+* [Answers to exercises](translated/Anwers_to_exercises_translated.md)
 * [References](translated/References_translated.md)
 * [Index](translated/Index_translated.md)
