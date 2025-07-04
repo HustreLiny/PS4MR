@@ -280,7 +280,7 @@ Clinical trials are a prime example of the principle that we collect data from a
 图15.1展示了低血压或高血压患者如何因为不同原因被排除在新型降压治疗试验之外。通常，伦理上合理且适合纳入试验的患者是那些如果治疗有效最有可能受益的患者。一般而言（但并非总是如此），我们不期望治疗对预后极佳的患者或预后极差的患者有显著作用。  
 Figure 15.1 shows how patients with either low or high blood pressure would be excluded from a trial of a new hypertensive treatment, although for different reasons. Often the patients whom it is both ethical and reasonable to include in a trial are those most likely to benefit if the treatment is effective. In general, but not always, we do not expect treatment to do much for patients who already have an excellent prognosis, nor for those with a dreadful prognosis.  
 
-![](../images/15_Clinical_trials/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/1d7df027dc4c031bbbc93aa52ec6c010a270ff0dbd8c898d7fac89edd76a3f64.jpg)  
 图15.1 新型降压药物试验中患者资格的示意图（基于 Elwood，1982）。  
 Figure 15.1 Diagram showing the eligibility of patients for a trial of a new antihypertensive agent (based on Elwood, 1982).  
 
@@ -417,7 +417,7 @@ can be, but greater power requires a larger sample, as we will see. It is common
 所需的样本量通常通过复杂的公式计算，或者查阅大量的表格（Machin 和 Campbell，1987），但使用图解法更为简便。图15.2展示了一个列线图，可用于计算本章所讨论所有情形下的合适样本量。使用起来简单，  
 The necessary sample size is usually obtained from complicated formulae or there are extensive tables available (Machin and Campbell, 1987), but it is much simpler to use a graphical method. Figure 15.2 shows a nomogram that can be used to calculate the appropriate sample size for all the situations considered in this chapter. It is simple to use and has the added  
 
-![](../images/15_Clinical_trials/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/87054afa85ca549c15a52ce8ef590c60c58cd6eaa1c4b6eb411321732dcdb892.jpg)  
 图15.2 用于计算样本量或检验力的列线图（经 Altman，1982b 授权转载）。  
 Figure 15.2 Nomogram for calculating sample size or power (reproduced from Altman, 1982b, with permission).  
 
@@ -748,7 +748,7 @@ A comparison of baseline readings taken at the start of each period can show whe
 显示了一项随机交叉试验中比较利福平与苯巴比妥治疗胆汁性肝硬化瘙痒的基线数据。显然，第1组患者在第2周期开始时的瘙痒程度较研究开始时轻微。因此，要么  
 shows baseline data from a randomized crossover trial comparing rifampicin with phenobarbitone for treatment of pruritus in biliary cirrhosis. It is clear that patients in the first group had less severe pruritis at the beginning of the second period than at the start of the study. Thus either  
 
-![](../images/15_Clinical_trials/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/fde8619c26f37fb5e070cc32cb46446f5d7f4c2284521c5fc045383528963d8e.jpg)  
 
 表15.6 两周期交叉试验中每周期开始前瘙痒评分分布，评分范围0（轻微）至3（严重）（Bachs等，1989）  
 Table 15.6 Distribution of pruritus scores, from 0 (mild) to 3 (severe) before each period in a two-period crossover trial (Bachs et al., 1989)  

@@ -108,7 +108,7 @@ Figure 1.1 shows the general sequence of steps in a research project. Statistica
 医学研究与临床实践的关键区别在于其范围。两者都从个体受试者收集数据，但医学研究的目标是能够对更广泛的受试者群体做出一些普遍性陈述，而我们通常并不特别关注所研究的具体个体。因此，我们使用来自样本个体的信息，对类似个体的更大群体进行推断。加粗的三个词是正式的统计术语，将在后续章节中详细解释。这里重要的一点是，所研究的受试者充当了感兴趣总体的代表。  
 The key difference between medical research and clinical practice is their scope. In each, data are collected from individual subjects, but in medical research the aim is to be able to make some general statements about a wider set of subjects, and we are not usually especially interested in the particular subjects that have been studied. We thus use information from a sample of individuals to make some inference about the wider population of like individuals. The three words in bold are formal statistical terms that will be explained fully in later chapters. The important point here is that the subjects who are studied act as a proxy for the total group of interest.  
 
-![](../images/01_Statistics_in_medical_research/img1.jpg)   
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2b16ff99886abc6b31e8c6f394bf9d43a6ed2b043d9a46f0a4e34c94b92dccc6.jpg)   
 图1.1 研究项目的一般步骤序列。  
 Figure 1.1 General sequence of steps in a research project.  
 

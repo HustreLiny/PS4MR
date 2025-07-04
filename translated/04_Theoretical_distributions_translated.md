@@ -86,11 +86,11 @@ In the previous chapter I showed how a histogram can be used to depict the distr
 很难想象某些观测数据的直方图或频率多边形是某种“潜在”平滑频率分布的近似。例如，图4.1显示了216名原发性胆汁性肝硬化患者血清白蛋白值的直方图，图4.2则显示了  
 difficult to imagine that the histogram or frequency polygon of some observed data is an approximation to some 'underlying' smooth frequency distribution. For example, Figure 4.1 shows a histogram of serum albumin values in 216 patients with primary biliary cirrhosis, and Figure 4.2 shows a  
 
-![](../images/04_Theoretical_distributions/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/24cb2509478d63eb641834dd2638f78a65a096de7655d061c06836fc3f2be9bf.jpg)  
 图4.1 216名原发性胆汁性肝硬化患者血清白蛋白值的直方图（摘自Christensen等人，1985年的研究）  
 Figure 4.1 Histogram of serum albumin values in 216 patients with primary biliary cirrhosis (from the study by Christensen et al., 1985)  
 
-![](../images/04_Theoretical_distributions/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/74b91208bc53abd7241e185789aecbeb7483c8c249dd52ab50802bdf5432ee1b.jpg)  
 图4.2 216名原发性胆汁性肝硬化患者血清白蛋白值的频率多边形图。  
 Figure 4.2 Frequency polygon of serum albumin values in 216 patients with primary biliary cirrhosis.  
 
@@ -100,7 +100,7 @@ frequency polygon of the same data, in which the effect is rather clearer.
 连续测量的频率分布，如图4.2所示，通常只有一个峰值：称为单峰分布。它们可能相当对称，如此处，或者不对称，如第3章中讨论的IgM数据。正态分布是一种单峰且对称的概率分布；其形状见图4.3。偶尔会见到双峰频率分布，称为双峰分布，通常是不同均值的亚组混合造成的。  
 frequency distributions for continuous measurements, such as in Figure 4.2, tend to have a single peak: they are called unimodal. They may be fairly symmetric, as here, or asymmetric, as with the IgM data discussed in Chapter 3. The Normal distribution is a probability distribution which is unimodal and symmetric; its shape is shown in Figure 4.3. Frequency distributions with two peaks are occasionally seen. These are called bimodal, and are usually the result of mixing subgroups with different means.  
 
-![](../images/04_Theoretical_distributions/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/7092068d0a404afea89cd36c4357e1c7e52bde91c1cde3e32f4ed6618af27b4f.jpg)  
 图4.3 正态分布。  
 Figure 4.3 The Normal distribution.  
 
@@ -128,17 +128,17 @@ Table B1 in Appendix B shows the lower tail areas of the standard Normal distrib
 低于  $-1$  的面积为0.16，低于  $+1$  的面积为0.84，因此  
 The area below  $- 1$  is 0.16 and the area below  $+1$  is 0.84, so that the  
 
-![](../images/04_Theoretical_distributions/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/29034ad646ae4712f68954f6d05765a735d27f129c1f1d898523fdc03090f892.jpg)  
 
-![](../images/04_Theoretical_distributions/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/24eee6d7bc10432156ce81780e2e196d4dab70e3a7e424d82113b8d2ec23625f.jpg)  
 
-![](../images/04_Theoretical_distributions/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/ff245d6f59c7dc15796b63f2506dc0b784712df97eb88c94fa854a06d7b51502.jpg)  
 
-![](../images/04_Theoretical_distributions/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/da75ab53752226a6e2bf53a7483436e06703be11de8a9594c1590af254a643f6.jpg)  
 图4.5 显示了216个血清白蛋白值的直方图及其相同均值和标准差的正态分布曲线。  
 Figure 4.5 Histogram of 216 serum albumin values and the Normal distribution with the same mean and standard deviation.  
 
-![](../images/04_Theoretical_distributions/img8.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/87fd549c42600c1ac33df9b7d104f4c8d940129c3e92b87bb1c0d3106cdd8aba.jpg)  
 图4.6 显示了拟合血清白蛋白数据的累积正态分布曲线。  
 Figure 4.6 Cumulative Normal distribution fitted to serum albumin data.  
 
@@ -212,7 +212,7 @@ distribution is important, and will be considered at various points in the follo
 虽然可以使用正式的方法（第7章中有描述），但判断一组观察值是否近似正态分布通常依赖于主观判断，通常通过观察直方图来完成。观察从正态分布中随机抽取样本所得的分布作为参考，有助于判断一组观测数据的分布情况。图4.7展示了16个样本的频率直方图，每个样本包含50个从标准正态分布中随机抽取的观察值。每个样本相当于考虑从一个已知变量服从正态分布的总体中抽取的50个个体。这些样本的分布表现出较大的不规则性，关键特征如单峰性和对称性通常缺失。在判断观察数据是否可能来自正态分布时，尤其是样本量较小时，应牢记这一点。  
 Although formal methods can be used (described in Chapter 7), whether a set of observations are reasonably Normal is often a matter of judge­ ment, usually by visual inspection of a histogram. It is instructive to look at distributions obtained by taking random samples from a Normal distribu­ tion to give a reference against which to judge a set of observed data. Figure 4.7 shows frequency histograms of 16 samples of 50 observations sampled at random from the standard Normal distribution. Each sample is equivalent to considering 50 individuals sampled from a population known to have a Normal distribution for the variable of interest. There is considerable irregularity in the distributions of these samples, with the key properties of unimodality and symmetry generally absent. This figure should be borne in mind when considering whether observed data might have come from a Normal distribution, especially when the sample size is small.  
 
-![](../images/04_Theoretical_distributions/img9.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/37f772053f0b04b8ee90ff86d7cd096c717bdeb824b6ace3dc3e30dfd2e4e742.jpg)  
 图4.7 正态分布中16个样本（每个样本50个观测值）的分布。  
 Figure 4.7 Distributions of 16 samples of size 50 from the Normal distribution.  
 
@@ -222,7 +222,7 @@ Figure 4.7 Distributions of 16 samples of size 50 from the Normal distribution.
 在第3.4节中我们看到，在某些情况下，一组呈正偏态分布的数据通过取对数可以转化为对称分布。对偏态分布的数据取对数，通常会得到接近正态的分布。图4.8显示了同一216名原发性患者的血清胆红素水平的直方图。  
 In section 3.4 we saw that in some circumstances a set of data with a positively skewed distribution can be transformed into a symmetric distribution by taking logarithms. Taking logs of data with a skewed distribution will often give a distribution that is near to Normal. Figure 4.8 shows a histogram of serum bilirubin levels in the same 216 patients with primary  
 
-![](../images/04_Theoretical_distributions/img10.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2497dae1549f39fe47d73f2480318e2f8263f7ddf35ff166d6aa1fa8c17b9a63.jpg)  
 图4.8 原发性胆汁性肝硬化（PBC）患者216例血清胆红素值的直方图及拟合的正态分布（摘自Christensen等，1985年的研究）。  
 Figure 4.8 Histogram of serum bilirubin values in 216 patients with primary biliary cirrhosis with fitted Normal distribution (from the study by Christensen et al., 1985).  
 
@@ -237,11 +237,11 @@ $$
 3.547 + (1.96 \times 1.030) = 5.566.  
 $$  
 
-![](../images/04_Theoretical_distributions/img11.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/463bab3957b5deac2596bf2a43678278b8dace860e67a40f9ce3da3ec7b25584.jpg)  
 图4.9 血清胆红素对数值的直方图及拟合的正态分布（以e为底的对数）。  
 Figure 4.9 Histogram of log serum bilirubin with fitted Normal distribution (logarithms to base e).  
 
-![](../images/04_Theoretical_distributions/img12.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/7c51d11444c513fda37294188260a18e58da748f083927f8b3617498b62a9f9b.jpg)  
 图4.10 血清胆红素的直方图及拟合的对数正态分布。  
 Figure 4.10 Histogram of serum bilirubin with fitted Lognormal distribution.  
 
@@ -251,7 +251,7 @@ The antilogs of these values (using the function  $\mathbf{e}^{x}$ ) are  $\math
 不应假设偏斜分布的数据都能通过转换近似为正态分布。必须通过视觉检查（如图4.9）或第7.5节描述的方法正式验证。  
 It should not be assumed that data with a skewed distribution can be transformed to approximate Normality. This must be established, perhaps visually as in Figure 4.9 or formally using the methods described in section 7.5.  
 
-![](../images/04_Theoretical_distributions/img13.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/48790cd749a53d77cf3ead11e6473540daaedef8ae48f45f7b14afd4430750eb.jpg)  
 图4.11 血清胆红素的箱线图，显示基于对数数据拟合正态分布得出的95%中心区间。  
 Figure 4.11 Box-and-whisker diagram of serum bilirubin showing  $95\%$  central range derived from fitting a Normal distribution to log data.  
 
@@ -267,25 +267,25 @@ We can summarize the possibilities as follows:
 64 理论分布  
 64 Theoretical distributions  
 
-![](../images/04_Theoretical_distributions/img14.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/121649da996f77a740f2fed010ff7f7fb3d102e7b570b9696b8c8b5fb20d6a28.jpg)  
 图4.12显示了两人中属于血型B人数的概率分布。该分布是二项分布的一个简单例子。为了得到图中显示的三个概率，我们做了三次简单计算。然而，如果将计算扩展到四个人的情况，计算就不那么简单了。每个人要么是血型B，要么不是，因此可能的排列组合是 $2 \times 2 \times 2 \times 2$，即16种。对于 $n$ 个人，可能的排列组合数是 $2^{n}$，例如七个人则有128种可能。  
 Figure 4.12 shows the probability distribution of the number of people out of two in blood group B. This distribution is a simple example of the Binomial distribution. To get the three probabilities shown we had to make three simple calculations. However, if we extend this simple calculation to consider the number of people out of four it is not so easy. Each person is either group B or not group B so there are  $2 \times 2 \times 2 \times 2$  possible orderings, which is 16. The number of possible orderings for  $n$  people is  $2^{n}$ , so if we have seven people for example, there are 128 possible orderings.  
 
 幸运的是，我们可以使用一个通用公式来跳过大部分计算。由于公式较复杂，详细内容见第4.9节。利用该公式，可以根据单个事件发生的概率，计算一系列事件中某种结果出现不同次数的概率。例如，图4.13显示了概率分布。  
 Fortunately, we can bypass most of the calculations by using a general formula. As it is rather complicated, the details are given in section 4.9. Using the formula one can calculate the probability of different numbers of outcomes of a particular type in a series of events from the probability of one such outcome. For example, Figure 4.13 shows the probability  
 
-![](../images/04_Theoretical_distributions/img15.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/5c101059381427bba4e88c3fdc9c3c56b4b1d5812ef18b31bf5aa624f75d9f4d.jpg)  
 图4.12 两人中属于血型B人数的二项分布。  
 Figure 4.12 Binomial distribution of number of people out of two in blood group B.  
 
 属于血型B的10人中人数的概率分布。（计算过程见第4.9节。）该分布是不对称的，但随着样本量增加，二项分布会变得  
 distribution for the number of individuals out of 10 being of blood group B. (The calculations are shown in section 4.9. ) The distribution is asymmetric, but as the sample size increases the Binomial distribution becomes  
 
-![](../images/04_Theoretical_distributions/img16.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9a56c1445d337bde3bb95876e6dffe5180ac8fe7e4b598b249cf4c3a30eddfd4.jpg)  
 图4.13 基于血型B概率为0.08，显示10人中属于血型B人数的二项分布。  
 Figure 4.13 Binomial distribution showing the number of subjects out of ten in blood group B based on the probability of being in blood group B of 0.08.  
 
-![](../images/04_Theoretical_distributions/img17.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c83f23aab3e2cbf5c3ac548fca59b32230aad6a1290168adc6fe4769792cc940.jpg)  
 图4.14 基于血型B概率为0.08，显示100人中属于血型B人数的二项分布。  
 Figure 4.14 Binomial distribution showing the number of subjects out of 100 in blood group B based on the probability of being in blood group B of 0.08.  
 
@@ -313,7 +313,7 @@ Table 4.2 shows some data that might be expected to follow a Poisson distributio
 泊松分布由单一参数完全描述。  
 The Poisson distribution is completely described by a single parameter.  
 
-![](../images/04_Theoretical_distributions/img18.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a171d7bebab4b25d3a1005ed1108ac3f1fe07204fa327e05a4cccb3672b359ea.jpg)  
 图4.15 均值为2.2的泊松分布。  
 Figure 4.15 Poisson distribution with mean 2.2.  
 

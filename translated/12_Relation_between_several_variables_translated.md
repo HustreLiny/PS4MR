@@ -114,7 +114,7 @@ There is no requirement for the data to be Normally distributed, neither overall
 即使残差分布接近正态，也不必然说明模型合适。观察表 12.5，受试者 4 和 9 存在较大残差，我们可能需要考虑不同个体的时间反应模式不一致的可能性。由于每个个体每个时间点只有一次观测，无法用这些数据检验此可能性。如果每个个体-时间组合有两次或更多观测，我们可以进行更全面的分析，具体来说，可以检验受试者和时间两个因素之间是否存在显著交互作用。下面将介绍这种更复杂的分析示例。如果  
 Even if the distribution of residuals is reasonably Normal it does not necessarily follow that the model is appropriate. Inspection of Table 12.5 shows some large values for subjects 4 and 9 and we might wish to consider the possibility that the response over time is not the same for all individuals. We cannot examine this possibility with these data, because there is only one observation per person at each time. If we had two or more observations for each person- time combination we would carry out a more comprehensive analysis. Specifically, we could examine the possible existence of a significant interaction between the two factors subject and time. An example of this more complex analysis is described below. If the  
 
-![](../images/12_Relation_between_several_variables/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/92860bed154f4597e3ba2196a43c1c1fdf9d3aba2e63cb7f82c453267016595f.jpg)  
 图12.1 表12.2数据方差分析残差的正态概率图。  
 Figure 12.1 Normal plot of residuals from analysis of variance of the data in Table 12.2.  
 
@@ -409,7 +409,7 @@ Table 12.13 Correlation matrix for PEmax and nine potential explanatory variable
 <table><tr><td></td><td>PEmax</td><td>年龄</td><td>性别</td><td>身高</td><td>体重</td><td>BMP</td><td>FEV1</td><td>RV</td><td>FRC</td></tr><tr><td>年龄</td><td>0.613</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>性别</td><td>-0.289</td><td>-0.167</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>身高</td><td>0.599</td><td>0.926</td><td>-0.168</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>体重</td><td>0.635</td><td>0.906</td><td>-0.190</td><td>0.921</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>BMP</td><td>0.230</td><td>0.378</td><td>-0.138</td><td>0.441</td><td>0.673</td><td></td><td></td><td></td><td></td></tr><tr><td>FEV1</td><td>0.453</td><td>0.294</td><td>-0.528</td><td>0.317</td><td>0.449</td><td>0.546</td><td></td><td></td><td></td></tr><tr><td>RV</td><td>-0.316</td><td>-0.552</td><td>0.271</td><td>-0.570</td><td>-0.622</td><td>-0.582</td><td>-0.666</td><td></td><td></td></tr><tr><td>FRC</td><td>-0.417</td><td>-0.639</td><td>0.184</td><td>-0.624</td><td>-0.617</td><td>-0.434</td><td>-0.665</td><td>0.911</td><td></td></tr><tr><td>TLC</td><td>-0.182</td><td>-0.469</td><td>0.024</td><td>-0.457</td><td>-0.418</td><td>-0.365</td><td>-0.443</td><td>0.589</td><td>0.704</td></tr><tr><td></td><td>PEmax</td><td>年龄</td><td>性别</td><td>身高</td><td>体重</td><td>BMP</td><td>FEV1</td><td>RV</td><td>FRC</td></tr></table>  
 <table><tr><td></td><td>PEmax</td><td>Age</td><td>Sex</td><td>Height</td><td>Weight</td><td>BMP</td><td>FEV1</td><td>RV</td><td>FRC</td></tr><tr><td>Age</td><td>0.613</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Sex</td><td>-0.289</td><td>-0.167</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Height</td><td>0.599</td><td>0.926</td><td>-0.168</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Weight</td><td>0.635</td><td>0.906</td><td>-0.190</td><td>0.921</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>BMP</td><td>0.230</td><td>0.378</td><td>-0.138</td><td>0.441</td><td>0.673</td><td></td><td></td><td></td><td></td></tr><tr><td>FEV1</td><td>0.453</td><td>0.294</td><td>-0.528</td><td>0.317</td><td>0.449</td><td>0.546</td><td></td><td></td><td></td></tr><tr><td>RV</td><td>-0.316</td><td>-0.552</td><td>0.271</td><td>-0.570</td><td>-0.622</td><td>-0.582</td><td>-0.666</td><td></td><td></td></tr><tr><td>FRC</td><td>-0.417</td><td>-0.639</td><td>0.184</td><td>-0.624</td><td>-0.617</td><td>-0.434</td><td>-0.665</td><td>0.911</td><td></td></tr><tr><td>TLC</td><td>-0.182</td><td>-0.469</td><td>0.024</td><td>-0.457</td><td>-0.418</td><td>-0.365</td><td>-0.443</td><td>0.589</td><td>0.704</td></tr><tr><td></td><td>PEmax</td><td>Age</td><td>Sex</td><td>Height</td><td>Weight</td><td>BMP</td><td>FEV1</td><td>RV</td><td>FRC</td></tr></table>  
 
-![](../images/12_Relation_between_several_variables/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/0dd7724b977b0d519b4cb389cd723180a3207b0d43517d1ee664a109e87314c2.jpg)  
 图12.2 与表12.13对应的散点图。  
 Figure 12.2 Scatter diagrams corresponding to Table 12.13.  
 
@@ -529,7 +529,7 @@ As with linear regression (section 11.10) several plots are possible:
 三变量模型预测 PEmax 的残差正态概率图非常接近直线（图12.3），无理由质疑分析的有效性。  
 The Normal plot for the residuals from the three variable model for PEmax is very straight (Figure 12.3), and provides no reason to question the validity of the analysis.  
 
-![](../images/12_Relation_between_several_variables/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/02bb50c0ca22a0b3ded80454a6ff0c6dea6cf6b3f297c445c6a314af70892c3f.jpg)   
 图12.3 表12.16回归模型残差的正态概率图。  
 Figure 12.3 Normal plot of residuals from regression model in Table 12.16.  
 
@@ -858,7 +858,7 @@ Figure 12.4 shows the first two discriminant functions for the 75 observations, 
 样本量再次成为问题，有建议指出每组受试者数量应至少为所考察变量数的五倍（Lachenbruch，1977）。  
 Sample size is again an issue, and it has been suggested that there should be at least five times as many subjects per group as variables examined (Lachenbruch, 1977).  
 
-![](../images/12_Relation_between_several_variables/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/702eb5432b589c3db190aeaa9c9b9059ec17a3db90a0f8c45821fe73b980bc53.jpg)  
 图12.4 Thompson等（1985）数据的判别函数。  
 Figure 12.4 Discriminant functions from data of Thompson et al. (1985).  
 

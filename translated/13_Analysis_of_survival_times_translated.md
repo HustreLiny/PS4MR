@@ -26,7 +26,7 @@ With data of this type we often wish to estimate the probability of an individua
 医学生存数据的分析自  
 The analysis of medical survival data has become widespread since the  
 
-![](../images/13_Analysis_of_survival_times/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f9518ed8b6b09fd375f2dc86cda92a316ee1118f432adde6e89221e0d76a53bd.jpg)  
 图13.1 显示患者在不同时间进入研究以及已知生存时间 $(\bullet)$ 和删失生存时间 $(\circ)$ 的示意图。  
 Figure 13.1 Diagram showing patients entering a study at different times and the observation of known  $(\bullet)$  and censored  $(\circ)$  survival times.  
 
@@ -39,7 +39,7 @@ Table 13.1 Survival times for patients shown in Figure 13.1
 *删失观察  
 *censored observation  
 
-![](../images/13_Analysis_of_survival_times/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/40e73b300a495d0ac0c81093c35842ef3d5cb60f9779447d9254d2b08be38012.jpg)  
 图13.2 图13.1重新组织以对应分析方法。  
 Figure 13.2 Figure 13.1 reorganized to correspond to method of analysis.  
 
@@ -96,7 +96,7 @@ The survival curve is drawn as a 'step function': the proportion surviving remai
 我们可以计算生存比例的置信区间。如果没有删失值，可以使用推导比例置信区间的标准方法（见第10.2节），但通常我们  
 We can calculate a confidence interval for the survival proportion. If there are no censored values we can use standard methods for deriving a confidence interval for a proportion (see section 10.2), but in general we  
 
-![](../images/13_Analysis_of_survival_times/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/47e48c2d94b1792477a03dd9425f0102b963fca2d56c78a16239c39f7c0596b0.jpg)  
 图13.3 显示了与表13.2中晕动病数据相对应的生存曲线。  
 Figure 13.3 Survival curve corresponding to the motion sickness data in Table 13.2.  
 
@@ -162,7 +162,7 @@ Table 13.3 Life table for motion sickness data from an experiment with vertical 
 * 截尾观察  
 \* censored observation  
 
-![](../images/13_Analysis_of_survival_times/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/87ad3f83073e947754fae7ce1a903a57f9755c4145b4907de6f3d686ca1d29ec.jpg)  
 图 13.4 两个不同运动病实验中事件时间 $(\bullet)$ 和截尾时间 $(\circ)$，显示用于计算对数秩检验的时间区间。实验 1 见表 13.2，实验 2 见表 13.3。  
 Figure 13.4 Times of events  $(\bullet)$  and censoring  $(\circ)$  for two different motion sickness experiments, showing the time intervals used for calculating the logrank test. Experiment 1 was described in Table 13.2 and Experiment 2 in Table 13.3.  
 
@@ -197,14 +197,14 @@ Note that the sum of the observed and expected numbers is the same: it is import
 对数秩检验可用于比较多个受试者组。  
 The logrank test can be used to compare several groups of subjects.  
 
-![](../images/13_Analysis_of_survival_times/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a682ce38145f0cb361979e8af8386d30a374ec88379257662cc45c92493a48de.jpg)  
 图13.5 显示了表13.2和表13.3中数据的生存曲线。  
 Figure 13.5 Survival curves for data shown in Table 13.2 and Table 13.3.  
 
 然而，定义这些组的类别通常具有自然顺序，我们应考察组间生存趋势的更具体可能性。例如，我们可能希望比较不同年龄组的生存情况，或与疾病分期相关，或与某些疑似环境危害（如吸烟）的暴露量相关。该方法是标准对数秩检验的简单扩展。  
 Often, however, the categories defining those groups will have a natural ordering, and we should examine the more specific possibility of a trend in survival across the groups. We might, for example, wish to compare survival in several age groups, or in relation to stage of disease, or in relation to amount of exposure of some suspected environmental hazard (such as smoking). The method is a simple extension of the standard logrank test.  
 
-![](../images/13_Analysis_of_survival_times/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/252b86000becfeced383e8bbd1889969bac9a65c717cf3575cf7d8441591dde8.jpg)  
 图13.6 显示了乳腺癌患者的Kaplan-Meier曲线，按阳性淋巴结数分类：无阳性结节  $(n = 102)$ ，1-3个  $(n = 58)$ ，超过3个  $(n = 35)$ （数据来自Barnes等，1988年）。  
 Figure 13.6 Kaplan-Meier curves for patients with breast cancer with none  $(n = 102)$ , 1-3  $(n = 58)$ , or more than 3  $(n = 35)$  positive nodes (data from Barnes et al., 1988).  
 
@@ -788,11 +788,11 @@ $$
 图13.7展示了基于表13.7中模型且将其他变量设为均值的情况下，接受硫唑嘌呤和安慰剂治疗患者的估计生存曲线。通过固定最后一式中的 $t$（可选几个感兴趣的时间点），可以考察生存概率与预后指数（PI）之间的关系。图13.8展示了PBC试验中，2年、5年和8年生存概率随PI变化的估计曲线。对于新患者，可以轻松估计其在特定时间内的生存概率。不幸的是，计算该估计生存概率的置信区间较为困难。  
 Figure 13.7 shows estimated survival curves for patients given azathioprine and placebo, based on the model shown in Table 13.7 and setting all other variables to their mean values. The relation between survival probability and prognosis can be examined by fixing  $t$  in the last equation, perhaps at a few values of interest. Figure 13.8 shows estimated 2, 5 and 8 year survival probability as a function of PI derived from the PBC trial. For any new patient it is easy to estimate the probability of surviving a given time. Unfortunately, it is difficult to calculate a confidence interval for the estimated survival probability.  
 
-![](../images/13_Analysis_of_survival_times/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d4b7d31ebeb51dd135ecf96a47f0d8c4e4a38071b50317fe4aef8934b5c2fef5.jpg)  
 图13.7 基于表13.7中Cox模型的硫唑嘌呤与安慰剂治疗患者的估计生存曲线（摘自Christensen等，1985）。  
 Figure 13.7 Estimated survival curves for patients treated with azathioprine or placebo based on the Cox model in Table 13.7 (from Christensen et al., 1985).  
 
-![](../images/13_Analysis_of_survival_times/img8.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/dbc3990daa0d252644d43135df5e3bf6a72a757c8ffa3532081eeec62046424c.jpg)  
 图13.8 PBC试验中，2年、5年和8年生存概率随预后指数（PI）变化的估计曲线。注意治疗方案已包含在PI中（摘自Christensen等，1985）。  
 Figure 13.8 Estimated 2, 5 and 8 year survival probability as a function of the prognostic index (PI) in the trial of azathioprine versus placebo. Note that the therapy given is incorporated in PI (from Christensen et al., 1985).  
 

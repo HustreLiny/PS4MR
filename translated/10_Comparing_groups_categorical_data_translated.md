@@ -89,7 +89,7 @@ which, from Table B2, corresponds to  $\mathbf{P} = 0.22$ . We cannot reject the
 刚才描述的方法使用连续的正态分布来近似离散的二项分布。图 10.1 展示了以 $n = 215$ 和 $p = 0.15$ 为例的这两种分布。假设检验基于计算正态分布尾部超过观察值（此处为 39）的面积。当我们对观察频数进行 $\frac{1}{2}$ 的小校正，以考虑变量只能取整数值时，正态分布对二项分布的拟合更好。  
 The method just described uses the continuous Normal distribution as an approximation to the discrete Binomial distribution. Figure 10.1 shows these two distributions for the example just examined, with  $n = 215$  and  $p = 0.15$ . The hypothesis test is based on calculating the tail area of the Normal distribution beyond the observed value, here 39. The Normal distribution corresponds better to the Binomial distribution when we make a small correction of  $\frac{1}{2}$  to the observed frequency to allow for the fact that the variable can only take integer values.  
 
-![](../images/10_Comparing_groups_categorical_data/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9ec7c2f991dbf6b46fe8b841cee40e73051fe5a48126dc4368a36791ba11d6b1.jpg)  
 图 10.1 二项分布（$p = 0.15$，$n = 215$）及其近似的正态分布。  
 Figure 10.1 Binomial distribution with  $p = 0.15$  and  $n = 215$  with the approximating Normal distribution.  
 
@@ -569,7 +569,7 @@ When the null hypothesis is true the statistic  $X^{2}$  has a Chi squared distr
 卡方分布的定义很简单。如果我们有一个变量 $X$，它服从标准正态分布，那么 $X^{2}$ 就服从卡方分布。显然，$X^{2}$ 只能取正值，其分布高度偏斜。这个 $X^{2}$ 的分布有一个自由度，是更广义卡方分布“家族”中最简单的情况。如果我们有多个相互独立且均服从标准正态分布的变量，比如 $X_{1}, X_{2}, X_{3}, \ldots , X_{k}$，那么所有这些 $X$ 的平方和 $\sum X_{i}^{2}$ 服从自由度为 $k$ 的卡方分布。  
 The definition of the Chi squared distribution is simple. If we have a quantity (variable)  $X$  which has a standard Normal distribution, then  $X^{2}$  has a Chi squared distribution. Clearly  $X^{2}$  can have only positive values, and its distribution is highly skewed. This distribution of  $X^{2}$  has one degree of freedom, and is the simplest case of a more general 'family' of Chi squared distributions. If we have several independent variables, each of which has a standard Normal distribution, say  $X_{1}, X_{2}, X_{3}, \ldots , X_{k}$ , then the sum of the squares of all the  $X$ s,  $\sum X_{i}^{2}$ , has a Chi squared  
 
-![](../images/10_Comparing_groups_categorical_data/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/25890563588ebe8f9f6ceb564d34aa8d409d9952bc6b2aee2c1cbfa8fac7e699.jpg)  
 图10.2 显示了不同自由度的理论卡方分布。  
 Figure 10.2 Chi squared distributions with different numbers of degrees of freedom.  
 
@@ -823,17 +823,17 @@ Table 10.16 shows the probabilities associated with all seven sets of frequencie
 表10.15 所有与表10.14具有相同行和列总数的频数表  
 Table 10.15 All tables of frequencies which have the same row and column totals as Table 10.14  
 
-![](../images/10_Comparing_groups_categorical_data/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/863d0272b2cc892dc5124b267db0a1e8b3cdb2e245fa46bf02a625a3541477f4.jpg)  
 
-![](../images/10_Comparing_groups_categorical_data/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/8a94a7a4e503607549a625ef11e56cdc60dc4ce7fb3ee659d327bb13c0ab9296.jpg)  
 (ii)  
 (ii)  
 
-![](../images/10_Comparing_groups_categorical_data/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/07f8ee14e3c19f15cb611c1a837201928abe16eaad440aff6346e6600b19d301.jpg)  
 (iii)  
 (iii)  
 
-![](../images/10_Comparing_groups_categorical_data/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d8e4be8b254195733df043ea7d4248d5e7509f856f67c0e5fecb93197fc373e9.jpg)  
 
 表10.16 表10.15中每组频数对应的概率  
 Table 10.16 Probability associated with each set of frequencies in Table 10.15  
@@ -1045,7 +1045,7 @@ Table 10.19 Relation between frequency of Caesarean section and maternal shoe si
 <table><tr><td rowspan="2">剖宫产</td><td colspan="7">鞋码</td></tr><tr><td>&lt; 4</td><td>4</td><td>4 1/2</td><td>5</td><td>5 1/2</td><td>6+</td><td>总计</td></tr><tr><td>是</td><td>5</td><td>7</td><td>6</td><td>7</td><td>8</td><td>10</td><td>43</td></tr><tr><td>否</td><td>17</td><td>28</td><td>36</td><td>41</td><td>46</td><td>140</td><td>308</td></tr><tr><td>总计</td><td>22</td><td>35</td><td>42</td><td>48</td><td>54</td><td>150</td><td>351</td></tr></table>  
 <table><tr><td rowspan="2">Caesarean section</td><td colspan="7">Shoe size</td></tr><tr><td>&amp;lt; 4</td><td>4</td><td>4 1/2</td><td>5</td><td>5 1/2</td><td>6+</td><td>Total</td></tr><tr><td>Yes</td><td>5</td><td>7</td><td>6</td><td>7</td><td>8</td><td>10</td><td>43</td></tr><tr><td>No</td><td>17</td><td>28</td><td>36</td><td>41</td><td>46</td><td>140</td><td>308</td></tr><tr><td>Total</td><td>22</td><td>35</td><td>42</td><td>48</td><td>54</td><td>150</td><td>351</td></tr></table>  
 
-![](../images/10_Comparing_groups_categorical_data/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c95d0a80562fa7cbe83a2b92dc5576e30e48452d30d63ded2f2c38888baff242.jpg)  
 图10.3 不同鞋码组中剖宫产比例  
 Figure 10.3 Proportions of women having a baby by Caesarean section in different shoe size groups.  
 

@@ -81,7 +81,7 @@ Figure 9.1 shows the  $t$  distributions with 5 and 25 degrees of freedom, toget
 本章介绍的几乎所有参数方法，以及后续大多数方法，都使用 $t$ 分布。在第8章，我展示了如何通过将感兴趣的量除以其标准误，利用正态分布计算检验统计量。使用 $t$ 分布时计算方法相同，唯一不同的是查表时使用 $t$ 分布表（表B4）而非正态分布表。同样，我们用 $t$ 分布计算置信区间。  
 Nearly all the parametric methods introduced in this chapter, and most that follow, make use of the  $t$  distribution. In Chapter 8 I showed how we calculate a test statistic using the Normal distribution by taking the ratio of the quantity of interest to its standard error. We use the same method of calculation when using the  $t$  distribution. The only difference is that we look up the result in a table of the  $t$  distribution (Table B4) rather than the Normal distribution. Likewise, we use the  $t$  distribution to calculate confidence intervals.  
 
-![](../images/09_Comparing_groups_continuous_data/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/957efa144149ddc450de6dbcff0841f02a34a4047c9b92e36e6e69dcbc34a200.jpg)  
 图9.1 Student的 $t$ 分布，(a) 自由度为5，(b) 自由度为25，同时展示标准正态分布。  
 Figure 9.1 Student's  $t$  distribution with (a) five, and (b) 25 degrees of freedom. together with the standard Normal distribution.  
 
@@ -576,11 +576,11 @@ Table 9.7 Numbers of  $\mathbf{T_{4}}$  and  $\mathbf{T_{8}}$  cells  $\mathbf{\
 研究了霍奇金病缓解患者和多种弥漫性恶性肿瘤缓解患者（称为非霍奇金病组）淋巴细胞异常。每组各有20名患者，组间无配对。表9.7列出了血液中每立方毫米$\mathbf{T_{4}}$和$\mathbf{T_{8}}$细胞的数量。除了$\mathbf{T_{4}}$和$\mathbf{T_{8}}$细胞的实际水平，作者特别关注$\mathbf{T_{4}}$（辅助细胞）与$\mathbf{T_{8}}$（抑制细胞）细胞数的比值，因此数据按各组内$\mathbf{T_{4}} / \mathbf{T_{8}}$比值升序排列。表9.7还显示了每组观察值的均值和标准差。标准差均大于均值的一半，强烈暗示（对于不可能为负的变量）数据呈偏态。此外，较大的均值对应较大的标准差，提示对数变换可能适用。  
 lymphocyte abnormalities in patients in remission from Hodgkin's disease or diverse, disseminated malignancies (called the non- Hodgkin's disease group). There were 20 patients in each group, but no pairing between the groups. Table 9.7 shows the numbers of  $\mathbf{T_{4}}$  and  $\mathbf{T_{8}}$  cells per  $\mathbf{m}\mathbf{m}^{3}$  in their blood. As well as the actual levels of  $\mathbf{T_{4}}$  and  $\mathbf{T_{8}}$  cells, the authors were particularly interested in the ratio of the numbers of  $\mathbf{T_{4}}$  cells (helper cells) to  $\mathbf{T_{8}}$  cells (suppressor cells), so the data are tabulated in ascending order of the ratio  $\mathbf{T_{4}} / \mathbf{T_{8}}$  within each group. Table 9.7 also shows the mean and standard deviation of each group of observations. The standard deviations are all greater than half the mean, strongly suggesting (for variables where negative values are impossible) that the data are skewed. Also the standard deviations are larger for the larger means, which suggests that a log  
 
-![](../images/09_Comparing_groups_continuous_data/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/efa3dbccc2303a42136b9d606fa264e0ddc2c7c3d003704513f639d897d75d37.jpg)  
 图9.2 显示了20名霍奇金病缓解患者和20名弥漫性恶性肿瘤缓解患者（非霍奇金病）中$\mathbf{T_{4}}$和$\mathbf{T_{8}}$（细胞/mm³）的直方图。  
 Figure 9.2 Histograms of  $\mathbf{T_{4}}$  and  $\mathbf{T_{8}}$  (cells/mm³) in 20 patients in remission from Hodgkin's disease and 20 patients in remission from disseminated malignancies (non-Hodgkin's disease).  
 
-![](../images/09_Comparing_groups_continuous_data/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e77f9b3fa8ee6c0f8de7dff4b392ec66e98504e1f7355a4b8619aff21a1d546d.jpg)  
 图9.3 显示了$\log_{e}\mathbf{T_{4}}$和$\log_{e}\mathbf{T_{8}}$的直方图。  
 Figure 9.3 Histograms of  $\log_{e}\mathbf{T_{4}}$  and  $\log_{e}\mathbf{T_{8}}$  
 
@@ -806,7 +806,7 @@ Table 9.10 Red cell folate levels  $(\mu \mathrm{g} / 1)$  in three groups of ca
 <table><tr><td colspan="2">组I (n = 8)</td><td>组II (n = 9)</td><td>组III (n = 5)</td></tr><tr><td colspan="2">243</td><td>206</td><td>241</td></tr><tr><td colspan="2">251</td><td>210</td><td>258</td></tr><tr><td colspan="2">275</td><td>226</td><td>270</td></tr><tr><td colspan="2">291</td><td>249</td><td>293</td></tr><tr><td colspan="2">347</td><td>255</td><td>328</td></tr><tr><td colspan="2">354</td><td>273</td><td></td></tr><tr><td colspan="2">380</td><td>285</td><td></td></tr><tr><td colspan="2">392</td><td>295</td><td></td></tr><tr><td colspan="2"></td><td>309</td><td></td></tr><tr><td>均值</td><td>316.6</td><td>256.4</td><td>278.0</td></tr><tr><td>标准差</td><td>58.7</td><td>37.1</td><td>33.8</td></tr></table>  
 <table><tr><td colspan="2">Group I (n = 8)</td><td>Group II (n = 9)</td><td>Group III (n = 5)</td></tr><tr><td colspan="2">243</td><td>206</td><td>241</td></tr><tr><td colspan="2">251</td><td>210</td><td>258</td></tr><tr><td colspan="2">275</td><td>226</td><td>270</td></tr><tr><td colspan="2">291</td><td>249</td><td>293</td></tr><tr><td colspan="2">347</td><td>255</td><td>328</td></tr><tr><td colspan="2">354</td><td>273</td><td></td></tr><tr><td colspan="2">380</td><td>285</td><td></td></tr><tr><td colspan="2">392</td><td>295</td><td></td></tr><tr><td colspan="2"></td><td>309</td><td></td></tr><tr><td>Mean</td><td>316.6</td><td>256.4</td><td>278.0</td></tr><tr><td>SD</td><td>58.7</td><td>37.1</td><td>33.8</td></tr></table>  
 
-![](../images/09_Comparing_groups_continuous_data/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/b2c0bcc58af47ae24b1cfec18cc19ad49662e3937e2b72260ea2bcbf21f6c5e4.jpg)  
 图9.5 三组心脏搭桥患者的红细胞叶酸水平（数据来源表9.10）。  
 Figure 9.5 Red cell folate levels in three groups of cardiac bypass patients (data 1 Table 9.10).  
 
@@ -1296,11 +1296,11 @@ For data analysed by a non- parametric method the median and selected centiles (
 图形展示通常采用均值和标准差或标准误“误差条”，但如果可能，展示原始数据更具信息量。图3.14展示了Lind等人（1984年）的一些数据，其中显示了所有原始数据和汇总统计。图9.6展示了均值和标准误本身信息量相对较少。对于偏态分布的数据，信息损失尤为明显。以均值 $\pm 1$ 标准差的形式展示，暗示数据具有对称性，而这可能并不存在。  
 Graphical presentation is often by means and standard deviation or standard error 'bars', but it is much more informative to show the raw data where possible. Figure 3.14 showed some data of Lind et al. (1984), in which all the raw data and summary statistics are shown. Figure 9.6 shows how comparatively uninformative the means and standard errors are on their own. For data which have a skewed distribution the loss of information is particularly marked. The presentation as, say, mean  $\pm 1$ SD implies a  
 
-![](../images/09_Comparing_groups_continuous_data/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/823030c4902dc9e30942b34839d68adda559dcabddadeead03a4588ab0fcfcbe.jpg)  
 图9.6 图3.14仅以均值和标准误条展示（数据来源：Lind等，1984年）。  
 Figure 9.6 Figure 3.14 shown as means and standard error bars only (data from Lind et al., 1984).  
 
-![](../images/09_Comparing_groups_continuous_data/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9e3875d9bcae20da562a918fd8896dd7c33040589095c45d00b8e8b88566e082.jpg)  
 图9.7 四组各25个观测值，均值为30，标准差为5.9。  
 Figure 9.7 Four groups of 25 observations each having a mean of 30 and standard deviation of 5.9.  
 

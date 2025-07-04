@@ -354,9 +354,9 @@ Initial Blood Pressure (mm Hg)
 末次血压（毫米汞柱）  
 Final Blood Pressure (mm Hg)  
 
-![](../images/06_Using_a_computer/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/2ffb3f12b28ad48aced5e5361ce18a491498b44a0ac952bbbdb9b83adb132cb8.jpg)  
 
-![](../images/06_Using_a_computer/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/260b7cbd624c3e4342522fc7fa40f80dc9f5535da132abf0172482c37eb6e106.jpg)  
 图6.2 用于收集比较两种降压药试验数据的表格部分，对应图6.1中的数据。  
 Figure 6.2 Part of a form to collect data for a trial comparing two antihypertensive drugs, corresponding to the data in Figure 6.1.  
 
@@ -438,7 +438,7 @@ for the program to accept data where all the values are in a single column, and 
 使用计算机的一个主要优势是能够绘制数据图。无论是在屏幕上还是纸上绘图，都可以生成两种类型的图—折线图或高分辨率图。第一种方法使用常见的“字母数字”字符集，将每个点尽可能准确地放置在其正确位置，而第二种方法利用计算机的图形功能，提供更精确的绘图。图6.3显示了图11.4中数据的折线图；大多数统计软件包都能生成折线图。重合的点通常通过显示点的数量（最多9个）来表示。指定坐标轴的比例和区分不同组别通常较为困难。大多数统计软件包可以绘制直方图和散点图，有些还能生成箱线图或茎叶图。折线图在数据分析中非常有用，但质量不是最高。直到最近，少数统计软件包能生成高分辨率图，但改进的图形功能正变得越来越普遍。本书中的图形  
 The ability to plot data is a major advantage of using a computer. There are two types of plot that can be produced, whether plotting on the screen or on paper - a line plot or a high- resolution plot. The first method uses the usual 'alphanumeric' character set and places each point as near as possible to its correct location, while the second uses the graphical capability of the computer to give a much more accurate plot. Figure 6.3 shows a line plot of the data shown in Figure 11.4; line plots can be produced by most statistical packages. Coincident points are usually indicated by showing the number of points (up to 9). It is often difficult to specify the scaling of axes and to indicate different groups. Most statistical packages can plot histograms and scatter diagrams, and some can produce box- and- whisker or stem- and- leaf plots. Line plots are very useful when analysing data, but they are not of top quality. Until recently few statistical packages could produce high- resolution plots, but improved graphical facilities are becoming more common. The figures in this book were  
 
-![](../images/06_Using_a_computer/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/18b18cf6a99758a6849bbc475fdca557e9b9120de485ca7a4d35e4300a2e1fe9.jpg)  
 图6.3 显示了图11.4中数据的折线图，涉及哺乳动物母体体重对胎儿体重的对数关系。  
 Figure 6.3 Line plot of data shown in Figure 11.4 relating log maternal weight to log fetal weight in mammals.  
 

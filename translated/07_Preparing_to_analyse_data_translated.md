@@ -133,17 +133,17 @@ between two continuous variables. Figure 7.2 shows the change in plasma protein 
 异常值会影响多种统计分析，常通过增加观测值的方差而掩盖感兴趣的效应。识别异常值是数据检查的重要附带收益。  
 Outliers can affect many types of statistical analysis, often by inflating the variance of a set of observations and so obscuring the effect of interest. Awareness of any outliers is a highly beneficial spin- off from checking the data.  
 
-![](../images/07_Preparing_to_analyse_data/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a15eb2e7161a87304c0db40de67300a9af9ede693ec79eae06632b25c8876dbb.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/118fe1880328f50cd052300324e2524494c3b9f3c7a2475f9593145d8bf96ca9.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/11951e3807cdc3a91e589bbff322ba85cff963b39ac72ace980cca1a224a715d.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/fe5c0e28013aecf4faaa93e07fa401c90fea52b261f7151d4c613b532c74eac9.jpg)  
 非霍奇金病 图7.1显示了表7.1中有无霍奇金病患者的 $\mathbf{T_{4}}$ 细胞计数（单位：$/\mathbf{mm}^{3}$）的直方图，（a）原始数据；（b）$\log_{2}$ 转换后数据。  
 Non-Hodgkin's disease  Figure 7.1 Histograms of  $\mathbf{T_{4}}$  cell counts  $/\mathbf{m}\mathbf{m}^{3}$  in patients with and without Hodgkin's disease shown in Table 7.1 (a) raw data; (b) after  $\log_{2}$  transformation.  
 
-![](../images/07_Preparing_to_analyse_data/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6710ec73a3de9e9e9d773bf14b3c8501335e754b67924ab017b042e9b57c4398.jpg)  
 图7.2展示了12例慢性肾功能衰竭患者血液透析后血浆蛋白（单位：$g/l$）变化与年龄的关系，图中给出了所有数据的回归线（—）和排除最年轻患者后的回归线（- - - - - -）。数据来源：Toulon 等（1987）。  
 Figure 7.2 Data showing the relation between change in plasma protein  $(g / l)$  after haemodialysis and age in 12 patients with chronic renal failure, showing regression lines for all data (—) and excluding the youngest patient (- - - - - -). Data from Toulon et al. (1987).  
 
@@ -219,9 +219,9 @@ The Normal plot is based on two ideas. First, the cumulative frequency distribut
 假设我们有一个变量，其总体值服从均值为34.46、标准差为5.84的正态分布。图7.3显示了(a)频数分布，(b)累计频数分布，以及(c)正态图。正态图的横轴表示观测值的数值，纵轴表示相对于均值的标准差数的相对频率。正态图纵轴标注的值对应累计百分比为 $0.1\%$、$2.3\%$、$16\%$、$50\%$、$84\%$、$97.7\%$ 和 $99.9\%$（见第4.5.1节）。绘图坐标的计算方法将在下文说明。图7.3展示了理论情况，图7.4则展示了从同一总体随机抽取的216个样本的相同过程。顶部面板显示数据的直方图，表现出一些不规则性。第二个面板显示累计频数分布，最后一个是正态图。数据在正态图中接近一条直线。  
 Suppose we have a variable whose values in the population have a Normal distribution with a mean of 34.46 and a standard deviation of 5.84. Figure 7.3 shows (a) the frequency distribution, (b) the cumulative frequency distribution, and (c) the Normal plot. The horizontal axis of the Normal plot shows the numerical value of the observation, and the vertical axis gives the relative frequency in terms of the number of standard deviations from the mean. The values labelled on the vertical axis of the Normal plot correspond to cumulative percentages of  $0.1\%$ ,  $2.3\%$ ,  $16\%$ ,  $50\%$ ,  $84\%$ ,  $97.7\%$  and  $99.9\%$  (see section 4.5.1). The calculation of the plotting coordinates is explained below. Figure 7.3 shows what happens in theory, and Figure 7.4 shows the same process for a sample of size 216 chosen at random from the same population. The top panel shows a histogram of the data, which exhibits some irregularities. The second shows the cumulative frequency distribution and the last the Normal plot. The data are close to a straight line in the Normal plot.  
 
-![](../images/07_Preparing_to_analyse_data/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e1a1c7c301937fca32a43ff4520503292e862a98d925361a69219cc3225295bf.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9602338a1c71a25f3af7a1b87c2f685ef57ece0d8462c2d7c8622e5ce111e344.jpg)  
 
 既然我们知道了当数据确实来自正态分布时应有的图像，我们便有了判断真实数据的依据。图7.5给出了先前讨论的216例原发性胆汁性肝硬化患者血清白蛋白值的正态图。这些数据的均值为 $34.46 \mathrm{g} / \mathrm{l}$，标准差为 $5.84 \mathrm{g} / \mathrm{l}$。因此，图7.3、7.4和7.5是可以直接比较的。当我们为某组数据绘制正态图时，实际上就是在做这样的比较。图7.5(c)中的正态图非常接近直线，表明这些患者血清白蛋白值的分布接近正态分布，与图4.5一致。下面我将考虑如何量化这种接近程度。  
 Now that we know what sort of picture to expect when the data really do come from a Normal distribution, we have some basis for judging some real data. Figure 7.5 gives a Normal plot for the serum albumin values from the study of 216 patients with primary biliary cirrhosis previously discussed. These data had a mean of  $34.46 \mathrm{g} / \mathrm{l}$  and the standard deviation was  $5.84 \mathrm{g} / \mathrm{l}$ . Figures 7.3, 7.4 and 7.5 are thus directly comparable. When we produce a Normal plot for some data this is the comparison that is implicitly being made. The Normal plot in Figure 7.5(c) is very near to a straight line, indicating that the distribution of serum albumin values in these patients is near to a Normal distribution, in agreement with Figure 4.5. I shall consider below how we can quantify the nearness.  
@@ -249,13 +249,13 @@ which are obvious extensions to the formula for the variance. From these we can 
 评估一组数据正态性的情形  
 Situations in which we may wish to assess the Normality of a set of data  
 
-![](../images/07_Preparing_to_analyse_data/img8.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/22f78d0a4563f9ebf06796aaa22c61d73f844387cf8d8f9e9cdd2464336c9a28.jpg)  
 图7.5 216例原发性胆汁性肝硬化患者的血清白蛋白值，表示为(a)频数直方图；(b)累计频数分布；(c)正态图。  
 Figure 7.5 Serum albumin values of 216 patients with primary biliary cirrhosis expressed as (a) frequency histogram; (b) cumulative frequency distribution; (c) Normal plot.  
 
-![](../images/07_Preparing_to_analyse_data/img9.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/ada312b6db8fee4b2f2822d89a7d83d0157deb02af831806467db1585318b0d6.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img10.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/21895c7b2ce7632e527330a62a4534904d0952e23be0d96aa5d959c5f4f7d64a.jpg)  
 
 在后续章节中会出现。对于许多目的来说，仅凭目测检查正态图就足够了，但如果需要更深入的分析，则更有用的方法是测量正态图的直线程度。然后我们可以计算如果总体服从正态分布，样本中出现此类值的概率。如果该概率足够大，比如大于0.05（即1/20），我们就可以认为数据与正态分布相当接近。此过程是标准统计推断方法的一个例子，下一章将正式介绍并详细讨论。  
 arise in subsequent chapters. For many purposes it is not necessary to do more than check the Normal plot by eye, but if something more is required then a more useful approach is based on measuring the straightness of the Normal plot. We can then calculate the probability that such a value would be obtained in a sample if the population had a Normal distribution, and if this probability is large enough, say greater than 0.05 (1 in 20), we conclude that the data are reasonably near to a Normal distribution. This procedure is an example of a standard statistical approach to inference which is introduced properly and discussed in detail in the next chapter.  
@@ -272,13 +272,13 @@ Table 7.2 Shapiro and Wilk's W test applied to 216 values of serum albumin, seru
 非正态性通常在分布的尾部最为明显。异常值在正态图上表现为一个或多个点偏离其余数据的线性趋势。即使只有一个异常值，也可能导致数据未通过Shapiro-Wilk检验。系统性曲线，如图7.6(a)所示，表明分布偏右（偏斜）；而S形曲线则表示分布两端的值过多或过少，相较于正态分布，如图7.7和7.8所示。  
 Non- Normality is usually most marked in the tails of the distribution. Outliers will show up in a Normal plot as one or more points lying away from the general linear trend of the rest of the data. Even one outlier can make the data fail the Shapiro- Wilk test. Systematic curvature, as seen in Figure 7.6(a), indicates skewness (to the right), while an S shaped plot will indicate either too many or too few values in both tails of the distribution in comparison with a Normal distribution, as shown in Figures 7.7 and 7.8  
 
-![](../images/07_Preparing_to_analyse_data/img11.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/0d94d0c222faacd78546b012faace688a602a6d00c2bf7c6f91608688b739fac.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img12.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c78f6e427d66092dc5b7463f40438d216dc0bfe6a69974b28cd377f6f12f2060.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img13.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/bbcca77cd6dd865e9a567a3a537c10a42d7c238233be5b1d702f10586d4a2576.jpg)  
 
-![](../images/07_Preparing_to_analyse_data/img14.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f7abae7f5a99f6571bdeea9c8b199c093b266d7760b5e5310fe2ed832fc44d67.jpg)  
 图7.8 分布尾部值过少的数据 $(n = 400$，均值 $= 80$，标准差 $= 9.7)$ (a) 直方图；(b) 正态图。  
 Figure 7.8 Data with too few values in the tails of the distribution  $(n = 400$ , mean  $= 80$ , SD  $= 9.7)$  (a) histogram; (b) Normal plot.  
 
@@ -294,7 +294,7 @@ respectively. Normal plots can also reveal a mixture of two distributions in the
 图7.7等正态图中，$Y$轴的刻度是以观测值标准差的倍数线性排列。构建正态图时，先将观测值按升序排列，然后将数据点绘制在对应的正态分数上。正态分数是指在给定样本大小的正态分布中，排名为第$i$的观测值相对于均值的标准差数。许多统计软件能计算正态分数并绘制正态图，有些甚至能轻松生成。手工绘制正态图时，可使用特殊的正态概率纸，其刻度对应正态分布的百分位数。先对观测值排序，然后绘制第$i$个  
 The scale of the  $Y$  axis in the Normal plots such as Figure 7.7 is linear in multiples of the standard deviation of the observations. The Normal plot is constructed by sorting the observations into ascending order and then plotting the data against the corresponding Normal scores. The Normal score is the number of standard deviations below or above the mean that we expect to find the observation with a given rank from a sample from a Normal distribution of a given size. Many statistical programs can calculate Normal scores for plotting against the data, and some can produce Normal plots easily. For drawing a Normal plot by hand there is special Normal probability paper with divisions corresponding to the percentage points of the Normal distribution. The observations are sorted and then the ith  
 
-![](../images/07_Preparing_to_analyse_data/img15.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/c132765f6355ab9e9e250d526798ad4d376b4ebe6a1db6e03d569e79b611b4ff.jpg)  
 图7.9 猪仔出生体重的正态概率图（Royston 等，1982）。  
 Figure 7.9 Normal plot of piglet birth weights (Royston et al., 1982).  
 
@@ -321,7 +321,7 @@ For some methods the distributional assumption is not too critical, especially i
 其他有时使用的变换包括平方根变换和倒数变换。图7.10展示了血清胆红素数据在不同变换前后的直方图。平方根变换（图7.10c）效果不如对数变换显著，通常用于变量为计数（频数）且预期服从泊松分布的情况。  
 Other transformations sometimes used are the square root and reciprocal transformations. Figure 7.10 shows histograms of the serum bilirubin data before and after different transformations. The square root transformation (Figure 7.10c) is less dramatic than taking logs. It is particularly used when the variable is a count (frequency) and thus would be expected to follow a  
 
-![](../images/07_Preparing_to_analyse_data/img16.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d2e0ceb359cf7021248e10f12ec5e296cf6d861e984a256698922e17e6fc1678.jpg)  
 
 倒数变换（图7.10d）效果比对数变换更剧烈（注意它会颠倒观察值的顺序），当数据极度偏斜时可能有用。Gore（1982）描述了对肾移植患者血浆肌酐值使用倒数变换，以及对肿瘤大小测量使用平方根变换的情况。然而，这些变换使用不普遍，且只要对数变换能取得满意结果，通常优先采用对数变换（见第9.7节）。有时使用特定变换有强烈的逻辑理由，例如立方根变换适用于体积数据，某段距离行走时间的倒数则表示速度。  
 Poisson distribution. The reciprocal transformation (Figure 7.10d) has a much more drastic effect than taking logs (note that it reverses the order of the observations), and may be useful if the observed data have an extremely skewed distribution. The use of the reciprocal transformation for plasma creatinine values of kidney transplant patients and the square root transformation for tumour size measurements were described by Gore (1982). Their use is not common, however, and there are certain reasons for using the log transformation in preference to any other as long as it yields satisfactory results (see section 9.7). Sometimes there may be a strong logical reason for using a particular transformation. For example, the cube root may be appropriate for data that are volumes and the reciprocal of a recorded time to walk a certain distance will yield the speed.  

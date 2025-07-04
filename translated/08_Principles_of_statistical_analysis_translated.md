@@ -74,7 +74,7 @@ First I shall consider the case where the distribution in the population is Norm
 我以第4章讨论的原发性胆汁性肝硬化（PBC）患者研究为模拟基础。假设所有PBC患者的血清白蛋白值服从均值为$35 \mathrm{~g} / \mathrm{l}$、标准差为$6 \mathrm{~g} / \mathrm{l}$的正态分布。通过计算机模拟，从该正态分布中随机抽取样本量为10、25和100的样本，研究其均值的分布。图8.1展示了PBC患者总体血清白蛋白的理论正态分布及100个随机样本均值的直方图（样本量分别为10、25和100，直方图显示频数和相对频率）。100个均值的预期标准差分别为$6 / \sqrt{10}$、$6 / \sqrt{25}$和$6 / \sqrt{100}$，即1.90、1.20和0.60。可以看到，观察到的分布较为接近正态分布，  
 I used the study of patients with primary biliary cirrhosis (PBC) discussed in Chapter 4 as the basis for the simulations. I supposed that among all patients with PBC, which is the population of interest here, serum albumin values have a Normal distribution with a mean of  $35 \mathrm{~g} / \mathrm{l}$  and a standard deviation of  $6 \mathrm{~g} / \mathrm{l}$ . I used computer simulation to study the distributions of samples of sizes 10, 25 and 100 drawn at random from this Normal distribution. Figure 8.1 shows the theoretical Normal distribution of serum albumin in the population of patients with PBC together with histograms of the means of 100 random samples of sizes 10, 25, and 100. (Note that as there were 100 samples the histograms show both frequencies and relative frequencies.) The expected standard deviations of the sets of 100 means are  $6 / \sqrt{10}$ ,  $6 / \sqrt{25}$  and  $6 / \sqrt{100}$  respectively, or 1.90, 1.20 and 0.60. It can be seen that the observed distributions are reasonably Normal,  
 
-![](../images/08_Principles_of_statistical_analysis/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e0390f404715f45e84defd3e1f1df9a32017c1528334e3a4e745699e283964af.jpg)  
 
 尤其是样本量较大时，其均值和标准差均接近预期值。随着均值数量的增加，直方图将更接近正态分布。  
 especially for larger samples, and that their means and standard deviations are close to the expected values. The histograms will get nearer to a Normal distribution as the number of means increases.  
@@ -91,13 +91,13 @@ As discussed in Chapter 4, the number of subjects in a sample who have a particu
 这些模拟从经验上验证了上一节中的三个陈述。实际上，我们几乎总是只有一个样本，但因为可以预测如果取多个样本会发生什么，所以我们可以利用单个样本的数值对总体做出有力推断，并量化不确定性。  
 These simulations have verified empirically the three statements in the previous section. In practice we nearly always have just a single sample, but because we can predict what would happen if many samples were taken we can use values from a single sample to make some strong inferences about the population, and can quantify the uncertainty.  
 
-![](../images/08_Principles_of_statistical_analysis/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/336f79737dffc5e2073b1640dad969dff4868029cb57cd5d46895e35083393f8.jpg)  
 
-![](../images/08_Principles_of_statistical_analysis/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/dbc508eca628c5657d1d17fb1fdbe9dc404cd084b54335b59d3d948038fa1cb3.jpg)  
 
-![](../images/08_Principles_of_statistical_analysis/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a90d60c43614b5950a7b1d4cea8ef062179e82a5346d7ae9ea9d0443718e3fcb.jpg)  
 
-![](../images/08_Principles_of_statistical_analysis/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/578154d8d2d90b065f034fe9c8ca2e867aee5154f3f5f1bef7bd4835f988b1ba.jpg)  
 图8.3 显示了在100个随机样本中，样本容量分别为10、25和100时，患哮喘女性的观察分布（概率为0.20）。  
 Figure 8.3 Observed distributions of the number of women with asthma (probability 0.20) in 100 random samples of sizes 10, 25, and 100.  
 
@@ -196,11 +196,11 @@ We expect that the  $95\%$  confidence interval will not include the true popula
 样本均值的  $95\%$  置信区间通常被解释为一个包含总体真实均值的区间，其概率为 0.95。我们因此预期，如果对图 8.1 中显示的 100 个随机样本分别计算血清白蛋白的  $95\%$  置信区间，大约有  $5\%$  的区间不会包含  $35 \mathrm{g / l}$  这个值。图 8.4 显示了基于样本量为 100 的 100 个置信区间，其中有七个不包含  $35 \mathrm{g / l}$ 。图 8.5 显示了按样本均值大小排序的置信区间，我们可以看到有七个样本均值落在我们预期包含  $95\%$  样本均值的范围之外。该范围是通过下式计算的：  
 The  $95\%$  confidence interval for the sample mean is usually interpreted as a range of values which contains the true population mean with probability 0.95. We thus expect that if we calculate a  $95\%$  confidence interval for the mean serum albumin using each of the 100 random samples shown in Figure 8.1 we would find that about  $5\%$  of them would not include the value of  $35 \mathrm{g / l}$ . Figure 8.4 shows all 100 confidence intervals based on samples of size 100 of which seven do not include  $35 \mathrm{g / l}$ . Figure 8.5 shows the confidence intervals sorted by the size of the sample mean and we can see that seven sample means fall outside the range within which we expect  $95\%$  of sample means. This range is calculated using the  
 
-![](../images/08_Principles_of_statistical_analysis/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e52d17f3dd8fa689076bd5604d3a08d44c41dfa06dde6d8323a96822e511b7bf.jpg)  
 图 8.4 由 100 个样本量为 100 的随机样本构建的血清白蛋白均值置信区间。垂直线显示了  $95\%$  的样本均值预期落入的范围。  
 Figure 8.4 Confidence intervals for mean serum albumin constructed from 100 random samples of size 100. The vertical lines show the range within which  $95\%$  of sample means are expected to fall.  
 
-![](../images/08_Principles_of_statistical_analysis/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/b1c75c5fd5a10f7349eb57b091cccadd81378d656c3945ef84d49e5bab157e99.jpg)  
 图 8.5 图 8.4 中置信区间按随机样本均值大小排序。  
 Figure 8.5 Confidence intervals from Figure 8.4 ordered by the magnitude of the mean of the random sample.  
 

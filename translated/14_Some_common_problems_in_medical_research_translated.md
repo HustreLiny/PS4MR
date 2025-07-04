@@ -57,11 +57,11 @@ from zero, but it is more important to quantify the variability of the individua
 这里的问题是测量方法的一致性，答案包含两个方面。首先，均值差异估计了一种方法相对于另一种方法的平均偏差。这里均值差异可忽略，说明两种方法平均而言高度一致。其次，必须考虑两种方法对个体的一致性程度，为此我们使用差异的标准差。虽然可以直接用差异的标准差$(s_{diff})$作为一致性（或不一致性）的度量，但更有用的是利用标准差构建一个范围，预计该范围能覆盖大多数受试者方法间的一致性。  
 The question being asked relates to how well the methods agree, and there are two components to the answer. Firstly, the mean difference is an estimate of the average bias of one method relative to the other. Here the mean is negligible and we can say that the methods agree excellently on average. Secondly, it is essential to consider also how well the methods are likely to agree for an individual, for which purpose we use the standard deviation of the differences. Although we could simply quote the standard deviation of the differences  $(s_{diff})$  as a measure of agreement (or disagreement), it is more useful to use the standard deviation to construct a range of values which we expect to cover the agreement between the methods for most subjects.  
 
-![](../images/14_Some_common_problems_in_medical_research/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/9f7cffb294c3ed578080097e07f4a3a2ac5b7fa299562942de3a7bff6e69f41e.jpg)  
 图14.1 二尖瓣容积流量（MF）与左心室搏出量（SV）。数据来源：Zhang 等（1986）。  
 Figure 14.1 Transmitral volumetric flow (MF) and left ventricular stroke volume (SV). Data from Zhang et al. (1986).  
 
-![](../images/14_Some_common_problems_in_medical_research/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/8687cf639fd86d70315076c42de8d4ee8e1915f9bf4955bcaadbc08c1bad2733.jpg)  
 图14.2 二尖瓣容积流量与左心室搏出量之差（SV-MF）与平均值 $(\mathbf{MF} + \mathbf{SV}) / 2$ 的散点图。  
 Figure 14.2 Difference between transmitral volumetric flow and left ventricular stroke volume (SV-MF) plotted against average,  $(\mathbf{MF} + \mathbf{SV}) / 2$  
 
@@ -85,7 +85,7 @@ The researchers also compared MF and SV in 25 patients with aortic valve disease
 差异的均值和标准差的解释必须依赖临床情况—统计学无法定义可接受的一致性。  
 The interpretation of the mean and standard deviation of the differences must depend upon the clinical circumstances - it is not possible to use statistics to define acceptable agreement.  
 
-![](../images/14_Some_common_problems_in_medical_research/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e25fe76a19301f1f90c2be49e5154ef51f48b7d4d63a45831f24e76a0fc01d06.jpg)  
 图14.3 有无主动脉瓣疾病患者SV与MF的差异，显示无病患者的 $95\%$ 一致性界限。  
 Figure 14.3 Differences between SV and MF for patients with or without aortic valve disease, showing  $95\%$  limits of agreement for patients without disease.  
 
@@ -439,7 +439,7 @@ two prevalences. As noted, the sensitivity and specificity are unchanged: these 
 患病率降低的影响符合预期：真实异常越少见，阴性测试结果越能确定无异常，而阳性结果的确诊可靠性则降低。  
 The effect of a lower prevalence is much as we would expect: the more uncommon is true abnormality the more sure we can be that a negative test indicates no abnormality, and the less sure that a positive result really  
 
-![](../images/14_Some_common_problems_in_medical_research/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6bb7a80645a77c5b83d25027f797221aef286f1994cbb807b429c7b54d90ac9d.jpg)  
 图14.4 图示（a）表14.6和（b）表14.7。P表示病理状态，$\mathbf{T}$表示测试。敏感性由区域$\mathbf{P}+$中标记为$\mathbf{T}+$的比例表示，两图相同。同样，特异性由区域$\mathbf{P}-$中标记为$\mathbf{T}-$的比例表示，也相同。相反，阳性预测值是标记为$\mathbf{T}+$的区域中$\mathbf{P}+$的比例，两图差异显著。阴性预测值亦同理。  
 Figure 14.4 Graphical illustration of (a) Table 14.6 and (b) Table 14.7. P indicates the pathology and  $\mathbf{T}$  indicates the test. The sensitivity is depicted by the proportion of the area  $\mathbf{P}+$  that is labelled  $\mathbf{T}+$  , and is the same in both figures. Likewise the specificity is the proportion of the area  $\mathbf{P}-$  that is labelled  $\mathbf{T}-$  , and this is the same in both figures. Conversely, the PPV is the proportion of the area labelled  $\mathbf{T}+$  that is  $\mathbf{P}+$  , and is markedly different for the two figures. The same applies to the NPV.  
 
@@ -671,7 +671,7 @@ that is,  $- 0.624$  and  $0.308$ , and back- transform these values (using  $10
 一如既往，替代方法各有优缺点，且各有支持者。参数法依赖于数据具有接近正态分布的特性，可能需要先进行变换。我们可以使用第7.5.3节描述的非正态性正式检验。图14.5中 $\log \mathrm{IgM}$ 数据的正态概率图显示数据确实接近正态分布。另一种分位数方法对数据不做假设，但当数据为正态时，其可靠性较低。  
 As always there are advantages and disadvantages of the alternative approaches and each has strong advocates. The parametric approach depends on the data having a closely Normal distribution, perhaps after transformation. We can use a formal test of non- Normality, as described in section 7.5.3. The Normal plot for the  $\log \mathrm{IgM}$  data in Figure 14.5 shows that the data are indeed close to a Normal distribution. The alternative percentile approach makes no assumptions about the data, but is less reliable when the data are Normal.  
 
-![](../images/14_Some_common_problems_in_medical_research/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/1e6d8cee1828ee4a421f00e8763f801360e7bab2f416d0c130ad7191adb9c208.jpg)  
 图14.5 儿童血清 $\mathrm{IgM}$ 对数数据的正态概率图（Isaacs 等，1983年）。  
 Figure 14.5 Normal plot of log serum  $\mathrm{IgM}$  data in children (Isaacs et al., 1983).  
 
@@ -704,7 +704,7 @@ $$
 其中 $s$ 是观测值的标准差。该值大致等于 $s \sqrt{3 / N}$。不同样本量下 $95\%$ 参考区间边界的置信区间宽度见图14.6。对于样本量小于约50的情况，定义参考区间的值本身的置信区间比标准差更宽。  
 where  $s$  is the standard deviation of the observations. This is approximately equal to  $s \sqrt{3 / N}$ . The widths of confidence intervals for the limits of  $95\%$  reference intervals for different sample sizes are shown in Figure 14.6. For sample sizes smaller than about 50 the values defining the reference interval themselves have a confidence interval wider than the standard  
 
-![](../images/14_Some_common_problems_in_medical_research/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e5955cab3d36040daa4b7674bce4927ea90b82e8e406d185c166b53ea29ec96b.jpg)  
 图14.6 若数据服从正态分布，参数法计算的 $95\%$ 参考区间边界置信区间宽度相对于标准差的倍数。  
 Figure 14.6 Width of parametric  $95\%$  confidence interval for limits of reference interval as a multiple of the standard deviation if the data have a Normal distribution.  
 
@@ -723,11 +723,11 @@ Not only the mean but also the standard deviation may vary with age. Further, th
 这两条曲线随后被结合起来，给出每个年龄的均值±1.96标准差，所有数据经过反对数转换，得到了图14.7所示的与年龄相关的参考区间。  
 data from children aged 6 months to 6 years showed that both the mean and standard deviation of log IgM increased slightly and then decreased in the  $5\frac{1}{2}$  year period. Quadratic regression lines were fitted separately to the mean and SD of log IgM for 6 month age groups. These two curves were then combined to give mean  $\pm 1.96\mathrm{SD}$  at each age, and everything was antilogged to give the age- related reference interval shown in Figure 14.7.  
 
-![](../images/14_Some_common_problems_in_medical_research/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/7a325eb5fbf152fbd52d9cb73ef46d03823b66bfca959e8036bf07f70e7d6230.jpg)  
 图14.7 IgM的95%年龄相关参考区间（Isaacs等，1983年）。  
 Figure 14.7 95% age-related reference interval for IgM (Isaacs et al., 1983).  
 
-![](../images/14_Some_common_problems_in_medical_research/img8.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/42ac39cee4ff43de769d225ebc0d7ad8746aed37d8b8fe466516e75517933707.jpg)  
 图14.8 首胎男婴出生体重的百分位数（Altman和Coles，1980年），显示了经验（原始）百分位数和回归模型推导的曲线。  
 Figure 14.8 Centiles for birthweight of first-born male babies (Altman and Coles. 1980), showing empirical (raw) centiles and curves derived from regression models.  
 
@@ -788,7 +788,7 @@ aannn aannn aannn aannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 <table><tr><td></td><td colspan="6">给药后时间（分钟）</td><td>峰值（nmol/l）</td><td>达到峰值时间（分钟）</td><td></td></tr><tr><td>0</td><td>1</td><td>3</td><td>5</td><td>10</td><td>15</td><td>30</td><td>45</td><td>60</td><td>120</td></tr><tr><td colspan="10">第3组（单侧鼻腔给药200 mg/ml孕酮0.2 ml）</td></tr><tr><td>13</td><td>8.4</td><td>10.8</td><td>8.1</td><td>7.8</td><td>8.5</td><td>12.0</td><td>19.8</td><td>22.2</td><td>40.5</td></tr><tr><td>14</td><td>3.5</td><td>3.2</td><td>3.4</td><td>3.3</td><td>8.5</td><td>9.4</td><td>14.5</td><td>12.7</td><td>10.2</td></tr><tr><td>15</td><td>3.5</td><td>4.0</td><td>4.8</td><td>3.5</td><td>3.7</td><td>13.0</td><td>12.5</td><td>15.0</td><td>10.5</td></tr><tr><td>16</td><td>3.7</td><td>3.2</td><td>4.3</td><td>4.5</td><td>5.5</td><td>8.5</td><td>10.3</td><td>11.1</td><td>6.0</td></tr><tr><td>均值（标准误）</td><td>4.8</td><td>5.3</td><td>5.2</td><td>4.8</td><td>6.7</td><td>10.7</td><td>14.3</td><td>15.3</td><td>16.7</td></tr><tr><td></td><td>(1.2)</td><td>(1.8)</td><td>(1.0)</td><td>(1.0)</td><td>(1.2)</td><td>(1.1)</td><td>(2.0)</td><td>(2.5)</td><td>(4.1)</td></tr><tr><td colspan="10">第4组（双侧鼻腔各给药100 mg/ml孕酮0.2 ml）</td></tr><tr><td>17</td><td>5.0</td><td>5.6</td><td>6.1</td><td>7.2</td><td>13.8</td><td>26.0</td><td>26.1</td><td>25.7</td><td>20.5</td></tr><tr><td>18</td><td>4.5</td><td>5.1</td><td>13.2</td><td>21.0</td><td>26.8</td><td>28.0</td><td>22.0</td><td>17.8</td><td>15.7</td></tr><tr><td>19</td><td>8.4</td><td>6.2</td><td>8.0</td><td>18.5</td><td>33.8</td><td>35.0</td><td>26.2</td><td>23.0</td><td>19.0</td></tr><tr><td>20</td><td>4.2</td><td>3.2</td><td>4.2</td><td>4.8</td><td>10.3</td><td>13.7</td><td>17.1</td><td>18.3</td><td>15.0</td></tr><tr><td>均值（标准误）</td><td>5.5</td><td>5.0</td><td>7.9</td><td>12.9</td><td>21.2</td><td>25.7</td><td>22.8</td><td>21.2</td><td>18.2</td></tr><tr><td></td><td>(1.0)</td><td>(0.7)</td><td>(1.9)</td><td>(4.0)</td><td>(5.5)</td><td>(4.4)</td><td>(2.2)</td><td>(1.9)</td><td>(1.0)</td></tr></table>  
 <table><tr><td></td><td colspan="6">Time after administration (min)</td><td>Peak value (nmol/l)</td><td>Time to peak (min)</td><td></td></tr><tr><td>0</td><td>1</td><td>3</td><td>5</td><td>10</td><td>15</td><td>30</td><td>45</td><td>60</td><td>120</td></tr><tr><td colspan="10">Group 3 (0.2 ml of 200 mg/ml progesterone in one nostril)</td></tr><tr><td>13</td><td>8.4</td><td>10.8</td><td>8.1</td><td>7.8</td><td>8.5</td><td>12.0</td><td>19.8</td><td>22.2</td><td>40.5</td></tr><tr><td>14</td><td>3.5</td><td>3.2</td><td>3.4</td><td>3.3</td><td>8.5</td><td>9.4</td><td>14.5</td><td>12.7</td><td>10.2</td></tr><tr><td>15</td><td>3.5</td><td>4.0</td><td>4.8</td><td>3.5</td><td>3.7</td><td>13.0</td><td>12.5</td><td>15.0</td><td>10.5</td></tr><tr><td>16</td><td>3.7</td><td>3.2</td><td>4.3</td><td>4.5</td><td>5.5</td><td>8.5</td><td>10.3</td><td>11.1</td><td>6.0</td></tr><tr><td>Mean (SE)</td><td>4.8</td><td>5.3</td><td>5.2</td><td>4.8</td><td>6.7</td><td>10.7</td><td>14.3</td><td>15.3</td><td>16.7</td></tr><tr><td></td><td>(1.2)</td><td>(1.8)</td><td>(1.0)</td><td>(1.0)</td><td>(1.2)</td><td>(1.1)</td><td>(2.0)</td><td>(2.5)</td><td>(4.1)</td></tr><tr><td colspan="10">Group 4 (0.2 ml of 100 mg/ml progesterone in each nostril)</td></tr><tr><td>17</td><td>5.0</td><td>5.6</td><td>6.1</td><td>7.2</td><td>13.8</td><td>26.0</td><td>26.1</td><td>25.7</td><td>20.5</td></tr><tr><td>18</td><td>4.5</td><td>5.1</td><td>13.2</td><td>21.0</td><td>26.8</td><td>28.0</td><td>22.0</td><td>17.8</td><td>15.7</td></tr><tr><td>19</td><td>8.4</td><td>6.2</td><td>8.0</td><td>18.5</td><td>33.8</td><td>35.0</td><td>26.2</td><td>23.0</td><td>19.0</td></tr><tr><td>20</td><td>4.2</td><td>3.2</td><td>4.2</td><td>4.8</td><td>10.3</td><td>13.7</td><td>17.1</td><td>18.3</td><td>15.0</td></tr><tr><td>Mean (SE)</td><td>5.5</td><td>5.0</td><td>7.9</td><td>12.9</td><td>21.2</td><td>25.7</td><td>22.8</td><td>21.2</td><td>18.2</td></tr><tr><td></td><td>(1.0)</td><td>(0.7)</td><td>(1.9)</td><td>(4.0)</td><td>(5.5)</td><td>(4.4)</td><td>(2.2)</td><td>(1.9)</td><td>(1.0)</td></tr></table>  
 
-![](../images/14_Some_common_problems_in_medical_research/img9.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/09bdc9bf41d064b4bbb717b0a980959ae64c4b5bf6562fb4def0e754f31b4a9b.jpg)  
 图14.9 四组女性鼻腔给药孕酮后的血清孕酮水平。数据来源于表14.13。  
 Figure 14.9 Serum progesterone levels after nasal administration of progesterone in four groups of women. Data from Table 14.13.  
 
@@ -871,11 +871,11 @@ The summary measures can also be plotted. One interesting format for 'peaked' da
 曲线下面积（AUC）是总结单个个体一系列测量信息的有用方法。它是  
 The area under the curve (AUC) is a useful way of summarizing the information from a series of measurements on one individual. It is  
 
-![](../images/14_Some_common_problems_in_medical_research/img10.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f660d07039686f40ff3f0209298ea999d7c6b5f29f7ca7aed29a62717b92d38e.jpg)  
 图14.10 图14.9中血清孕酮数据的另一种展示方式。  
 Figure 14.10 Alternative display of serum progesterone data in Figure 14.9.  
 
-![](../images/14_Some_common_problems_in_medical_research/img11.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/975c5c803e5d954ab7d455a61baa6af96c3d4a2fcc62b9f43302eefe94ddce46.jpg)  
 图14.11 孕酮峰值随时间的变化图。  
 Figure 14.11 Plot of peak values of progesterone by time.  
 
@@ -948,7 +948,7 @@ When data come from ordered groups we should examine directly the possibility of
 已有多种方法用于分析此类数据。频数数据可用Freedman（1979）提出的非参数方法分析，例如检验疾病新发病例是否存在季节性变化。连续变量或比例则可通过拟合正弦曲线进行分析。  
 Several methods exist for analysing such data. Frequencies can be analysed using a non- parametric method given by Freedman (1979), for example to see if the incidence of new cases of disease varies seasonally. Continuous variables or proportions can be examined by fitting a sinusoidal  
 
-![](../images/14_Some_common_problems_in_medical_research/img12.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/a8cde01f439cad3bc98b9b9ecfda279b48f15f9a99b75074129cc356fb7cb60e.jpg)  
 图14.12 显示了IgE值超过 $1.0 \mathrm{IU / ml}$ 的观察百分比及拟合的正弦曲线。  
 Figure 14.12 Observed percentages of IgE values above  $1.0 \mathrm{IU / ml}$  and fitted sine curve.  
 

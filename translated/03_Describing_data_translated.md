@@ -11,11 +11,11 @@ In general we can divide variability into that due to known causes and that whic
 在任何研究中，我们通常希望以简单的方式总结部分数据。有时这就是统计分析的全部内容，但通常它是第一步。对于类别变量，如性别和血型，直接呈现各类别的数量是很简单的，通常还会显示该类别占总患者数的频率或百分比。图形展示时称为条形图。图3.1显示了1974年按职业划分的一般航空事故率条形图（Booze，1977）。类似的图表也可用来显示频率（或率）与另一变量值的关系。例如，图3.2展示了1979年英格兰和威尔士按星期几划分的每千次出生围产期死亡率，明显看到周末死亡率较高。条形图的纵轴必须从零开始，否则视觉效果会误导，夸大组间差异。  
 In any study we will usually want to summarize some of the data in a simple way. Sometimes this will be as far as the statistical analysis goes, but often it is a first step. For categorical variables, such as sex and blood group, it is straightforward to present the number in each category, usually indicating the frequency or percentage of the total number of patients. When shown graphically this is called a bar diagram. Figure 3.1 shows a bar diagram of general aviation accident rates in 1974 by occupation (Booze, 1977). A similar diagram can also be used to relate frequencies (or rates) to values of another variable. For example, Figure 3.2 shows perinatal mortality per 1000 births in England and Wales in 1979 by day of the week. The higher mortality rates at the weekend are clearly seen. It is very important that the vertical axis of a bar diagram starts at zero, otherwise the visual impression is misleading, with the differences between groups being exaggerated.  
 
-![](../images/03_Describing_data/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6f22c66301b575c5b8ee23f534998610b7e2879599b8bb86aa5f022da8bb9d5f.jpg)  
 图3.1 1974年按职业划分的一般航空事故率条形图（每千次）（Booze，1977）。  
 Figure 3.1 Bar diagram showing general aviation accident rates (per 1000) in 1974 by occupation (Booze, 1977).  
 
-![](../images/03_Describing_data/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/94c205f36b51e8a5d233dd04cce2f65c5ddfb544ae8d9b2748ab414530733adb.jpg)  
 图3.2 1979年英格兰和威尔士按星期几划分的围产期死亡率（Macfarlane和Mugford，1984）。  
 Figure 3.2 Perinatal mortality in England and Wales in 1979 by day of the week (Macfarlane and Mugford, 1984).  
 
@@ -93,7 +93,7 @@ Table 3.2 Concentrations of serum IgM in 298 children aged 6 months to 6 years (
 <table><tr><td>IgM   
 (g/l)</td><td>Number of Children</td></tr><tr><td>0.1</td><td>3</td></tr><tr><td>0.2</td><td>7</td></tr><tr><td>0.3</td><td>19</td></tr><tr><td>0.4</td><td>27</td></tr><tr><td>0.5</td><td>32</td></tr><tr><td>0.6</td><td>35</td></tr><tr><td>0.7</td><td>38</td></tr><tr><td>0.8</td><td>38</td></tr><tr><td>0.9</td><td>22</td></tr><tr><td>1.0</td><td>16</td></tr><tr><td>1.1</td><td>16</td></tr><tr><td>1.2</td><td>6</td></tr><tr><td>1.3</td><td>7</td></tr><tr><td>1.4</td><td>9</td></tr><tr><td>1.5</td><td>6</td></tr><tr><td>1.6</td><td>2</td></tr><tr><td>1.7</td><td>3</td></tr><tr><td>1.8</td><td>3</td></tr><tr><td>2.0</td><td>3</td></tr><tr><td>2.1</td><td>2</td></tr><tr><td>2.2</td><td>1</td></tr><tr><td>2.5</td><td>1</td></tr><tr><td>2.7</td><td>1</td></tr><tr><td>4.5</td><td>1</td></tr></table>  
 
-![](../images/03_Describing_data/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/fd987c9542c4a1b8894ab9b6b8a12b7deaa96c5ffdcc09b2928335419ef498d6.jpg)  
 图3.3 298名6个月至6岁儿童血清IgM浓度频率直方图（Isaacs等，1983）。  
 Figure 3.3 Frequency histogram of IgM concentrations in 298 children aged 6 months to 6 years (Isaacs et al., 1983).  
 
@@ -103,7 +103,7 @@ these values. If there are many different values it is often desirable to group 
 直方图中的条形通常宽度相同，因为分组大小一致。如果分组大小不一，则应考虑条形的面积与频率成正比，而非高度。这个原则在1985年伦敦哈罗区交通事故受害者年龄分布数据中得到了体现。表3.3显示了这些数据。大多数受害者为成年人，且25至59岁年龄段人数最多。显然，分组宽度差异较大，范围从1岁到35岁不等，绘制直方图时必须考虑这一点。注意，为了在直方图中包含60岁以上组，我们需假设一个合理的最大年龄，这里取80岁。  
 The bars in histograms are usually all the same width, because the groupings are the same size. If the groups are not the same size this should be allowed for by remembering that it is the area of each bar that is proportional to the frequency, not its height. This principle is illustrated on data showing the age distribution of road accident casualties in the London borough of Harrow in 1985. Table 3.3 shows the data as presented. Most of the casualties were adults, with the greatest number in the age range 25 to 59. Clearly the widths of the groupings vary considerably, from 1 to 35 years in fact, and this must be taken account of in a histogram of the data. Note that in order to include the  $60+$  age group in a histogram we have to assume a reasonable upper age limit - here it will be taken as 80.  
 
-![](../images/03_Describing_data/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/53645a919a2a225214a5fe77924710f392dfda23099305d41b6563274734fca3.jpg)  
 图3.4 与图3.3类似，但数据按0.2克/升区间分组。  
 Figure 3.4 As Figure 3.3 but data grouped in intervals of  $0.2 \text{g / l}$ .  
 
@@ -116,11 +116,11 @@ Table 3.3 Road accident casualties in the London Borough of Harrow in 1985 (excl
 首先，考虑如果忽略上述警告，绘制一个直方图，其中每个年龄组的高度表示表3.3中的频数，宽度表示年龄范围，如图3.5所示。该直方图暗示16岁和17岁受害者数量远少于成年人，而我们可能预期情况正好相反。通过让频数对应条形面积而非高度，我们得到了正确的图像，如图3.6所示。这里我们考虑的是每岁年龄的受害者人数—当没有明确数据时，我们采用  
 First, consider what happens if we ignore the above warning and draw a histogram where, for each age group, the height indicates the frequency shown in Table 3.3 and the width shows the age range - this is shown in Figure 3.5. This histogram suggests that accident victims are much less likely to be 16 and 17 year olds than adults, whereas we would probably expect the opposite to be true. We get the correct picture by making the frequencies correspond to the area of each bar rather than its height, as is shown in Figure 3.6. What we have done is consider the number of casualties per year of age - where we don't have this explicitly we take the  
 
-![](../images/03_Describing_data/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/315a72f733072bf5f380137f08f4e35b5d3c7b2962c265fb8436c231eb7a47fa.jpg)  
 图3.5 表3.3交通事故数据的错误直方图。  
 Figure 3.5 Incorrect histogram of road accident data of Table 3.3.  
 
-![](../images/03_Describing_data/img6.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/10ea3b15ef8bb9864bef9ad78e0642c3d67872722bb047f4df2a45aaed0328f5.jpg)  
 图 3.6 道路交通事故数据的正确直方图。  
 Figure 3.6 Correct histogram of road accident data.  
 
@@ -133,7 +133,7 @@ Note that this histogram just shows the observed numbers of casualties. It does 
 有时显示样本中每个区间的比例更为有用。所有频数通过除以样本量并乘以 100 转换为百分比。图 3.7(a) 显示了 IgM 数据的相对频率直方图，其与图 3.3 的唯一区别是纵轴的标注方式。另一种绘图方法是将直方图所有柱顶的中点连接起来，这称为频率多边形。图 3.7(b) 显示了同一数据的此类图形。  
 It is sometimes more useful to show the proportion of the sample in each interval. All the frequencies are converted into percentages by dividing by the sample size and multiplying by 100. Figure 3.7(a) shows the resulting relative frequency histogram for the IgM data, which differs from Figure 3.3 only in the way the vertical axis is labelled. An alternative way of plotting the data is to join the mid- points of the tops of all the vertical bars of the histogram; this is called a frequency polygon. Figure 3.7(b) shows such a plot for the same data.  
 
-![](../images/03_Describing_data/img7.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/90f603f6cf77882e9d7c3fb953c7dbcf096ab3cb21762a25c20fda14f7845935.jpg)  
 图 3.7 图 3.3 中的 IgM 数据分别以 (a) 相对频率直方图和 (b) 相对频率多边形展示。  
 Figure 3.7 IgM data in Figure 3.3 shown as (a) Relative frequency histogram, (b) Relative frequency polygon.  
 
@@ -151,7 +151,7 @@ A clever modification of the histogram called a stem- and- leaf diagram allows a
 茎叶图在许多情况下表现良好，特别是当数据值多样时，但最佳格式取决于数据性质和样本大小。表 3.2 中的 IgM 数据无法用五个“茎”（0、1、2、3、4）成功制作茎叶图，但我们可以拆分每个组，得到有用的图形，如图 3.9 所示。  
 The stem- and- leaf diagram works well in many circumstances, especially where there are many different values, but the best format depends on the nature of the data and the sample size. The IgM data in Table 3.2 cannot be made into a successful stem- and- leaf diagram using five 'stems' (0, 1, 2, 3, 4), but we can split each group to get a useful diagram, as in Figure 3.9.  
 
-![](../images/03_Describing_data/img8.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/34cd46f2b54952096553d0241d10facdd212272f30751b57edcd8a731ad7ced7.jpg)  
 
 
 ### 3.3.3 累积频数  3.3.3 Cumulative frequencies  
@@ -166,7 +166,7 @@ Table 3.4 Cumulative frequency distribution of 298 IgM values
 <table><tr><td>IgM g/l</td><td>频数</td><td>相对频率 %</td><td>累积频数</td><td>累积相对频率 %</td></tr><tr><td>0.1</td><td>3</td><td>1.0</td><td>3</td><td>1.0</td></tr><tr><td>0.2</td><td>7</td><td>2.3</td><td>10</td><td>3.4</td></tr><tr><td>0.3</td><td>19</td><td>6.4</td><td>29</td><td>9.7</td></tr><tr><td>0.4</td><td>27</td><td>9.1</td><td>56</td><td>18.8</td></tr><tr><td>0.5</td><td>32</td><td>10.7</td><td>88</td><td>29.5</td></tr><tr><td>0.6</td><td>35</td><td>11.7</td><td>123</td><td>41.3</td></tr><tr><td>0.7</td><td>38</td><td>12.8</td><td>161</td><td>54.0</td></tr><tr><td>0.8</td><td>38</td><td>12.8</td><td>199</td><td>66.8</td></tr><tr><td>0.9</td><td>22</td><td>7.4</td><td>221</td><td>74.2</td></tr><tr><td>1.0</td><td>16</td><td>5.4</td><td>237</td><td>79.5</td></tr><tr><td>1.1</td><td>16</td><td>5.4</td><td>253</td><td>84.9</td></tr><tr><td>1.2</td><td>6</td><td>2.0</td><td>259</td><td>86.9</td></tr><tr><td>1.3</td><td>7</td><td>2.3</td><td>266</td><td>89.3</td></tr><tr><td>1.4</td><td>9</td><td>3.0</td><td>275</td><td>92.3</td></tr><tr><td>1.5</td><td>6</td><td>2.0</td><td>281</td><td>94.3</td></tr><tr><td>1.6</td><td>2</td><td>0.7</td><td>283</td><td>95.0</td></tr><tr><td>1.7</td><td>3</td><td>1.0</td><td>286</td><td>96.0</td></tr><tr><td>1.8</td><td>3</td><td>1.0</td><td>289</td><td>97.0</td></tr><tr><td>2.0</td><td>3</td><td>1.0</td><td>292</td><td>98.0</td></tr><tr><td>2.1</td><td>2</td><td>0.7</td><td>294</td><td>98.7</td></tr><tr><td>2.2</td><td>1</td><td>0.3</td><td>295</td><td>99.0</td></tr><tr><td>2.5</td><td>1</td><td>0.3</td><td>296</td><td>99.3</td></tr><tr><td>2.7</td><td>1</td><td>0.3</td><td>297</td><td>99.7</td></tr><tr><td>4.5</td><td>1</td><td>0.3</td><td>298</td><td>100.0</td></tr><tr><td>总计</td><td>298</td><td>99.9</td><td></td><td></td></tr></table>  
 <table><tr><td>IgM g/l</td><td>Frequency</td><td>Relative Frequency %</td><td>Cumulative Frequency</td><td>Cumulative Relative Frequency %</td></tr><tr><td>0.1</td><td>3</td><td>1.0</td><td>3</td><td>1.0</td></tr><tr><td>0.2</td><td>7</td><td>2.3</td><td>10</td><td>3.4</td></tr><tr><td>0.3</td><td>19</td><td>6.4</td><td>29</td><td>9.7</td></tr><tr><td>0.4</td><td>27</td><td>9.1</td><td>56</td><td>18.8</td></tr><tr><td>0.5</td><td>32</td><td>10.7</td><td>88</td><td>29.5</td></tr><tr><td>0.6</td><td>35</td><td>11.7</td><td>123</td><td>41.3</td></tr><tr><td>0.7</td><td>38</td><td>12.8</td><td>161</td><td>54.0</td></tr><tr><td>0.8</td><td>38</td><td>12.8</td><td>199</td><td>66.8</td></tr><tr><td>0.9</td><td>22</td><td>7.4</td><td>221</td><td>74.2</td></tr><tr><td>1.0</td><td>16</td><td>5.4</td><td>237</td><td>79.5</td></tr><tr><td>1.1</td><td>16</td><td>5.4</td><td>253</td><td>84.9</td></tr><tr><td>1.2</td><td>6</td><td>2.0</td><td>259</td><td>86.9</td></tr><tr><td>1.3</td><td>7</td><td>2.3</td><td>266</td><td>89.3</td></tr><tr><td>1.4</td><td>9</td><td>3.0</td><td>275</td><td>92.3</td></tr><tr><td>1.5</td><td>6</td><td>2.0</td><td>281</td><td>94.3</td></tr><tr><td>1.6</td><td>2</td><td>0.7</td><td>283</td><td>95.0</td></tr><tr><td>1.7</td><td>3</td><td>1.0</td><td>286</td><td>96.0</td></tr><tr><td>1.8</td><td>3</td><td>1.0</td><td>289</td><td>97.0</td></tr><tr><td>2.0</td><td>3</td><td>1.0</td><td>292</td><td>98.0</td></tr><tr><td>2.1</td><td>2</td><td>0.7</td><td>294</td><td>98.7</td></tr><tr><td>2.2</td><td>1</td><td>0.3</td><td>295</td><td>99.0</td></tr><tr><td>2.5</td><td>1</td><td>0.3</td><td>296</td><td>99.3</td></tr><tr><td>2.7</td><td>1</td><td>0.3</td><td>297</td><td>99.7</td></tr><tr><td>4.5</td><td>1</td><td>0.3</td><td>298</td><td>100.0</td></tr><tr><td>Total</td><td>298</td><td>99.9</td><td></td><td></td></tr></table>  
 
-![](../images/03_Describing_data/img9.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6a5a639283dffea2484a1bc4ed8a56b1754e17997b7ca0133077ad3d945cc929.jpg)  
 图3.10 IgM数据展示：(a) 累积相对频率直方图，(b) 累积分布图。  
 Figure 3.10 IgM data shown as (a) Cumulative relative frequency histogram, (b) Cumulative distribution.  
 
@@ -194,7 +194,7 @@ The simplest way to describe the spread of a set of data is to quote the lowest 
 通过指定两个涵盖大部分而非全部数据值的数值，我们可以绕过大部分困难。例如，我们可以计算90%的观测值所处的区间。低于某一给定百分比的值称为百分位数（centile或percentile），对应于具有指定累积相对频率的数值。  
 By specifying two values that encompass most rather than all of the data values we get round much of the difficulty. For example, we could calculate the values between which  $90\%$  of the observations lie. The value below which a given percentage of the values occur is called a centile or percentile, and corresponds to a value with a specified cumulative relative frequency.  
 
-![](../images/03_Describing_data/img10.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/04841b57a2a696e83e0da0063733f2db6cd11e3c435129b0aa3b3b1797b137c6.jpg)  
 
 我们需要IgM值分布的第5和第95百分位数。从表3.4的最后一列可以看到，累积相对频率在IgM值为0.3 g/l的组别中超过了5%，而95%则在1.6 g/l处达到。  
 We require the 5th and 95th centiles of the distribution of IgM values. From the last column of Table 3.4 we can see that the cumulative relative frequency passes  $5\%$  somewhere in the group of IgM values of  $0.3 \mathrm{g / l}$ , and  $95\%$  is reached at the value of  $1.6 \mathrm{g / l}$ .  
@@ -214,7 +214,7 @@ A simple but useful semi- graphical way of summarizing data using centiles is th
 量化变异性的另一种方法基于计算每个值与均值距离的平均值。对于个体而言，  
 The alternative approach to quantifying variability is based on the idea of averaging the distance each value is from the mean. For an individual with  
 
-![](../images/03_Describing_data/img11.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/1fd0941406f4631c4e181c51b632430edfe6b314e18cc93c27f908be2b0ebf5f.jpg)  
 图3.12 IgM数据的箱线图，显示了 $2\frac{1}{2}$、25、50、75 和 $97\frac{1}{2}\%$ 的累积相对频率（分位数）。  
 Figure 3.12 Box-and-whisker plot of the IgM data, showing the  $2\frac{1}{2}$ , 25, 50, 75 and  $97\frac{1}{2}\%$  cumulative relative frequencies (centiles).  
 
@@ -303,7 +303,7 @@ Note that log data can be negative, and that it does not matter whether logs to 
 描述偏斜数据分布的另一种方法是计算对应于选定中心范围的分位数。例如，要获得包含 $95\%$ 观测值的范围，需要计算第 $2\frac{1}{2}$ 和第 $97\frac{1}{2}$ 百分位数。使用上一节描述的方法，  
 The alternative approach to describing the distribution of skewed data is to calculate the centiles corresponding to a chosen central range. For example, to get the values that enclose  $95\%$  of the observations we need to calculate the  $2\frac{1}{2}$ th and  $97\frac{1}{2}$ th centiles. Using the method described in the  
 
-![](../images/03_Describing_data/img12.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/642f7d38303726a3c136455be56a2c90f0d2eb204226523102d8f7436e685168.jpg)  
 图3.13 显示了 $\log_{10} \mathrm{IgM}$ 的频数直方图及均值 $\pm 2 \mathrm{SD}$ 的值。  
 Figure 3.13 Frequency histogram of  $\log_{10} \mathrm{IgM}$  showing the values of mean  $\pm 2 \mathrm{SD}$ .  
 
@@ -343,9 +343,9 @@ Table 3.5 Details of patients in each treatment group in a study of low back pai
 有时我们希望用图形方式展示两个或多个组中连续变量的分布。这可以通过为每组绘制独立的直方图实现，并将它们垂直排列，但有一种更清晰的格式能显示所有观测值。图3.14展示了一组女性在怀孕前、怀孕期间及产后尿酸的分布（Lind 等，1984）。图中展示了所有数据，作者还给出了各阶段的均值、标准差和观测数。这幅信息丰富的图形有效地结合了表格的功能，同时占用的空间很小。条形图常用于显示各组的均值和标准差，但这种格式并不理想—这类信息更适合用表格呈现，或者使用更具信息量的展示方式，如图3.14所示的图形或箱线图。  
 Sometimes we wish to show graphically the distribution of a continuous variable in two or more groups. This can be done by means of a separate histogram for each group, these being aligned vertically, but there is a rather clearer format that shows all the observations. Figure 3.14 shows the distribution of uric acid in a group of women before, during and after pregnancy (Lind et al., 1984). All the data are shown in the graph, and the authors have also given the mean, standard deviation and number of observations at each stage. This informative figure thus effectively incorporates a table while using little extra space. Bar diagrams are often used to show means and standard deviations in each group. This is not a good format – this information is better in a table, or else a more informative display, such as that in Figure 3.14 or a box- and- whisker diagram, should be used.  
 
-![](../images/03_Describing_data/img13.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/728cb555c15961382732a9b7120a48022ab481cc315a491242fadb06c226848e.jpg)  
 
-![](../images/03_Describing_data/img14.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/f37866a487f9f07b749022c28799e6907a60e0859d5a5a70ad3378fd189d75cb.jpg)  
 图3.14 健康女性在怀孕前、怀孕期间及产后血清尿酸的分布（经Lind等，1984年授权转载）。  
 Figure 3.14 Distribution of serum uric acid in a group of healthy women before, during and after pregnancy (reproduced from Lind et al., 1984, with permission).  
 
@@ -355,7 +355,7 @@ Figure 3.14 Distribution of serum uric acid in a group of healthy women before, 
 两个连续变量之间的关系可以用散点图直观展示。散点图是一种简单的图形，将一个变量的值绘制在另一变量的对应坐标上。例如，图3.15展示了表3.1中PImax数据与年龄的散点图。使用统计软件制作散点图非常简单。当存在两个或更多个体在两个变量上数值相同，应通过稍微移动点的位置来显示重叠点。有些软件包会显示重叠点的实际数量，最多显示9，数字“9”表示“9个或以上”。通过使用不同的绘图符号，可以轻松区分子组。例如，图3.15中可以用实心圆和空心圆分别表示男性和女性。散点图是一种非常有用的描述工具，常作为正式统计分析的前奏。图3.14实际上是连续变量与分类变量的散点图。  
 The relation between two continuous variables may be shown graphically in a scatter diagram. This is a simple graph in which the values of one variable are plotted against those of the other. For example, Figure 3.15 shows a scatter diagram of the PImax data of Table 3.1 related to age. Scatter diagrams are very simple to produce using statistical computer programs. When there are two (or more) individuals with identical values of both variables this should be shown, preferably by moving one point slightly. Some software packages print the actual number of coincident points up to 9, so that '9' means '9 or more'. It is easy to indicate subgroupings by using different plotting symbols. For example, in Figure 3.15 males and females could have been indicated by closed and open circles. The scatter diagram is a very useful descriptive tool, and is often valuable as a prelude to formal statistical analysis. The graph in Figure 3.14 is really a scatter diagram relating a continuous and a categorical variable.  
 
-![](../images/03_Describing_data/img15.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/6380096f97fccbe75ba118175beae2126c43f20b2b2b187d2a8df165d452ca62.jpg)  
 图3.15 PImax与年龄的散点图。  
 Figure 3.15 Scatter diagram of PImax by age.  
 
@@ -415,7 +415,7 @@ Table 3.6 Amounts of bread consumed in London from 1960 to 1980 (g per person pe
 关于图形方法的优秀著作有Tufte（1983），统计图形则由Moses（1987）讨论。许多创新的描述方法由Tukey（1977）提出。  
 An excellent book on graphical methods in general is that by Tufte (1983), and graphs for statistics are discussed by Moses (1987). Many innovative ideas for descriptive methods are described by Tukey (1977).  
 
-![](../images/03_Describing_data/img16.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/296a27b9781f9d6606954eab133862cc47f2d30a4cea8861fc2f88cdf832af34.jpg)  
 
 
 ## 练习  EXERCISES  

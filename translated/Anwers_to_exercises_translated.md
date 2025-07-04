@@ -179,7 +179,7 @@ changes over time as being causally related. Second, we would expect them to hav
 7.1 图A7.1显示了数据的散点图。最偏离总体趋势的点位于左下角，对应患者19。该患者的楔压实际为 $28 \mathrm{mmHg}$。  
 7.1 Figure A7.1 shows a scatter diagram of the data. The point that is most distant from the general trend is in the bottom left- hand corner, corresponding to patient 19. This patient's wedge pressure was actually  $28 \mathrm{mmHg}$ .  
 
-![](../images/Anwers to exercises/img1.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/10fc9ebaa5de5b42304e3b98b2ac5fe3f26359faa7c59ae857e16a45c94f2397.jpg)  
 
 7.2 下表显示了计算过程：  
 7.2 The following table shows the calculations:  
@@ -190,7 +190,7 @@ changes over time as being causally related. Second, we would expect them to hav
 正态分数可以通过许多统计软件获得。否则，可通过反向使用表B1获得。这些数据的正态图非常直，如图A7.2所示。  
 The Normal scores can be obtained in many statistics packages. Otherwise they can be obtained by using Table B1 'in reverse'. The Normal plot of these data is very straight, as is shown in Figure A7.2.  
 
-![](../images/Anwers to exercises/img2.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/e6404a792646249f8fbdb8afe4ec22b6a1854a76194410ea1281c13cc23e752c.jpg)  
 
 7.3 末位数字（剂量SA时为倒数第二位数字）的分布如下：  
 7.3 The terminal digits (or penultimate digits in the case of dose of SA) are distributed as follows:  
@@ -690,7 +690,7 @@ The mean and SD of the differences ( $^{51}\mathrm{Cr}$ - biotin) are  $- 85.0$ 
 (d) 如果某种方法受食用鸡蛋影响，则建议排除食用过鸡蛋的患者。相反，仅仅因为某些患者…  
 (d) If one method is affected by consumption of eggs then it would be advisable to exclude patients who had eaten eggs. In contrast, it would be completely invalid to omit some patients simply because  
 
-![](../images/Anwers to exercises/img3.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/d67b49326a77dcb77806ed44021158421162f52116b658864163387694ff27b6.jpg)  
 
 他们的数据存在差异。作者的评论令人好奇，因为他们没有说明哪位患者吃过鸡蛋。如果排除两名疑似数值异常的患者，两种方法间差异的均值和标准差变为 $-20.2$ 和 $112.2 \mathrm{ml}$，有了显著改善。修正后的协议限如图 A14.1 中的虚线所示。  
 their data were discrepant. The authors' comment is curious, as they do not say which of the patients had eaten an egg. If the two patients with suspect values are excluded, the mean and SD of the between method differences become  $- 20.2$  and  $112.2 \mathrm{ml}$  , a considerable improvement. The revised limits of agreement are shown in Figure A14.1 as dashed lines.  
@@ -698,7 +698,7 @@ their data were discrepant. The authors' comment is curious, as they do not say 
 【14】2 (a) 均值绘制在图 A14.2 中。两组的均值显示出非常相似的模式。  
 14.2 (a) The means are plotted in Figure A14.2. The means for the two groups show a very similar pattern.  
 
-![](../images/Anwers to exercises/img4.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/8c827aa7e9db98f45e21ea6616d5f030bbd28a5ea4eb747a9e5e2bb0e31222b9.jpg)  
 
 (b) 两组的峰值均值和标准差以及曲线下面积的均值和标准差如下：  
 (b) The mean and SD of the peak values and areas under the curves for the two groups are  
@@ -712,7 +712,7 @@ The two groups can be compared by two sample  $t$  tests, which give  $t = 1.53$
 (c) 图 A14.3 中显示的个体曲线变化较大—许多曲线与平均曲线差异明显。均值是否能很好地代表整体模式，仍需判断。  
 (c) The individual curves shown in Figure A14.3 show considerable variation - many look very different from the mean curves. It is a matter of judgement whether the means are a good representation of the overall pattern.  
 
-![](../images/Anwers to exercises/img5.jpg)  
+![](https://cdn-mineru.openxlab.org.cn/extract/77a6b115-a348-4fd3-8d0d-227011c94856/bad038c61844d02b9fb50870ea1687adaaaf6d25c0687130a542d4a90c4dce08.jpg)  
 图 A14.3 时间（小时）  
 Figure A14.3 Time (hours)  
 
