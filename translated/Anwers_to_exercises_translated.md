@@ -1,5 +1,114 @@
 # 习题答案  Answers to exercises  
 
+这些解答通常不包括作为分析常规部分通常会生成的图表。  
+These solutions do not in general include the graphs that would usually be produced routinely as part of the analysis.
+
+常用缩写有：  
+Common abbreviations are:
+
+SD 标准差  
+SD standard deviation
+
+SE 标准误  
+SE standard error
+
+CI 置信区间  
+CI confidence interval
+
+df 自由度  
+df degrees of freedom
+
+# 第3章  
+# CHAPTER 3
+
+3.1 (a) 截尾数据。  
+3.1 (a) Censored.
+
+(b) 我们不知道SI的上限。未截尾的数据表明分布呈正偏态（偏右）。  
+(b) We do not know the upper limit of SI. The uncensored data show that the distributions are positively skewed (skewed to the right).
+
+(c) 数据呈偏态分布，且部分值被删失。  
+(c) The data are skewed and some values are censored.
+
+(d) 分别为3.8和22.3。  
+(d) 3.8 and 22.3 respectively.
+
+(e)  $1135\mathrm{mg}$  
+(e)  $1135\mathrm{mg}$
+
+(f) 无不良反应 有不良反应  
+(f) Without adverse reactions With adverse reactions
+
+2 2 99
+
+3 135799 3 89
+
+4 1234489 4 1244669999
+
+5 1337899 5 01113333347799
+
+6 11457 6 12237788
+
+7 122 7 4
+
+(g) 两组的中位年龄可从茎叶图中轻松得出，分别为52岁和53岁，表明不良反应与年龄无关。  
+(g) The median ages of the two groups are easily obtained from the stem-and-leaf diagrams as 52 and 53, suggesting that adverse reactions are not age-related.
+
+3.2 (a) 答案取决于“更可能”的解释。图表显示涉及职业飞行员的事故多于其他任何群体，但未提供个体风险的信息。  
+3.2 (a) The answer depends upon the interpretation of 'more likely'. The Figure shows that more accidents involve professional pilots than any other group, but gives no information of the risk per individual.
+
+(b) 当根据各组飞行量调整数据后，显然职业飞行员的风险最低。风险最高的是家庭主妇和学生。不同的答案可由飞行量与事故风险之间的强负相关关系解释。  
+(b) When the figures are adjusted for the amount of flying in each group it is clear that professional pilots had much the lowest risk. The highest risks were among housewives and students. The different answers are explained by the strong negative relation between the amount of flying and the risk of an accident.
+
+3.3 图3.12显示了 $2_{2}^{1}$ 、25、50、75 和 $97_{2}^{1}$ 百分位数。所需观察值的排名是样本量加1（299）乘以0.025、0.25、0.5、0.75 和 0.975。  
+3.3 Figure 3.12 shows the  $2_{2}^{1}$ , 25, 50, 75 and  $97_{2}^{1}$  centiles. The ranks of the
+
+这些值分别为7.475、74.75、149.5、224.25 和 291.525。可从表3.4中找到这些排名两侧的观察值（计算累计频数列有助于查找），并通过插值法获得所需的百分位数。然而，在每种情况下，所需排名两侧的观察值相同，因此IgM分布的百分位数简单地为0.2、0.5、0.7、1.0 和 $2.0 \mathrm{g} / \mathrm{l}$。  
+required observations are thus the sample size plus 1 (299) multiplied by 0.025, 0.25, 0.5, 0.75 and 0.975. These values are 7.475, 74.75, 149.5, 224.25 and 291.525. The observations with ranks either side of these values can be found from Table 3.4 (it helps to calculate a column of cumulative frequencies), and interpolation used to get the required centiles. However, in each case the observations with ranks either side of the required rank are the same, so the centiles of the distribution of IgM are obtained simply as 0.2, 0.5, 0.7, 1.0 and  $2.0 \mathrm{g} / \mathrm{l}$ .
+
+# 第4章  
+# CHAPTER 4
+
+4.1 0.023 或 $2.3\%$（来自表 B1）。  
+4.1 0.023 or  $2.3\%$  (from Table B1).
+
+4.2 按照第 4.9.1 节给出的方法，我们需要计算获得 0、1 或 2 品脱 B 型血的概率。因此，我们需要计算从 100 个样本中选出这些数量的方法数，即：  
+4.2 Following the method given in section 4.9.1, we need to calculate the probabilities of obtaining 0, 1, or 2 pints of group B blood. We thus need to calculate the number of ways of choosing these numbers from a sample of 100, which are:
+
+$$
+\begin{array}{l}{{\binom{100}{0}~=~1}}\\ {{\binom{100}{1}~=~\binom{100}{0}\times100/1=100}}\\ {{\binom{100}{2}~=~\binom{100}{1}\times99/2=4950}}\end{array}
+\begin{array}{l}{{\binom{100}{0}~=~1}}\\ {{\binom{100}{1}~=~\binom{100}{0}\times100/1=100}}\\ {{\binom{100}{2}~=~\binom{100}{1}\times99/2=4950}}\end{array}
+$$
+
+使用第 4.9.1 节中的公式，所需概率为  
+Using the formula in section 4.9.1, the required probability is
+
+$$
+\begin{array}{l}{{(0.08)^{0}(0.92)^{100}+100(0.08)^{1}(0.92)^{99}+4950(0.08)^{2}(0.92)^{98}}}\\ {{=0.00024+0.00208+0.00895=0.0113.}}\end{array}
+\begin{array}{l}{{(0.08)^{0}(0.92)^{100}+100(0.08)^{1}(0.92)^{99}+4950(0.08)^{2}(0.92)^{98}}}\\ {{=0.00024+0.00208+0.00895=0.0113.}}\end{array}
+$$
+
+获得少于三品脱 B 型血的概率约为 1/100，即 0.01。  
+The probability of getting fewer than three pints of group B blood is about 1 in 100, or 0.01.
+
+4.3 由于男孩的概率略高于女孩，男孩最多的序列最可能出现，即最后一个序列。其他两个序列出现的概率相等。  
+4.3 As the probability of a boy is slightly greater than the probability of a girl, the sequence with the most boys is most likely, which is the last sequence. The other two sequences are equally likely.
+
+4.4 (a) 0.0013。  
+4.4 (a) 0.0013.
+
+(b) $20000 \times 0.0013 = 26$  
+(b)  $20000 \times 0.0013 = 26$
+
+4.5 (a) 这个问题可以反过来考虑，即我们希望评估必要的样本量，使得所有儿童检测结果均为阴性的概率小于 0.05。数学上，我们需要样本量 $m$，使得 $0.9^{m} < 0.05$。通过反复试验可知，$m=29$。（如果数学功底扎实，你可能会计算出 $m$ 是大于 $\log(0.05) / \log(0.9)$ 的最小整数。）  
+4.5 (a) The question can be reversed, so that we wish to evaluate the necessary sample size so that the probability of all the children being negative to the test is  $< 0.05$ . In mathematics, we require the sample size  $m$ , such that  $0.9^{m} < 0.05$ . It is simple to show, by trial and error, that we need  $m = 29$ . (If your maths is good, you might have evaluated  $m$  as the smallest integer greater than  $\log (0.05) / \log (0.9)$ .)
+
+(b) 它没有影响。  
+(b) It has no effect.
+
+4.6 一开始的最小高度是 $(172 - 175.8) / 5.84 = - 0.65$  
+4.6 At the start the minimum height was  $(172 - 175.8) / 5.84 = - 0.65$
+
 距离均值的标准差。从表B1中，身高超过该值的男性比例为0.7422（约74%）。在25年期末，最低身高为$(172 - 179.1) / 5.84 = -1.22$个标准差。从表B1中，身高高于最低值的男性比例现在为0.8888，约89%。不合格男性的比例减少了一半以上。  
 standard deviations from the mean. From Table B1, the proportion of men taller than this would be 0.7422 (about  $74\%$ ). At the end of the 25 year period the minimum height was  $(172 - 179.1) / 5.84 = - 1.22$  standard deviations from the mean. From Table B1, the proportion of men above the minimum is now 0.8888, or about  $89\%$ . The proportion of ineligible men has more than halved.  
 

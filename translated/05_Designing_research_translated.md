@@ -1,7 +1,7 @@
 # 5 研究设计  5 Designing research  
 
-临床研究中，可能没有哪一方面比研究设计更容易被忽视。热心的年轻研究者参加医学统计课程，学会了无数计算 $\mathbf{\nabla}^{\bullet}\mathbf{P}^{\bullet}$ 值的方法，却很少学会如何正确组织一个临床研究项目。然而，严谨的研究设计是高质量临床研究的基础。  
-Probably no aspect of clinical research is as neglected as study design. Eager young investigators attend classes on medical statistics, find dozens of ways to compute  $\mathbf{\nabla}^{\bullet}\mathbf{P}^{\bullet}$  values, but rarely learn how to organize a clinical research project properly. Yet careful study design is the foundation of quality clinical research.  
+临床研究中，可能没有哪一方面比研究设计更容易被忽视。热心的年轻研究者参加医学统计课程，学会了无数计算 $P$ 值的方法，却很少学会如何正确组织一个临床研究项目。然而，严谨的研究设计是高质量临床研究的基础。  
+Probably no aspect of clinical research is as neglected as study design. Eager young investigators attend classes on medical statistics, find dozens of ways to compute  $P$  values, but rarely learn how to organize a clinical research project properly. Yet careful study design is the foundation of quality clinical research.  
 
 Noller 和 Melton (1985)  
 Noller and Melton (1985)  
@@ -41,12 +41,9 @@ Research design is arguably the most important aspect of the statistical contrib
 研究设计可以按多种方式分类，部分分类如下：  
 Research designs can be classified in several ways, some of which are:  
 
-【1】观察性或实验性；   
-1. observational or experimental;   
-【2】前瞻性或回顾性；   
-2. prospective or retrospective;   
-【3】纵向或横断面。  
-3. longitudinal or cross-sectional.  
+【1】观察性或实验性 observational or experimental;   
+【2】前瞻性或回顾性 prospective or retrospective;   
+【3】纵向或横断面 longitudinal or cross-sectional.  
 
 这些术语将在下文解释。第一种分类与研究目的相关，而其他分类描述数据的收集方式。并非所有分类的组合都是可能的，但大多数是。  
 These terms are explained below. The first classification relates to the purpose of the study, while the others describe the way in which the data are collected. Not all combinations of these classifications are possible, but most are.  
@@ -115,9 +112,9 @@ Chapters 3 and 4 both began with comments about the importance of variability to
 Further, individuals will exhibit similar variation in other characteristics not directly being studied but which might affect the variables of interest. Many of the principles of experimental design are aimed at trying to control variation that we are not interested in, so that we can focus our attention on the variability that we are interested in. Two consequences of this general variability relevant to the design of studies are:  
 
 1. 采样时需谨慎，确保样本具有代表性。   
-1. Care is needed to make samples representative of the population.   
+Care is needed to make samples representative of the population.   
 2. 在比较研究中，需谨慎使各组在已知变异来源上保持相似。  
-2. In comparative studies care is needed in making groups similar with respect to known sources of variation.  
+In comparative studies care is needed in making groups similar with respect to known sources of variation.  
 
 此外，我们需牢记，当感兴趣的测量值变异较大时，需要较大的样本量以获得可靠结果。  
 In addition, we need to bear in mind that when the measurement of interest is highly variable, large samples are needed to get reliable results.  
