@@ -189,6 +189,12 @@
                         </a>
                         {{/if}}
 
+                        <!-- Page TOC Toggle Button -->
+                        <button id="pagetoc-toggle" class="icon-button" type="button" title="Toggle page contents" 
+                            aria-label="Toggle page contents" aria-expanded="false">
+                            <i class="fa fa-list"></i>
+                        </button>
+
                     </div>
                 </div>
 
@@ -220,10 +226,18 @@
                         <div class="content-wrap">
                             {{{ content }}}
                         </div>
-                        <div class="sidetoc">
-                            <nav id="pagetoc"></nav>
-                        </div>
                     </main>
+                    
+                    <!-- Floating Page TOC Panel -->
+                    <div id="pagetoc-panel" class="pagetoc-panel hidden">
+                        <div class="pagetoc-header">
+                            <span class="pagetoc-title">目录</span>
+                            <button id="pagetoc-close" class="pagetoc-close-btn" type="button" aria-label="Close page contents">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <nav id="pagetoc" class="pagetoc-content"></nav>
+                    </div>
                     
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
