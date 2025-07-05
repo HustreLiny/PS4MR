@@ -379,8 +379,7 @@ and
 So we have  
 
 $$  
-\begin{array}{r l}&{\left(\begin{array}{l}{10}\\ {0}\end{array}\right)=1}\\ &{\left(\begin{array}{l}{10}\\ {1}\end{array}\right)=\left(\begin{array}{l}{10}\\ {0}\end{array}\right)\times10/1=10=\left(\begin{array}{l}{10}\\ {9}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {2}\end{array}\right)=\left(\begin{array}{l}{10}\\ {1}\end{array}\right)\times9/2=45=\left(\begin{array}{l}{10}\\ {8}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {3}\end{array}\right)=\left(\begin{array}{l}{10}\\ {2}\end{array}\right)\times8/3=120=\left(\begin{array}{l}{10}\\ {7}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {4}\end{array}\right)=\left(\begin{array}{l}{10}\\ {3}\end{array}\right)\times7/4=210=\left(\begin{array}{l}{10}\\ {6}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {5}\end{array}\right)=\left(\begin{array}{l}{10}\\ {4}\end{array}\right)\times6/5=252}\end{array}  
-\begin{array}{r l}&{\left(\begin{array}{l}{10}\\ {0}\end{array}\right)=1}\\ &{\left(\begin{array}{l}{10}\\ {1}\end{array}\right)=\left(\begin{array}{l}{10}\\ {0}\end{array}\right)\times10/1=\begin{array}{l}{10=\left(\begin{array}{l}{10}\\ {9}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {2}\end{array}\right)=\left(\begin{array}{l}{10}\\ {1}\end{array}\right)\times\begin{array}{l}{9/2=\begin{array}{l}{45=\left(\begin{array}{l}{10}\\ {8}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {3}\end{array}\right)=\left(\begin{array}{l}{10}\\ {2}\end{array}\right)\times\begin{array}{l}{8/3=120=\left(\begin{array}{l}{10}\\ {7}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {4}\end{array}\right)=\left(\begin{array}{l}{10}\\ {3}\end{array}\right)\times\begin{array}{l}{7/4=210=\left(\begin{array}{l}{10}\\ {6}\end{array}\right)}\\ {\left(\begin{array}{l}{10}\\ {5}\end{array}\right)=\left(\begin{array}{l}{10}\\ {4}\end{array}\right)\times\begin{array}{l}{6/5=252}\end{array}}\end{array}  
+\begin{array}{r l}&{\left(\begin{array}{l}{10}\\ {0}\end{array}\right)=1=\left(\begin{array}{l}{10}\\ {10}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {1}\end{array}\right)=\left(\begin{array}{l}{10}\\ {0}\end{array}\right)\times10/1=10=\left(\begin{array}{l}{10}\\ {9}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {2}\end{array}\right)=\left(\begin{array}{l}{10}\\ {1}\end{array}\right)\times9/2=45=\left(\begin{array}{l}{10}\\ {8}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {3}\end{array}\right)=\left(\begin{array}{l}{10}\\ {2}\end{array}\right)\times8/3=120=\left(\begin{array}{l}{10}\\ {7}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {4}\end{array}\right)=\left(\begin{array}{l}{10}\\ {3}\end{array}\right)\times7/4=210=\left(\begin{array}{l}{10}\\ {6}\end{array}\right)}\\ &{\left(\begin{array}{l}{10}\\ {5}\end{array}\right)=\left(\begin{array}{l}{10}\\ {4}\end{array}\right)\times6/5=252}\end{array}  
 $$  
 
 因此，10人中有4人为B型血的概率是  
@@ -420,8 +419,7 @@ The general Poisson formula for the probability of  $k$  events is  $\mathrm{e}^
 If the conditions for a Poisson distribution hold, the probability of getting no new cases on a day is  
 
 $$  
-$P(0) = \mathrm{e}^{-\mu}$。  
-P(0) = \mathrm{e}^{-\mu}.  
+P(0) = \mathrm{e}^{-\mu}.
 $$  
 
 最适合数据的泊松分布具有与观察值相同的均值：2.2。因此这里 $P(0)$ 为 $\mathrm{e}^{- 2.2} = 0.111$。我们可以不用上述复杂公式，而通过关系式 $P(i) = mP(i - 1) / i$ 计算 $P(1)$、$P(2)$ 等，其中 $m$ 是样本均值。于是我们有  

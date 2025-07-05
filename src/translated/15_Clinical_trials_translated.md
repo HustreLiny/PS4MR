@@ -738,7 +738,7 @@ A problem with the analysis of crossover trials is that the important test for a
 In contrast Ueshima et al. (1987) found a marginally significant  $(0.05 < \mathbf{P} < 0.10)$  treatment- period interaction in a crossover trial to investigate the possible effect on blood pressure of reducing alcohol intake. They discarded the data from the second period.  
 
 一种图形方法是绘制两周期差值与两周期平均值的散点图，使用不同符号区分两组（Clayton和Hills，1987）。两组垂直分离表明治疗间存在差异。如果无治疗-周期交互作用，两组在水平方向上应无差异，且两组数据应对称分布于 $y=0$ 线的两侧，如图15.3(a)所示。图15.3(b)展示了尼卡地平试验的此类图形，显示两组间存在水平和垂直差异，与前述结果一致。  
-A graphical approach is to produce a scatter plot of the difference between the two periods against the average of the two periods, using different symbols to identify the two groups (Clayton and Hills, 1987). Vertical separation of the two groups is an indication of a difference between the treatments. If there is no treatment- period interaction there should be no horizontal difference between the groups, and the data for the two groups should lie symmetrically either side of the line  $y = 0$ , as in Figure 15.3(a). Figure 15.3(b) shows such a plot for the nicardipine trial, indicating both horizontal and vertical differences between the two groups, in line with the results already presented.  
+A graphical approach is to produce a scatter plot of the difference between the two periods against the average of the two periods, using different symbols to identify the two groups (Clayton and Hills, 1987). Vertical separation of the two groups is an indication of a difference between the treatments. If there is no treatment- period interaction there should be no horizontal difference between the groups, and the data for the two groups should lie symmetrically either side of the line $y = 0$, as in Figure 15.3(a). Figure 15.3(b) shows such a plot for the nicardipine trial, indicating both horizontal and vertical differences between the two groups, in line with the results already presented.  
 
 比较每周期开始时的基线测量值可判断洗脱期是否成功。例如，表15.6  
 A comparison of baseline readings taken at the start of each period can show whether the washout period was successful. For example, Table 15.6  
@@ -777,7 +777,6 @@ In most cases the statistical analysis of a clinical trial will be simple, at le
 
 是否合理假设结果同样适用于女性，或年轻或高龄男性？在没有相反信息的情况下，通常会推断结果具有更广泛的适用性，但应考虑不同群体可能有不同反应的可能性。正是基于这种可能性，才进行亚组分析，因为它们可能揭示不同患者群体对治疗（或副作用）效果的差异。不幸的是，如上所述，进行多次此类分析存在得出误导性结果的风险。  
 reasonable to assume that the results apply to women too, or to young or very old men？ In the absence of any information to the contrary it is common to infer wider applicability of results, but the possibility that different groups would respond differently should be borne in mind. It is because of this possibility that subgroup analyses are carried out, as they may give clues about variation in the effectiveness of a treatment (or side- effects) for different groups of patients. Unfortunately, as indicated above, there is a risk of coming up with a misleading result as a consequence of carrying out several such analyses.  
-
 
 ### 15.5.2 所有已发表的试验  15.5.2 All published trials  
 

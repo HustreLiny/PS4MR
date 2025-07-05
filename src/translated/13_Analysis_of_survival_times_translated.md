@@ -349,8 +349,7 @@ As shown in Figure 13.4, the time span of the study is divided into time interva
 我们按照第10章的方法计算期望失败数，即 \(e_{1} = r_{1}f / r\) 和 \(e_{2} = r_{2}f / r\)。然后对整个表的观察值和期望值求和，得到 \(O_{1} = \sum f_{1}\)、\(E_{1} = \sum e_{1}\) 等。注意 \(O_{1} + O_{2} = E_{1} + E_{2}\)，这一等式应在手工计算时加以验证。计算对数秩检验统计量的最简单方法是通过  
 We calculate expected numbers of failures as in Chapter 10, so that  $e_{1} = r_{1}f / r$  and  $e_{2} = r_{2}f / r$  . We then sum the observed and expected values for the whole table to get  $O_{1} = \Sigma f_{1}$  ,  $E_{1} = \Sigma e_{1}$  , etc. Note that  $O_{1} + O_{2} = E_{1} + E_{2}$  , an equivalence that should be verified for hand calculations. The simplest way to calculate the logrank test statistic is by  
 
-$$  
-\(X^{2} = \frac{(O_{1} - E_{1})^{2}}{E_{1}} + \frac{(O_{2} - E_{2})^{2}}{E_{2}}\)。  
+$$   
 X^{2} = \frac{(O_{1} - E_{1})^{2}}{E_{1}} +\frac{(O_{2} - E_{2})^{2}}{E_{2}}.  
 $$  
 

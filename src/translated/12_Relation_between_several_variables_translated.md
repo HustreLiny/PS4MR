@@ -536,7 +536,6 @@ Figure 12.3 Normal plot of residuals from regression model in Table 12.16.
 We can use the multiple regression equation to obtain a predicted value of the dependent  $(y)$  variable for any individual with cystic fibrosis. For example, using the model in Table 12.16 the predicted PEmax for an individual is:  
 
 $$  
-$y_{fit} = 126.334 + 1.536 \times \mathrm{weight} - 1.465 \times \mathrm{BMP} + 1.109 \times \mathrm{FEV}_{1}$。  
 y_{f i t} = 126.334 + 1.536\times \mathrm{weight} - 1.465\times \mathrm{BMP} + 1.109\times \mathrm{FEV}_{1}.  
 $$  
 

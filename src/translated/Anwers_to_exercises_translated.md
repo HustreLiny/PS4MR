@@ -393,8 +393,7 @@ where  $+$  and  $-$  refer to presence or absence of exposure to loud noise at 
 (a) 报告暴露于噪声的病例和对照比例分别为0.674（58/86）和0.535（46/86）。比例差为0.14，95%置信区间为0.02到0.26。比例差可用McNemar检验比较，结果为  
 (a) The proportions of cases and controls reporting exposure to loud noise were 0.674 (58/86) and 0.535 (46/86). The difference in proportions is 0.14, with the  $95\%$  CI of 0.02 to 0.26. The proportions can be compared using McNemar's test, which gives  
 
-$$  
-$z_{c} = 11 / \sqrt{28} = 2.08$ （$\mathrm{P} = 0.04$）。  
+$$   
 z_{c} = 11 / \sqrt{28} = 2.08 (\mathrm{P} = 0.04).  
 $$  
 

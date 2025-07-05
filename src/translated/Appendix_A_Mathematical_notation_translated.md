@@ -223,8 +223,7 @@ $<$ 和 $>$ 用于表示不等式：
 $<$  and  $>$  are used to indicate inequalities:  
 
 $$  
-$a < b$：$a$ 小于 $b$。  
-a< b\colon a\mathrm{~is~less~than~}b  
+a< b\colon a\mathrm{~is~less~than~}b
 $$  
 
 $a > b$：$a$ 大于 $b$。  

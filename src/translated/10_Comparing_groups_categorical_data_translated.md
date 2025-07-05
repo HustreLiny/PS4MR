@@ -33,8 +33,7 @@ Suppose a general practitioner chooses a random sample of 215 women from the pat
 如第8.4.3节所示，比例 $p$ 的标准误为 $se(p) = \sqrt{p(1 - p) / n}$。因此，观察到的患哮喘女性比例的标准误为 $\sqrt{0.18 \times 0.82 / 215} = 0.0262$。女性哮喘患病比例的95%置信区间为  
 As we saw in section 8.4.3, the standard error of a proportion  $p$  is  $se(p) = \sqrt{p(1 - p) / n}$ . So the standard error of the observed proportion of women with asthma is  $\sqrt{0.18 \times 0.82 / 215} = 0.0262$ . The 95% confidence interval for the proportion of women with asthma in the population is thus from  
 
-$$  
-0.$0.18 - 1.96 \times 0.0262 \qquad \text{到} \qquad 0.18 + 1.96 \times 0.0262$  
+$$
 0.18 - 1.96 \times 0.0262 \qquad \text{to} \qquad 0.18 + 1.96 \times 0.0262  
 $$  
 
@@ -131,32 +130,28 @@ As an example I will consider data from a randomized clinical trial comparing in
 如第8.4.4节所示，观察到的比例差异 $p_{1} - p_{2}$ 的标准误差为  
 As shown in section 8.4.4, the standard error of the difference between the observed proportions,  $p_{1} - p_{2}$ , is given by  
 
-$$  
-\begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ {= \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}  
+$$   
 \begin{array}{r}{s e(p_{1} - p_{2}) = \sqrt{v a r(p_{1}) + v a r(p_{2})}}\\ {= \sqrt{\frac{p_{1}(1 - p_{1})}{n_{1}} + \frac{p_{2}(1 - p_{2})}{n_{2}}}.} \end{array}  
 $$  
 
 只要样本量和比例不太小，$p_{1} - p_{2}$ 的抽样分布将近似正态分布。因此，我们可以很简单地计算95%的置信区间为  
 The sampling distribution of  $p_{1} - p_{2}$  will be approximately Normal as long as the sample size and proportions are not very small. We can thus calculate the 95% confidence interval very simply as  
 
-$$  
-$p_{1} - p_{2} - 1.96 \times s e(p_{1} - p_{2}) \quad \text{到} \quad p_{1} - p_{2} + 1.96 \times s e(p_{1} - p_{2})$。  
+$$
 p_{1} - p_{2} - 1.96 \times s e(p_{1} - p_{2}) \qquad \text{to} \qquad p_{1} - p_{2} + 1.96 \times s e(p_{1} - p_{2}).  
 $$  
 
 在示例中，观察到的比例差异为  
 In the example, the difference in observed proportions is  
 
-$$  
-$p_{1} - p_{2} = 0.7500 - 0.3077 = 0.4423$  
+$$
 p_{1} - p_{2} = 0.7500 - 0.3077 = 0.4423  
 $$  
 
 标准误差为  
 and the standard error is  
 
-$$  
-$s e(p_{1} - p_{2}) = \sqrt{\frac{0.75 \times 0.25}{12} + \frac{0.3077 \times 0.6923}{13}} = 0.1789$。  
+$$ 
 s e(p_{1} - p_{2}) = \sqrt{\frac{0.75 \times 0.25}{12} + \frac{0.3077 \times 0.6923}{13}} = 0.1789.  
 $$  
 
@@ -344,8 +339,7 @@ $$
 我们计算检验统计量为  
 and we calculate our test statistic as  
 
-$$  
-\begin{array}{c}{{z=\frac{p_{1}-p_{2}}{s e(p_{1}-p_{2})}}}\\ {{=\frac{(b-c)/n}{\sqrt{b+c}/n}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
+$$   
 \begin{array}{c}{{z=\frac{p_{1}-p_{2}}{s e(p_{1}-p_{2})}}}\\ {{=\frac{(b-c)/n}{\sqrt{b+c}/n}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
 $$  
 
@@ -355,8 +349,7 @@ which is one of the simplest formulae in statistics. An alternative derivation o
 在本例中，我们得到  
 In the example we get  
 
-$$  
-\( z = \frac{3 - 9}{\sqrt{3 + 9}} = -1.73 \)  
+$$ 
 z = \frac{3 - 9}{\sqrt{3 + 9}} = -1.73  
 $$  
 
@@ -369,15 +362,13 @@ giving  $\mathbf{P} = 0.08$  . We cannot reject the null hypothesis at the  $5\%
 We ought to use a continuity correction when comparing paired proportions, especially in small samples. As with the unpaired case we use the formula  
 
 $$  
-\( z_{c} = \frac{|p_{1} - p_{2}| - \frac{1}{2}\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}{se(p_{1} - p_{2})} \)  
 z_{c} = \frac{|p_{1} - p_{2}| - \frac{1}{2}\Big(\frac{1}{n_{1}} + \frac{1}{n_{2}}\Big)}{s e(p_{1} - p_{2})}  
 $$  
 
 但这里两个样本大小相同，所以我们得到  
 but here the two samples are the same size, so we get  
 
-$$  
-\begin{array}{c}{{z_{c}=\frac{\frac{1}{n}\left|b-c\right|-\frac{1}{2}\left(\frac{1}{n}+\frac{1}{n}\right)}{(\sqrt{b+c})/n}}}\\ {{=\frac{\left|b-c\right|-1}{\sqrt{b+c}}.}}\end{array}  
+$$
 \begin{array}{c}{{z_{c}=\frac{\frac{1}{n}\left|b-c\right|-\frac{1}{2}\left(\frac{1}{n}+\frac{1}{n}\right)}{(\sqrt{b+c})/n}}}\\ {{=\frac{\left|b-c\right|-1}{\sqrt{b+c}}.}}\end{array}  
 $$  
 
@@ -411,8 +402,7 @@ $$
 统计量 $z$ 计算公式为  
 The statistic  $z$  is calculated as  
 
-$$  
-\begin{array}{c}{{z=\frac{b-\frac{(b+c)}{2}}{se(b)}}}\\ {{=\frac{(b-c)/2}{\sqrt{(b+c)/2}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
+$$   
 \begin{array}{c}{{z=\frac{b-\frac{(b+c)}{2}}{s e(b)}}}\\ {{=\frac{(b-c)/2}{\sqrt{b+c}/2}}}\\ {{=\frac{b-c}{\sqrt{b+c}}}}\end{array}  
 $$  
 
@@ -446,9 +436,7 @@ The two sets of calculations are shown below in parallel:
 
 $$  
 \begin{array}{l l}{{p_{1}=(10+15)/36=0.694}}&{{\qquad p_{1}=(51+15)/105=0.629}}\\ {{p_{2}=(10+6)/36=0.444}}&{{\qquad p_{2}=(51+6)/105=0.543}}\\ {{p_{1}-p_{2}=0.250}}&{{\qquad p_{1}-p_{2}=0.086}}\\ {{s e(p_{1}-p_{2})}}&{{=\frac{1}{36}\sqrt{21-9^{2}/36}}}\\ {{}}&{{=0.1203}}\end{array} \tag{ii}  
-\begin{array}{l l}{{p_{1}=(10+15)/36=0.694}}&{{\qquad p_{1}=(51+15)/105=0.629}}\\ {{p_{2}=(10+6)/36=0.444}}&{{\qquad p_{2}=(51+6)/105=0.543}}\\ {{p_{1}-p_{2}=0.250}}&{{\qquad p_{1}-p_{2}=0.086}}\\ {{s e(p_{1}-p_{2})}}&{{=\frac{1}{36}\sqrt{21-9^{2}/36}}}\\ {{}}&{{=0.1203}}\end{array} \tag{ii}  
 $$  
-
 95% 置信区间为  $0.250 \pm 1.96 \times 0.1203$  和  $0.086 \pm 1.96 \times 0.0428$  
 $95\%$  CI is  $0.250 \pm 1.96 \times 0.1203$ $95\%$  CI is  $0.086 \pm 1.96 \times 0.0428$  
 
@@ -545,16 +533,14 @@ Table 10.7 Expected frequencies corresponding to Table 10.5
 表中所有单元格的数量 $(O - E)^{2} / E$ 之和，其中 $O$ 和 $E$ 分别表示观察频数和期望频数。检验统计量 $X^{2}$ 因此为  
 sum of the quantities  $(O - E)^{2} / E$  for all the cells in the table, where  $0$  and  $E$  denote the observed and expected frequencies. The test statistic  $X^{2}$  is thus  
 
-$$  
-$X^{2} = \sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}$，  
+$$    
 X^{2} = \sum_{i = 1}^{r}\sum_{j = 1}^{c}\frac{(O_{ij} - E_{ij})^{2}}{E_{ij}},  
 $$  
 
 其中 $i$ 表示行号，$j$ 表示列号。该公式通常简写为  
 where  $i$  indicates the row number and  $j$  the column number. This formula is often written simply as  
 
-$$  
-$X^{2} = \sum \frac{(O - E)^{2}}{E}$。  
+$$    
 X^{2} = \sum \frac{(O - E)^{2}}{E}.  
 $$  
 
@@ -738,8 +724,7 @@ When the sample sizes are small the use of the continuous Chi squared distributi
 该校正通过将每个 $O - E$ 向零方向移动 $\frac{1}{2}$ 来实现。换言之，我们用 $|O - E| - \frac{1}{2}$ 替代 $O - E$。带有耶茨校正的简便公式为  
 The correction consists of moving each  $O - E$  nearer to zero by  $\frac{1}{2}$ . In other words we replace  $O - E$  by  $|O - E| - \frac{1}{2}$ . The short cut formula with Yates' correction becomes  
 
-$$  
-$X_{Y}^{2} = \frac{N\left(|ad - bc| - \frac{N}{2}\right)^{2}}{(a + b)(a + c)(b + d)(c + d)}$。  
+$$   
 X_{Y}^{2} = \frac{N\left(|ad - bc| - \frac{N}{2}\right)^{2}}{(a + b)(a + c)(b + d)(c + d)}.  
 $$  
 
@@ -985,8 +970,7 @@ Table 10.18 Eye strain reported by four groups of office workers (Reading and We
 根据之前给出的通用公式计算 $X^{2} = \Sigma [(O - E)^{2} / E]$ 。另一种表达方式如下。如果第 $i$ 组有 $n_{i}$ 名受试者，其中 $r_{i}$ 人具有感兴趣的特征，则 $X^{2}$ 可计算为  
 calculation of  $X^{2}$  according to the general formula previously given:  $X^{2} = \Sigma [(O - E)^{2} / E]$  . An alternative formulation is as follows. If there are  $n_{i}$  subjects in group  $i$  , of whom  $r_{i}$  have the characteristic of interest, we can calculate  $X^{2}$  as  
 
-$$  
-\(X^{2} = \frac{\sum_{i = 1}^{k}(r_{i}^{2} / n_{i}) - R^{2} / N}{P(1 - P)}\)  
+$$   
 X^{2} = \frac{\sum_{i = 1}^{k}(r_{i}^{2} / n_{i}) - R^{2} / N}{P(1 - P)}  
 $$  
 
@@ -1205,8 +1189,7 @@ $$
 \(\log RR\) 的抽样分布服从正态分布，因此我们可以构建，例如，90%的相对风险对数置信区间：  
 The sampling distribution of  $\log RR$  is the Normal distribution, so we can construct, say, a  $90\%$  confidence interval for the log of the relative risk as  
 
-$$  
-\(\log_{\mathrm{e}}RR - N_{0.95} \times SE(\log_{\mathrm{e}}RR) \qquad \text{到} \qquad \log_{\mathrm{e}}RR + N_{0.95} \times SE(\log_{\mathrm{e}}RR)\)  
+$$   
 \log_{\mathrm{e}}RR - N_{0.95} \times SE(\log_{\mathrm{e}}RR) \qquad \text{to} \qquad \log_{\mathrm{e}}RR + N_{0.95} \times SE(\log_{\mathrm{e}}RR)  
 $$  
 

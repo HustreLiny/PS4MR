@@ -276,8 +276,7 @@ $$
 加权 kappa 是通过根据表中各单元格距离对角线（表示一致性）的远近给频数赋权重得到的。对于第 $i$ 行第 $j$ 列的单元格，其观察频数为 $f_{ij}$，权重计算为  
 Weighted kappa is obtained by giving weights to the frequencies in each cell of the table according to their distance from the diagonal that indicates agreement. For the cell in row  $i$  and column  $j$ , with observed frequency  $f_{ij}$ , a weight is calculated as  
 
-$$  
-w_{ij} = 1 - \frac{|i - j|}{g - 1}。  
+$$   
 w_{ij} = 1 - \frac{|i - j|}{g - 1}.  
 $$  
 
@@ -288,15 +287,13 @@ Thus we give cells on the diagonal a weight of 1, while those where the differen
 The weighted observed and expected proportional agreement are obtained as  
 
 $$  
-\( p_{o(w)} = \frac{1}{n} \sum_{i=1}^{g} \sum_{j=1}^{g} w_{ij} f_{ij} \)  
 p_{o(w)} = \frac{1}{n}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}f_{ij}  
 $$  
 
 和  
 and  
 
-$$  
-\( p_{e(w)} = \frac{1}{n^{2}} \sum_{i=1}^{g} \sum_{j=1}^{g} w_{ij} r_{i} c_{j} \)  
+$$   
 p_{e(w)} = \frac{1}{n^{2}}\sum_{i = 1}^{g}\sum_{j = 1}^{g}w_{ij}r_{i}c_{j}  
 $$  
 
@@ -304,7 +301,6 @@ $$
 and weighted kappa is given by  
 
 $$  
-\( \kappa_{w} = \frac{p_{o(w)} - p_{e(w)}}{1 - p_{e(w)}} \)。  
 \kappa_{w} = \frac{p_{o(w)} - p_{e(w)}}{1 - p_{e(w)}}.  
 $$  
 

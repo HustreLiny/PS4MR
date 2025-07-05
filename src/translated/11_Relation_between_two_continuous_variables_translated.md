@@ -383,15 +383,13 @@ $$
 and  
 
 $$  
-\( z_{2} = 1.0770 + \frac{1.96}{\sqrt{15}} \),  
 z_{2} = 1.0770 + 1.96 / \sqrt{15},  
 $$  
 
 得到区间为 0.5710 到 1.5831。我们将这些值反变换，以获得 \( r \) 的 95% 置信区间，  
 giving 0.5710 to 1.5831. We back- transform these values to get a  $95\%$  confidence interval for  $r$  as  
 
-$$  
-\(\frac{e^{2 \times 0.5710} - 1}{e^{2 \times 0.5710} + 1} \mathrm{到} \frac{e^{2 \times 1.5831} - 1}{e^{2 \times 1.5831} + 1}\)，  
+$$
 \frac{e^{2\times 0.5710} - 1}{e^{2\times 0.5710} + 1}\mathrm{to}\frac{e^{2\times 1.5831} - 1}{e^{2\times 1.5831} + 1},  
 $$  
 
@@ -402,8 +400,7 @@ or 0.52 to 0.92. Although the whole confidence interval is much greater than zer
 相关系数的假设检验可以非常容易地进行。在总体中无关联（即相关系数为零）的原假设下，可以证明以下量  
 The hypothesis test for the correlation coefficient may be performed very easily. Under the null hypothesis that there is no association in the population (i.e. zero correlation) it can be shown that the quantity  
 
-$$  
-\( r \sqrt{\frac{n - 2}{1 - r^{2}}} \)  
+$$ 
 r\sqrt{\frac{n - 2}{1 - r^{2}}}  
 $$  
 
@@ -413,8 +410,7 @@ has a  $t$  distribution with  $n - 2$  degrees of freedom. Thus the null hypoth
 图 11.1 中脂肪百分比与年龄的数据相关系数为 0.7921，因此我们有  
 The  $\%$  fat and age data in Figure 11.1 had a correlation of 0.7921 so we have  
 
-$$  
-\( t = 0.7921 \sqrt{\frac{16}{1 - 0.7921^{2}}} = 5.19 \)  
+$$   
 t = 0.7921\sqrt{\frac{16}{1 - 0.7921^{2}}} = 5.19  
 $$  
 
@@ -443,8 +439,7 @@ This formula bears no obvious similarity to the formula for Pearson's  $r$  but 
 表11.4显示了纬度和DZ双胞胎率数据的秩。排名差的平方和为366.5，因此我们有  
 The ranks of the data on latitude and DZ twinning rate are shown in Table 11.4. The sum of the squares of the differences in the ranks is 366.5 so we have  
 
-$$  
-$r_{s} = 1 - \frac{6\times366.5}{6859 - 19} = 0.68$。  
+$$ 
 r_{s} = 1 - \frac{6\times366.5}{6859 - 19} = 0.68.  
 $$  
 
@@ -461,8 +456,7 @@ The distribution of  $r_{s}$  is similar to that of  $r$  for samples larger tha
 在总体中无关联（即零相关）的原假设下，可以证明对于大样本（$n > 30$），量  
 Under the null hypothesis that there is no association in the population (i.e. zero correlation) it can be shown that for large samples  $(n > 30)$  the quantity  
 
-$$  
-$r_{s}\sqrt{\frac{n - 2}{1 - r_{s}^{2}}}$  
+$$   
 r_{s}\sqrt{\frac{n - 2}{1 - r_{s}^{2}}}  
 $$  
 
@@ -475,8 +469,7 @@ has a  $t$  distribution with  $n - 2$  degrees of freedom. Thus the null hypoth
 如果我们知道变量对之间的相关系数，比如 $r(AB)$、$r(AC)$ 和 $r(BC)$，就可以计算调整第三个变量后的两个变量之间的相关性。为了调整变量 $C$ 对变量 $A$ 和 $B$ 相关性的影响，我们计算调整变量 $C$ 后的偏相关系数为  
 We can calculate the correlation between two variables after adjusting for a third if we have the correlation coefficients between each pair of variables, say  $r(AB)$ ,  $r(AC)$  and  $r(BC)$ . To adjust the correlation between variables  $A$  and  $B$  for the possible effect of variable  $C$  we calculate the partial correlation of  $A$  and  $B$  adjusted for  $C$  as  
 
-$$  
-$r(AB|C) = \frac{r(AB) - r(AC)r(BC)}{\sqrt{[1 - r(AC)^2][1 - r(BC)^2]}}$。  
+$$   
 r(AB|C) = \frac{r(AB) - r(AC)r(BC)}{\sqrt{[1 - r(AC)^2][1 - r(BC)^2]}}.  
 $$  
 
@@ -607,8 +600,7 @@ The least squares method produces the line that minimizes the sum of the squares
 如果我们有两个变量 $X$（血糖）和 $Y$（Vcf）的观测值，可以进行“$Y$ 关于 $X$ 的回归”，得到一条直线，为任意 $X$ 值提供 $Y$ 的“拟合”估计值。回归线的一般方程为：  
 If we have observed values of two variables,  $X$  (blood glucose) and  $Y$  (Vcf), we can perform a 'regression of  $Y$  on  $X$ ' to derive a straight line that gives a 'fitted' estimated value of  $Y$  for any value of the variable  $X$ . The general equation of a regression line is  
 
-$$  
-$Y = a + b X$。  
+$$   
 Y = a + b X.  
 $$  
 
@@ -765,8 +757,7 @@ Figure 11.16 Quadratic curve fitted to mean birth weight by gestational age (Alt
 estimates of  $a$  and  $b$  can be obtained easily. Denoting the observed data as  $x_{i}$  and  $y_{i} (i = 1, \ldots , n)$  it can be shown that the line must pass through the mean of the data  $(\bar{x}, \bar{y})$ . The estimated slope is given by  
 
 $$  
-$b = \frac{\Sigma (x_i - \bar{x})(y_i - \bar{y})}{\Sigma (x_i - \bar{x})^2}$。  
-b = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\Sigma(x_{i} - \bar{x})^{2}}.  
+b = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\Sigma(x_{i} - \bar{x})^{2}}.
 $$  
 
 注意，正如分析的性质所预期的，这个方程是不对称的，与第11.7节中给出的相关系数$r$的公式不同：$X$和$Y$变量的选择是有区别的。  
@@ -783,8 +774,7 @@ $$
 量 $S_{xx}$ 和 $S_{yy}$ 分别是 $X$ 和 $Y$ 方差的 $(n - 1)$ 倍。计算斜率 $b$ 的更简便方法是  
 The quantities  $S_{xx}$  and  $S_{yy}$  are just  $n - 1$  times the variances of  $X$  and  $Y$ . An easier way of calculating  $b$  is as  
 
-$$  
-$b = \frac{S_{xy}}{S_{xx}}$。  
+$$ 
 b = \frac{S_{xy}}{S_{xx}}.  
 $$  
 
@@ -794,8 +784,7 @@ This formula should not be used in a computer program, however, as inaccuracy is
 因为回归线经过均值点 $(\bar{x}, \bar{y})$，所以截距 $a$ 可以简单估计为  
 Because we know that the regression line passes through the mean  $(\bar{x}, \bar{y})$ , we can estimate  $a$  simply as  
 
-$$  
-$a = \bar{y} - b\bar{x}$。  
+$$   
 a = \bar{y} - b\bar{x}.  
 $$  
 
@@ -837,19 +826,13 @@ $$
 We estimate the slope  $b$  as  
 
 $$  
-\[  
-b = \frac{9.439}{429.704} = 0.02196.  
-\]  
 \begin{array}{c}b = \frac{9.439}{429.704} \\ = 0.02196. \end{array}  
 $$  
 
 截距 $a$ 的估计值为  
 The intercept  $a$  is estimated as  
 
-$$  
-\[  
-a = 1.33 - 0.02196 \times 10.37 = 1.098\% /\mathrm{sec}.  
-\]  
+$$ 
 \begin{array}{c}a = 1.33 - 0.02196 \times 10.37 \\ = 1.098\% /\mathrm{sec}. \end{array}  
 $$  
 
@@ -858,8 +841,7 @@ $$
 观察值  $y_0$  与拟合值  $y_{\hat{H}}$  之间的差异为  
 The difference between an observed value  $y_0$  and fitted value  $y_{\hat{H}}$  is thus  
 
-$$  
-$y_{0} - y_{\hat{t}} = y_{0} - [\bar{y} + b(x_{0} - \bar{x})]$ ，\tag{y0 - yfit = y0 - [y + b(x0 - x)]}  
+$$
 y_{0} - y_{\hbar t} = y_{0} - [\bar{y} +b(x_{0} - \bar{x})], \tag{y0 - yfit = y0 - [y + b(x0 - x)]},  
 $$  
 
@@ -867,7 +849,6 @@ $$
 and the value  $y_{0} - y_{\hbar t}$  is the residual for that individual. It is the sum of the squares of the residuals,  $\Sigma (y_{i} - y_{\hbar t})^{2}$ , that is minimized by the least squares line, but we are more interested in their variance, obtained as  
 
 $$  
-$s_{res}^{2} = \frac{\Sigma(y_{i} - y_{\hat{t}})^{2}}{n - 2}$  
 s_{res}^{2} = \frac{\Sigma(y_{i} - y_{\hbar t})^{2}}{n - 2}  
 $$  
 
@@ -875,9 +856,6 @@ $$
 or, for calculation,  
 
 $$  
-\[  
-   s_{res}^{2} = \frac{1}{n-2}\left[\Sigma y_{i}^{2} - \frac{(\Sigma y_{i})^{2}}{n} - b\left(\Sigma x_{i} y_{i} - \frac{\Sigma x_{i} \Sigma y_{i}}{n}\right)\right] = \frac{1}{n-2}(S_{yy} - b S_{xy})  
-   \]  
 \begin{array}{l}{{s_{r e s}^{2}=\frac{1}{n-2}\biggl[\Sigma y_{i}^{2}-\frac{(\Sigma y_{i})^{2}}{n}-b\biggl(\Sigma x_{i}y_{i}-\frac{\Sigma x_{i}\Sigma y_{i}}{n}\biggr)\biggr]}}\\ {{=\frac{1}{n-2}(S_{y y}-b S_{x y}).}}\end{array}  
 $$  
 
@@ -887,10 +865,7 @@ The square root of this expression, the residual standard deviation,  $s_{\mathr
 在本例中，残差方差计算为  
 We can calculate the residual variance in the example as  
 
-$$  
-\[  
-    s_{res}^{2} = \frac{1}{21}(1.193 - 0.02196 \times 9.439) = 0.04696  
-    \]  
+$$ 
 \begin{array}{c}{{s_{r e s}^{2}=\frac{1}{21}(1.193-0.02196\times9.439)}}\\ {{{}}}\\ {{=0.04696}}\end{array}  
 $$  
 
@@ -1147,12 +1122,10 @@ The equation of the regression line should be given, together with the residual 
 斜率的标准误及 $t$ 检验的 $\mathbf{P}$ 值很有用。回归线的置信区间，或更实用的新观测预测区间，尤其具有参考价值，可在同一图中展示。  
 The standard error of the slope is useful, as is the  $\mathbf{P}$  value for the  $t$  test. A confidence interval for the line or, more usefully, prediction intervals for new observations are especially informative and can be shown in the same plot.  
 
-系数的精度应与原始数据的精度相符。例如，以下胎儿腹部面积 $(x)$ 对出生体重 $(y)$ 的二次回归方程：  
+系数所用的精确度应与原始数据的精确度相关。举例来说，给出一个声称能预测出生体重精确到 $\frac{1}{100000} \mathbf{g}$ 的方程是没有意义的，以下关于出生体重 $(y)$ 对胎儿腹部面积 $(x)$ 的二次回归方程就暗示了这一点：
 The accuracy used for the coefficients should be related to the accuracy of the raw data. It makes no sense, for example, to give an equation that purports to predict birth weight to the nearest  $\frac{1}{100000} \mathbf{g}$ , which is what is implied by the following quadratic regression equation of birth weight  $(y)$  on fetal abdominal area  $(x)$ :  
 
 $$  
-$y = 3518.42829 - 0.26395x + 0.000024x^{2}$  
-    不应被解释为能精确预测出生体重至 $\frac{1}{100000} \mathbf{g}$，这显然不合理。  
 y = 3518.42829 - 0.26395x + 0.000024x^{2}  
 $$  
 
