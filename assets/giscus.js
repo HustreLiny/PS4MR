@@ -1,8 +1,14 @@
 // 若当前 mdBook 主题为 Light 或 Rust ，则将 giscus 主题设置为 light
 let giscus_theme = "transparent_dark";
 const themeClass = document.getElementsByTagName("html")[0].className;
-if (themeClass.indexOf("light") != -1 || themeClass.indexOf("rust") != -1) {
-    giscus_theme = "light"
+if (themeClass.indexOf("light") !== -1 || themeClass.indexOf("rust") !== -1) {
+    giscus_theme = "light";
+} else if (
+    themeClass.indexOf("coal") !== -1 ||
+    themeClass.indexOf("navy") !== -1 ||
+    themeClass.indexOf("ayu") !== -1
+  ) {
+    giscus_theme = "dark_tritanopia";
 }
 
 // 设定默认的语言
@@ -25,7 +31,7 @@ var giscus = function () {
     script.setAttribute("data-reactions-enabled", "1");
     script.setAttribute("data-emit-metadata", "0");
     script.setAttribute("data-input-position", "top");
-    script.setAttribute("data-theme", theme);
+    script.setAttribute("data-theme", giscus_theme);
     script.setAttribute("data-lang", giscus_lang);
     script.crossOrigin = "anonymous";
     script.async = true;
