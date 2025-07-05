@@ -337,9 +337,8 @@ Transforming the data is sometimes felt to be a trick used by statisticians, a b
 变换的另一个主要用途是在比例分析中。观察到的比例在0.2到0.8范围内具有相似的不确定性，但非常小或非常大的比例不确定性较小，因为它们在尺度的两端（零和一）受到一定限制。为了统计分析，我们常希望所有比例都具有相等的不确定性，这可以通过logit变换实现，定义为  
 The other main use of transformations is in the analysis of proportions. Observed proportions in the range 0.2 to 0.8 have similar uncertainty but very small or large proportions have smaller uncertainty as they are somewhat constrained towards the ends of the scale (zero and one). For statistical analyses we often wish to have equal uncertainty attached to all proportions, and we can achieve this by the logit transformation, which is defined by  
 
-$$  
-\mathrm{logit}(p) = \mathrm{log}_{\mathrm{e}}\left(\frac{p}{1 - p}\right)。  
-\mathrm{logit}(p) = \mathrm{log}_{\mathrm{e}}\left(\frac{p}{1 - p}\right).  
+$$
+\mathrm{logit}(p) = \mathrm{log}_{\mathrm{e}}\left(\frac{p}{1 - p}\right)。
 $$  
 
 logit变换将比例拉伸，就像正态概率图中正态分布的百分位数被拉伸一样，  

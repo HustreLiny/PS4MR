@@ -493,8 +493,7 @@ The usual way of thinking about specifying  $p_{1}$  and  $p_{2}$  is that previ
 给定 $p_{1}$ 和 $p_{2}$ 的具体值，我们可以计算标准化差异为  
 Given specified values of  $p_{1}$  and  $p_{2}$  we can calculate the standardized difference as  
 
-$$  
-\frac{p_{1} - p_{2}}{\sqrt{\bar{p}(1 - \bar{p})}}  
+$$
 \frac{p_{1} - p_{2}}{\sqrt{\bar{p}(1 - \bar{p})}}  
 $$  
 
@@ -507,8 +506,7 @@ For example, suppose we are planning a trial to compare two methods of helping s
 我们有 $p_{1} = 0.30$ 和 $p_{2} = 0.15$，因此 $\bar{p} = (0.30 + 0.15) / 2 = 0.225$。使用上述公式，标准化差异为  
 We have  $p_{1} = 0.30$  and  $p_{2} = 0.15$  so  $\bar{p} = (0.30 + 0.15) / 2 = 0.225$ . Using the above formula the standardized difference is given as  
 
-$$  
-\frac{0.30 - 0.15}{\sqrt{0.225(1 - 0.225)}}  
+$$
 \frac{0.30 - 0.15}{\sqrt{0.225(1 - 0.225)}}  
 $$  
 

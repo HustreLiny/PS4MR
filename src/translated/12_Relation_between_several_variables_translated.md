@@ -249,9 +249,8 @@ Chapter 11 dealt mainly with simple linear regression, the method we use to desc
 例如，假设我们希望根据身高（单位：厘米）和体重（单位：千克）预测呼吸肌力量指标PEmax（单位：cm $\mathbf{H}_{2}\mathbf{O}$）。我们将得到如下回归模型：  
 For example, suppose we wish to predict an index of respiratory muscle strength PEmax (in cm  $\mathbf{H}_{2}\mathbf{O}$  ) from height (in cm) and weight (in kg). We would obtain a regression model like the following:  
 
-$$  
-\mathrm{PEmax} = 47.35 + 0.147\times \mathrm{height} + 1.024\times \mathrm{weight}.  
-\mathrm{PEmax} = 47.35 + 0.147\times \mathrm{height} + 1.024\times \mathrm{weight}.  
+$$
+\mathrm{PEmax} = 47.35 + 0.147\times \mathrm{height} + 1.024\times \mathrm{weight}.
 $$  
 
 数字0.147和1.024分别称为身高和体重的回归系数。它们表示PEmax随解释变量每增加一个单位（分别为1厘米和1千克）而预测的增加值。47.35是常数项，表示当体重和身高均为零时的PEmax值。与线性回归中的截距类似，它通常不具备实际意义。  
@@ -557,9 +556,8 @@ In section 11.5 I described the calculation of the partial correlation coefficie
 例子基于表11.2中的数据。调整红细胞压积（PCV）后的血液粘度与纤维蛋白原的偏相关系数 $r(\mathbf{V}\mathbf{F}|\mathbf{P})$ 为0.212。表12.17显示了血液粘度对PCV的线性回归及加入纤维蛋白原后的多元回归的方差分析表。通过加入纤维蛋白原，第一模型残差平方和的比例变化为  
 The illustrative example was based on data in Table 11.2. The partial correlation between blood viscosity and fibrinogen adjusted for haematocrit (PCV), denoted  $r(\mathbf{V}\mathbf{F}|\mathbf{P})$  , was 0.212. Table 12.17 shows analysis of variance tables for linear regression of blood viscosity on PCV, and multiple regression with fibrinogen added to the model. The proportion of the residual sum of squares from the first model that is explained by adding fibrinogen is  
 
-$$  
-\frac{2.7209 - 2.5982}{2.7209} = 0.045  
-\frac{2.7209 - 2.5982}{2.7209} = 0.045  
+$$
+\frac{2.7209 - 2.5982}{2.7209} = 0.045
 $$  
 
 表12.17 血液粘度的回归分析（表11.2数据） (a) 血液粘度对红细胞压积（PCV）的回归  
@@ -694,25 +692,22 @@ seem to be independently prognostic. Omission of smoking (Table 12.20b) makes a 
 三变量模型的回归方程为  
 The regression equation for the model with three variables is  
 
-$$  
-\mathrm{logit}(p) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872x_{3}。  
-\mathrm{logit}(p) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872x_{3}.  
+$$
+\mathrm{logit}(p) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872x_{3}。
 $$  
 
 高血压的估计概率可以通过吸烟、肥胖和打鼾这三个变量的任意组合来计算。具体来说，我们可以比较不同组的预测概率，例如打鼾者和非打鼾者。首先将  $x_{3}$  设为1，然后设为0，我们有  
 The estimated probability of having hypertension can be calculated from any combination of the three variables smoking, obesity and snoring. Specifically, we can compare the predicted probabilities for different groups, such as snorers and non- snorers. Setting  $x_{3}$  first to 1 and then to 0 we have  
 
-$$  
-\mathrm{logit}(p_{s}) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872  
-\mathrm{logit}(p_{s}) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872  
+$$
+\mathrm{logit}(p_{s}) = -2.378 - 0.068x_{1} + 0.695x_{2} + 0.872
 $$  
 
 以及  
 and  
 
-$$  
-\mathrm{logit}(p_{n s}) = -2.378 - 0.068x_{1} + 0.695x_{2}  
-\mathrm{logit}(p_{n s}) = -2.378 - 0.068x_{1} + 0.695x_{2}  
+$$
+\mathrm{logit}(p_{n s}) = -2.378 - 0.068x_{1} + 0.695x_{2}
 $$  
 
 其中  $x_{1}$  和  $x_{2}$  分别是吸烟和肥胖的编码值。因此，我们有  $\mathrm{logit}(p_{s}) - \mathrm{logit}(p_{n s}) = 0.872$ 。如前所述，该表达式是对数比值比，因此与打鼾相关的高血压比值比为  $\mathbf{e}^{0.872} = 2.39$ 。因此，我们可以直接从回归系数获得变量的估计比值比。比值比的解释见第10.11.2节。我们可以将其视为打鼾者相对于非打鼾者高血压的估计概率或风险的度量。  

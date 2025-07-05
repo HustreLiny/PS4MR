@@ -160,9 +160,8 @@ The probability of being within two standard deviations of the mean is just over
 回到血清白蛋白数据，我们可以计算在假设真实分布为正态分布的前提下，数值大于42.0的概率。血清白蛋白的平均水平为 $34.46\mathrm{g / l}$ ，标准差为 $5.84\mathrm{g / l}$ 。我们首先计算42 $\mathrm{g / l}$ 离均值多少个标准差，计算公式为  
 Returning to the serum albumin data, we can calculate the probability of a value being above 42.0 on the assumption that the true distribution is Normal. The mean serum albumin level was  $34.46\mathrm{g / l}$  and the standard deviation was  $5.84\mathrm{g / l}$ . We first calculate how many standard deviations from the mean the value of  $42\mathrm{g / l}$  is, which is given by  
 
-$$  
+$$
 \frac{42 - 34.46}{5.84} = 1.29。  
-\frac{42 - 34.46}{5.84} = 1.29.  
 $$  
 
 从表B1中查得，大于1.29的概率为0.0985，因此数值大于 $42\mathrm{g / l}$ 的概率约为 $10\%$ 。  
@@ -180,8 +179,7 @@ $99\%$  within mean  $\pm 2.576\mathrm{SD}$ . For the serum albumin data we get 
 因此，我们可以使用正态分布来估计总体中该变量分布的百分位数。我们本可以计算样本数据的观察百分位数并用作总体百分位数的估计，但当数据接近正态分布时，使用正态分布更为可靠，尤其是在分布的尾部。此外，方法也更简便，只需两个数值和正态分布表，而不必使用完整的原始数据集。图4.5显示，216个血清白蛋白值的分布与具有相同均值和标准差的正态分布非常相似。我们可以用刚才描述的方法，从正态分布计算出直方图各区间内预期的数值。例如，区间26.0到 $28.0 \mathrm{g / l}$ 内预期的数值是该区间概率乘以216。26.0和28.0对应的标准正态偏差为  
 We can thus use the Normal distribution to estimate the centiles of the distribution of the variable in the population. We could have calculated the observed centiles of the sample data and used these values as estimates of the population centiles, but when the data are near to Normal the use of the Normal distribution is more reliable, especially in the tails of the distribution. It is also easier, requiring just two values and a table of the Normal distribution rather than the complete set of raw data values. Figure 4.5 showed that the distribution of the 216 serum albumin values was very similar to the Normal distribution with the same mean and standard deviation. We can use the procedure just described to calculate from the Normal distribution the number of values expected in each interval of the histogram. For example, the number expected in the interval 26.0 to  $28.0 \mathrm{g / l}$  is the probability of being in that interval multiplied by 216. The standard Normal deviates for 26.0 and 28.0 are  
 
-$$  
-\begin{array}{c}\frac{26.0 - 34.46}{5.84} = -1.45 \\ \frac{28.0 - 34.46}{5.84} = -1.11 \end{array}  
+$$
 \begin{array}{c}\frac{26.0 - 34.46}{5.84} = -1.45 \\ \frac{28.0 - 34.46}{5.84} = -1.11 \end{array}  
 $$  
 
@@ -232,9 +230,8 @@ biliary cirrhosis (PBC). The mean and standard deviation are 60.7 and  $77.9 \mu
 对于像血清胆红素测量这样偏斜的数据，取对数转换通常能产生近似正态分布。我们可以在对数数据上进行计算，然后将结果转换回原始尺度。例如，我们可能希望用数据估计包含所有PBC患者95%血清胆红素水平的区间。假设数据服从对数正态分布，我们可以利用均值为3.547、标准差为1.030的正态分布进行计算（这些值比上文所示更准确）。在对数单位上，95%的分布预计位于均值减去 $1.96 \mathrm{SD}$ 和均值加上 $1.96 \mathrm{SD}$ 之间。具体数值为：  
 With skewed data like the serum bilirubin measurements log transformation will often produce approximate Normality. We can then perform our calculations on the log data and transform the answers back to the original scale. For example, we may wish to use our data to estimate the values enclosing  $95\%$  of serum bilirubin levels for all patients with PBC. Assuming a Lognormal distribution, we can make our calculations from the Normal distribution with mean 3.547 and standard deviation 1.030 (these being more accurate values than those shown above). In log units,  $95\%$  of the distribution will be expected to be between mean  $- 1.96 \mathrm{SD}$  and mean  $+1.96 \mathrm{SD}$ . These values are  
 
-$$  
+$$
 3.547 + (1.96 \times 1.030) = 5.566。  
-3.547 + (1.96 \times 1.030) = 5.566.  
 $$  
 
 ![](../images/04_Theoretical_distributions/img11.jpg)  
@@ -353,8 +350,7 @@ To take an example, suppose we wish to calculate the probability of different nu
 一般来说，假设有 $n$ 个“事件”，我们想计算其中0、1、2直到 $n$ 个为某特定类型的概率，$p$ 是该类型结果的总体概率。则 $r$ 个此类事件的二项分布概率为  
 In general, suppose we have  $n$  'events' and wish to calculate the probability of 0, 1, 2, up to  $n$  of them being a specific type, where  $p$  is the overall probability of this type of outcome. Then the Binomial probability of  $r$  such events is given by  
 
-$$  
-{\binom{n}{r}}p^{r}(1-p)^{n-r}  
+$$
 {\binom{n}{r}}p^{r}(1-p)^{n-r}  
 $$  
 
@@ -364,8 +360,7 @@ where  $\binom{n}{r}$  is the number of ways of choosing  $r$  items from  $n$ ,
 我们可以通过以下关系简单地计算 $\binom{n}{r}$：  
 We can evaluate  $\binom{n}{r}$  simply by using the following relations:  
 
-$$  
-\begin{array}{l}{{\binom{n}{0}=1;}}\\ {{\binom{n}{r}=\binom{n}{r-1}\times(n-r+1)/r;}}\end{array}  
+$$
 \begin{array}{l}{{\binom{n}{0}=1;}}\\ {{\binom{n}{r}=\binom{n}{r-1}\times(n-r+1)/r;}}\end{array}  
 $$  
 
@@ -398,9 +393,8 @@ The general formula for the coefficients  $\binom{n}{r}$  is
 70 理论分布  
 70 Theoretical distributions  
 
-$$  
-{\binom{n}{r}}={\frac{n!}{r!(n-r)!}}  
-{\binom{n}{r}}={\frac{n!}{r!(n-r)!}}  
+$$
+{\binom{n}{r}}={\frac{n!}{r!(n-r)!}}
 $$  
 
 其中 $n!$（读作 n 的阶乘）等于 $1\times 2\times 3\times \ldots \times n$（见附录A）。注意 $0! = 1$（见附录A）。系数 $\binom{n}{r}$ 可以从 $\log{\binom{n}{r}}$ 的表格中获得（Lentner, 1982，第74-81页），或按上述方法计算。  

@@ -211,9 +211,8 @@ value is statistically significant at about the  $3\%$  level, and we infer that
 关于符号检验，还需要进一步说明两点。首先，最好在检验中加入连续性校正。当连续分布被用来近似非连续数据时（如本例所示），我们通常会使用连续性校正。该调整是将观察计数 $r$ 与假设值 $np$ 之间的差值减少 $\frac{1}{2}$。我们写作 $\left|r - np\right| - \frac{1}{2}$，其中竖线表示取绝对值；也就是说，如果 $r - np$ 为负，则忽略其符号。用连续性校正重新计算检验统计量得到：  
 Two further comments are needed in relation to the sign test. Firstly, it is preferable to incorporate a continuity correction into the test. We use the continuity correction in several circumstances when a continuous distribution is used as an approximation to non- continuous data, as is the case here. The adjustment involves reducing the difference between the observed count  $r$  and the hypothesized value  $np$  by  $\frac{1}{2}$ . We write this as  $\left|r - np\right| - \frac{1}{2}$ , where the vertical bars indicate that we take the absolute value of  $r - np$ ; that is we ignore the sign if  $r - np$  is negative. Recalculating our test statistic with the continuity correction gives  
 
-$$  
-\begin{array}{l}{{z=\frac{\left|r-n p\right|-\frac{1}{2}}{\sqrt{n p(1-p)}}}}\\ {{=\frac{\left|9-5.5\right|-0.5}{1.658}}}\\ {{=1.81.}}\end{array}  
-\begin{array}{l}{{z=\frac{\left|r-n p\right|-\frac{1}{2}}{\sqrt{n p(1-p)}}}}\\ {{=\frac{\left|9-5.5\right|-0.5}{1.658}}}\\ {{=1.81.}}\end{array}  
+$$
+\begin{array}{l}{{z=\frac{\left|r-n p\right|-\frac{1}{2}}{\sqrt{n p(1-p)}}}}\\ {{=\frac{\left|9-5.5\right|-0.5}{1.658}}}\\ {{=1.81.}}\end{array}
 $$  
 
 连续性校正的使用不可避免地会降低 $z$ 值并增加 $\mathbf{P}$ 值，但如果不使用校正，计算结果在拒绝原假设时会显得稍微“乐观”一些。由于样本较小，校正后的 $z$ 值明显较低，但在大样本中这种影响很小。根据表 B2，$z$ 值为 1.81 对应的双侧 $\mathbf{P}$ 值为 0.07，因此这种更为准确的检验方法得出的结果在 5% 显著性水平下并不完全显著。连续性校正应始终用于小样本，并且可以常规地纳入分析中。  
@@ -307,9 +306,8 @@ or 1074.2 to  $1566.8 \mathrm{kJ}$  . The whole confidence interval is much grea
 我们可以使用单样本$t$检验计算均值差的$\mathbf{P}$值。这里我们希望比较观察到的均值差$(\vec{d})$，即1320.5 kJ，与假设值零，即原假设为经前期与经后期膳食摄入量相同。$t$值计算如下：  
 We can use the one sample  $t$  test to calculate a  $\mathbf{P}$  value for the comparison of means. Here we wish to compare the observed mean difference  $(\vec{d})$  of  $1320.5\mathrm{kJ}$  with a hypothetical value of zero, i.e. the null hypothesis is that pre- and post- menstrual dietary intake is the same. The  $t$  value is then given by  
 
-$$  
-\begin{array}{c}{{t=\frac{\vec{d}-0}{s e(\vec{d})}}}\\ {{=1320.5/110.6}}\\ {{=11.94}}\end{array}  
-\begin{array}{c}{{t=\frac{\vec{d}-0}{s e(\vec{d})}}}\\ {{=1320.5/110.6}}\\ {{=11.94}}\end{array}  
+$$
+\begin{array}{c}{{t=\frac{\vec{d}-0}{s e(\vec{d})}}}\\ {{=1320.5/110.6}}\\ {{=11.94}}\end{array}
 $$  
 
 自由度为10。根据表B4，我们可以看到11.94远大于$t$分布中$\mathbf{P} = \mathbf{0.001}$的临界值，因此$\mathbf{P}$远小于0.001。通常写作$\mathbf{P} < 0.001$即可。（实际的$\mathbf{P}$值实际上是0.0000003。）  
@@ -321,9 +319,8 @@ on 10 degrees of freedom. From Table B4 we can see that 11.94 is much larger tha
 我们也可以对配对观察值的差异应用单样本符号检验。对于表9.3中的数据，所有11个差异符号相同，因此带连续性校正的检验统计量为  
 We can also apply the one sample sign test to the differences between paired observations. For the data in Table 9.3 all 11 differences have the same sign, so the test statistic, with the continuity correction, is  
 
-$$  
-\frac{|11 - 5.5| - 0.5}{\sqrt{11\times0.5\times0.5}} = 5 / 1.658 = 3.02  
-\frac{|11 - 5.5| - 0.5}{\sqrt{11\times0.5\times0.5}} = 5 / 1.658 = 3.02  
+$$
+\frac{|11 - 5.5| - 0.5}{\sqrt{11\times0.5\times0.5}} = 5 / 1.658 = 3.02
 $$  
 
 根据表B2，这对应于$\mathbf{P} = 0.003$  
@@ -391,14 +388,12 @@ Table 9.4 24 hour total energy expenditure (MJ/day) in groups of lean and obese 
 表9.4显示了瘦女性组和肥胖女性组的24小时能量消耗。肥胖组的平均能量消耗为10.3 MJ/天，高于瘦组的8.1 MJ/天，且两组的标准差非常接近。合并标准差为  
 Table 9.4 shows the 24 hour energy expenditure of groups of lean and obese women. The obese group had a higher mean energy expenditure of 10.3 compared with 8.1 MJ/day for the lean group and the two standard deviations were very similar. The pooled standard deviation is  
 
-$$  
-\sqrt{\frac{12 \times 1.238^2 + 8 \times 1.398^2}{20}}  
-\sqrt{\frac{12 \times 1.238^2 + 8 \times 1.398^2}{20}}  
+$$
+\sqrt{\frac{12 \times 1.238^2 + 8 \times 1.398^2}{20}}
 $$  
 
-$$  
-= 1.3044 \mathrm{MJ / day}。  
-= 1.3044 \mathrm{MJ / day}.  
+$$
+= 1.3044 \mathrm{MJ / day}。
 $$  
 
 平均摄入差异的标准误为  
@@ -426,8 +421,7 @@ or 1.05 to 3.41 MJ/day.
 还有一种适用于比较两个独立数据组的  $t$  检验。两独立样本  $t$  检验与单样本或配对  $t$  检验非常相似，统计量由下式计算：  
 There is also a  $t$  test appropriate for comparing two independent groups of data. The two sample  $t$  test looks much the same as the single sample or paired  $t$  tests, the statistic being obtained from  
 
-$$  
-t = \frac{\bar{x}_{1} - \bar{x}_{2}}{s e(\bar{x}_{1} - \bar{x}_{2})}  
+$$
 t = \frac{\bar{x}_{1} - \bar{x}_{2}}{s e(\bar{x}_{1} - \bar{x}_{2})}  
 $$  
 
@@ -461,8 +455,7 @@ Table 9.5 Calculations for the Mann-Whitney  $U$  test on energy expenditure (EE
 两组的秩和分别为103和150。（我们可以通过所有$N$个观察值的秩和必须是$N(N+1)/2$来检验计算，这里为253。）现在我们可以使用两种替代统计量，$T$和$U$。统计量$T$（由Wilcoxon提出）简单地是较小组的秩和，在本例中为150。（如果两组大小相同，可以任选一组。）统计量$U$（由Mann和Whitney提出）更复杂，其计算公式为  
 two groups are 103 and 150. (We can check our calculations by noting that the sum of all ranks of  $N$  observations must be  $N(N + 1) / 2$ , which here is 253. ) We can now use two alternative statistics,  $T$  and  $U$ . The statistic  $T$  (due to Wilcoxon) is simply the sum of the ranks in the smaller group, 150 in our example. (Either group can be taken if they are of the same size.) The statistic  $U$  (due to Mann and Whitney) is more complicated, being calculated as  
 
-$$  
-\begin{array}{r}{U = n_{1}n_{2} + \frac{1}{2} n_{1}(n_{1} + 1) - T.} \end{array}  
+$$
 \begin{array}{r}{U = n_{1}n_{2} + \frac{1}{2} n_{1}(n_{1} + 1) - T.} \end{array}  
 $$  
 
@@ -490,24 +483,21 @@ For larger samples of about ten or more in each group the statistic  $T$  has an
 对于上述样本量为9和13的例子，使用大样本近似是合理的。原假设下检验统计量的均值和标准差为  
 It is reasonable to use the large sample approximation for the above example with sample sizes 9 and 13. The mean and standard deviation of the test statistic under the null hypothesis are given by  
 
-$$  
-\mu_{T} = 9(9 + 13 + 1) / 2 = 103.5  
+$$
 \mu_{T} = 9(9 + 13 + 1) / 2 = 103.5  
 $$  
 
 以及  
 and  
 
-$$  
-\sigma_{T} = \sqrt{13\times103.5 / 6} = 14.975  
+$$
 \sigma_{T} = \sqrt{13\times103.5 / 6} = 14.975  
 $$  
 
 由此得到  
 giving  
 
-$$  
-\begin{array}{c}z = \frac{150 - 103.5}{14.975} \\ = 3.105, \end{array}  
+$$
 \begin{array}{c}z = \frac{150 - 103.5}{14.975} \\ = 3.105, \end{array}  
 $$  
 
@@ -829,9 +819,8 @@ A confidence interval can be constructed for the mean of any group in the usual 
 该组均值的标准误为  
 interest with a mean of  $\bar{x}_{1}$ , the standard error of the mean is given by  
 
-$$  
+$$
 se(\bar{x}_{1}) = s_{res} / \sqrt{n_{1}}。  
-se(\bar{x}_{1}) = s_{res} / \sqrt{n_{1}}.  
 $$  
 
 95% 置信区间由下式给出  
@@ -848,9 +837,8 @@ where the  $t$  value has the number of degrees of freedom associated with the r
 类似地，两个均值差异的置信区间，例如 $\bar{x}_{1}$ 和 $\bar{x}_{2}$，需要 $\bar{x}_{1} - \bar{x}_{2}$ 的标准误，计算公式为  
 Similarly, a confidence interval for the difference between any two means, say  $\bar{x}_{1}$  and  $\bar{x}_{2}$ , requires the standard error of  $\bar{x}_{1} - \bar{x}_{2}$ , which is given by  
 
-$$  
+$$
 se(\bar{x}_{1} - \bar{x}_{2}) = s_{res} \times \sqrt{\frac{1}{n_{1}} + \frac{1}{n_{2}}}。  
-se(\bar{x}_{1} - \bar{x}_{2}) = s_{res} \times \sqrt{\frac{1}{n_{1}} + \frac{1}{n_{2}}}.  
 $$  
 
 两个均值差异的 95% 置信区间因此为  
@@ -993,9 +981,8 @@ Fentress et al. (1986) reported the results of a randomized comparison of three 
 表9.15显示了每位儿童头痛活动的减少百分比。注意，负值表示头痛活动增加。三名儿童在研究结束时完全无头痛，故头痛活动减少了 $100\%$。这些数据明显不适合方差分析，但我们可以应用 Kruskal-Wallis 检验。表9.15还列出了数据的秩次及各组的平均秩次。利用上述公式，我们可以计算统计量 $H$：  
 Table 9.15 shows the reduction in headache activity for each child, expressed as a percentage. Note that a negative value indicates an increase in headache activity. Three children had a complete absence of headaches at the end of the study period and thus a reduction of  $100\%$ . These observations are clearly unsuited for analysis of variance, but we can apply the Kruskal- Wallis test. Table 9.15 also shows the ranks of the data and the mean rank for each group. Using the equation given above we can calculate the statistic  $H$  as  
 
-$$  
-\begin{array}{l}{{H=\frac{12}{18\times19}\left(\frac{55^{2}}{6}+\frac{36^{2}}{6}+\frac{80^{2}}{6}\right)-3\times19}}\\ {{\mathrm{}}}\\ {{=5.69.}}\end{array}  
-\begin{array}{l}{{H=\frac{12}{18\times19}\left(\frac{55^{2}}{6}+\frac{36^{2}}{6}+\frac{80^{2}}{6}\right)-3\times19}}\\ {{\mathrm{}}}\\ {{=5.69.}}\end{array}  
+$$
+\begin{array}{l}{{H=\frac{12}{18\times19}\left(\frac{55^{2}}{6}+\frac{36^{2}}{6}+\frac{80^{2}}{6}\right)-3\times19}}\\ {{\mathrm{}}}\\ {{=5.69.}}\end{array}
 $$  
 
 表9.15 三个治疗组每周头痛活动减少百分比，基于基线数据（Fentress等，1986）。括号内为秩次。  
@@ -1028,33 +1015,29 @@ We have  $k$  groups of sample sizes  $n_{i}$  ( $i = 1, \ldots , k$ ), where  $
 计算所有组得分的加权和$L$，公式为  
 the ranks in each group,  $R_{i}$ , are obtained. We calculate a weighted sum of all the group scores,  $L$ , as  
 
-$$  
-L = \sum_{i = 1}^{k}l_{i}n_{i}。  
-L = \sum_{i = 1}^{k}l_{i}n_{i}.  
+$$
+L = \sum_{i = 1}^{k}l_{i}n_{i}。
 $$  
 
 统计量 $T$ 计算公式为  
 The statistic  $T$  is calculated as  
 
-$$  
-T = \sum_{i = 1}^{k}l_{i}R_{i}。  
-T = \sum_{i = 1}^{k}l_{i}R_{i}.  
+$$
+T = \sum_{i = 1}^{k}l_{i}R_{i}。
 $$  
 
 在原假设下，$T$ 的期望值为 $E(T) = \frac{1}{2} (N + 1)L$，其标准误为  
 Under the null hypothesis the expected value of  $T$  is  $E(T) = \frac{1}{2} (N + 1)L$ , and its standard error is  
 
-$$  
-se(T) = \sqrt{\frac{N + 1}{12}\left(N\sum_{i = 1}^{k}l_{i}^{2}n_{i} - L^{2}\right)}。  
-se(T) = \sqrt{\frac{N + 1}{12}\left(N\sum_{i = 1}^{k}l_{i}^{2}n_{i} - L^{2}\right)}  
+$$
+se(T) = \sqrt{\frac{N + 1}{12}\left(N\sum_{i = 1}^{k}l_{i}^{2}n_{i} - L^{2}\right)}。
 $$  
 
 因此检验统计量 $z$ 由下式给出  
 so that the test statistic,  $z$ , is given by  
 
-$$  
-z = \frac{T - E(T)}{se(T)}。  
-z = \frac{T - E(T)}{se(T)}  
+$$
+z = \frac{T - E(T)}{se(T)}。
 $$  
 
 当无趋势的原假设成立时，$z$ 近似服从标准正态分布。  
@@ -1082,9 +1065,8 @@ $$
 因此检验统计量为  
 so that the test statistic is given by  
 
-$$  
-\begin{array}{c}{{z=\frac{86-33}{34.94}}}\\ {{=1.52\left(\mathrm{P}=0.13\right).}}\end{array}  
-\begin{array}{c}{{z=\frac{86-33}{34.94}}}\\ {{=1.52\left(\mathrm{P}=0.13\right).}}\end{array}  
+$$
+\begin{array}{c}{{z=\frac{86-33}{34.94}}}\\ {{=1.52\left(\mathrm{P}=0.13\right).}}\end{array}
 $$  
 
 因此，几乎没有证据支持眼睛暴露于紫外线与可见光透过量有关的假设。  
@@ -1159,9 +1141,8 @@ There are  $k - 1$  degrees of freedom between groups and  $n - k$  within group
 如果我们已知每组大小为 $n_i$ 的均值 $(M_i)$ 和标准差 $(s_i)$，可以用上述 $T$ 和 $B$ 的公式，结合一个更简单的计算组内平方和 $W$ 的方法：  
 If we already have the mean  $(M_{i})$  and standard deviation  $(s_{i})$  for each group of size  $n_{i}$  we can use the above formulae for  $T$  and  $B$  together with a simpler method of calculating the within groups sum of squares,  $W$ , as  
 
-$$  
-W = \sum_{i = 1}^{k}(n_{i} - 1)s_{i}^{2}。  
-W = \sum_{i = 1}^{k}(n_{i} - 1)s_{i}^{2}.  
+$$
+W = \sum_{i = 1}^{k}(n_{i} - 1)s_{i}^{2}。
 $$  
 
 
@@ -1170,17 +1151,15 @@ $$
 如果各组有自然的顺序，组间平方和可以分解为线性趋势部分和剩余的（非线性）部分。我们给各组赋予分数 $l_{i}$，这些 $l_{i}$ 的值等距分布，且其和为零。然后计算  
 If there is a natural ordering of the groups, the between groups sum of squares can be partitioned into a component due to a linear trend, and the remaining (non- linear) component. We give scores  $l_{i}$  to the groups, where the values of the  $l_{i}$  are equally spaced and chosen so that their sum is zero. We then calculate  
 
-$$  
-\begin{array}{r}{L = \sum l_{i}\bar{y}_{i}} \end{array}  
-\begin{array}{r}{L = \sum l_{i}\bar{y}_{i}} \end{array}  
+$$
+\begin{array}{r}{L = \sum l_{i}\bar{y}_{i}} \end{array}
 $$  
 
 及其标准误差  
 and its standard error  
 
-$$  
-se(L) = s_{res}\sqrt{\Sigma(l_{i}^{2} / n_{i})}。  
-se(L) = s_{res}\sqrt{\Sigma(l_{i}^{2} / n_{i})}.  
+$$
+se(L) = s_{res}\sqrt{\Sigma(l_{i}^{2} / n_{i})}。
 $$  
 
 可以通过比较 $L / se(L)$ 与自由度为组内自由度的 $t$ 分布，进行单样本 $t$ 检验。  
@@ -1206,41 +1185,36 @@ and the analysis of variance table recalculated by partitioning the between grou
 对于表9.12中的血清胰蛋白酶数据，271个观测值的总和为  
 For the serum trypsin data in Table 9.12 the sum of the 271 observations is given by  
 
-$$  
-\begin{array}{c}{{T=32\times128+137\times152+38\times194+44\times207+16\times215+4\times218}}\\ {{{}}}\\ {{=45712.}}\end{array}  
-\begin{array}{c}{{T=32\times128+137\times152+38\times194+44\times207+16\times215+4\times218}}\\ {{{}}}\\ {{=45712.}}\end{array}  
+$$
+\begin{array}{c}{{T=32\times128+137\times152+38\times194+44\times207+16\times215+4\times218}}\\ {{{}}}\\ {{=45712.}}\end{array}
 $$  
 
 组内平方和通过基于标准差的公式计算得出为  
 The within groups sum of squares is obtained from the formula based on standard deviations as  
 
-$$  
-W = 31\times 50.9^{2} + 136\times 58.5^{2} + \ldots +3\times 14.0^{2} = 879271.9  
-W = 31\times 50.9^{2} + 136\times 58.5^{2} + \ldots +3\times 14.0^{2} = 879271.9  
+$$
+W = 31\times 50.9^{2} + 136\times 58.5^{2} + \ldots +3\times 14.0^{2} = 879271.9
 $$  
 
 而量 $\Sigma n_{i}M_{i}^{2}$ 为  
 and the quantity  $\Sigma n_{i}M_{i}^{2}$  is  
 
-$$  
-32\times 128^{2} + 137\times 152^{2} + \ldots +4\times 218^{2} = 7934756.  
-32\times 128^{2} + 137\times 152^{2} + \ldots +4\times 218^{2} = 7934756.  
+$$
+32\times 128^{2} + 137\times 152^{2} + \ldots +4\times 218^{2} = 7934756.
 $$  
 
 因此，组间平方和为  
 The between groups sum of squares is thus  
 
-$$  
-\begin{array}{c}{{B=7934756-45712^{2}/271}}\\ {{=224103.1.}}\end{array}  
-\begin{array}{c}{{B=7934756-45712^{2}/271}}\\ {{=224103.1.}}\end{array}  
+$$
+\begin{array}{c}{{B=7934756-45712^{2}/271}}\\ {{=224103.1.}}\end{array}
 $$  
 
 方差分析的完整表格见表9.13。残差标准差为 $\sqrt{3318} = 57.602$ 。为了评估可能的线性趋势，我们给组赋予分数 $l_{i}$，这些分数等间距且和为零，例如 $-5, -3, -1, 1, 3, 5$ 。线性对比的值为  
 The complete analysis of variance table is shown in Table 9.13. The residual standard deviation is  $\sqrt{3318} = 57.602$ . To evaluate a possible linear trend we give the groups scores  $l_{i}$  which are equally spaced and add to zero, such as  $- 5, - 3, - 1, 1, 3$ , and 5. The value of the linear contrast is then  
 
-$$  
-\begin{array}{c}{{L=-5\times128-3\times152-1\times194+1\times207+3\times215+5\times218}}\\ {{=652}}\end{array}  
-\begin{array}{c}{{L=-5\times128-3\times152-1\times194+1\times207+3\times215+5\times218}}\\ {{=652}}\end{array}  
+$$
+\begin{array}{c}{{L=-5\times128-3\times152-1\times194+1\times207+3\times215+5\times218}}\\ {{=652}}\end{array}
 $$  
 
 它的标准误为  

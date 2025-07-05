@@ -179,9 +179,8 @@ Total
 因此，仅由偶然产生的一致次数为26.2，占总数的比例为 $26.2 / 85 = 0.31$。问题是，放射科医师的实际一致性比0.31好多少。最大一致性为1.00，所以我们可以将放射科医师的一致性表示为超出偶然一致的最大可能范围的比例，即 $1.00 - 0.31$。然后计算一致性为  
 So the number of agreements expected just by chance is 26.2, which as a proportion of the total is  $26.2 / 85 = 0.31$ . The question, therefore, is how much better were the radiologists than 0.31. The maximum agreement is 1.00, so we can express the radiologists' agreement as a proportion of the possible scope for doing better than chance, which is  $1.00 - 0.31$ . We then calculate the agreement as  
 
-$$  
+$$
 \frac{0.64 - 0.31}{1.00 - 0.31} = 0.47。  
-\frac{0.64 - 0.31}{1.00 - 0.31} = 0.47.  
 $$  
 
 这种一致性度量称为kappa，记作 $\kappa$。当一致性完美时，kappa最大为1.00；值为零表示没有优于偶然的一致；负值表示一致性比偶然还差，这在本情境中不太可能出现。  
@@ -569,9 +568,8 @@ Here I consider two further approaches that are more informative than simply loo
 对于任何检测结果，我们可以比较患者确实患有相关疾病时获得该结果的概率与其健康时获得该结果的概率。两者概率的比值称为似然比（LR），计算公式为  
 For any test result we can compare the probability of getting that result if the patient truly had the condition of interest with the corresponding probability if they were healthy. The ratio of these probabilities is called the likelihood ratio (LR), and it is calculated as  
 
-$$  
-\mathrm{LR} = \frac{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{disease})}{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{no~disease})} = \frac{\mathrm{sensitivity}}{1 - \mathrm{specificity}}  
-\mathrm{LR} = \frac{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{disease})}{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{no~disease})} = \frac{\mathrm{sensitivity}}{1 - \mathrm{specificity}}  
+$$
+\mathrm{LR} = \frac{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{disease})}{\mathrm{Prob}(\mathrm{positive~test}|\mathrm{no~disease})} = \frac{\mathrm{sensitivity}}{1 - \mathrm{specificity}}
 $$  
 
 我们可以将似然比视为增加对阳性诊断确定性的检测价值。患病率是检测前患病的概率。因此患病的赔率为患病率/(1 - 患病率)。例如，若患病率为 $10\%$ ，则赔率为0.11，即患病的概率为1比9。我们称此为检测前赔率，阳性预测值对应的赔率为检测后赔率。数学上不难证明  
@@ -690,9 +688,8 @@ Table 14.12 Reference intervals from 14 studies of fetal scalp blood pH (Lumley 
 标准误差可以用于估计正态分布任意百分位数的标准误差。例如，描述 $95\%$ 参考区间的值的标准误差为  
 The standard error may be obtained for any estimated centile of the Normal distribution. For example, the values describing a  $95\%$  reference interval have a standard error of  
 
-$$  
-\sqrt{\frac{s^{2}}{N} + \frac{1.96^{2}s^{2}}{2N}}  
-\sqrt{\frac{s^{2}}{N} + \frac{1.96^{2}s^{2}}{2N}}  
+$$
+\sqrt{\frac{s^{2}}{N} + \frac{1.96^{2}s^{2}}{2N}}
 $$  
 
 其中 $s$ 是观测值的标准差。该值大致等于 $s \sqrt{3 / N}$。不同样本量下 $95\%$ 参考区间边界的置信区间宽度见图14.6。对于样本量小于约50的情况，定义参考区间的值本身的置信区间比标准差更宽。  
@@ -885,9 +882,8 @@ $(t_{2} - t_{1})(y_{1} + y_{2}) / 2$ . This is known as the trapezium rule becau
 如果我们有 $n + 1$ 个在时间点 $t_{i}$ ($t = 0, \ldots , n$) 的测量值 $y_{i}$，则AUC计算公式为  
 If we have  $n + 1$  measurements  $y_{i}$  at times  $t_{i}$ $(t = 0, \ldots , n)$  then the AUC is calculated as  
 
-$$  
-\frac{1}{2} \sum_{i = 0}^{n - 1} (t_{i + 1} - t_{i}) (y_{i} + y_{i + 1})。  
-\frac{1}{2} \sum_{i = 0}^{n - 1} (t_{i + 1} - t_{i}) (y_{i} + y_{i + 1}).  
+$$
+\frac{1}{2} \sum_{i = 0}^{n - 1} (t_{i + 1} - t_{i}) (y_{i} + y_{i + 1})。
 $$  
 
 AUC的单位是 $y_{i}$ 和 $t_{i}$ 单位的乘积，例如 nmol·min/l，较难直观理解。将AUC除以总时间，可以得到一个时间段内的加权平均水平，这通常更有用。  
@@ -896,9 +892,8 @@ The units of the AUC are the product of the units used for  $y_{i}$  and  $t_{i}
 表14.13中第一个受试者的计算过程如下。该受试者有八次观测，因此需计算七个面积。计算为  
 The calculation for the first subject in Table 14.13 goes as follows. There were eight observations for this subject, so seven areas to calculate. We have  
 
-$$  
-\begin{array}{l}{\mathrm{AUC} = 3\times \left(\frac{1 + 10}{2}\right) + 2\times \left(\frac{10 + 16}{2}\right) + 5\times \left(\frac{16 + 22}{2}\right) + \ldots}\\ {+60\times \left(\frac{18 + 14}{2}\right)}\\ {= 1930\mathrm{nmol.min / l}.} \end{array}  
-\begin{array}{l}{\mathrm{AUC} = 3\times \left(\frac{1 + 10}{2}\right) + 2\times \left(\frac{10 + 16}{2}\right) + 5\times \left(\frac{16 + 22}{2}\right) + \ldots}\\ {+60\times \left(\frac{18 + 14}{2}\right)}\\ {= 1930\mathrm{nmol.min / l}.} \end{array}  
+$$
+\begin{array}{l}{\mathrm{AUC} = 3\times \left(\frac{1 + 10}{2}\right) + 2\times \left(\frac{10 + 16}{2}\right) + 5\times \left(\frac{16 + 22}{2}\right) + \ldots}\\ {+60\times \left(\frac{18 + 14}{2}\right)}\\ {= 1930\mathrm{nmol.min / l}.} \end{array}
 $$  
 
 该值也可表示为平均水平，即 $1930 / 120 = 16.1 \mathrm{nmol / l}$。  

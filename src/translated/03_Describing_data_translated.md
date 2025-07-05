@@ -221,9 +221,8 @@ Figure 3.12 Box-and-whisker plot of the IgM data, showing the  $2\frac{1}{2}$ , 
 观察值 $x_{i}$ 与均值 $\bar{x}$ 的距离为 $x_{i} - \bar{x}$，若有 $n$ 个观察值，则有一组 $n$ 个这样的距离，每个个体一个。低于均值的观察值距离为负。我们可以计算观察值与均值之间距离的平均值，但这些距离的和 $\Sigma (x_{i} - \bar{x})$ 总是零，因为均值是由个体观察值计算得出。然而，如果先将距离平方再求和，得到的量必为正。平方差的平均值因此衡量了个体相对于均值的偏差。这个量称为方差，定义为  
 an observed value  $x_{i}$  the distance from the mean  $\bar{x}$  is  $x_{i} - \bar{x}$ , and if we have  $n$  observations we have a set of  $n$  such distances, one for each individual. For observations below the mean the difference will be negative. We can calculate the average distance between the observations and their mean, but the sum of these distances,  $\Sigma (x_{i} - \bar{x})$ , is always zero because of the way the mean is calculated from the individual observations. However, if we square the distances before we sum them we get a quantity that must be positive. The average of these squared differences thus gives a measure of individual deviations from the mean. This quantity is called the variance, and is defined as  
 
-$$  
+$$
 \frac{\sum_{i = 1}^{n}(x_{i} - \bar{x})^{2}}{n - 1}。  
-\frac{\sum_{i = 1}^{n}(x_{i} - \bar{x})^{2}}{n - 1}.  
 $$  
 
 注意，我们除以的是 $n - 1$ 而不是更直观的 $n$。除以 $n$ 得到的是观测值围绕样本均值的方差，但我们几乎总是将数据视为来自某个更大总体的样本，且希望用样本数据来估计总体的变异性。除以 $n - 1$ 能更好地估计总体方差，虽然对于大样本而言，两者差异可忽略不计。  
@@ -249,9 +248,8 @@ Many calculators can calculate the standard deviation, by means of a key marked 
 然而，如果我们想自己计算，有一个更简便的公式，数学上等价于上式：  
 However, should we wish to do the calculation ourselves there is a much easier formula to use, which is mathematically equivalent:  
 
-$$  
+$$
 s = \sqrt{\frac{\Sigma x^{2} - (\Sigma x)^{2} / n}{n - 1}}。  
-s = \sqrt{\frac{\Sigma x^{2} - (\Sigma x)^{2} / n}{n - 1}}.  
 $$  
 
 （关于 $\Sigma$ 符号的简化，详见附录A。）使用此公式，我们可以仅通过观测值之和 $\Sigma x$ 和观测值平方和 $\Sigma x^{2}$ 计算标准差，无需计算每个观测值与均值的距离。  
@@ -268,8 +266,7 @@ $$
 因此，PImax的均值为 $2315 / 25 = 92.60 \text{cm} \text{H}_{2} \text{O}$ ，标准差为  
 so the mean PImax is  $2315 / 25 = 92.60 \text{cm} \text{H}_{2} \text{O}$  and the standard deviation is  
 
-$$  
-\begin{array}{c}{{s=\sqrt{\frac{229275-2315^{2}/25}{24}}.}}\\ {{=24.92\mathrm{cm}\mathrm{H}_{2}\mathrm{O}.}}\end{array}  
+$$
 \begin{array}{c}{{s=\sqrt{\frac{229275-2315^{2}/25}{24}}.}}\\ {{=24.92\mathrm{cm}\mathrm{H}_{2}\mathrm{O}.}}\end{array}  
 $$  
 

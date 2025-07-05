@@ -306,8 +306,7 @@ Table 11.5 Fasting blood glucose data from 24 type 1 diabetic patients (Thuesen 
 通常计算的相关系数称为Pearson相关系数$r$，或“积差”相关系数。若有两个变量$X$和$Y$，它们之间的相关性记为$r(X,Y)$，通常简写为$r$，计算公式为  
 The correlation coefficient that is usually calculated is called Pearson's  $r$  or the 'product- moment' correlation coefficient. If we have two variables  $X$  and  $Y$ , the correlation between them, denoted by  $r(X,Y)$  or usually just  $r$ , is given by  
 
-$$  
-r = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\sqrt{\Sigma(x_{i} - \bar{x})^{2}\Sigma(y_{i} - \bar{y})^{2}}}  
+$$
 r = \frac{\Sigma(x_{i} - \bar{x})(y_{i} - \bar{y})}{\sqrt{\Sigma(x_{i} - \bar{x})^{2}\Sigma(y_{i} - \bar{y})^{2}}}  
 $$  
 
@@ -342,9 +341,8 @@ This formula should not be used in a computer program, however, as inaccuracy is
 Pearson 相关系数  $r$  的抽样分布不是正态分布，但我们可以对  $r$  进行变换，得到一个称为  $z$  的量，它具有正态抽样分布。变换为  
 The sampling distribution of Pearson's  $r$  is not Normal, but we can transform  $r$  to get a quantity called  $z$  which does have a Normal sampling distribution. The transformation is  
 
-$$  
-z = \frac{1}{2}\log_{\mathrm{e}}\left(\frac{1 + r}{1 - r}\right)。  
-z = \frac{1}{2}\log_{\mathrm{e}}\left(\frac{1 + r}{1 - r}\right).  
+$$
+z = \frac{1}{2}\log_{\mathrm{e}}\left(\frac{1 + r}{1 - r}\right)。
 $$  
 
 z 的标准误约为  $1 / \sqrt{n - 3}$，其中  $n$  是样本量，因此我们可以构建 95% 的  $z$  置信区间，区间范围为  
@@ -366,17 +364,15 @@ $$
 图 11.1 中的  $\%$  脂肪含量与年龄数据的相关系数为 0.7921，因此我们有  
 The  $\%$  fat and age data in Figure 11.1 had a correlation of 0.7921 so we have  
 
-$$  
-z = \frac{1}{2}\log_{e}\left(\frac{1 + 0.7921}{1 - 0.7921}\right) = 1.0770。  
-z = \frac{1}{2}\log_{e}\left(\frac{1 + 0.7921}{1 - 0.7921}\right) = 1.0770.  
+$$
+z = \frac{1}{2}\log_{e}\left(\frac{1 + 0.7921}{1 - 0.7921}\right) = 1.0770。
 $$  
 
 我们可以通过计算获得  $z$  的 95% 置信区间  
 We can get a  $95\%$  confidence interval for  $z$  by calculating  
 
-$$  
-z_{1} = 1.0770 - 1.96 / \sqrt{15}  
-z_{1} = 1.0770 - 1.96 / \sqrt{15}  
+$$
+z_{1} = 1.0770 - 1.96 / \sqrt{15}
 $$  
 
 以及  
@@ -610,9 +606,8 @@ Here  $b$  is the slope of the line and  $a$  is called the intercept because it
 实际上，对于给定数据集计算 $a$ 和 $b$ 是很容易的（参见11.13节），尽管使用计算机进行计算显然更为合适。对于糖尿病患者的数据，图11.10中回归线的方程为  
 In practice the calculation of  $a$  and  $b$  for a given set of data is easy (see section 11.13) although it is definitely preferable to use a computer to do the calculations. For the data on diabetics the equation of the regression line shown in Figure 11.10 is  
 
-$$  
-\mathrm{Vcf} = 1.10 + 0.0220 \times \text{blood glucose}。  
-\mathrm{Vcf} = 1.10 + 0.0220 \times \text{blood glucose}.  
+$$
+\mathrm{Vcf} = 1.10 + 0.0220 \times \text{blood glucose}。
 $$  
 
 这个方程告诉我们什么？对于任意血糖值，从回归方程得到的 Vcf 估计值即为预测的 Vcf 值，但我们需要对这种预测的不确定性有一定的度量。更根本地，我们通常希望考虑两个变量之间观察到的关系是否只是偶然发现，并评估拟合直线的优劣。所有这些方面都可以通过之前介绍的残差来研究。  
@@ -660,9 +655,8 @@ test gives  $W^{\prime} = 0.907$ $(\mathbf{P} = 0.03)$  , indicating some non- N
 图11.10中所示的最小二乘回归线方程为  
 The least squares regression line shown in Figure 11.10 has the equation  
 
-$$  
-Y = 1.10 + 0.0220X。  
-Y = 1.10 + 0.0220X.  
+$$
+Y = 1.10 + 0.0220X。
 $$  
 
 从图11.10和11.13来看，该分析的假设似乎合理—回归线周围的散点较为均匀且对称，线性关系看起来可信，且残差的分布与正态分布相差不大。  
@@ -766,9 +760,8 @@ Note that, as we should expect from the nature of the analysis, the equation is 
 如果我们先计算出 $X$ 和 $Y$ 值相对于它们均值的“平方和”以及“乘积和”，计算过程可以简化：  
 The calculations can be simplified if we first obtain the 'sum of squares' of the  $X$  and  $Y$  values about their means, and the 'sum of products':  
 
-$$  
-\begin{array}{l}{{S_{x x}=\sum x_{i}^{2}-(\sum x_{i})^{2}/n}}\\ {{S_{y y}=\sum y_{i}^{2}-(\sum y_{i})^{2}/n}}\\ {{S_{x y}=\sum x_{i}y_{i}-\sum x_{i}\sum y_{i}/n.}}\end{array}  
-\begin{array}{l}{{S_{x x}=\sum x_{i}^{2}-(\sum x_{i})^{2}/n}}\\ {{S_{y y}=\sum y_{i}^{2}-(\sum y_{i})^{2}/n}}\\ {{S_{x y}=\sum x_{i}y_{i}-\sum x_{i}\sum y_{i}/n.}}\end{array}  
+$$
+\begin{array}{l}{{S_{x x}=\sum x_{i}^{2}-(\sum x_{i})^{2}/n}}\\ {{S_{y y}=\sum y_{i}^{2}-(\sum y_{i})^{2}/n}}\\ {{S_{x y}=\sum x_{i}y_{i}-\sum x_{i}\sum y_{i}/n.}}\end{array}
 $$  
 
 量 $S_{xx}$ 和 $S_{yy}$ 分别是 $X$ 和 $Y$ 方差的 $(n - 1)$ 倍。计算斜率 $b$ 的更简便方法是  
@@ -884,9 +877,8 @@ $$
 斜率 $b$ 的标准误与残差标准差密切相关，其计算公式为  
 The standard error of the slope,  $b$ , is strongly related to the residual standard deviation, being  
 
-$$  
-se(b) = \frac{s_{res}}{\sqrt{S_{xx}}}  
-se(b) = \frac{s_{res}}{\sqrt{S_{xx}}}  
+$$
+se(b) = \frac{s_{res}}{\sqrt{S_{xx}}}
 $$  
 
 因此，$b$ 的 $95\%$ 置信区间为  
@@ -903,17 +895,15 @@ where  $t$  is on  $n - 2$  degrees of freedom (the degrees of freedom associate
 斜率通常是最感兴趣的参数。$b$ 的标准误为  
 The slope is usually the aspect of most interest. The standard error of  $b$  is  
 
-$$  
-\begin{array}{c}{{s e(b)=\frac{0.2167}{\sqrt{429.704}}}}\\ {{=0.0105.}}\end{array}  
-\begin{array}{c}{{s e(b)=\frac{0.2167}{\sqrt{429.704}}}}\\ {{=0.0105.}}\end{array}  
+$$
+\begin{array}{c}{{s e(b)=\frac{0.2167}{\sqrt{429.704}}}}\\ {{=0.0105.}}\end{array}
 $$  
 
 根据表B4，21个自由度下的 $t_{0.975}$ 值为2.08，因此95%的置信区间为  
 From Table B4 the value of  $t_{0.975}$  on 21 degrees of freedom is 2.08, so a  $95\%$  confidence interval is given by  
 
-$$  
-0.02196\pm 2.08\times 0.0105  
-0.02196\pm 2.08\times 0.0105  
+$$
+0.02196\pm 2.08\times 0.0105
 $$  
 
 即从0.00012到0.044。置信区间从零开始，零表示变量间无关系，到样本中观察值的两倍。  
@@ -1063,9 +1053,8 @@ data. Such extrapolation is unjustified as we have no evidence about the relatio
 外推危险的一个例子是对1954年至1984年间世界纪录跑一英里时间的二次回归模型拟合。Kitson (1984) 给出了模型  
 An example of the danger of extrapolation is seen from a quadratic regression model fitted to the world record times to run a mile from 1954 to 1984. Kitson (1984) produced the model  
 
-$$  
-\mathrm{time} = 4.777 - 0.02039 \mathrm{Year} + 0.0001040 \mathrm{Year}^2  
-\mathrm{time} = 4.777 - 0.02039 \mathrm{Year} + 0.0001040 \mathrm{Year}^2  
+$$
+\mathrm{time} = 4.777 - 0.02039 \mathrm{Year} + 0.0001040 \mathrm{Year}^2
 $$  
 
 其中“Year”是日历年份减去1900。他预测“终极一英里”将于1998年以3分46.66秒的时间完成，并基于此模型认为“我们可能已经接近终极一英里不到一秒”。然而，他未能注意到，1998年之后该模型显示世界纪录时间将开始回升（见图11.17），这显然是不可能的！  

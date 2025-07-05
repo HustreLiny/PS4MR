@@ -223,8 +223,7 @@ An example from a regression analysis is the following equation relating
 出生体重（单位：千克，BWt）与胸围（CC）及上臂中围（AC）（均为厘米）之间的关系（Bhargava 等，1985年）  
 birth weight in kg (BWt) to chest circumference (CC) and mid- arm circumference (AC) (both in cm) (Bhargava et al., 1985)  
 
-$$  
-\mathbf{BWt} = - 3.0983527 + 0.142088\mathbf{CC} + 0.158039\mathbf{AC}  
+$$
 \mathbf{BWt} = - 3.0983527 + 0.142088\mathbf{CC} + 0.158039\mathbf{AC}  
 $$  
 

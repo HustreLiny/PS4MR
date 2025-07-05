@@ -77,14 +77,12 @@ required observations are thus the sample size plus 1 (299) multiplied by 0.025,
 
 $$
 \begin{array}{l}{{\binom{100}{0}~=~1}}\\ {{\binom{100}{1}~=~\binom{100}{0}\times100/1=100}}\\ {{\binom{100}{2}~=~\binom{100}{1}\times99/2=4950}}\end{array}
-\begin{array}{l}{{\binom{100}{0}~=~1}}\\ {{\binom{100}{1}~=~\binom{100}{0}\times100/1=100}}\\ {{\binom{100}{2}~=~\binom{100}{1}\times99/2=4950}}\end{array}
 $$
 
 使用第 4.9.1 节中的公式，所需概率为  
 Using the formula in section 4.9.1, the required probability is
 
 $$
-\begin{array}{l}{{(0.08)^{0}(0.92)^{100}+100(0.08)^{1}(0.92)^{99}+4950(0.08)^{2}(0.92)^{98}}}\\ {{=0.00024+0.00208+0.00895=0.0113.}}\end{array}
 \begin{array}{l}{{(0.08)^{0}(0.92)^{100}+100(0.08)^{1}(0.92)^{99}+4950(0.08)^{2}(0.92)^{98}}}\\ {{=0.00024+0.00208+0.00895=0.0113.}}\end{array}
 $$
 
@@ -323,8 +321,7 @@ indicating that a non- parametric method would be suitable. An alternative, but 
 【10】1 (a) 必须使用适合配对数据的分析方法。对蓖麻油和DNCB呈阴性的比例分别为 $44 / 173 = 25.4\%$ 和 $69 / 173 = 39.9\%$ 。使用第10.4节中给出的方法计算这两个比例差异的 $95\%$ 置信区间为从 $5\%$ 到 $24\%$ 。检验两个皮肤试验阴性患者比例相同的假设，通过计算  
 10.1 (a) It is essential to use an analysis appropriate for paired data. The proportions negative to croton oil and DNCB were  $44 / 173 = 25.4\%$  and  $69 / 173 = 39.9\%$  respectively. A  $95\%$  CI for the difference between these proportions, using the method given in section 10.4, is from  $5\%$  to  $24\%$ . The hypothesis test that the proportions of patients negative to the two skin tests are the same is evaluated by calculating  
 
-$$  
-z = \frac{48 - 23}{\sqrt{48 + 23}} = 2.97  
+$$
 z = \frac{48 - 23}{\sqrt{48 + 23}} = 2.97  
 $$  
 
@@ -417,9 +414,8 @@ correlation coefficients with survival time of 0.63,  $- 0.67$  and  $- 0.42$  r
 11.2 (a) 线性回归方程为  
 11.2 (a) The linear regression equation is  
 
-$$  
-\mathbf{RMR} = 811.23 + 7.0595\times \mathrm{weight}  
-\mathbf{RMR} = 811.23 + 7.0595\times \mathrm{weight}  
+$$
+\mathbf{RMR} = 811.23 + 7.0595\times \mathrm{weight}
 $$  
 
 残差标准差为157.91千卡/24小时。  
@@ -445,9 +441,8 @@ or 5.09 to 9.03 kcal/24 hr.
 11.3 (a) 以血糖为自变量对  $\log_{e}Vcf$  进行回归，得到方程  
 11.3 (a) The regression of  $\log_{e}Vcf$  on blood glucose gives the equation  
 
-$$  
-\log_{e}Vcf = 0.115 + 0.0148\times \mathrm{blood~glucose}。  
-\log_{e}Vcf = 0.115 + 0.0148\times \mathrm{blood~glucose}.  
+$$
+\log_{e}Vcf = 0.115 + 0.0148\times \mathrm{blood~glucose}。
 $$  
 
 残差标准差为0.2167。  
@@ -582,9 +577,8 @@ expect the model to err by more than about 2.37 l (twice the residual SD), which
 (b) 肺容量对身高的线性回归方程为  
 (b) The linear regression equation of lung volume on height is  
 
-$$  
-\mathrm{lung~volume} = -9.869 + 0.0951\times \mathrm{height}。  
-\mathrm{lung~volume} = -9.869 + 0.0951\times \mathrm{height}.  
+$$
+\mathrm{lung~volume} = -9.869 + 0.0951\times \mathrm{height}。
 $$  
 
 斜率的标准误差为0.0184，残差标准差为1.227，且 $R^{2} = 0.47$。这些数值表明，多元回归模型对数据的拟合仅略优于以身高为自变量的线性回归，正如第一个模型中年龄和性别系数不显著所示。  
@@ -593,9 +587,8 @@ The SE of the slope is 0.0184 and the residual SD is 1.227, and  $R^{2} = 0.47$ 
 (c) 利用上述肺容量对身高的线性回归结果，对于具有平均肺容量的个体，$95\%$ 预测区间为  
 (c) Using the above results of linear regression of lung volume on height, the  $95\%$  prediction interval for someone with average lung capacity is  
 
-$$  
-6.047 \pm 2.042 \times 1.227 \sqrt{1 + 1 / 32}  
-6.047 \pm 2.042 \times 1.227 \sqrt{1 + 1 / 32}  
+$$
+6.047 \pm 2.042 \times 1.227 \sqrt{1 + 1 / 32}
 $$  
 
 或者 3.50 到 8.59 升。  
@@ -720,17 +713,15 @@ Figure A14.3 Time (hours)
 因此，献血者中吸毒者的比例为  
 Thus the proportion of blood donors who would be drug users is  
 
-$$  
-\frac{0.24 \times 0.33 \times 0.05}{0.24 \times 0.33 \times 0.05 + 0.63 \times 0.95} = 0.007。  
-\frac{0.24 \times 0.33 \times 0.05}{0.24 \times 0.33 \times 0.05 + 0.63 \times 0.95} = 0.007.  
+$$
+\frac{0.24 \times 0.33 \times 0.05}{0.24 \times 0.33 \times 0.05 + 0.63 \times 0.95} = 0.007。
 $$  
 
 (b) 在三分之二的说谎的药物使用者中，我们预计有0.76（76%）会未通过测谎测试。在非药物使用者中，我们也预计有0.37（37%）会未通过测试。因此，未通过测试者中药物使用者的预期比例为  
 (b) Among the two thirds of drug users who lied, we would expect 0.76 (76%) to fail the polygraph test. Among non-drug users we would expect 0.37 (37%) to fail the test too. Thus the expected proportion of drug users among those failing the test is  
 
-$$  
-\frac{0.76 \times 0.33 \times 0.05}{0.76 \times 0.33 \times 0.05 + 0.37 \times 0.95} = 0.035。  
-\frac{0.76 \times 0.33 \times 0.05}{0.76 \times 0.33 \times 0.05 + 0.37 \times 0.95} = 0.035.  
+$$
+\frac{0.76 \times 0.33 \times 0.05}{0.76 \times 0.33 \times 0.05 + 0.37 \times 0.95} = 0.035。
 $$  
 
 换句话说，几乎所有被测试拒绝的人（约96%）都是非药物使用者。为了筛查出一个药物使用者，必须错误地拒绝大约27名真正的捐赠者。  
@@ -812,9 +803,8 @@ significant. Confidence intervals would be very wide. It is totally wrong to sug
 15.5 (a) 如15.3节所述，此处的标准化差异为  
 15.5 (a) As described in section 15.3, the standardized difference here is  
 
-$$  
-\frac{0.3 - 0.2}{\sqrt{0.25 \times 0.75}} = 0.23。  
-\frac{0.3 - 0.2}{\sqrt{0.25 \times 0.75}} = 0.23.  
+$$
+\frac{0.3 - 0.2}{\sqrt{0.25 \times 0.75}} = 0.23。
 $$  
 
 使用图15.2中的列线图，所需的样本量为600（每组300）。  
@@ -826,9 +816,8 @@ Using the nomogram in Figure 15.2, the required sample size is 600 (300 per grou
 (c) 标准化差异为0.7时，样本量为65可达到  $80\%$  的检验效能。假设安慰剂组高血压的风险为0.3，则有  
 (c) A standardized difference of 0.7 gives  $80\%$  power with a sample of size 65. Taking the risk of hypertension in the placebo group as 0.3, we have  
 
-$$  
-\frac{0.3 - p_{\mathrm{a}}}{\sqrt{\bar{p}(1 - \bar{p})}} = 0.7  
-\frac{0.3 - p_{\mathrm{a}}}{\sqrt{\bar{p}(1 - \bar{p})}} = 0.7  
+$$
+\frac{0.3 - p_{\mathrm{a}}}{\sqrt{\bar{p}(1 - \bar{p})}} = 0.7
 $$  
 
 其中  $p_{\mathrm{a}}$  是阿司匹林组发生高血压的比例，  $\bar{p}$  是0.3和  $p_{\mathrm{a}}$  的平均值。该方程可通过数学方法或反复试验求解，结果为  $p_{\mathrm{a}} = 0.04$ 。显然，该试验样本量过小，除非治疗效果非常显著，否则难以检测出治疗的益处。  
@@ -851,9 +840,8 @@ where  $p_{\mathrm{a}}$  is the proportion developing hypertension in the aspiri
 (b) 一个男性身高超过 $182.9\mathrm{~cm}$ 的概率是正态分布上对应于 $z = (182.9 - 179.1) / 5.84 = 0.65$ 的上尾面积，根据表B1，该概率为0.2578。对于女性，我们需要对应于 $z = (182.9 - 171.7) / 5.75 = 1.95$ 的尾部面积，为0.0256。如果成年人中60%是女性，那么身高超过 $182.9\mathrm{~cm}$ 的成年人中女性所占比例为  
 (b) The probability of a man being taller than  $182.9\mathrm{~cm}$  is the upper tail area of the Normal distribution corresponding to  $z = (182.9 - 179.1) / 5.84 = 0.65$ , which from Table B1 is 0.2578. For women we require the tail area corresponding to  $z = (182.9 - 171.7) / 5.75 = 1.95$ , which is 0.0256. If  $60\%$  of adults are women the proportion of adults taller than  $182.9\mathrm{~cm}$  who are women is given by  
 
-$$  
-\frac{0.6 \times 0.0256}{0.4 \times 0.2578 + 0.6 \times 0.0256}  
-\frac{0.6 \times 0.0256}{0.4 \times 0.2578 + 0.6 \times 0.0256}  
+$$
+\frac{0.6 \times 0.0256}{0.4 \times 0.2578 + 0.6 \times 0.0256}
 $$  
 
 $= 0.1296$ 或 $13\%$。  

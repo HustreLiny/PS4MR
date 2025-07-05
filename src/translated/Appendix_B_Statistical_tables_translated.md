@@ -68,9 +68,8 @@ Example: For a rank sum of 8 from a sample of 11 we look along the row for  $n =
 对于 $n>25$，秩和 $(R)$ 近似服从正态分布，其均值为 $M = n(n + 1) / 4$，标准差为  
 For  $n > 25$  the rank sum  $(R)$  has an approximately Normal distribution with mean  $M = n(n + 1) / 4$  and standard deviation  
 
-$$  
+$$
 S = \sqrt{n(n + 1)(2n + 1) / 24}。  
-S = \sqrt{n(n + 1)(2n + 1) / 24}.  
 $$  
 
 检验统计量 $(R - M) / S$ 使用表 B2 进行评估。  
@@ -96,9 +95,8 @@ Example: For a rank sum of 29 from a sample of 6 compared with a sample of 11 we
 对于较大的样本，较小组的秩和 $\pmb{T}$ 近似服从正态分布，其均值为 $M = n_{1}(n_{1} + n_{2} + 1) / 2$ ，标准差为  
 For larger samples, the sum of the ranks in the smaller group,  $\pmb{T}$  , has an approximately Normal distribution with mean  $M = n_{1}(n_{1} + n_{2} + 1) / 2$  and standard deviation  
 
-$$  
+$$
 S = \sqrt{n_{2}M / 6}。  
-S = \sqrt{n_{2}M / 6}.  
 $$  
 
 使用表B2计算检验统计量 $(T - M) / S$。  
