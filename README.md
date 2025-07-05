@@ -17,3 +17,8 @@ nvm不能用，还是装老版本nodejs和gitbook cli，然后install, build 吧
 [text](https://chenxiwong.github.io/gitbook/blog/other/gitbookEnvPrepare.html)
 [text](https://dianyao.co/gitbook-notes/1.%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6.html)
 [text](https://blog.csdn.net/qq_40889820/article/details/110013310)
+
+$$
+$chinese formula$
+english formula
+$$

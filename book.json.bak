@@ -1,0 +1,49 @@
+{
+    "plugins": [
+        "anchor-navigation-ex",
+        "edit-link",
+        "copy-code-button",
+        "theme-comscore",
+        "ga",
+        "katex",
+        "lightbox",
+        "search-plus",
+        "-lunr",
+        "-search",
+        "page-treeview",
+        "collapsible-menu"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "anchor-navigation-ex": {
+            "showLevel": true,
+            "associatedWithSummary": false,
+            "printLog": false,
+            "multipleH1": false,
+            "mode": "float",
+            "showGoTop": true,
+            "float": {
+                "floatIcon": "fa fa-navicon",
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        },
+        "edit-link": {
+            "base": "https://github.com/HustreLiny/PS4MR/edit/master/translated/",
+            "label": "Edit on GitHub"
+        },
+        "ga": {
+            "token": ""
+        }
+    }
+}
