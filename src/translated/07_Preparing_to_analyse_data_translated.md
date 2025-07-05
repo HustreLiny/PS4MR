@@ -301,8 +301,7 @@ Figure 7.9 Normal plot of piglet birth weights (Royston et al., 1982).
 观测值与对应百分比 $P_{i}$ 的正态分数作图，计算公式为  
 observation is plotted against the Normal score corresponding to the percentage  $P_{i}$ , given by  
 
-$$  
-$P_{i} = \frac{i - 3 / 8}{n + 1 / 4} \times 100$。  
+$$    
 P_{i} = \frac{i - 3 / 8}{n + 1 / 4} \times 100.  
 $$  
 

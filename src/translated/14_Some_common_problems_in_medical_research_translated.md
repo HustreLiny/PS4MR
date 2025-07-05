@@ -238,17 +238,15 @@ We can build this idea into the calculation of  $\kappa$  to get a quantity call
 卡帕系数是根据频数表中对角线上的观察频数和期望频数计算的。如果在 $g$ 个类别中有 $n$ 个观察值，则观察到的比例一致性为  
 Kappa is calculated from the observed and expected frequencies on the diagonal of a square table of frequencies. If there are  $\pmb{n}$  observations in  $\pmb{g}$  categories, then the observed proportional agreement is  
 
-$$  
-$p_{o} = \sum_{i = 1}^{g} f_{i i} / n$  
-p_{o} = \sum_{i = 1}^{g}f_{i i} / n  
+$$
+p_{o} = \sum_{i = 1}^{g}f_{i i} / n
 $$  
 
 其中 $f_{i i}$ 是类别 $i$ 的一致次数。随机一致的期望比例为  
 where  $f_{i i}$  is  the  number  of  agreements  for  category  i.  The  expected proportion of agreements by chance is given by  
 
-$$  
-$p_{e} = \sum_{i = 1}^{g} r_{i} c_{i} / n^{2}$  
-p_{e} = \sum_{i = 1}^{g}r_{i}c_{i} / n^{2}  
+$$
+p_{e} = \sum_{i = 1}^{g}r_{i}c_{i} / n^{2}
 $$  
 
 其中 $\pmb{r_{i}}$ 和 $c_{i}$ 分别是第 i 类的行和列总数。一致性指标 kappa 定义为  

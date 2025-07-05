@@ -524,9 +524,8 @@ The nomogram can be used for trials in which the sample size in the two groups w
 若要使用对数图规划不等组的研究，必须先假设两组样本量相等计算 $N$，然后计算调整后的样本量 $N^{\prime}$。若 $k = n_{1} / n_{2}$ 是两组样本量的比例，则所需总样本量为  
 To use the nomogram to plan a study with unequal groups, we must first calculate  $N$  as if we were using equal groups and then calculate the modified sample size  $N^{\prime}$ . If  $k = n_{1} / n_{2}$  is the ratio of the sample sizes in the two groups, then the required total sample size is  
 
-$$  
-$N^{\prime} = N(1 + k)^{2} / 4k$  
-N^{\prime} = N(1 + k)^{2} / 4k  
+$$
+N^{\prime} = N(1 + k)^{2} / 4k
 $$  
 
 两组样本量分别为 $N^{\prime} / (1 + k)$ 和 $k N^{\prime} / (1 + k)$。例如，若希望实验组样本数是对照组的两倍，即 $k = 2$，则 $N^{\prime} = 9N / 8$，增加幅度较小；但若 $k = 3$，则 $N^{\prime} = 16N / 12$，比等样本量时增加了三分之一。  
@@ -541,9 +540,8 @@ The nomogram can be used to calculate the power for a given sample size. We just
 评估不等样本量 $n_{1}$ 和 $n_{2}$ 的研究功效时，使用“有效”样本量 $N$，其计算公式为  
 To evaluate the power of a study with unequal sample sizes  $n_{1}$  and  $n_{2}$  we use the 'effective' sample size  $N$ , which is calculated as  
 
-$$  
-$N = 4N^{\prime}k / (1 + k)^{2}$  
-N = 4N^{\prime}k / (1 + k)^{2}  
+$$
+N = 4N^{\prime}k / (1 + k)^{2}
 $$  
 
 其中  $k = n_{1} / n_{2}$ ，且  $N^{\prime} = n_{1} + n_{2}$  

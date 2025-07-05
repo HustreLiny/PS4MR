@@ -317,9 +317,8 @@ where  $x_{i}$  and  $y_{i}$  are the values of  $X$  and  $Y$  for the  $i^{\te
 为了计算，使用一个更简单的公式是  
 For the purposes of calculation a simpler formula to use is  
 
-$$  
-$r = \frac{\Sigma x_{i}y_{i} - (\Sigma x_{i})(\Sigma y_{i}) / n}{\sqrt{[\Sigma x_{i}^{2} - (\Sigma x_{i})^{2} / n][\Sigma y_{i}^{2} - (\Sigma y_{i})^{2} / n]}}$  
-r = \frac{\Sigma x_{i}y_{i} - (\Sigma x_{i})(\Sigma y_{i}) / n}{\sqrt{[\Sigma x_{i}^{2} - (\Sigma x_{i})^{2} / n][\Sigma y_{i}^{2} - (\Sigma y_{i})^{2} / n]}}  
+$$
+r = \frac{\Sigma x_{i}y_{i} - (\Sigma x_{i})(\Sigma y_{i}) / n}{\sqrt{[\Sigma x_{i}^{2} - (\Sigma x_{i})^{2} / n][\Sigma y_{i}^{2} - (\Sigma y_{i})^{2} / n]}}
 $$  
 
 其中需要计算  $\Sigma x_{i}$ 、 $\Sigma y_{i}$ 、 $\Sigma x_{i}^{2}$ 、 $\Sigma y_{i}^{2}$  和  $\Sigma x_{i}y_{i}$ 。  
@@ -328,9 +327,8 @@ for which it is necessary to obtain  $\Sigma x_{i}, \Sigma y_{i}, \Sigma x_{i}^{
 如果你已经有了均值（ $\bar{x}$  和  $\bar{y}$ ）以及标准差（ $s_{x}$  和  $s_{y}$ ），公式可以简化为  
 If you already have the means ( $\bar{x}$  and  $\bar{y}$ ) and standard deviations ( $s_{x}$  and  $s_{y}$ ) the formula simplifies to  
 
-$$  
-$r = \frac{\Sigma x_{i}y_{i} - n\bar{x}\bar{y}}{(n - 1)s_{x}s_{y}}$  
-r = \frac{\Sigma x_{i}y_{i} - n\bar{x}\bar{y}}{(n - 1)s_{x}s_{y}}  
+$$
+r = \frac{\Sigma x_{i}y_{i} - n\bar{x}\bar{y}}{(n - 1)s_{x}s_{y}}
 $$  
 
 这样就只需要额外计算项  $\Sigma x_{i}y_{i}$ 。  
@@ -435,9 +433,8 @@ Spearman's rank correlation coefficient  $r_{s}$  is obtained by ranking in orde
 还有一种更适合手工计算的替代方法，但它假设数据中没有并列排名。对每个被研究的$N$个个体，计算排名差$d_{i}$。斯皮尔曼秩相关系数由下式给出：  
 There is an alternative approach which is simpler for hand calculation, but it assumes that there are no ties in the data. For each of the  $N$  subjects being studied the difference in the ranks,  $d_{i}$  , is calculated. Spearman's rank correlation coefficient is then given by  
 
-$$  
-$r_{s} = 1 - \frac{6\sum_{i = 1}^{n}d_{i}^{2}}{N^{3} - N}$  
-r_{s} = 1 - \frac{6\sum_{i = 1}^{n}d_{i}^{2}}{N^{3} - N}  
+$$
+r_{s} = 1 - \frac{6\sum_{i = 1}^{n}d_{i}^{2}}{N^{3} - N}
 $$  
 
 这个公式与Pearson相关系数$r$的公式没有明显相似之处，但在没有并列排名时，结果完全相同。  
@@ -816,29 +813,24 @@ Note that all the results quoted below were obtained using full numeric accuracy
 对于糖尿病患者的数据，两个变量的均值分别为 $\bar{x} = 10.37 \mathrm{mmol / l}$ 和 $\bar{y} = 1.33\% /\mathrm{sec}$，我们还需要以下量：  
 For the data on diabetics the mean values of the two variables are  $\bar{x} = 10.37 \mathrm{mmol / l}$  and  $\bar{y} = 1.33\% /\mathrm{sec}$ , and the other quantities we will need are  
 
-$$  
-$\sum x = 238.60, \sum y = 30.49, \sum x^2 = 2904.92, \sum y^2 = 41.6125$  
-\sum x = 238.60, \sum y = 30.49, \sum x^2 = 2904.92, \sum y^2 = 41.6125  
-$$  
-
-$$  
-$\textstyle \mathrm{和}\sum x y = 325.74,$  
-\textstyle \mathrm{and}\sum x y = 325.74,  
+$$
+\sum x = 238.60, \sum y = 30.49, \sum x^2 = 2904.92, \sum y^2 = 41.6125
 $$  
 
-$$  
-$S_{xx} = 2904.92 - 238.60^2 / 23 = 429.704,$  
-S_{xx} = 2904.92 - 238.60^2 / 23 = 429.704,  
-$$  
-
-$$  
-$S_{yy} = 41.61 - 30.49^2 / 23 = 1.193,$  
-S_{yy} = 41.61 - 30.49^2 / 23 = 1.193,  
+$$
+\textstyle \mathrm{and}\sum x y = 325.74,
 $$  
 
+$$
+S_{xx} = 2904.92 - 238.60^2 / 23 = 429.704,
 $$  
-$S_{xy} = 325.74 - 238.60 \times 30.49 / 23 = 9.439.$  
-S_{xy} = 325.74 - 238.60 \times 30.49 / 23 = 9.439.  
+
+$$
+S_{yy} = 41.61 - 30.49^2 / 23 = 1.193,
+$$  
+
+$$
+S_{xy} = 325.74 - 238.60 \times 30.49 / 23 = 9.439.
 $$  
 
 斜率 $b$ 的估计值为  
@@ -957,17 +949,15 @@ that is, 0.00012 to 0.044. The confidence interval thus extends from zero, repre
 对于给定的 $X$ 值，假设为 $x_{0}$，估计值 $y_{\hbar t}$ 的标准误差为  
 The standard error of the estimate  $y_{\hbar t}$  for a given value of  $X$  , say  $x_{0}$  ,is given by  
 
-$$  
-$s e(y_{f i t}) = s_{r e s}\sqrt{\frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{x x}}}$  
-s e(y_{f i t}) = s_{r e s}\sqrt{\frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{x x}}}  
+$$
+s e(y_{f i t}) = s_{r e s}\sqrt{\frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{x x}}}
 $$  
 
 其 $95\%$ 置信区间为  
 and a  $95\%$  confidence interval is given by  
 
-$$  
-$y_{f i t} \pm t_{0.975} s e(y_{f i t})$  
-y_{f i t}\pm t_{0.975}s e(y_{f i t})  
+$$
+y_{f i t}\pm t_{0.975}s e(y_{f i t})
 $$  
 
 其中 $t$ 服从自由度为 $n - 2$ 的 t 分布。  
@@ -1021,17 +1011,15 @@ The  $95\%$  prediction interval is much wider than the  $95\%$  confidence inte
 对于任意值 $x_{0}$，预测值为 $y_{fit} = a + bx_{0}$。为了得到预测区间，我们不需要 $y_{fit}$ 的标准误，而是该 $X$ 值处个体 $Y - y_{fit}$ 值的估计标准差。该标准差由下式给出：  
 For any value  $x_{0}$  the predicted value is  $y_{fit} = a + bx_{0}$ . To get the prediction interval we do not want the standard error of  $y_{fit}$ , but the estimated standard deviation of individual values of  $Y - y_{fit}$  at that value of  $X$ . This standard deviation is given by  
 
-$$  
-$s_{pred} = s_{res}\sqrt{1 + \frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{xx}}}$  
-s_{pred} = s_{res}\sqrt{1 + \frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{xx}}}  
+$$
+s_{pred} = s_{res}\sqrt{1 + \frac{1}{n} + \frac{(x_{0} - \bar{x})^{2}}{S_{xx}}}
 $$  
 
 因此，$95\%$ 预测区间为  
 and thus the  $95\%$  prediction interval is  
 
-$$  
-$y_{fit} \pm t_{0.975} s_{pred}$  
-y_{fit}\pm t_{0.975}s_{pred}  
+$$
+y_{fit}\pm t_{0.975}s_{pred}
 $$  
 
 其中 $t$ 服从 $n - 2$ 自由度的 t 分布。  

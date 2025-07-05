@@ -207,17 +207,15 @@ Table 12.10 Ranks of the data in Table 12.9
 该分析的进行方式类似于Kruskal-Wallis非参数单因素方差分析（详见第9.8.6节）。如果$R_{i}$是第i组中秩的总和，我们有$k$组（此处为潜水服类型）和$n$个受试者，则计算统计量$H$，定义为  
 The analysis proceeds in a similar way to the Kruskal- Wallis non- parametric one way analysis of variance (described in section 9.8.6). If  $R_{i}$  is the sum of the ranks in the ith group, and we have  $k$  groups (here types of suit) and  $n$  subjects, then we calculate the statistic  $H$  defined by  
 
-$$  
-$H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}[R_{i} - n(k + 1) / 2]^{2}.$  
-H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}[R_{i} - n(k + 1) / 2]^{2}.  
+$$
+H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}[R_{i} - n(k + 1) / 2]^{2}.
 $$  
 
 量$n(k + 1) / 2$是当原假设成立且所有组相同时，$R_i$的期望值。该检验基于观察到的秩和围绕期望值的变异，这是一种常见的假设检验形式。在原假设下，$H$服从自由度为$k-1$的卡方分布。计算$H$还有一个更简便的公式，即  
 The quantity  $n(k + 1) / 2$  is the expected value for  $R_{i}$  if the null hypothesis is true and all groups are the same. The test is thus based on the variation of the observed sums of ranks around the expected values, a common form of hypothesis test. Under the null hypothesis  $H$  has a  $x^{2}$  distribution with  $k - 1$  degrees of freedom. Again there is a simpler version of the formula for calculating  $H$ , which is  
 
-$$  
-$H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}R_{i}^{2} - 3n(k + 1).$  
-H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}R_{i}^{2} - 3n(k + 1).  
+$$
+H = \frac{12}{n k(k + 1)}\sum_{i = 1}^{k}R_{i}^{2} - 3n(k + 1).
 $$  
 
 该方法不适用于二维表中每个单元格有多于一个观测值的数据。它假设每组数据中不存在平秩，但对少量平秩影响不大。  
@@ -226,9 +224,8 @@ This method is not suitable for data where there is more than one observation in
 表12.10显示了每种潜水服类型的秩和。我们计算$H$为：  
 Table 12.10 shows the sums of the ranks for each type of diving suit. We calculate  $H$  as:  
 
-$$  
-$H = \frac{12}{8\times4\times5} [24^{2} + 27^{2} + 19^{2} + 10^{2}] - 3\times 8\times 5 = 12.45.$  
-H = \frac{12}{8\times4\times5} [24^{2} + 27^{2} + 19^{2} + 10^{2}] - 3\times 8\times 5 = 12.45.  
+$$
+H = \frac{12}{8\times4\times5} [24^{2} + 27^{2} + 19^{2} + 10^{2}] - 3\times 8\times 5 = 12.45.
 $$  
 
 利用自由度为3的卡方分布表B5，我们得到$\mathrm{P} < 0.01$。（精确值为0.006。）  
@@ -503,9 +500,8 @@ $R^{2}$  assesses crudely how well the model fits the data overall, but we shoul
 残差标准差是观察值 $y$ 与模型预测或拟合值之间平均差异的度量。多元回归模型可写为  
 The residual standard deviation is a measure of the average difference between the observed  $y$  values and those predicted or fitted by the model. The multiple regression model can be written  
 
-$$  
-$y_{fit} = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots$  
-y_{f i t} = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots  
+$$
+y_{f i t} = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots
 $$  
 
 其中 $b_{0}$ 是截距；$b_{1}, b_{2}$ 等为回归系数；$x_{2}$ 等为模型中变量的个体取值；$y_{fit}$ 是拟合或预测值。残差为 $y_{obs} - y_{fit}$，其中 $y_{obs}$ 是因变量的观察值。我们无法绘制原始多维数据，但可以通过残差图来判断模型是否合理。具体来说，应检查残差是否服从正态分布，并且模型在因变量值的整个范围内拟合效果是否均匀。  
@@ -651,9 +647,8 @@ Before explaining the method it is useful to recall that if we have a binary var
 我们使用的变换称为对数几率变换，记作 $\mathrm{logit}(p)$ 。这里 $p$ 是具有该特征的个体比例。例如，如果 $p$ 是受试者发生心肌梗死的概率，那么 $1 - p$ 就是不发生的概率。比值 $p / (1 - p)$ 称为赔率，因此  
 The transformation we use is called the logit transformation, written  $\mathrm{logit}(p)$ . Here  $p$  is the proportion of individuals with the characteristic. For example, if  $p$  is the probability of a subject having a myocardial infarction, then  $1 - p$  is the probability that they do not have one. The ratio  $p / (1 - p)$  is called the odds and thus  
 
-$$  
-$\mathrm{logit}(p) = \log_{\mathrm{e}}\left(\frac{p}{1 - p}\right)$  
-\mathrm{logit}(p) = \log_{\mathrm{e}}\left(\frac{p}{1 - p}\right)  
+$$
+\mathrm{logit}(p) = \log_{\mathrm{e}}\left(\frac{p}{1 - p}\right)
 $$  
 
 是对数赔率。如果我们希望比较模型中具有或不具有某特征（如年龄大于50岁）的受试者的预测值，我们将估计一组受试者的 $l_{1} = \mathrm{logit}(p_{1})$ 和另一组的 $l_{2} = \mathrm{logit}(p_{2})$ 。然后我们有  
@@ -753,9 +748,8 @@ A logistic regression model enables us to predict the probability of a particula
 与多元回归（见12.4.8节）类似，我们可以将逻辑回归模型用作预后或诊断指标。如果定义 $L$ 为个体具有感兴趣特征的概率 $p$ 的对数几率，则  
 As with multiple regression (see section 12.4.8) we can use the logistic regression model as a prognostic or diagnostic index. If we define  $L$  as the logit of the probability  $p$  that an individual will have the characteristic of interest, then  
 
-$$  
-$L = \log \left(\frac{p}{1 - p}\right) = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots +b_{k}x_{k}$  
-L = \log \left(\frac{p}{1 - p}\right) = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots +b_{k}x_{k}  
+$$
+L = \log \left(\frac{p}{1 - p}\right) = b_{0} + b_{1}x_{1} + b_{2}x_{2} + \ldots +b_{k}x_{k}
 $$  
 
 其中模型中有 $k$ 个变量。我们可以计算研究中所有受试者的 $L$ 值，并比较有无该特征的两组的分布。由此可以判断两组的区分效果，并确定最佳截断点以最大化判别力。如果所有解释变量均为二元变量，如高血压数据所示，则 $L$ 只有少数可能取值。例如，表12.20(b)中的模型仅允许四组，由肥胖和打鼾的有无定义。因此 $L$ 只有四个可能值，每个对应一个高血压的估计概率。表12.21展示了这些值及四组中观察到的高血压比例。  
@@ -776,9 +770,8 @@ If one or more of the variables in the model is continuous the values of the sco
 Peeters 等人（1987）研究了乳腺X线筛查中阳性测试结果的预测价值。在十年期间，801名女性乳腺X线检查结果为阳性并被转诊进行临床检查。302名女性在一年内通过组织学确诊为乳腺癌，10名女性因各种原因被排除，489名女性被归类为假阳性乳腺X线结果。研究人员将302名真阳性与489名假阳性进行比较，探讨是否能通过结合包括流行病学特征在内的其他信息来改善诊断。共考察了15个变量，其中5个变量—转诊时年龄、体质指数、绝经状态、乳房不适及对侧乳房的Wolfe分类—与癌症风险显著相关（$\mathbf{P}< 0.01$）。多元逻辑回归分析得出仅包含两个显著变量的模型，即转诊年龄（岁）和乳房不适（无或有；指既往疼痛、皮肤问题等病史）。他们预测真阳性概率$p$的回归模型为  
 Peeters et al. (1987) examined the predictive values of a positive test result in screening for breast cancer by mammography. Over a ten year period 801 women had positive mammography results and were referred for clinical examination. Breast cancer was histologically confirmed within one year in 302 women, 10 women were excluded for various reasons, and 489 women were classified as having had a false positive mammography result. The researchers compared the 302 true positives with the 489 false positives to see if they could improve the diagnosis by incorporating other information including epidemiological characteristics. Fifteen variables were examined of which five - age at referral, body mass index, menopausal status, breast complaints, and Wolfe classification of the contralateral breast - were significantly related to risk of cancer  $(\mathbf{P}< 0.01)$  . Multiple logistic regression analysis yielded a model containing just two significant variables, age at referral (in years) and breast complaints (No or Yes; this refers to previous history of pain, skin problems, and so on). Their regression model to predict  $p$  , the probability of being a true positive, was  
 
-$$  
-$\mathrm{logit}(p) = 4.005 + 0.0606x_{1} + 0.8398x_{2}$  
-\mathrm{logit}(p) = 4.005 + 0.0606x_{1} + 0.8398x_{2}  
+$$
+\mathrm{logit}(p) = 4.005 + 0.0606x_{1} + 0.8398x_{2}
 $$  
 
 其中$x_{1}$为年龄，$x_{2}$为乳房不适（$\mathbf{No} = 0$，$\mathbf{Yes} = 1$）。研究人员为每位女性计算了模型预测的患乳腺癌的概率$p$。他们将这些概率  

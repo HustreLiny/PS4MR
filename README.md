@@ -22,3 +22,5 @@ $$
 $chinese formula$
 english formula
 $$
+
+在翻译的时候就提前过滤掉公式还是很重要啊！！！！

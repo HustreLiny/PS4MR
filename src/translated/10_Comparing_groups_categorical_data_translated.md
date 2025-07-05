@@ -607,9 +607,8 @@ There is thus only one degree of freedom, agreeing with the general formula of  
 在第10.6.2节中，我介绍了检验统计量  $X^{2}$ ，用于评估行和列所表示的分类变量是否独立的原假设。我们可以在假设原假设成立的前提下，计算表中每个单元格的期望频数，然后计算  $X^{2}$  如下：  
 In section 10.6.2 I introduced the test statistic  $X^{2}$  for evaluating the null hypothesis that the categorical variables denoting the rows and columns are independent. We can calculate expected frequencies in each cell of the table on the assumption that the null hypothesis is true, and then calculate  $X^{2}$  as  
 
-$$  
-$X^{2} = \sum_{i = 1}^{r} \sum_{j = 1}^{c} \frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}$  
-X^{2} = \sum_{i = 1}^{r} \sum_{j = 1}^{c} \frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}  
+$$
+X^{2} = \sum_{i = 1}^{r} \sum_{j = 1}^{c} \frac{(O_{ij} - E_{ij})^{2}}{E_{ij}}
 $$  
 
 其中  $i$  和  $j$  分别表示行号和列号。表10.8展示了表10.5中每个单元格对检验统计量的贡献，计算得出  $X^{2} = 51.61$ 。根据表B5，自由度为6的卡方分布在上尾截断0.1%的临界值为22.46，因此在这组女性样本中，婚姻状况与咖啡因摄入量之间存在高度显著的关联  $(P < 0.001)$ 。第10.9.1节对该数据集有进一步讨论，考虑了其中一个变量具有有序类别的情况。  
@@ -911,14 +910,12 @@ To perform Fisher's exact test we carry out the same calculation for all tables,
 我多次指出，比较两个独立比例的方法与 $2 \times 2$ 表的卡方检验是相同的。通过使用表 10.11 的符号表达两个比例的比较，可以数学上证明这一点。设 $p_{1} = a / (a + c)$，$p_{2} = b / (b + d)$，合并比例为 $p = (a + b) / N$，那么比较两个观察比例的 $z$ 值为  
 I have commented more than once that the method for comparing two independent proportions is identical to the Chi squared test for a  $2 \times 2$  table. This can be shown mathematically, by expressing the comparison of two proportions in the notation of Table 10.11. We have  $p_{1} = a / (a + c)$ ,  $p_{2} = b / (b + d)$ , and the pooled proportion is  $p = (a + b) / N$ , so that the value of  $z$  for comparing the two observed proportions is  
 
-$$  
-$z = \frac{p_{1} - p_{2}}{\sqrt{p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}}$  
-z = \frac{p_{1} - p_{2}}{\sqrt{p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}}  
+$$
+z = \frac{p_{1} - p_{2}}{\sqrt{p(1 - p)\left(\frac{1}{n_{1}} + \frac{1}{n_{2}}\right)}}
 $$  
 
-$$  
-$z = \frac{\frac{a}{a + c} - \frac{b}{b + d}}{\sqrt{\frac{a + b}{N} \frac{c + d}{N} \left(\frac{1}{a + c} + \frac{1}{b + d}\right)}}$  
-z = \frac{\frac{a}{a + c} - \frac{b}{b + d}}{\sqrt{\frac{a + b}{N} \frac{c + d}{N} \left(\frac{1}{a + c} + \frac{1}{b + d}\right)}}  
+$$
+z = \frac{\frac{a}{a + c} - \frac{b}{b + d}}{\sqrt{\frac{a + b}{N} \frac{c + d}{N} \left(\frac{1}{a + c} + \frac{1}{b + d}\right)}}
 $$  
 
 经过一些变换，得到  
@@ -946,17 +943,15 @@ Table 10.17 Results of Table 10.3 rearranged as a  $2\times 2$  table, showing n
 配对比例的比较基于结果不同的配对频数，正如我们在第10.4节中看到的，那里描述了置信区间和假设检验。在第10.4.3节中，给出了包含连续性校正的检验统计量：  
 The comparison of paired proportions is based on the frequencies of pairs with different outcomes, as we saw in section 10.4 where the confidence interval and hypothesis test were described. In section 10.4.3 the test statistic incorporating the continuity correction was given as  
 
-$$  
-$z_{c} = \frac{|b - c| - 1}{\sqrt{b + c}}$  
-z_{c} = \frac{|b - c| - 1}{\sqrt{b + c}}.  
+$$
+z_{c} = \frac{|b - c| - 1}{\sqrt{b + c}}.
 $$  
 
 有时检验统计量的计算略有不同，如下：  
 Sometimes the test statistic is calculated slightly differently as  
 
-$$  
-$X^{2} = \frac{(|b - c| - 1)^{2}}{b + c}$  
-X^{2} = \frac{(|b - c| - 1)^{2}}{b + c},  
+$$
+X^{2} = \frac{(|b - c| - 1)^{2}}{b + c},
 $$  
 
 显然，这等于 $z_{c}^{2}$。$X^{2}$ 的值参照自由度为1的卡方分布。正如我们在独立比例的情况中看到的，这两个检验完全等价。  
@@ -998,14 +993,7 @@ $$
 其中，\(R\) 是具有该特征的总人数 \((R = \Sigma r_{i})\)，\(N\) 是样本总量，且 \(P = R / N\)。我们将 \(X^{2}\) 与自由度为 \(k - 1\) 的卡方分布进行比较。对于表10.18中的数据，我们有  
 where  $R$  is the total number with the characteristic  $(R = \Sigma r_{i})$  ,  $N$  is the total sample size, and  $P = R / N$  . We compare  $X^{2}$  to the Chi squared distribution with  $k - 1$  degrees of freedom. For the data in Table 10.18, we have  
 
-$$  
-\[  
-\begin{array}{r}  
-X^{2} = \frac{\frac{11^{2}}{53} + \frac{30^{2}}{109} + \frac{14^{2}}{78} + \frac{3^{2}}{55} - \frac{58^{2}}{295}}{\frac{58}{295} \times \frac{237}{295}} \\  
-= \frac{1.8130}{0.1580} \\  
-= 11.48  
-\end{array}  
-\]  
+$$   
 \begin{array}{r}{X^{2} = \frac{\frac{11^{2}}{53} + \frac{30^{2}}{109} + \frac{14^{2}}{78} + \frac{3^{2}}{55} - \frac{58^{2}}{295}}{\frac{58}{295}\times\frac{237}{295}}}\\ {= \frac{1.8130}{0.1580}}\\ {= 11.48} \end{array}  
 $$  
 
@@ -1072,17 +1060,15 @@ The simplest way to calculate  $X_{t r e n d}^{2}$  is by means of a formula tha
 对于第 $i$ 组，我们将具有某特征的观察频数记为 $r_{i}$，总个体数记为 $n_{i}$。此外，令 $x_{i}$ 为分配给第 $i$ 组的分值。然后定义以下简化量：  
 For group  $i$  we will call the observed frequency with a characteristic  $r_{i}$  and the total number of individuals  $n_{i}$ . Further, we let  $x_{i}$  be the score allocated to group  $i$ . Then we define some simplifying quantities as follows:  
 
-$$  
-$N = \sum_{i=1}^{k} n_{i}, \quad R = \sum_{i=1}^{k} r_{i}, \quad p = R / N, \quad \mathrm{and} \quad \bar{x} = \sum_{i=1}^{k} n_{i} x_{i} / N.$  
-N = \sum_{i = 1}^{k}n_{i},\quad R = \sum_{i = 1}^{k}r_{i},\quad p = R / N,\quad \mathrm{and} \bar{x} = \sum_{i = 1}^{k}n_{i}x_{i} / N.  
+$$
+N = \sum_{i = 1}^{k}n_{i},\quad R = \sum_{i = 1}^{k}r_{i},\quad p = R / N,\quad \mathrm{and} \bar{x} = \sum_{i = 1}^{k}n_{i}x_{i} / N.
 $$  
 
 检验统计量 $X_{trend}^{2}$ 计算公式为：  
 The test statistic  $X_{t r e n d}^{2}$  is then obtained as  
 
-$$  
-$X_{trend}^{2} = \frac{\left[\sum_{i=1}^{k} r_{i} x_{i} - R \bar{x}\right]^2}{p (1 - p) \left[\sum_{i=1}^{k} n_{i} x_{i}^2 - N \bar{x}^2 \right]}.$  
-X_{t r e n d}^{2} = \frac{\left[\sum_{i = 1}^{k}r_{i}x_{i} - R\bar{x}\right]^{2}}{p(1 - p)\left[\sum_{i = 1}^{k}n_{i}x_{i}^{2} - N\bar{x}^{2}\right]}.  
+$$
+X_{t r e n d}^{2} = \frac{\left[\sum_{i = 1}^{k}r_{i}x_{i} - R\bar{x}\right]^{2}}{p(1 - p)\left[\sum_{i = 1}^{k}n_{i}x_{i}^{2} - N\bar{x}^{2}\right]}.
 $$  
 
 表10.20 计算表10.19数据的 $X_{trend}^{2}$  

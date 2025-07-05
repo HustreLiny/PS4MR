@@ -132,25 +132,22 @@ Similarly we can calculate a confidence interval for the energy deficit. The mea
 我们还可以对零假设进行检验，即我们的数据来自一个具有特定“假设”均值的总体。该检验称为单样本  $t$  检验，$t$ 值计算公式为  
 We can also carry out a test of the null hypothesis that our data are a sample from a population with a specific 'hypothesized' mean. The test is called the one sample  $t$  test, and the value of  $t$  is calculated as  
 
-$$  
-$t = \frac{\text{样本均值} - \text{假设均值}}{\text{样本均值的标准误}}$  
-t = \frac{\text{sample mean} - \text{hypothesized mean}}{\text{standard error of sample mean}}  
+$$
+t = \frac{\text{sample mean} - \text{hypothesized mean}}{\text{standard error of sample mean}}
 $$  
 
 遵循第8.5节描述的常见假设检验形式。如果假设总体均值为某个值  $k$ ，则公式可改写为  
 following the common form of hypothesis tests described in section 8.5. If the hypothetical population mean is some value  $k$ , we can rewrite the formula as  
 
-$$  
-$t = \frac{\bar{x} - k}{s / \sqrt{n}}$  
-t = \frac{\bar{x} - k}{s / \sqrt{n}}  
+$$
+t = \frac{\bar{x} - k}{s / \sqrt{n}}
 $$  
 
 或者  
 or  
 
-$$  
-$t = \frac{(\bar{x} - k) \sqrt{n}}{s}$  
-t = \frac{(\bar{x} - k) \sqrt{n}}{s}  
+$$
+t = \frac{(\bar{x} - k) \sqrt{n}}{s}
 $$  
 
 其中  $\bar{x}$  和  $s$  分别为样本大小为  $n$  的样本均值和标准差。$t$ 的大小即为样本值与假设均值的平均偏差除以样本均值的标准误。  
@@ -159,8 +156,7 @@ where  $\bar{x}$  and  $s$  are the mean and standard deviation of the sample of
 饮食摄入数据的均值和标准差分别为6753.6和$1142.1 \mathrm{kJ}$，感兴趣的假设值是推荐摄入量$7725 \mathrm{kJ}$。因此我们可以计算$t$值为  
 The mean and standard deviation of the dietary intake data were 6753.6 and  $1142.1 \mathrm{kJ}$ , and the hypothetical value of interest was the recommended intake of  $7725 \mathrm{kJ}$ . We can thus calculate the value of  $t$  as  
 
-$$  
-$t = \frac{6753.6 - 7725}{1142.1 / \sqrt{11}} = -2.821$。  
+$$   
 t = \frac{6753.6 - 7725}{1142.1 / \sqrt{11}} = -2.821.  
 $$  
 
@@ -194,8 +190,7 @@ In our example the hypothesized intake of interest was  $7725\mathrm{kJ}$  .Two 
 这里我们关注的是二项分布，参数为 $\begin{array}{r}{p = \frac{1}{2}} \end{array}$ 和 $n = 11$ 。我们观察到的计数为 $r = 2$ 或 $r = 9$ —由于当 $\begin{array}{r}{p = \frac{1}{2}} \end{array}$ 时分布的对称性，使用哪一个无关紧要。假设原假设成立，期望计数为 $n p = 11\times {\textstyle{\frac{1}{2}}} = 5.5$ 。根据第4.9节，$r$ 的标准误为  
 Here we are interested in the Binomial distribution with  $\begin{array}{r}{p = \frac{1}{2}} \end{array}$  and  $n = 11$  Our observed count is either  $r = 2$  or  $r = 9$  - it does not matter which we use because of the symmetry of the distribution when  $\begin{array}{r}{p = \frac{1}{2}} \end{array}$  . The expected count, assuming the null hypothesis is true, is  $n p = 11\times {\textstyle{\frac{1}{2}}} = 5.5$  . From section 4.9, the standard error of  $r$  is  
 
-$$  
-${\sqrt{n p(1-p)}}={\sqrt{11\times{\frac{1}{2}}\times{\frac{1}{2}}}}=1.658$。  
+$$    
 {\sqrt{n p(1-p)}}={\sqrt{11\times{\frac{1}{2}}\times{\frac{1}{2}}}}=1.658.  
 $$  
 
@@ -361,25 +356,22 @@ The standard error of the mean of one group of observations is derived from the 
 所需的标准误计算公式比单样本情况更复杂，但仅涉及每组的均值、方差和样本量。首先计算合并方差 $s^{2}$，公式为：  
 The required standard error is obtained from a more complicated formula than for the one sample case, but it involves only the mean, variance and sample size for each group. First we calculate the pooled variance,  $s^{2}$  , as  
 
-$$  
-$s^{2} = \frac{(n_{1} - 1)s_{1}^{2} + (n_{2} - 1)s_{2}^{2}}{n_{1} + n_{2} - 2}$  
-s^{2} = \frac{(n_{1} - 1)s_{1}^{2} + (n_{2} - 1)s_{2}^{2}}{n_{1} + n_{2} - 2}  
+$$
+s^{2} = \frac{(n_{1} - 1)s_{1}^{2} + (n_{2} - 1)s_{2}^{2}}{n_{1} + n_{2} - 2}
 $$  
 
 其中，$s_{1}$ 和 $s_{2}$ 分别为两个样本组的标准差，样本量为 $n_{1}$ 和 $n_{2}$。用 $\bar{x}_{1}$ 和 $\bar{x}_{2}$ 表示两个样本的均值，$s$ 为合并标准差，则有：  
 where  $\pmb{s}_{1}$  and  $\pmb{s}_{2}$  are the standard deviations of the two groups of sizes  $\pmb{n}_{1}$  and  $\pmb{n}_{2}$  . Using  $\bar{x}_{1}$  and  $\bar{x}_{2}$  to denote the means of the two samples, and  $\pmb{s}$  as the pooled standard deviation, we have  
 
-$$  
-$se(\bar{x}_{1} - \bar{x}_{2}) = s \times \sqrt{\frac{1}{n_{1}} + \frac{1}{n_{2}}}$  
-s e(\bar{x}_{1} - \bar{x}_{2}) = s \times \sqrt{\frac{1}{n_{1}} + \frac{1}{n_{2}}}.  
+$$
+s e(\bar{x}_{1} - \bar{x}_{2}) = s \times \sqrt{\frac{1}{n_{1}} + \frac{1}{n_{2}}}.
 $$  
 
 每个组对 $s$ 的自由度贡献为 $n_{1} + n_{2} - 2$。获得均值差异的标准误后，我们可以构建置信区间。均值差异的 $95\%$ 置信区间为：  
 Each group contributes to the degrees of freedom associated with s, to give  $n_{1} + n_{2} - 2$  degrees of freedom. Having acquired the standard error of the difference between the means we can produce a confidence interval. The  $95\%$  confidence interval for the difference between the means is given by  
 
-$$  
-$\bar{x}_{1} - \bar{x}_{2} \pm t_{0.975} \times se(\bar{x}_{1} - \bar{x}_{2})$  
-\bar{x}_{1} - \bar{x}_{2}\pm t_{0.975}\times s e(\bar{x}_{1} - \bar{x}_{2})  
+$$
+\bar{x}_{1} - \bar{x}_{2}\pm t_{0.975}\times s e(\bar{x}_{1} - \bar{x}_{2})
 $$  
 
 其中 $t$ 值对应自由度为 $n_{1} + n_{2} - 2$。  
@@ -907,9 +899,8 @@ There is no simple nor totally satisfactory solution to these problems, but I re
 修正的 $t$ 检验基于所有组的合并方差估计（即方差分析表中的残差方差），而非仅考虑的那一对组。因此，$t$ 计算公式为  
 The modified  $t$  test is based on the pooled estimate of variance from all the groups (which is the residual variance in the anova table), not just the pair being considered. So  $t$  is calculated as  
 
-$$  
-$t = \frac{\bar{x}_{1} - \bar{x}_{2}}{se(\bar{x}_{1} - \bar{x}_{2})}$  
-t = \frac{\bar{x}_{1} - \bar{x}_{2}}{s e(\bar{x}_{1} - \bar{x}_{2})}  
+$$
+t = \frac{\bar{x}_{1} - \bar{x}_{2}}{s e(\bar{x}_{1} - \bar{x}_{2})}
 $$  
 
 其中  $se(\bar{x}_{1} - \bar{x}_{2})$  如前节所述。  
@@ -924,9 +915,8 @@ Returning to the red cell folate data in Tables 9.10 and 9.11, the residual stan
 212 比较组别 - 连续数据  
 212 Comparing groups - continuous data  
 
-$$  
-$t = \frac{316.6 - 256.4}{45.72\times{\sqrt{\frac{1}{8} + \frac{1}{9}}}}$  
-t = \frac{316.6 - 256.4}{45.72\times{\sqrt{\frac{1}{8} + \frac{1}{9}}}}  
+$$
+t = \frac{316.6 - 256.4}{45.72\times{\sqrt{\frac{1}{8} + \frac{1}{9}}}}
 $$  
 
 如果我们比较每一对组别，将进行三次比较。上述  $t$  值2.71对应  $\mathbf{P}< 0.02$  （表B4），精确值为  $\mathbf{P} = 0.014$ 。校正后的  $\mathbf{P}$  值为  $\mathbf{P}^{\prime} = 0.014\times 3 = 0.042$ ，调整后刚好在5%显著性水平上显著。其他比较均不显著。因此，方差分析（表9.11）中识别的组间差异主要是组I与组II之间的差异。  
@@ -975,7 +965,6 @@ Just as analysis of variance is a more general form of  $t$  test, so there is a
 The calculation of the test statistic is simple. The complete set of  $N$  observations are ranked from 1 to  $N$  regardless of which group they are in, and for each group the sum of the ranks is calculated. If the sum of the ranks of  $n_i$  observations in the  $i$ th group is  $R_i$ , then the average rank in each group is given by  $\bar{R}_i$ . We calculate the statistic  $H$  defined by  
 
 $$  
-\( H = \frac{12\Sigma n_i(\bar{R}_i - \bar{R})^2}{N(N + 1)} \)  
 H = \frac{12\Sigma n_i(\bar{R}_i - \bar{R})^2}{N(N + 1)}  
 $$  
 
@@ -985,8 +974,7 @@ where  $\bar{R}$  is the average of all the ranks, and is always equal to  $(N +
 虽然这个 \(H\) 的公式展示了检验的原理，但计算时有一个等效且更简单的版本，\(H\) 表达为  
 sum of squares calculated in parametric one way analysis of variance (shown mathematically in section 9.9). While this formula for  $H$  shows the way the test works, there is an equivalent but simpler version for calculation, with  $H$  given by  
 
-$$  
-\( H = \frac{12}{N(N + 1)}\sum \frac{R_{i}^{2}}{n_{i}} - 3(N + 1) \)。  
+$$    
 H = \frac{12}{N(N + 1)}\sum \frac{R_{i}^{2}}{n_{i}} -3(N + 1).  
 $$  
 
