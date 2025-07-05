@@ -1,0 +1,569 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="light sidebar-visible" dir="ltr">
+
+<head>
+    <!-- Book generated using mdBook -->
+    <meta charset="UTF-8">
+    <title>第6章 计算机的使用 | Using a computer - PS4MR</title>
+
+
+    <!-- Custom HTML head -->
+
+    <meta name="description" content="基于 mdBook 构建的PS4MR电子书，中英对照。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon" href="../favicon.svg">
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/chrome.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+
+    <!-- Highlight.js Stylesheets -->
+    <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+    <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+    <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+    <!-- Custom theme stylesheets -->
+    <link rel="stylesheet" href="../theme/pagetoc.css">
+
+    <!-- MathJax -->
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <!-- Provide site root and default themes to javascript -->
+    <script>
+        const path_to_root = "../";
+        const default_light_theme = "light";
+        const default_dark_theme = "navy";
+    </script>
+    <!-- Start loading toc.js asap -->
+    <script src="../toc.js"></script>
+</head>
+
+<body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch (e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch (e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor"
+                            title="Toggle Table of Contents" aria-label="Toggle Table of Contents"
+                            aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme"
+                            aria-label="Change theme" aria-haspopup="true" aria-expanded="false"
+                            aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)"
+                            aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s"
+                            aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">PS4MR</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/HustreLiny/PS4MR" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                        <!-- Page TOC Toggle Button -->
+                        <button id="pagetoc-toggle" class="icon-button" type="button" title="Toggle page contents" 
+                            aria-label="Toggle page contents" aria-expanded="false">
+                            <i class="fa fa-list"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..."
+                            aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function (link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="content-wrap">
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+<h1 id="6-使用计算机--6-using-a-computer"><a class="header" href="#6-使用计算机--6-using-a-computer">6 使用计算机  6 Using a computer</a></h1>
+<p>好消息是统计分析变得更简单、更便宜。坏消息是统计分析变得更简单、更便宜。<br />
+The good news is that statistical analysis is becoming easier and cheaper. The bad news is that statistical analysis is becoming easier and cheaper.</p>
+<p>Hofacker (1983)<br />
+Hofacker (1983)</p>
+<h2 id="61-引言--61-introduction"><a class="header" href="#61-引言--61-introduction">6.1 引言  6.1 INTRODUCTION</a></h2>
+<p>最近的技术进步使许多医学研究人员能够使用计算机。这一变化总体上是有益的，但应牢记Hofacker上述的话。计算机消除了统计分析中大部分繁琐的部分，并且应当能给出正确的答案，但它们并不能保证我们获得正确且有效的结果。本章将讨论使用计算机进行统计分析的优缺点，并提出数据分析的方法。我还将考虑用于计算机分析的数据收集表格设计。<br />
+Recent technological advances have provided many medical researchers with access to a computer. This change has largely been beneficial, but Hofacker's words above should be borne in mind. Computers remove most of the tedious aspects of statistical analysis, and should give us correct answers, but they do not guarantee that we will obtain correct and valid results. In this chapter I shall consider the advantages and disadvantages of using computers for statistical analysis, and suggest ways to approach the analysis of data. I shall also consider the design of forms for collecting data to be analysed by computer.</p>
+<h2 id="62-使用计算机的优点--62-advantages-of-using-a-computer"><a class="header" href="#62-使用计算机的优点--62-advantages-of-using-a-computer">6.2 使用计算机的优点  6.2 ADVANTAGES OF USING A COMPUTER</a></h2>
+<p>使用计算机进行统计分析有许多优点。最显而易见的是，它使我们能够完成否则无法完成的任务，但还有许多其他好处：<br />
+There are many advantages in using a computer to carry out statistical analyses. Most obviously it enables us to do things we couldn't otherwise do, but there are many other benefits:</p>
+<h3 id="a-准确性和速度--a-accuracy-and-speed"><a class="header" href="#a-准确性和速度--a-accuracy-and-speed">(a) 准确性和速度  (a) Accuracy and speed</a></h3>
+<p>优秀的计算机程序（即软件）能快速给出正确答案。手工分析容易出现算术错误，且除最简单任务外速度极慢。<br />
+Good computer programs (known as software) will give the correct answers quickly. Analysis by hand is prone to arithmetical errors, and is painfully slow for all but the simplest tasks.</p>
+<h3 id="b-多功能性--b-versatility"><a class="header" href="#b-多功能性--b-versatility">(b) 多功能性  (b) Versatility</a></h3>
+<p>计算机可以访问广泛的统计技术，远超过本书中描述的内容。即使是复杂的分析也能快速完成。<br />
+A computer gives access to a wide range of statistical techniques, many more than are described in this book. Even complex analyses can be performed quickly.</p>
+<h3 id="c-图形--c-graphics"><a class="header" href="#c-图形--c-graphics">(c) 图形  (c) Graphics</a></h3>
+<p>(c) 图形 计算机程序可以轻松生成观察数据或统计结果的图形。应充分利用这一功能。直方图和散点图可用于检查原始数据（见第7章），图形也可用于研究分析结果。第6.8节讨论了与计算机绘图相关的一些实际问题。<br />
+(c) GraphicsComputer programs enable plots of observations or statistical results to be obtained easily. Full advantage should be taken of this facility. Histograms and scatter diagrams can be used to inspect the raw data (see Chapter 7), and plots can also be used to study the results from an analysis. Section 6.8 discusses some practical issues relating to computer plots.</p>
+<h3 id="d-灵活性--d-flexibility"><a class="header" href="#d-灵活性--d-flexibility">(d) 灵活性  (d) Flexibility</a></h3>
+<p>(d) 灵活性 一个主要优点是能够进行小幅修改并重复分析。例如，经过数据变换后重新运行分析很简单，比如取对数（见第7章）；也可以对数据子集执行相同分析，或添加一些新观察值。<br />
+(d) FlexibilityA major advantage is the ability to make small changes and repeat the analysis. For example, it is simple to rerun an analysis after transforming the data, perhaps by taking logs (see Chapter 7), to perform the same analysis on a subset of the data, or to add some new observations.</p>
+<h3 id="e-新变量--e-new-variables"><a class="header" href="#e-新变量--e-new-variables">(e) 新变量  (e) New variables</a></h3>
+<p>(e) 新变量 生成新变量非常简单。我们可以根据出生日期和研究日期计算受试者年龄，或者通过计算治疗前后测量值的差异来得出变化量，或统计患者症状的数量。此类计算应始终由计算机完成，因为计算机比手工计算更快、更准确。当然，如果创建新变量的指令错误或输入有误，所有观察值都会出错。<br />
+(e) New variablesIt is simple to generate new variables. We may calculate a subject's age from their date of birth and the date of the study, or the change in a measurement by taking the difference between pre- and post-treatment values, or count the number of symptoms a patient has. Such calculations should always be done on the computer, which is faster and more accurate than doing the calculations by hand. Of course, if the instruction to create a new variable is incorrect or is typed wrongly all of the observations will be wrong.</p>
+<h3 id="f-数据量--f-volume-of-data"><a class="header" href="#f-数据量--f-volume-of-data">(f) 数据量  (f) Volume of data</a></h3>
+<p>(f) 数据量 可以处理海量数据。实际上，对于某些程序，分析的受试者（病例）数量没有限制。<br />
+(V) Volume of dataVast amounts of data can be handled. Indeed for some programs there is no limit to the number of subjects (cases) that can be analysed.</p>
+<h3 id="g-数据轻松传输--g-easy-transfer-of-data"><a class="header" href="#g-数据轻松传输--g-easy-transfer-of-data">(g) 数据轻松传输  (g) Easy transfer of data</a></h3>
+<p>(g) 数据易于传输 一旦数据被输入到计算机文件中，就可以通过电子方式（如电话线）或邮寄“软盘”的方式轻松地在研究人员之间传输。通常不应重复输入相同的数据，但遗憾的是，不同计算机使用的磁盘格式和大小各异。<br />
+(g) Easy transfer of dataOnce data have been entered into a computer file they can easily be transferred between researchers either electronically (by telephone line) or by sending a 'floppy disk' by post. It should never be necessary to enter the same data into a computer twice, but unfortunately computers use a variety of disk formats and sizes.</p>
+<h2 id="63-使用计算机的缺点--63-disadvantages-of-using-a-computer"><a class="header" href="#63-使用计算机的缺点--63-disadvantages-of-using-a-computer">6.3 使用计算机的缺点  6.3 DISADVANTAGES OF USING A COMPUTER</a></h2>
+<p>为了平衡主要的优势，统计软件用户应注意几个潜在的问题。<br />
+To counterbalance the major benefits there are several potential problems that users of statistical software should be aware of.</p>
+<h3 id="a-软件错误--a-errors-in-software"><a class="header" href="#a-软件错误--a-errors-in-software">(a) 软件错误  (a) Errors in software</a></h3>
+<p>(a) 软件错误 并非所有统计程序都编写得很好。有些程序在某些情况下可能会给出错误的结果，这可能是由于编程不良或对统计理论理解不足。建议使用声誉良好且存在时间较长、已被检验过的程序。<br />
+(a) Errors in softwareNot all statistical programs are well-written. Some may give incorrect answers in certain circumstances, either through poor programming or inadequate understanding of the statistical theory. It is advisable to use programs that are reputable and have been around long enough for errors</p>
+<p>可以找到许多统计软件，其中最著名的有 BMDP、Minitab、SAS 和 SPSS。自微型计算机（PC）问世以来，市场上的统计程序数量大幅增加，其中有些质量较差，甚至存在错误（Bland 和 Altman，1988；Dallal，1988）。第6.4节和6.5节提供了关于选择和评估统计软件的建议。<br />
+to be found, the best known of which are BMDP, Minitab, SAS and SPSS. Since the advent of microcomputers (PCs) there has been a huge increase in the number of statistical programs on the market, some of which are poor and some incorrect (Bland and Altman, 1988; Dallal, 1988). Sections 6.4 and 6.5 give advice about choosing and evaluating statistical software.</p>
+<h3 id="b-多功能性--b-versatility-1"><a class="header" href="#b-多功能性--b-versatility-1">(b) 多功能性  (b) Versatility</a></h3>
+<p>多功能性被认为是使用计算机的优点之一，但也可能带来困难。由于可用分析方法种类繁多，容易使用不恰当的方法。必须清楚自己统计知识的局限，只使用自己理解的方法。如果遇到需要不熟悉方法的问题，应寻求专家建议。<br />
+Versatility was given as one of the advantages of using a computer, but it can lead to difficulties too. Because of the wide variety of analyses available, it is easy to use an inappropriate method. It is essential to be aware of the limits of your statistical knowledge, and to use only methods that you understand. If your problem seems to require methods you are not familiar with you should seek expert advice.</p>
+<h3 id="c-黑箱方法--c-the-black-box-approach"><a class="header" href="#c-黑箱方法--c-the-black-box-approach">(c) 黑箱方法  (c) The black box approach</a></h3>
+<p>使用计算机可能使你与数据产生距离感。统计分析可以自动完成：数据从一端输入，结果从另一端输出，完全不经过人工思考。由于许多统计分析关注的是平均效应，你可能无法感受到个体的具体反应方式。<br />
+Using a computer may distance you from your data. It is possible to perform statistical analyses automatically: the data go in at one end and the results come out at the other, untouched by human thought. Because much statistical analysis is concerned with average effects you may get no feel for the way individuals respond.</p>
+<h3 id="d-垃圾进垃圾出--d-garbage-in-garbage-out"><a class="header" href="#d-垃圾进垃圾出--d-garbage-in-garbage-out">(d) 垃圾进，垃圾出  (d) Garbage in garbage out</a></h3>
+<p>“垃圾进，垃圾出”指的是只有合理的问题才能得到合理的答案。如果输入的数据或分析的设定错误，那么结果也会错误。例如，一个常见的问题是如何处理缺失的观测值。当数据输入计算机时，这些值有时会留空，这种情况下该值会自动被视为零，或者它们会被赋予一个数值“缺失代码”，如99。常用的缺失值代码有9、99、999等，或者是负数—只要明确该值不可能是真实观测值即可。<br />
+'Garbage in garbage out' refers to the fact that sensible answers follow only from sensible questions. If the data input or the specification of the analysis was wrong then the results will be wrong. For example, a common problem is what to do about missing observations. When data are entered into the computer such values are sometimes left blank, in which case the value will automatically be taken as zero, or they are given a numerical 'missing value code', such as 99. It is common to use values like 9, 99, 999, etc. as missing values, or perhaps a negative number - any value will do as long as it clearly could not be a genuine observation.</p>
+<p>表3.1显示了25名囊性纤维化患者的PImax值；均值和标准差分别为92.6和24.92 cm <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathrm">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathrm">O</span></span></span></span>。假设研究中还有另外5名患者的PImax未知。如果这些值留空（视为零）或编码为999，并将所有30个值用计算机程序分析，结果将如下：<br />
+Table 3.1 showed the PImax values of 25 patients with cystic fibrosis; the mean and standard deviation were 92.6 and 24.92 cm  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathrm">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathrm">O</span></span></span></span>  respectively. Suppose that there had been five other patients in the study whose PImax was unknown. If their values were left blank (zero) or coded 999 and all 30 values analysed by a computer program then the results would have been as follows:</p>
+<table><tr><td rowspan="2">缺失数据的取值</td><td colspan="2">30名受试者的结果</td></tr><tr><td>均值</td><td>标准差</td></tr><tr><td>0</td><td>77.2</td><td>41.79</td></tr><tr><td>999</td><td>243.7</td><td>344.32</td></tr></table>  
+<table><tr><td rowspan="2">Value for missing data</td><td colspan="2">Result for 30 subjects</td></tr><tr><td>Mean</td><td>SD</td></tr><tr><td>0</td><td>77.2</td><td>41.79</td></tr><tr><td>999</td><td>243.7</td><td>344.32</td></tr></table>  
+<p>这两种结果都严重扭曲了事实。计算机会将0或999视为真实观测值，因此会给出错误的答案。缺失数据必须在程序中明确标识（参见第6.6节）。<br />
+both of which are major distortions of the truth. The computer will accept the values 0 or 999 as genuine observations, and so will give false answers. Missing data must be identified as such to the program (see section 6.6).</p>
+<p>当信息对某些个体不适用而非真正缺失时，也可能出现类似问题。例如，怀孕次数只适用于女性，在研究中男性可能被记录为9或99。这些例子说明了在分析前检查数据的重要性，详见第6.6节和下一章。<br />
+A similar problem may arise when information is not appropriate for some individuals rather than actually missing. For example, the number of pregnancies is only appropriate for women, and may be recorded as 9 or 99 for all males in a study. These examples show the importance of checking the data before analysis, as discussed in section 6.6 and in the next chapter.</p>
+<h2 id="64-统计程序的类型--64-types-of-statistical-program"><a class="header" href="#64-统计程序的类型--64-types-of-statistical-program">6.4 统计程序的类型  6.4 TYPES OF STATISTICAL PROGRAM</a></h2>
+<p>市售统计软件通常能够执行多种统计分析。统计程序，通常称为软件包，其功能和工作方式各异。需要考虑的一些重要方面包括：<br />
+Commercially available statistical software is generally capable of perform­ ing many types of statistical analysis. Statistical programs, often called packages, vary in their capability and the way in which they work. Some of the more important aspects to consider are:</p>
+<ol>
+<li>可用的统计方法</li>
+<li>statistical methods available</li>
+<li>准确性</li>
+<li>accuracy</li>
+<li>可分析的数据最大容量</li>
+<li>maximum amount of data that can be analysed</li>
+<li>数据处理功能（包括编辑）</li>
+<li>facilities for data manipulation (including editing)</li>
+<li>处理缺失数据的能力</li>
+<li>ability to accept missing data</li>
+<li>易用性（是否“用户友好”？）</li>
+<li>ease of use (is it 'user-friendly'？)</li>
+<li>成熟度（是否经过验证和测试？）</li>
+<li>maturity (is it tried and tested？)</li>
+<li>速度</li>
+<li>speed</li>
+<li>文档支持</li>
+<li>documentation</li>
+<li>错误处理</li>
+<li>error handling</li>
+<li>图形功能</li>
+<li>graphics capability</li>
+<li>输出质量</li>
+<li>quality of output</li>
+<li>成本。</li>
+<li>cost.</li>
+</ol>
+<p>最重要的考虑因素是上述列表中的前两个，因为显然你需要一个能够执行所需分析并获得正确结果的软件包。然而，评估准确性并不容易。其他关键问题包括能否简单地创建图表，以及在你犯错时（这很常见）是否有有用的错误提示。此外，告诉程序你想要完成什么任务的方法也各不相同。在某些软件包中，需要输入诸如<br />
+The most important considerations are the first two in the above list. because you obviously need a package that will perform the analyses desired and achieve correct results. However, assessing accuracy is not easy. Other key issues are the ability to create plots simply, and helpful error messages when you make a mistake, as you often will. In addition. there are different ways of telling the program what you want done. In some packages one enters commands such as</p>
+<p><strong>绘制身高与年龄图</strong><br />
+<strong>plot height age</strong></p>
+<p>但在其他情况下，人们从选项菜单中选择。这被称为交互式系统。对于使用命令的程序，通常可以创建一个命令文件，然后作为一个整体执行。这种方法的优点是复杂的指令只需编写一次<br />
+but in others one chooses from a menu of options. This is known as an interactive system. For programs that use commands it is usually possible to create a file of commands which can then be executed as a block. This has the advantage that possibly complicated instructions only have to be</p>
+<p>只需输入一次，且编辑文件以生成略有不同的分析非常容易。<br />
+typed once, and that it is easy to edit the file to produce slightly different analyses.</p>
+<p>除了涵盖广泛分析的统计软件包外，还有一些针对特定用途的专用程序，如计算样本量或置信区间。这些程序也需满足上述某些要求，但主要应根据其完成常规软件包无法实现的特定功能的能力来评判。<br />
+As well as statistical packages, which cover a wide range of analyses, there are also some specialized programs for particular purposes, such as calculating sample sizes or confidence intervals. These are subject to some of the above requirements too, but should be judged mainly on their specific ability to do things that cannot be done in the usual packages.</p>
+<p>在选择使用或购买软件包之前，值得向同事或统计学家寻求建议。我强烈建议你在所有分析中使用同一软件包，因为熟练掌握哪怕一个软件包都需要相当的努力。因此，谨慎选择软件非常重要。本书中涉及的所有分析几乎没有哪个软件包能全部完成，因此你需要了解可能进行的所有分析类型，而这并不容易。市面上有许多微型计算机统计程序（甚至免费软件）可能会产生错误结果（Dallal，1988），如果对某个统计程序有疑问，建议将其输出结果与其他程序进行比较。<br />
+It is worth seeking advice from a colleague or from a statistician before choosing a package to use, or buy. I strongly recommend that you use the same package for all your analyses, as it takes a considerable effort to become fully acquainted with even one package. So it is important to choose your software carefully. Few, if any, packages will perform all the analyses in this book, so that it is necessary to know all the types of analysis you might wish to do, which is not at all easy. There are many microcomputer statistics programs on the market (or even free) that can give incorrect results (Dallal, 1988), so if you have doubts about a particular statistical program it is advisable to compare its output with that from another.</p>
+<p>下一节将讨论评估统计软件的一些方面。如果你确定拥有可靠的软件，可以直接跳到6.6节，那里描述了一般的分析策略。<br />
+The next section discusses some aspects of evaluating statistical software. If you know that you have reliable software then you can go on to section 6.6, which describes a general strategy for analysis.</p>
+<h2 id="65-评估统计软件包--65-evaluating-a-statistical-package"><a class="header" href="#65-评估统计软件包--65-evaluating-a-statistical-package">6.5 评估统计软件包  6.5 EVALUATING A STATISTICAL PACKAGE</a></h2>
+<p>（本节可省略，不影响连贯性。）<br />
+(This section can be omitted without loss of continuity.)</p>
+<p>评估统计计算机程序时的主要关注点是：<br />
+The main concerns when evaluating a statistical computer program are:</p>
+<p>【1】 它是否执行所有期望的功能？</p>
+<ol>
+<li>Does it perform all the desired functions？</li>
+</ol>
+<p>【2】 它是否易于使用？<br />
+2. Is it easy to use？</p>
+<p>【3】 它是否给出正确的答案？<br />
+3. Does it give the correct answers？</p>
+<p>同事或统计学家的建议在回答前两个问题时非常有帮助，因为只有熟悉一个软件包后，才能真正判断其价值和易用性。第6.4节中给出的功能列表可以辅助评估。本节的目的是在上述第（3）点上提供有限的帮助。<br />
+Advice from colleagues or from a statistician can be of great assistance in answering the first two questions, because it takes some familiarity with a package before one can really judge its value and ease of use. The list of features given in section 6.4 can aid evaluation. The purpose of this section is to give limited assistance in relation to (3. ) above.</p>
+<p>计算机程序可能给出错误答案，原因要么是使用了错误的公式，要么是程序编写不良。前者虽不太可能，但仍有可能。更常见的问题是程序编写方式导致的。计算机程序执行特定计算的过程称为算法。有些算法在某些情况下会丧失精度，属于较差的算法。举一个简单的例子，可以证明三个数 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>、<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> 和 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mord mathnormal">c</span></span></span></span> 的标准差是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>，无论 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> 和 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> 取何值。<br />
+A computer program may give the wrong answers either because it uses an incorrect formula or because it is not well written. The former is unlikely but possible. More often problems occur because of the way in which the program was written. The procedure by which a computer program performs a given calculation is known as an algorithm. Some algorithms are inferior in that they lose accuracy in some circumstances. To take a simple example, it can be shown that the standard deviation of three numbers  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> ,  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>  and  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mord mathnormal">c</span></span></span></span>  is  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> , whatever values we give  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span>  and  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> . I</p>
+<p>我使用两台袖珍计算器计算了多组三个数的标准差，其中 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord" style="text-shadow:0.02em 0.01em 0.04px;"><span class="mord mathnormal">x</span></span></span></span></span> 增加，但 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> 固定为0.1。对于以下四组数字：<br />
+calculated the standard deviations of sets of three numbers where  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord" style="text-shadow:0.02em 0.01em 0.04px;"><span class="mord mathnormal">x</span></span></span></span></span>  increases but  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>  is held at 0.1 using two pocket calculators. For each of the four sets of numbers</p>
+<p>(a) 7.0 7.1 7.2<br />
+(a) 7.0 7.1 7.2</p>
+<p>(b) 77.0 77.1 77.2<br />
+(b) 77.0 77.1 77.2</p>
+<p>(c) 777.0 777.1 777.2<br />
+(c) 777.0 777.1 777.2</p>
+<p>(d) 7777.0 7777.1 7777.2<br />
+(d) 7777.0 7777.1 7777.2</p>
+<p>两者都给出了正确的答案0.1，但对于该组数据<br />
+both gave the correct answer of 0.1, but for the set</p>
+<p>(e) 77777.0 77777.1 77777.2<br />
+(e) 77777.0 77777.1 77777.2</p>
+<p>一个计算器给出的标准差是0.0，而另一个则显示错误—它无法计算标准差。问题的原因在于，在极端情况下，计算器会因为无法存储数据平方后得到的大数而丧失精度。有些算法可以避免这个问题，虽然我们不指望口袋计算器使用这些算法，但我们肯定期望计算机程序能给出这类数据的正确答案。然而，许多微型计算机软件包仍采用较差的算法（Dallal，1988）。在某些复杂分析中也存在数值精度丢失的风险；关于回归分析的问题将在第12章讨论。<br />
+one calculator gave the standard deviation as 0.0 while the other gave an error - it would not calculate the standard deviation. The reason for this problem is that in extreme circumstances the calculator loses accuracy because it cannot store the large numbers obtained when the data are squared. There are algorithms that avoid this problem, and while we may not expect them to be used on a pocket calculator we would certainly expect a computer program to give the correct answers for such data. However,  many  microcomputer  packages  use  the  inferior  algorithm (Dallal, 1988). There is also a risk of losing numerical accuracy in some complex  analyses;  problems  with  regression  analysis  are  discussed in Chapter 12.</p>
+<p>电子表格软件在执行简单统计分析方面的使用日益增加。这些程序不太适合统计分析，可能使用较差或错误的方法。我不推荐它们用于严肃的统计工作。<br />
+Increasing use is being made of spreadsheet software for performing simple statistical analyses. These programs are not well suited to statistics, and may use inferior or incorrect methods. I do not recommend them for serious statistics.</p>
+<p>对于某些类型的分析，还需考虑使用哪种形式的检验，尤其当存在多种形式时。后续章节将讨论单边和双边检验、连续性校正的使用以及秩次分析（非参数方法）中对平局的调整等问题。了解程序具体采用的方法非常重要，而这往往在手册中并不明确。实际上，有些手册甚至具有误导性（Bland 和 Altman，1988）。<br />
+Another aspect to consider for some types of analysis is which form of a test is used when there are different forms available. Subsequent chapters will discuss matters such as one and two- sided tests, the use of continuity corrections, and the adjustment for ties in analyses of ranks (non- paramet­ ric methods). It is important to know precisely what method the program uses, and this is not always clear from the manual. Indeed some manuals are positively misleading (Bland and Altman, 1988).</p>
+<p>首次使用软件包进行特定分析时，建议先分析一些已知答案的数据集。本书尽可能提供了示例的原始数据，方便读者进行此类练习。<br />
+When using a package to perform a particular analysis for the first time it is advisable to begin by analysing some sets of data for which you already know the answers. In this book the raw data are given for the worked examples wherever possible to enable you to do this.</p>
+<h2 id="66-计算机辅助分析策略--66-strategy-for-computer-aided-analysis"><a class="header" href="#66-计算机辅助分析策略--66-strategy-for-computer-aided-analysis">6.6 计算机辅助分析策略  6.6 STRATEGY FOR COMPUTER-AIDED ANALYSIS</a></h2>
+<p>本节包含在计算机上分析数据的总体策略。请注意，在进入数据分析之前，需要经过若干步骤。<br />
+This section contains a broad strategy for analysing data on a computer. Notice that there are several steps to pass through before moving to the analysis of the data.</p>
+<h3 id="a-数据收集--a-data-collection"><a class="header" href="#a-数据收集--a-data-collection">(a) 数据收集  (a) Data collection</a></h3>
+<p>(a) 数据收集<br />
+第6.7节描述了为将要输入计算机的数据准备编码表的几个方面。如果有一个设计良好的编码表，数据录入将更快且更准确。<br />
+(a) Data collectionSection 6.7 describes several aspects of preparing a coding sheet for data that are going to be typed into a computer. Data entry will be much quicker and more accurate if there is a well-designed coding form to work from.</p>
+<h3 id="b-数据录入--b-data-entry"><a class="header" href="#b-数据录入--b-data-entry">(b) 数据录入  (b) Data entry</a></h3>
+<p>(b) 数据录入<br />
+数据应输入到计算机中的文件中。这可以在统计软件包内完成，也可以使用通用编辑程序。存储数据的原因是你常常需要在以后进行进一步分析，而且只需输入一次数据。同时，列出数据并检查数值是否正确录入也很方便。第6.7节讨论了数据文件的格式。无法读取文件中数据的统计软件包应被淘汰。<br />
+(b) Data entryData should be typed into a file on the computer. This may be possible within the statistics package or using a general purpose editing program. The reason for storing the data is that you will often need to carry out further analyses at a later date, and you only want to enter the data once. Also it is easy to list the data and check that the values have been entered correctly. I consider formats for data files in section 6.7. A statistical package that cannot read data from a file should be rejected.</p>
+<h3 id="c-数据检查--c-data-checking"><a class="header" href="#c-数据检查--c-data-checking">(c) 数据检查  (c) Data checking</a></h3>
+<p>(c) 数据检查<br />
+人们往往认为数据一旦输入计算机就是正确的。实际上，无论多么小心，输入（键入）数据时都很容易出错。无论多么繁琐，必须检查数据是否正确录入。减少错误的最好方法是让两个人分别录入数据两遍。此时，使用文件比较程序非常有用。检查两个文件间的差异，并确定正确的数值。第7.2节讨论了数据检查。<br />
+(c) Data checkingThere is a tendency to believe that once the data are on the computer they must be correct. In fact it is all too easy to make errors when entering (typing) data, however careful one is. It is essential to check that the data have been typed correctly, however tedious this may be. The best way to minimize errors is to have the data entered twice, preferably by two different people. Here it is useful to have a program for comparing files. Any differences between the two files are checked and the correct value obtained. Data checking is discussed in section 7.2.</p>
+<h3 id="d-数据筛选--d-data-screening"><a class="header" href="#d-数据筛选--d-data-screening">(d) 数据筛选  (d) Data screening</a></h3>
+<p>(d) 数据筛选<br />
+在开始主要统计分析之前，重要的是先观察数据。制作每个变量的直方图是简单的任务，变量对之间可以通过散点图进行检查。这些图表能初步展示平均值、变异性、分布形态，以及是否存在异常值或缺失值。第7.5节讨论了数据筛选。<br />
+(d) Data screeningBefore starting the main statistical analysis it is important to look at the data. It is a simple task to produce a histogram of each variable, and pairs of variables can be inspected by scatter diagrams. These plots will give a first idea of the average value, the variability, the shape of the distribution, and whether there are any outlying or missing values. Data screening is discussed in section 7.5.</p>
+<h3 id="e-数据分析--e-data-analysis"><a class="header" href="#e-数据分析--e-data-analysis">(e) 数据分析  (e) Data analysis</a></h3>
+<p>适当的统计分析形式通常直接来源于研究设计。特别是，变量的数值可能在组间或组内进行比较，如第5章所述。组内比较必须使用针对该类型数据设计的技术。<br />
+The appropriate form of statistical analysis will often follow directly from the design. In particular, values of a variable may be compared between groups or within a group, as discussed in Chapter 5. Within group comparisons must make use of techniques intended for that type of data.</p>
+<p>研究目标应指明几个主要感兴趣的分析。虽然预先指定的分析最为重要，但对数据的观察可能提示一些额外的有趣分析。这些“探索性”分析的结果应谨慎解读（见第8章）。<br />
+The objectives of the study should indicate a few main analyses of interest. Although the pre- specified analyses are the most important ones, inspection of the data may suggest some additional analyses of interest. The results of these 'exploratory' analyses should be interpreted cautiously (see Chapter 8).</p>
+<p>许多统计方法基于对数据的某些假设。<br />
+Many statistical methods are based on certain assumptions about the</p>
+<p>这些假设可能需要通过进一步分析来验证。<br />
+data. These may require further analyses to verify them.</p>
+<p>我强烈建议如果软件支持，保持一个计算会话的“日志”，其中同时显示输入命令和结果。尤其当命令未保存到文件时，这一点尤为重要。<br />
+I strongly recommend that you keep a 'log' of the computing session if the software has the facility, in which both the input commands and results are shown. This is especially important when the commands are not stored on a file.</p>
+<h3 id="f-结果检查--f-checking-results"><a class="header" href="#f-结果检查--f-checking-results">(f) 结果检查  (f) Checking results</a></h3>
+<p>(f) 结果检查 你应检查结果是否对应正确的观测数量—无意中丢失或多出几个病例是很容易的。重要的是要认识到，计算机给出的结果不应被自动视为正确。对数据进行简单的初步检查应能让你对预期结果有所了解。如果结果与预期明显不同，则应检查数据是否有错误，以及是否进行了正确的分析。分析数据时容易出错，尤其是复杂分析。计算机只有在你提出正确问题时才会给出正确答案。显然，如前所述，有分析日志时检查结果会容易得多。<br />
+(f) Checking resultsYou should check that the results relate to the correct number of observations – it is surprisingly easy to lose or gain a few cases unwittingly. It is important to appreciate that the results obtained from a computer should not be taken as automatically correct. Simple preliminary inspection of the data should give you some idea of what results to expect. If the results obtained differ markedly from expectation, then you should check that there are no errors in the data, and that the proper analysis has been performed. It is easy to make mistakes when trying to analyse data, especially with complex analyses. The computer will give you the correct answer only if you ask the correct question. Clearly it is much easier to check results when there is a log of the analysis, as suggested above.</p>
+<h3 id="g-结果解释--g-interpretation"><a class="header" href="#g-结果解释--g-interpretation">(g) 结果解释  (g) Interpretation</a></h3>
+<p>(g) 结果解释 结果的解释将在后续章节讨论。<br />
+(g) InterpretationInterpretation of results is discussed in subsequent chapters.</p>
+<h2 id="67-数据收集表格--67-forms-for-data-collection"><a class="header" href="#67-数据收集表格--67-forms-for-data-collection">6.7 数据收集表格  6.7 FORMS FOR DATA COLLECTION</a></h2>
+<p>当数据将用于计算机后续分析时，使用带有每位数字指定框的标准表格是个好主意。这适用于从现有记录（如医院病历）中提取数据的研究，也适用于前瞻性研究。尤其当每个个体收集许多变量信息时，这一点非常重要。<br />
+When data are to be collected for subsequent analysis using a computer, it is a good idea to use a standard form with assigned boxes for each digit. This applies to studies where data are to be extracted from existing records, such as hospital notes, as well as to prospective studies. It is especially important when information on many variables is collected for each individual.</p>
+<p>我将先考虑计算机程序从文件接收（读取）数据的不同方式，然后讨论表格设计的相关方面。关于表格设计的进一步讨论见Pocock（1983，第160-166页）、De Pauw和Buyse（1984）（特别针对癌症试验）以及Armitage和Berry（1987，第8-14页）。<br />
+I shall first consider alternative ways in which computer programs can accept (read) data from a file, and then aspects of form design. Further discussion of form design is given by Pocock (1983, pp. 160- 6), De Pauw and Buyse (1984) (with special reference to cancer trials) and Armitage and Berry (1987, pp. 8- 14).</p>
+<h3 id="671-计算机程序输入格式--671-formats-for-input-to-computer-programs"><a class="header" href="#671-计算机程序输入格式--671-formats-for-input-to-computer-programs">6.7.1 计算机程序输入格式  6.7.1 Formats for input to computer programs</a></h3>
+<p>6.7.1 计算机程序输入格式 大多数软件包能读取的一种标准格式（称为自由格式）如图6.1所示，该图展示了一项比较两种降压药的试验中部分数据。这里文件的每一行包含一个个体的多个变量，每个信息项之间用一个或多个空格分隔。列不必像示例中那样垂直对齐，但我建议这样做，<br />
+6.7.1 Formats for input to computer programsA standard format (called free format) that most packages will read is shown in Figure 6.1 which illustrates the first part of the data from a trial comparing two antihypertensive drugs. Here each row of the file contains several variables for one individual and each item of information is separated from the next by one or more spaces. There is no necessity for the columns to line up vertically as in this example, but I recommend this</p>
+<p>001 17 02 89 25 11 33 1 2 170.2 77.1 141 82 129 79 002 21 02 89 02 02 44 1 1 162.3 80.8 150 85 144 81 003 28 02 89 14 06 40 2 2 151.9 72.2 142 79 142 76 004 05 03 89 01 12 28 1 1 178.8 91.4 181 101 155 87 005 11 03 89 18 05 48 1 1 166.0 81.8 170 90 158 84 006 12 03 89 24 09 37 2 1 171.4 73.3 139 82 134 78 007 17 03 89 07 04 36 2 2 155.8 61.5 184 107 177 102 008 20 03 89 12 02 38 1 2 185.2 100.6 157 93 150 88</p>
+<p>等等<br />
+etc</p>
+<p>图6.1 一种普遍适用的数据布局样式示例，用于输入统计计算机程序。不同项目由一个或多个空格分隔，每列数字对齐。各列依次包含患者编号、入组日期、出生日期、性别、治疗方案、身高、体重、初始血压（收缩压和舒张压）及最终血压。<br />
+Figure 6.1 An example of a generally applicable style of data layout for entry into a statistical computer program. Different items are separated by one or more spaces and the figures in each column are aligned. The columns contain, in sequence, patient number, date of entry to study, date of birth, sex, treatment, height, weight, initial blood pressure (systolic and diastolic) and final blood pressure.</p>
+<p>这种做法便于目视检查所有信息是否正确录入。我强烈建议使用代码编号来标识每位受试者，如图6.1所示。这便于核查可疑值、后续添加变量、确认无重复受试者等。<br />
+practice as it makes it easy to check visually that all information has been entered correctly. I strongly recommend that a code number is used to identify each subject, as in Figure 6.1. This makes it easy to check any suspicious values, to add extra variables at a later date, to check that nobody is in the study twice, and so on.</p>
+<p>自由格式的替代方案是固定格式，数据文件中项目间不需空格分隔。此格式的缺点是必须告知程序具体格式，若不熟悉编程则较复杂。固定格式可用空白表示缺失数据，但这并不理想，因为空白无法区分是故意缺失还是疏漏。此外，大多数程序会将空白解释为零，这可能导致严重错误（见6.3节）。固定格式文件占用的磁盘空间稍小，但实际影响不大。并非所有软件包都支持固定格式，且自由格式更易处理。<br />
+The alternative to free format is fixed format, in which items need not be separated by spaces in the data file. The disadvantage of this format is that it is necessary to tell the program the precise format used, and this can be complicated if you are unused to computer programming. With fixed format you can use blanks to indicate missing data, but this is a bad idea as a blank cannot be distinguished from an omission due to oversight. Also, most programs will interpret blanks as zero, which is potentially disastrous (as shown in section 6.3). Fixed format files occupy slightly less space on the disk, but this is of no real practical consequence. Not all packages can accept data in fixed format, and in any case free format is easier to deal with.</p>
+<p>统计程序要求每个受试者每个变量都有值，自由格式的一个优点是即使缺失值也需输入某个数值。不能用空白，因为空白用于分隔相邻项目。有些程序允许用特殊符号（如 ？ 或 *）表示缺失数据，否则必须用该变量不可能出现的数值（如 -1 或 99）代替，并且要记得在程序中指定该缺失值代码。<br />
+Statistical programs require a value for every variable for each subject, so a good feature of free format is that you will need to enter some quantity even when a value is missing. A blank cannot be used because blanks are used to separate adjacent items. Some programs have the useful facility of letting you indicate missing data in the file by a special symbol, such as ？ or *. Otherwise you must give missing data a numerical value which is impossible for that variable, perhaps - 1 or 99, and then remember to give the appropriate instruction to the program to indicate</p>
+<p>若无缺失值代码功能，统计软件包将不可接受。<br />
+the missing value code. The absence of a missing value code facility would make a statistical package unacceptable.</p>
+<p>当每个个体的数据太多，无法在屏幕宽度（80字符）内显示时，程序处理方式多样，需查阅手册。<br />
+There is a variety of ways in which programs can handle the situation where you have too much data for each individual to fit onto the width of your screen (80 characters). You will need to consult your manual.</p>
+<h3 id="672-表单设计--672-form-design"><a class="header" href="#672-表单设计--672-form-design">6.7.2 表单设计  6.7.2 Form design</a></h3>
+<p>图6.2展示了一个可用于收集图6.1中数据的表格。其部分特征已在前文描述过，如受试者的识别代码。每组方框旁的数字表示数据输入计算机时，从行首开始的字符数。缺失的数字表示每条信息之间有空格，说明数据采用自由格式。注意，患者姓名不应录入计算机文件。<br />
+Figure 6.2 shows a form that could have been used to collect the data shown in Figure 6.1. Some of its features have been described already, such as the subject's identifying code number. The numbers associated with each group of boxes indicate the number of characters from the start of the line when the data are typed into the computer. The missing numbers mean that there is a blank between each piece of information, indicating that the data will be in free format. Note that the patient's name should not be entered into the computer file.</p>
+<p>患者姓名<br />
+Patient's name</p>
+<p>患者编号<br />
+Patient's number</p>
+<p>入组日期<br />
+Date of entry to study</p>
+<p>出生日期<br />
+Date of birth</p>
+<p>性别（1=男，2=女）<br />
+Sex (1=Male, 2=Female)</p>
+<p>药物（1=Andreprevin，2=Doryprevin）<br />
+Drug (1=Andreprevin, 2=Doryprevin)</p>
+<p>身高（厘米）<br />
+Height (cm)</p>
+<p>体重（千克）<br />
+Weight (kg)</p>
+<p>初始血压（毫米汞柱）<br />
+Initial Blood Pressure (mm Hg)</p>
+<p>末次血压（毫米汞柱）<br />
+Final Blood Pressure (mm Hg)</p>
+<p><img src="../images/06_Using_a_computer/img1.jpg" alt="" /></p>
+<p><img src="../images/06_Using_a_computer/img2.jpg" alt="" /><br />
+图6.2 用于收集比较两种降压药试验数据的表格部分，对应图6.1中的数据。<br />
+Figure 6.2 Part of a form to collect data for a trial comparing two antihypertensive drugs, corresponding to the data in Figure 6.1.</p>
+<p>设计用于记录数据的表格需要仔细考虑。分类变量和连续变量带来不同的问题。<br />
+The way in which forms are designed for recording data needs careful thought. Categorical and continuous variables pose different problems.</p>
+<h4 id="a-分类数据--a-categorical-data"><a class="header" href="#a-分类数据--a-categorical-data">(a) 分类数据  (a) Categorical data</a></h4>
+<p>应该给每个可能的类别分配一个数字，如以下示例：<br />
+A number should be assigned to each possible category, as in the following examples:</p>
+<p>糖尿病：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf cjk_fallback">是</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf cjk_fallback">否</span></span></span></span> 血型：<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">A</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">B</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">AB</span></span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span><br />
+Diabetes:  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">Yes</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">No</span></span></span></span>  Blood group:  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathbf">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">A</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">B</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord mathbf">AB</span></span></span></span> <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></p>
+<p>我强烈建议所有编码都直接写在表格上，而不是放在单独的纸张上。图6.2展示了两个简单的例子。如果必须使用大于9的编码，则需要第二个方框。<br />
+I strongly recommend that all the codes are on the form itself rather than on a separate sheet. Two simple examples are shown in Figure 6.2. If it is necessary to use codes higher than nine, a second box will be needed.</p>
+<p>当使用固定格式时，建议避免使用0作为编码，因为某些程序无法区分0和未填写的空白框。自由格式输入则不存在此问题，因为每个变量都必须输入一个数值。<br />
+It is advisable to avoid zero as a code when fixed format is used, as some programs do not distinguish 0 from a blank corresponding to a box which has not been filled in. This is not a problem for free format input, as some number must be entered for every variable.</p>
+<p>有些变量可能有多个非互斥的答案，如既往或同时用药。此时需要为每个感兴趣的答案设置一个是/否的方框。尽可能保持编码一致是理想的，例如所有是/否问题应使用相同的编码。<br />
+Some variables have several possible non- mutually exclusive answers, such as prior or concomitant therapy. Here it is necessary to have one yes/no box for each possible answer of interest. It is desirable to have consistent codes where possible. For example, all questions with yes or no answers should use the same codes.</p>
+<p>有些程序允许用字母代替数字作为分类数据的编码。例如性别可用M或F表示，药物可用A或D表示。这有一定优势，但意味着数据文件不一定能被所有程序接受。<br />
+It is possible with some programs to use letters instead of numbers for categorical data. Thus sex could be entered as M or F, and drug as, say, A or D. This has some advantages, but means that the data file will not be acceptable to all programs.</p>
+<h4 id="b连续数据--b-continuous-data"><a class="header" href="#b连续数据--b-continuous-data">（b）连续数据  (b) Continuous data</a></h4>
+<p>测量值应记录到与测量精度相同的程度—在记录前四舍五入数值没有任何优势。通常也不建议在记录数据时将连续变量分类，例如通过给数值范围分配数字代码。为了统计分析，最好尽可能精确地记录数据。每个数字应占一个方格，且如果相关，应显示小数点的位置，如图6.2中身高和体重所示。小数点不必占用单独的方格；如果此处省略小数点，分析前我们需要将所有身高和体重除以10。表格上标明所用单位很有用，尤其是在常用单位有多种选择时。<br />
+Measurements should be recorded to the same accuracy as that to which they are measured - there is no advantage in rounding values before recording them. Nor is it usually a good idea to categorize continuous variables when recording data, for example by allocating numeric codes to ranges of values. For statistical analysis it is desirable to have the data recorded as precisely as possible. One box should be allowed for each digit, and the location of the decimal point should be shown if relevant, as for height and weight in Figure 6.2. The decimal point does not have to have its own box; if it were omitted here we would need to divide all heights and weights by 10 before analysis. It is useful to indicate on the form the units used, especially where there are alternatives in common use.</p>
+<p>每个方格只能放一个数字，因此必须为可能记录的最大值预留足够的方格。例如，成人体重以千克计，应在小数点前预留三个方格，因为有人体重超过100千克。即使第一个方格最终未被使用，也无妨。<br />
+Only one digit should go in each box, so it is essential to allow enough boxes for the largest value that could be recorded. Thus we ought to allow three boxes before the decimal point for adult body weight in kg because some people weigh more than  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">100</span><span class="mord"><span class="mord mathrm" style="margin-right:0.01389em;">kg</span></span></span></span></span>  . It will not matter if it turns out that the first box is never used.</p>
+<p>填写表格的人应理解在不需要使用所有方格时，使用右侧方格的重要性。<br />
+Whoever fills in the forms should understand the importance of using the</p>
+<p>因此，舒张压低于100时，必须填写在三个可用方格中的第二和第三个方格内。<br />
+right- hand boxes when not all boxes are needed. Thus diastolic blood pressure below 100 must be written in the second and third of the three available boxes.</p>
+<h4 id="c-日期--c-dates"><a class="header" href="#c-日期--c-dates">(c) 日期  (c) Dates</a></h4>
+<p>英国通常的日期顺序是日、月、年，如图6.2所示，但在美国则是月、日、年。表格上注明所需的顺序非常重要。<br />
+The usual British ordering of dates is day, month, year, as shown in Figure 6.2, but in the USA it is month, day, year. It is important to indicate on the form which order is required.</p>
+<p>事实上，年、月、日的顺序是一个不错的选择，尽管不太常见，但它允许通过将日期视为六位数字来简单排序数据。<br />
+In fact the order year, month, day is a good option, apart from its unfamiliarity, as it allows the data to be sorted simply by using the date as a six digit number.</p>
+<h4 id="d-缺失数据--d-missing-data"><a class="header" href="#d-缺失数据--d-missing-data">(d) 缺失数据  (d) Missing data</a></h4>
+<p>如果你的程序接受用于此目的的符号，比如*，那么可以使用，但这意味着你的文件可能无法被其他统计程序读取。否则，应使用特殊的数字代码。最常用的方法是用数字9填满每个格子，例如未知的血压记录为999，未知的性别记录为9。<br />
+If your program will accept a symbol for this purpose, such as *, then this can be used, but it will mean that your file may not be readable by any other statistical program. Otherwise a special numeric code should be used. The most common method is to fill each box with nines, so that unknown blood pressure is recorded as 999 and unknown sex as 9.</p>
+<h3 id="673-多重形式--673-multiple-forms"><a class="header" href="#673-多重形式--673-multiple-forms">6.7.3 多重形式  6.7.3 Multiple forms</a></h3>
+<p>临床数据通常是在每次见到受试者时收集的，例如在怀孕期间。当患者的随访次数不均等时，研究对象之间的信息量也会有所不同。图6.1中隐含的假设是每个受试者的信息量应相同。虽然可以使用一种称为数据库的软件存储每个受试者不等量的数据，但大多数统计软件只能处理所有受试者均有相同信息的数据集（称为矩形数据）。在开始分析之前，通常需要对这类数据集进行一定的汇总。<br />
+Clinical data are often obtained from a subject each time they are seen, for example during pregnancy. When patients are not seen equally often there will be varying amounts of information among the subjects being studied. It is implicit in Figure 6.1 that there should be the same amount of information about each subject. Although unequal amounts of data per subject can be stored using a type of software known as a database, most statistical computer programs can only deal with data sets where the same information is available for all subjects (called rectangular data). Some summarizing of such data sets will be necessary before analysis can begin.</p>
+<p>绝不应简单地将每次随访视为独立的数据集—将来自同一患者的多条记录当作多名患者的数据是完全无效的。在研究设计阶段，即使是基于回顾性病例记录的研究，也应考虑数据量的差异。这类数据在组织成适合统计分析的形式时可能极为复杂。如果必须从每个受试者收集多组数据，我建议寻求专家协助。<br />
+The simple expedient of treating each visit as a separate data set should never be adopted - it is completely invalid to treat multiple records from one patient as if they were from several patients. The amount of data should be considered when the study is being planned, even for retrospective studies based on examining case notes. This type of data can be extremely difficult to organize appropriately for statistical analysis. I recommend expert assistance if it is necessary to collect multiple sets of data from each subject.</p>
+<h3 id="674-文件中数据的分析--674-analysis-of-data-on-a-file"><a class="header" href="#674-文件中数据的分析--674-analysis-of-data-on-a-file">6.7.4 文件中数据的分析  6.7.4 Analysis of data on a file</a></h3>
+<p>上述格式的一个结果是，计算机文件中的每一行代表一个个体，不同的变量分布在各列。许多分析中我们希望比较受试者的亚组，因此有必要<br />
+A consequence of the formats described above is that on the computer file each row represents an individual, with different variables in columns. In many analyses we wish to compare subgroups of subjects, so it is necessary</p>
+<p>程序能够接受所有数值都在同一列中，而子组指示符在另一列中的数据。例如，对于图6.1和6.2中显示的数据，我们希望比较接受不同治疗的患者的最终血压值。一些程序要求比较的数据集必须位于不同的列中，这种情况下它们不适合对以所述方式存储的文件数据进行统计分析。这是评估统计软件时需要考虑的另一个特点。<br />
+for the program to accept data where all the values are in a single column, and an indicator of the subgroup is in a different column. For example, for the data shown in Figures 6.1 and 6.2 we would wish to compare final blood pressures for patients receiving the different treatments. Some programs expect sets of data to be compared to be in different columns, in which case they would be unsuitable for statistical analysis of data stored in files in the manner described. This is a further feature to be considered when evaluating statistical software.</p>
+<h2 id="68-绘图--68-plotting"><a class="header" href="#68-绘图--68-plotting">6.8 绘图  6.8 PLOTTING</a></h2>
+<p>使用计算机的一个主要优势是能够绘制数据图。无论是在屏幕上还是纸上绘图，都可以生成两种类型的图—折线图或高分辨率图。第一种方法使用常见的“字母数字”字符集，将每个点尽可能准确地放置在其正确位置，而第二种方法利用计算机的图形功能，提供更精确的绘图。图6.3显示了图11.4中数据的折线图；大多数统计软件包都能生成折线图。重合的点通常通过显示点的数量（最多9个）来表示。指定坐标轴的比例和区分不同组别通常较为困难。大多数统计软件包可以绘制直方图和散点图，有些还能生成箱线图或茎叶图。折线图在数据分析中非常有用，但质量不是最高。直到最近，少数统计软件包能生成高分辨率图，但改进的图形功能正变得越来越普遍。本书中的图形<br />
+The ability to plot data is a major advantage of using a computer. There are two types of plot that can be produced, whether plotting on the screen or on paper - a line plot or a high- resolution plot. The first method uses the usual 'alphanumeric' character set and places each point as near as possible to its correct location, while the second uses the graphical capability of the computer to give a much more accurate plot. Figure 6.3 shows a line plot of the data shown in Figure 11.4; line plots can be produced by most statistical packages. Coincident points are usually indicated by showing the number of points (up to 9). It is often difficult to specify the scaling of axes and to indicate different groups. Most statistical packages can plot histograms and scatter diagrams, and some can produce box- and- whisker or stem- and- leaf plots. Line plots are very useful when analysing data, but they are not of top quality. Until recently few statistical packages could produce high- resolution plots, but improved graphical facilities are becoming more common. The figures in this book were</p>
+<p><img src="../images/06_Using_a_computer/img3.jpg" alt="" /><br />
+图6.3 显示了图11.4中数据的折线图，涉及哺乳动物母体体重对胎儿体重的对数关系。<br />
+Figure 6.3 Line plot of data shown in Figure 11.4 relating log maternal weight to log fetal weight in mammals.</p>
+<p>是在个人计算机上（使用STATA软件包）生成，并通过高分辨率激光打印机打印的。<br />
+produced on a personal computer (using the package STATA) and printed on a high- resolution laser printer.</p>
+<h2 id="69-计算机的其他用途--69-other-uses-of-computers"><a class="header" href="#69-计算机的其他用途--69-other-uses-of-computers">6.9 计算机的其他用途  6.9 OTHER USES OF COMPUTERS</a></h2>
+<p>计算机在统计学上的显著主要价值在于数据分析，如前所述，还包括绘制图表。然而，还有一些其他应用也很有用，主要涉及随机数。<br />
+The obvious main statistical value of computers is in the analysis of data and, as just indicated, for producing graphs. However, there are some other applications which can be useful, mostly relating to random numbers.</p>
+<p>我们在第5章中看到随机分配在研究中的重要性，尤其是在临床试验中分配治疗。表B13可用于此目的，它是由计算机程序通过一种算法生成的，该算法产生的数字序列几乎具有随机数的所有特性。使用表的缺点是每次必须使用同一组数字，尽管可以从表中的任意位置开始。更好的方法是每次使用合适的算法生成新的随机数，许多统计程序都能做到这一点。算法的质量各异，但都足以满足治疗分配的需要。<br />
+We saw in Chapter 5 the importance of random allocation in research, especially for allocation of treatments in clinical trials. Table B13, which can be used for this purpose, was generated by a computer program using an algorithm that produces a sequence of numbers which have virtually the same properties as random numbers. The disadvantage of using a table is that you must use the same set of numbers each time, although you can start at an arbitrary place in the table. It is better to generate new random numbers each time using a suitable algorithm, and many statistical programs can do this. Algorithms vary in quality, but all are likely to be good enough for treatment allocation.</p>
+<p>表B13中的数字是0到9之间的数字，因此是均匀分布的随机样本，如第4章所述。有时我们希望从其他分布中获得随机样本，特别是正态分布，以便在已知条件下研究变异性。第4.7图展示了从标准正态分布中抽取的50个随机样本，这就是这种用法的一个例子。多个程序可以生成来自正态分布的随机样本。<br />
+The numbers in Table B13 are digits in the range 0 to 9, and are thus a random sample from a Uniform distribution, as described in Chapter 4. Sometimes we wish to obtain a random sample from some other distribution, especially the Normal distribution, in order to study variability under known conditions. An example of this use was seen in Figure 4.7 which showed random samples of size 50 from a standard Normal distribution. Several programs can generate random samples from a Normal distribution.</p>
+<p>研究在特定情境下发生的情况是称为模拟法的一种简单方法。其思想是研究在对过程性质做出某些假设下会发生什么，以及改变假设的影响。第8章中使用模拟来说明从具有特定特征的总体中抽取样本的变异性。<br />
+Investigating what happens in a defined situation is a simple example of an approach known as simulation. The idea is to study what happens under certain assumptions about the nature of a process, and what the effect is of varying the assumptions. Simulation is used in Chapter 8 to illustrate variability among samples drawn from a population with specified characteristics.</p>
+<h2 id="610-计算机的误用--610-misuses-of-the-computer"><a class="header" href="#610-计算机的误用--610-misuses-of-the-computer">6.10 计算机的误用  6.10 MISUSES OF THE COMPUTER</a></h2>
+<p>本章前面已经提到使用计算机的一些缺点。还有三个应避免的计算机误用。<br />
+Some disadvantages of using computers were given earlier in this chapter. There are three further misuses of computers that should be avoided.</p>
+<h3 id="a-数据挖掘--a-data-dredging"><a class="header" href="#a-数据挖掘--a-data-dredging">(a) “数据挖掘”  (a) 'Data-dredging'</a></h3>
+<p>许多研究有明确的目标，但也会收集其他“可能有趣”的信息。在没有明确目标的研究中，很容易进行大量统计分析，希望能发现一些有趣的结果。正如我们将在第8章看到的，当总体中不存在真实关系时，仅凭样本数据就有很大可能偶然发现某种表面关系。<br />
+Many studies have clearly defined objectives, but other information is collected because it 'may be interesting'. It is easy to perform a large number of statistical analyses in the hope that something interesting will turn up, especially in studies without clear objectives. As we will see in Chapter 8, there is a good chance of finding some apparent relationship in</p>
+<p>因此，我在第5章强调，主要目标及主要分析应事先明确。任何探索性分析最多只能作为生成假设的手段，供后续研究验证。<br />
+a sample purely by chance when there is no real relationship in the population. For this reason I stressed in Chapter 5 that the main objectives, and thus the principal analyses, should be clearly identified in advance. Any exploratory analyses should be considered as useful, if at all, only for generating hypotheses for examination in further studies.</p>
+<h3 id="b-过度复杂--b-over-complexity"><a class="header" href="#b-过度复杂--b-over-complexity">(b) 过度复杂  (b) Over-complexity</a></h3>
+<p>由于方法学可用，可能会诱使你对数据进行复杂的统计分析，但这并非良好的统计实践。分析应限制在回答相关问题所需的最低限度。保持分析简洁的重要原因之一是，更容易向其他研究者解释你所做的工作和发现。<br />
+It may be tempting to subject your data to a complex statistical analysis because the methodology is available, but this is not good statistical practice. The analysis should be restricted to the minimum necessary to answer the relevant questions. One important reason for keeping analyses simple is that it is much easier to explain to other researchers what you did and what you found.</p>
+<h3 id="c-虚假的精确度--c-spurious-precision"><a class="header" href="#c-虚假的精确度--c-spurious-precision">(c) 虚假的精确度  (c) Spurious precision</a></h3>
+<p>计算机通常会给出多位有效数字的结果，但报告前几乎总应进行四舍五入。我曾见过发表的方程，声称能预测出生体重精确到 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/10000</span><span class="mord mathrm" style="margin-right:0.01389em;">g</span></span></span></span>，妊娠期长短精确到十分钟，这些结果看起来直接来自计算机输出。第2.8节提供了关于统计分析结果适当数值呈现的一些指导，后续章节也有进一步评论。<br />
+Computers usually produce results to many significant figures, but they should nearly always be rounded before being reported. I have seen published examples of equations purporting to predict birthweight to the nearest  <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1/10000</span><span class="mord mathrm" style="margin-right:0.01389em;">g</span></span></span></span>  and length of gestation to the nearest ten minutes, results which appeared to have come straight from computer output. Some guidance on the appropriate numerical presentation of the results of statistical analysis was given in section 2.8, and there are further comments in subsequent chapters.</p>
+<h2 id="611-结语--611-concluding-remarks"><a class="header" href="#611-结语--611-concluding-remarks">6.11 结语  6.11 CONCLUDING REMARKS</a></h2>
+<p>除极小的数据集外，统计分析最好使用计算机，因为它带来了诸多好处。然而，虽然计算机消除了手工计算的繁琐和错误，但存在原始数据未被适当检查的风险。下一章将讨论数据的初步检查。此外，统计分析易被执行而缺乏对所用方法的真正理解。正确使用计算机对统计分析极为有益，但在必要时仍需专家指导。<br />
+For all but the smallest data sets it is desirable to use a computer for statistical analysis because of all the benefits indicated. However, while computers remove the drudgery and errors associated with hand calculations, there is a danger that the raw data are never examined properly. The next chapter discusses the preliminary inspection of data. Also, it is easy to perform statistical analyses without a true understanding of the methods used. Properly used, computers are enormously beneficial for statistical analysis, but they do not obviate the need for expert advice when appropriate.</p>
+
+                        </div>
+                    </main>
+                    
+                    <!-- Floating Page TOC Panel -->
+                    <div id="pagetoc-panel" class="pagetoc-panel hidden">
+                        <div class="pagetoc-header">
+                            <span class="pagetoc-title">目录</span>
+                            <button id="pagetoc-close" class="pagetoc-close-btn" type="button" aria-label="Close page contents">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </div>
+                        <nav id="pagetoc" class="pagetoc-content"></nav>
+                    </div>
+                    
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <a rel="prev" href="../translated/05_Designing_research_translated.html" class="mobile-nav-chapters previous"
+                            title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+
+                        <a rel="next prefetch" href="../translated/07_Preparing_to_analyse_data_translated.html" class="mobile-nav-chapters next"
+                            title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                    <section>
+                        <hr>
+                        <div id="giscus-container"></div>
+                    </section>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                <a rel="prev" href="../translated/05_Designing_research_translated.html" class="nav-chapters previous" title="Previous chapter"
+                    aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+
+                <a rel="next prefetch" href="../translated/07_Preparing_to_analyse_data_translated.html" class="nav-chapters next" title="Next chapter"
+                    aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </nav>
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../assets/giscus.js"></script>
+        <script src="../theme/pagetoc.js"></script>
+
+
+    </div>
+</body>
+
+</html>
